@@ -1,0 +1,20 @@
+[pull]
+	rebase = false
+[push]
+    default = current
+[init]
+	defaultBranch = main
+[core]
+    editor = nvim
+[alias]
+    # From tjdevries/config_manager
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+[delta]
+  line-numbers = true
+  syntax-theme = gruvbox
+  side-by-side = false
+
+  file-modified-label = modified:
+
+[interactive]
+  diffFilter = delta --color-only

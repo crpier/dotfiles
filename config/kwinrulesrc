@@ -1,0 +1,13 @@
+[$Version]
+update_info=kwinrules.upd:replace-placement-string-to-enum
+
+[1]
+Description=no borders no min size
+minsize=0,0
+minsizerule=2
+noborder=true
+noborderrule=3
+types=1
+
+[General]
+count=1

@@ -1,0 +1,23 @@
+if test -f $HOME/.config/fish/config.local.fish
+    source $HOME/.config/fish/config.local.fish
+end
+
+function fish_mode_prompt
+end
+
+alias n nvim
+alias nconfig "nvim ~/.config/nvim/init.vim"
+alias fconfig "nvim ~/.config/fish/config.fish"
+alias flconfig "nvim ~/.config/fish/config.local.fish"
+alias rsource "source ~/.config/fish/config.fish"
+
+alias g "git"
+alias gs "git status"
+alias ga "git add ."
+alias gc "git commit -m"
+alias gd "git diff"
+alias gac "git add . && git commit -m"
+alias gp "git push"
+alias gr "git reset HEAD --hard"
+
+set -gx PATH $PATH $HOME/Tools
