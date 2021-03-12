@@ -3,8 +3,10 @@ end
 
 alias n nvim
 alias nconfig "nvim ~/.config/nvim/init.vim"
+alias nlconfig "nvim ~/.config/local_configs/init.local.vim"
+alias vconfig "nvim ~/.vimrc"
 alias fconfig "nvim ~/.config/fish/config.fish"
-alias flconfig "nvim ~/.config/fish/config.local.fish"
+alias flconfig "nvim ~/.config/local_configs/config.local.fish"
 alias rsource "source ~/.config/fish/config.fish"
 
 alias g "git"
