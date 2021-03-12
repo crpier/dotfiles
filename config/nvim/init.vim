@@ -86,7 +86,7 @@ EOF
 
 " For nvim-lsp completion
 lua << EOF
-require'lspconfig'.pyls.setup{}
+require'lspconfig'.pyright.setup{}
 EOF
 " require'lspconfig'.vimls.setup{}
 " require'lspconfig'.bashls.setup{}
@@ -97,7 +97,7 @@ nnoremap <leader>rn :lua vim.lsp.buf.rename()<CR>
 nnoremap gr :lua vim.lsp.buf.references()<CR>
 nnoremap gh :lua vim.lsp.buf.hover()<CR>
 nnoremap <leader>ca :lua vim.lsp.buf.code_action()<CR>
-nnoremap <leader>sd :lua vim.util.show_line_diagnostics()<CR>
+nnoremap <leader>sd :lua vim.lsp.diagnostic.set_loclist()<CR>
 nnoremap ]g :lua vim.lsp.diagnostic.goto_next()<CR>
 nnoremap [g :lua vim.lsp.diagnostic.goto_prev()<CR>
 let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
