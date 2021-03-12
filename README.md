@@ -1,3 +1,5 @@
+### Usage
+The intstallation script creates a folder ~/.config/local_configs, where non-vcs-nable settings be stored for sourcing
 
 ### Installing
 As the use of the `pwd` indicates, the scripts should be run from the repo root directory.

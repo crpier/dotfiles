@@ -12,6 +12,8 @@ ln -sf $(pwd)/tmux.conf $HOME/.tmux.conf
 # Make sure .gitconfig sources extra.gitconfig
 ./scripts/setup_gitconfig.sh
 
-# Touch local rc files
-touch $HOME/.config/nvim/init.local.vim
-touch $HOME/.config/fish/config.local.fish
+# Make sure there are local config files
+mkdir -p ~/.config/local_configs
+touch $HOME/.config/local_configs/init.local.vim
+touch $HOME/.config/local_configs/config.local.fish
+touch $HOME/.config/local_configs/kitty.local.conf

@@ -1,6 +1,6 @@
 source ~/.config/nvim/viminit.vim
-if !empty(expand(glob("~/.config/nvim/init.local.vim")))
-    source ~/.config/nvim/init.local.vim
+if !empty(expand(glob("~/.config/local_configs/init.local.vim")))
+    source ~/.config/local_configs/init.local.vim
 endif
 
 

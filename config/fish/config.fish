@@ -1,7 +1,3 @@
-if test -f $HOME/.config/fish/config.local.fish
-    source $HOME/.config/fish/config.local.fish
-end
-
 function fish_mode_prompt
 end
 
@@ -21,3 +17,8 @@ alias gp "git push"
 alias gr "git reset HEAD --hard"
 
 set -gx PATH $PATH $HOME/Tools
+
+if test -f $HOME/.config/fish/config.local.fish
+    source $HOME/.config/local_configs/config.local.fish
+end
+
