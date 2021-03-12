@@ -9,6 +9,9 @@ ln -sf  $(pwd)/kde4 $HOME/.kde4
 # Individual files
 ln -sf $(pwd)/tmux.conf $HOME/.tmux.conf
 
+# Make sure .gitconfig sources extra.gitconfig
+./scripts/setup_gitconfig.sh
+
 # Touch local rc files
 touch $HOME/.config/nvim/init.local.vim
 touch $HOME/.config/fish/config.local.fish
