@@ -17,3 +17,4 @@ mkdir -p ~/.config/local_configs
 touch $HOME/.config/local_configs/init.local.vim
 touch $HOME/.config/local_configs/config.local.fish
 touch $HOME/.config/local_configs/kitty.local.conf
+touch $HOME/.config/local_configs/tmux.conf
