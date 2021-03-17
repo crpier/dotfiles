@@ -87,6 +87,7 @@ EOF
 " For nvim-lsp completion
 lua << EOF
 require'lspconfig'.pyright.setup{}
+require'lspconfig'.tsserver.setup{}
 EOF
 " require'lspconfig'.vimls.setup{}
 " require'lspconfig'.bashls.setup{}

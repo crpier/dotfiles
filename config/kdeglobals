@@ -107,7 +107,7 @@ ForegroundVisited=127,140,141
 
 [General]
 BrowserApplication=firefox.desktop
-ColorScheme=BreezeDark
+ColorScheme=Breeze Dark
 Name=Breeze Dark
 TerminalApplication=kitty
 XftHintStyle=hintslight
@@ -118,6 +118,7 @@ menuFont=Monaco,10,-1,5,50,0,0,0,0,0
 shadeSortColumn=true
 smallestReadableFont=Monaco,8,-1,5,50,0,0,0,0,0
 toolBarFont=Monaco,10,-1,5,50,0,0,0,0,0
+widgetStyle=Breeze
 
 [Icons]
 Theme=breeze-dark
