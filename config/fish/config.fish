@@ -20,7 +20,7 @@ alias gr "git reset HEAD --hard"
 
 set -gx PATH $PATH $HOME/Tools
 
-if test -f $HOME/.config/fish/config.local.fish
+if test -f $HOME/.config/local_configs/config.local.fish
     source $HOME/.config/local_configs/config.local.fish
 end
 
