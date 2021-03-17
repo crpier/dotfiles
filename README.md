@@ -6,3 +6,6 @@ As the use of the `pwd` indicates, the scripts should be run from the repo root 
 
 ### Extra
 Keyboard layout: https://configure.ergodox-ez.com/ergodox-ez/layouts/APZKR/latest
+
+# Future features
+- handle ssh config
