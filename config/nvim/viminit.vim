@@ -20,7 +20,7 @@ Plug 'tpope/vim-surround'
 " Neovim plugins
 Plug 'nvim-telescope/telescope.nvim', has('nvim') ? {} : { 'on': [] }
 " undecided between gruvbox variants, so I keep them both
-Plug 'numirias/semshi', has('nvim') ? {'do': ':UpdateRemotePlugins' } :  {'do': ':UpdateRemotePlugins', 'on': [] }
+" Plug 'numirias/semshi', has('nvim') ? {'do': ':UpdateRemotePlugins' } :  {'do': ':UpdateRemotePlugins', 'on': [] }
 " fuzzy finder
 Plug 'nvim-lua/popup.nvim', has('nvim') ? {} : { 'on': [] }
 Plug 'nvim-lua/plenary.nvim', has('nvim') ? {} : { 'on': [] }
