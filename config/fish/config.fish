@@ -18,7 +18,7 @@ alias gac "git add . && git commit -m"
 alias gp "git push"
 alias gr "git reset HEAD --hard"
 
-set -gx PATH $PATH $HOME/Tools
+set -gx PATH $PATH $HOME/Tools $HOME/go/bin
 
 if test -f $HOME/.config/local_configs/config.local.fish
     source $HOME/.config/local_configs/config.local.fish
