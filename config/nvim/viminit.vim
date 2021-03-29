@@ -50,6 +50,7 @@ Plug 'itspriddle/vim-shellcheck', has('nvim') ? {} : { 'on': [] }
 Plug 'skywind3000/asyncrun.vim', has('nvim') ? {} : { 'on': [] }
 Plug 'preservim/tagbar', has('nvim') ? {} : { 'on': [] }
 Plug 'mg979/vim-visual-multi', has('nvim') ? {'branch': 'master'} : {'branch': 'master', 'on': []}
+Plug 'tpope/vim-sensible'
 call plug#end()
 
 """"""""""""""""""""""""""""""General Options""""""""""""""""""""""""""""""
@@ -61,7 +62,7 @@ set smartindent
 set exrc
 " show current line number and relative line number for other lines
 set number relativenumber
-set nohlsearch
+" set nohlsearch
 " keep buffers open in the background even when not saved
 set hidden
 set noerrorbells
@@ -78,7 +79,7 @@ set incsearch
 " keep 4 lines above and below the cursor at all times
 set scrolloff=4
 " add an additional column to the left to be used by linters and other plugins
-set signcolumn=yes
+" set signcolumn=yes
 " show the limit to line length
 " set colorcolumn=100
 " refresh the file if it was edited outside vim
@@ -193,3 +194,32 @@ nnoremap <leader>m :MaximizerToggle!<CR>
 """"""""""""""""""""""""""""""Experimental Remaps"""""""""""""""""""""""""""""
 " I might keep these, I might not, we'll see
 
+imap jw <Esc>:w<CR>
+
+" Quickly append semicolon or comma
+imap ;; <Esc>A;<Esc>
+imap ,, <Esc>A,<Esc>
+
+" Navigate window splits with the arrow keys
+nnoremap <Left> <C-w>h
+nnoremap <Down> <C-w>j
+nnoremap <Up> <C-w>k
+nnoremap <Right> <C-w>l
+
+" Newline at end of file - actually I came up with this one lol
+nnoremap <leader>n Go<Esc>zz
+
+" Clear search highlight
+nnoremap <Esc> <Cmd>nohlsearch<CR>
+
+" Yank until end of line
+nnoremap Y yg_
+
+" not really sure that this does but I'll keep it for now lol
+set shortmess+=c
+
+" Insert one char then exit nmode
+nnoremap <C-s> :exec "normal i".nr2char(getchar())."\e"<CR>
+
+" Sort selected lines alphabetically
+vnoremap <Leader>s :sort<CR>

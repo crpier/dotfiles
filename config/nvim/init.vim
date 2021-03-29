@@ -111,8 +111,7 @@ let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
 " fugitive remaps
 nnoremap <leader>gc :GBranches<CR>
 nnoremap <leader>ga :Git fetch --all<CR>
-nnoremap <leader>grum :Git rebase upstream/master<CR>
-nnoremap <leader>grom :Git rebase origin/master<CR>
+nnoremap <leader>grom :Git pull origin/main<CR>
 nmap <leader>gh :diffget //3<CR>
 nmap <leader>gu :diffget //2<CR>
 nmap <leader>gs :G<CR>
@@ -149,13 +148,10 @@ EOF
 " haha vscode go brrr
 nnoremap <C-p> :lua require('telescope.builtin').git_files()<CR>
 nnoremap <Leader>f :lua require('telescope.builtin').find_files()<CR>
-" this doesn't seem to work great, maybe remove it?
 nnoremap <leader>ps :lua require('telescope.builtin').grep_string({ search = vim.fn.input("Grep For > ")})<CR>
-
 nnoremap <leader>pw :lua require('telescope.builtin').grep_string { search = vim.fn.expand("<cword>") }<CR>
 nnoremap gb :lua require('telescope.builtin').buffers()<CR>
-" maybe I'll remove this completely
-" nnoremap <leader>ph :lua require('telescope.builtin').help_tags()<CR>
+nnoremap <leader>ph :lua require('telescope.builtin').help_tags()<CR>
 
 " vimspector remaps
 fun! GotoWindow(id)
@@ -214,9 +210,8 @@ inoremap <silent><expr> <C-e>     compe#close('<C-e>')
 inoremap <silent><expr> <C-f>     compe#scroll({ 'delta': +4 })
 inoremap <silent><expr> <C-d>     compe#scroll({ 'delta': -4 })
 
-" Semshi settings
-nnoremap <leader>s :Semshi toggle<CR>
-
 """"""""""""""""""""""""""""""Experimental Remaps"""""""""""""""""""""""""""""
 " I might keep these, I might not, we'll see
 " nmap <Esc> <Esc>`^
+
+
