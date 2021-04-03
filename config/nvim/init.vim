@@ -14,13 +14,6 @@ let mapleader = " "
 
 """"""""""""""""""""""""""""""Theme""""""""""""""""""""""""""""""
 """"" Plugin settings
-" Airline settings
-call airline#parts#define_function('filetype', 'nvim_treesitter#statusline')
-
-" Airline settings
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#buffer_nr_show = 1
-let g:airline#extensions#tagbar#enabled = 0
 
 
 """"""""""""""""""""""""""""""General Remaps""""""""""""""""""""""""""""""
@@ -110,6 +103,7 @@ let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
 
 " fugitive remaps
 nnoremap <leader>gc :GBranches<CR>
+nnoremap <leader>gb :Git blame<CR>
 nnoremap <leader>ga :Git fetch --all<CR>
 nnoremap <leader>grom :Git pull origin/main<CR>
 nmap <leader>gh :diffget //3<CR>
@@ -214,4 +208,9 @@ inoremap <silent><expr> <C-d>     compe#scroll({ 'delta': -4 })
 " I might keep these, I might not, we'll see
 " nmap <Esc> <Esc>`^
 
+" Start term session
+nnoremap <leader>t :vs<CR>:term<CR>i
+" tnoremap <C-\> <C-\><C-n>
+" This only makes sense because I use vi mode in shell
+tnoremap <Left> <C-\><C-n><C-w>h
 

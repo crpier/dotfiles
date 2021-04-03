@@ -1,9 +1,6 @@
 call plug#begin('~/.vim/plugged')
 Plug 'morhetz/gruvbox'
 Plug 'lifepillar/vim-gruvbox8'
-" " status bar
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
 " " improved motion
 Plug 'bkad/CamelCaseMotion'
 " git plugins
@@ -16,7 +13,6 @@ Plug 'dbeniamine/cheat.sh-vim'
 " Plug 'sbdchd/neoformat'
 " " manage surrounding characters
 Plug 'tpope/vim-surround'
-
 " Neovim plugins
 Plug 'nvim-telescope/telescope.nvim', has('nvim') ? {} : { 'on': [] }
 " undecided between gruvbox variants, so I keep them both
@@ -51,6 +47,11 @@ Plug 'skywind3000/asyncrun.vim', has('nvim') ? {} : { 'on': [] }
 Plug 'preservim/tagbar', has('nvim') ? {} : { 'on': [] }
 Plug 'mg979/vim-visual-multi', has('nvim') ? {'branch': 'master'} : {'branch': 'master', 'on': []}
 Plug 'tpope/vim-sensible'
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'tpope/vim-repeat', has('nvim') ? {} : { 'on': [] }
+" Plug 'itchyny/lightline.vim'
+" Plug 'shinchu/lightline-gruvbox.vim'
+Plug 'vim-airline/vim-airline'
 call plug#end()
 
 """"""""""""""""""""""""""""""General Options""""""""""""""""""""""""""""""
@@ -107,6 +108,17 @@ set background=dark
 hi Normal guibg=NONE ctermbg=NONE
 
 """"" Plugin settings
+" Still undecided between lightline and airline
+" let g:lightline = {}
+" let g:lightline.colorscheme = 'jellybeans'
+
+" Airline settings
+call airline#parts#define_function('filetype', 'nvim_treesitter#statusline')
+
+" Airline settings
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#buffer_nr_show = 1
+let g:airline#extensions#tagbar#enabled = 0
 
 
 """"""""""""""""""""""""""""""General Remaps""""""""""""""""""""""""""""""
@@ -191,6 +203,16 @@ let g:rg_derive_root='true'
 
 nnoremap <leader>m :MaximizerToggle!<CR>
 
+" Nerdtree mapping
+" nnoremap <leader>n :NERDTreeFocus<CR>
+" nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+" nnoremap <C-f> :NERDTreeFind<CR>
+
+" Nerdtree settings
+" Exit Vim if NERDTree is the only window left.
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
+            \ quit | endif
 """"""""""""""""""""""""""""""Experimental Remaps"""""""""""""""""""""""""""""
 " I might keep these, I might not, we'll see
 
@@ -223,3 +245,22 @@ nnoremap <C-s> :exec "normal i".nr2char(getchar())."\e"<CR>
 
 " Sort selected lines alphabetically
 vnoremap <Leader>s :sort<CR>
+
+" Center screen after search result
+nnoremap n nzzzv
+nnoremap N Nzzzv
+
+" Insert line
+nmap <C-i> O<Esc>
+nmap <CR> o<Esc>
+
+" Start term session
+nnoremap <leader>t :vs<CR>:term<CR>i
+
+" Move when using surroinding chars
+imap "" ""<Esc>i
+imap '' ''<Esc>i
+imap () ()<Esc>i
+imap [] []<Esc>i
+imap {} {}<Esc>i
+
