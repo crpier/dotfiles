@@ -113,7 +113,10 @@ hi Normal guibg=NONE ctermbg=NONE
 " let g:lightline.colorscheme = 'jellybeans'
 
 " Airline settings
-call airline#parts#define_function('filetype', 'nvim_treesitter#statusline')
+if has('nvim') 
+    call airline#parts#define_function('filetype', 'nvim_treesitter#statusline')
+endif
+
 
 " Airline settings
 let g:airline#extensions#tabline#enabled = 1
@@ -228,6 +231,9 @@ nnoremap <Down> <C-w>j
 nnoremap <Up> <C-w>k
 nnoremap <Right> <C-w>l
 
+nnoremap <S-Down> :vertical resize -10<CR>
+nnoremap <S-Up> :vertical resize +10<CR>
+
 " Newline at end of file - actually I came up with this one lol
 nnoremap <leader>n Go<Esc>zz
 
@@ -251,7 +257,7 @@ nnoremap n nzzzv
 nnoremap N Nzzzv
 
 " Insert line
-nmap <C-i> O<Esc>
+nmap <Backspace> O<Esc>
 nmap <CR> o<Esc>
 
 " Start term session
@@ -264,3 +270,13 @@ imap () ()<Esc>i
 imap [] []<Esc>i
 imap {} {}<Esc>i
 
+" Tab is wasted in normal mode, map it to something!
+" nnoremap <Tab> ???
+" nnoremap <S-Tab> ???
+
+" Same as o and O, but escape indentation
+nnoremap <Leader>o o<Esc>^Da
+nnoremap <Leader>O O<Esc>^Da
+
+" Blackhole x
+nnoremap x "_x

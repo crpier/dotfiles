@@ -91,7 +91,6 @@ nnoremap <leader>rn :lua vim.lsp.buf.rename()<CR>
 nnoremap gr :lua vim.lsp.buf.references()<CR>
 nnoremap gh :lua vim.lsp.buf.hover()<CR>
 nnoremap <leader>ca :lua vim.lsp.buf.code_action()<CR>
-nnoremap <leader>sd :lua vim.lsp.diagnostic.set_loclist()<CR>
 nnoremap ]g :lua vim.lsp.diagnostic.goto_next()<CR>
 nnoremap [g :lua vim.lsp.diagnostic.goto_prev()<CR>
 let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
@@ -141,11 +140,13 @@ EOF
 
 " haha vscode go brrr
 nnoremap <C-p> :lua require('telescope.builtin').git_files()<CR>
-nnoremap <Leader>f :lua require('telescope.builtin').find_files()<CR>
-nnoremap <leader>ps :lua require('telescope.builtin').grep_string({ search = vim.fn.input("Grep For > ")})<CR>
-nnoremap <leader>pw :lua require('telescope.builtin').grep_string { search = vim.fn.expand("<cword>") }<CR>
+" Do I even use that?
+" nnoremap <Leader>f :lua require('telescope.builtin').find_files()<CR>
+nnoremap <leader>ss :lua require('telescope.builtin').grep_string({ search = vim.fn.input("Grep For > ")})<CR>
+nnoremap <leader>sw :lua require('telescope.builtin').grep_string { search = vim.fn.expand("<cword>") }<CR>
 nnoremap gb :lua require('telescope.builtin').buffers()<CR>
-nnoremap <leader>ph :lua require('telescope.builtin').help_tags()<CR>
+" what does this even do?
+" nnoremap <leader>st :lua require('telescope.builtin').help_tags()<CR>
 
 " vimspector remaps
 fun! GotoWindow(id)
@@ -210,7 +211,9 @@ inoremap <silent><expr> <C-d>     compe#scroll({ 'delta': -4 })
 
 " Start term session
 nnoremap <leader>t :vs<CR>:term<CR>i
-" tnoremap <C-\> <C-\><C-n>
 " This only makes sense because I use vi mode in shell
+" tnoremap <C-\> <C-\><C-n>
 tnoremap <Left> <C-\><C-n><C-w>h
-
+tnoremap <Right> <C-\><C-n><C-w>l
+" Meh, I don't really know how to feel about this one
+" tnoremap <leader><Esc> <C-\><C-n>
