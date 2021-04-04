@@ -257,9 +257,6 @@ nnoremap N Nzzzv
 nmap <Backspace> O<Esc>
 nmap <CR> o<Esc>
 
-" Start term session
-nnoremap <leader>t :vs<CR>:term<CR>i
-
 " Move when using surrounding chars
 imap "" ""<Esc>i
 imap '' ''<Esc>i
@@ -286,5 +283,3 @@ nnoremap <leader>cp :let @p=@""<CR>
 " If this stops being experimental, move it to the one where Q is mapped to noop
 nnoremap Q ZQ
 
-" TODO figure out these colors and make :Gdiffsplit more gruvbox friendly
-" highlight DiffAdd ctermfg=253 ctermbg=237 guifg=#dadada guibg=#3a3a3a

@@ -201,8 +201,8 @@ nnoremap <leader>t :vs<CR>:term<CR>i
 " tnoremap <C-\> <C-\><C-n>
 tnoremap <Left> <C-\><C-n><C-w>h
 tnoremap <Right> <C-\><C-n><C-w>l
-" Really considering removing this, I could simply do <Left> or <Right>, in the
-" direction where there is no other window
-tnoremap <leader><Esc> <C-\><C-n>
 
 " TODO think about snippets, you might like them
+
+" TODO figure out these colors and make :Gdiffsplit more gruvbox friendly
+" highlight DiffAdd ctermfg=253 ctermbg=237 guifg=#dadada guibg=#3a3a3a
