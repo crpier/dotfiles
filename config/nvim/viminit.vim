@@ -156,7 +156,6 @@ inoremap <silent><expr> <TAB>
       \ <SID>check_back_space() ? "\<TAB>" :
       \ "\<C-n>"
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-nnoremap <leader>c :vsp ~/.config/nvim/init.vim<CR>
 " control quickfixlist
 nnoremap <leader>' :copen<CR>
 nnoremap <leader>" :cclose<CR>
@@ -278,5 +277,9 @@ imap {} {}<Esc>i
 nnoremap <Leader>o o<Esc>^Da
 nnoremap <Leader>O O<Esc>^Da
 
-" Blackhole x
+" Blackhole x and c
 nnoremap x "_x
+nnoremap c "_c
+
+" Copy unnamed register to p register
+nnoremap <leader>cp :let @p=@""<CR>
