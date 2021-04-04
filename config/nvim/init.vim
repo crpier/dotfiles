@@ -10,11 +10,9 @@ endif
 let g:python3_host_prog="~/.pynvim3/bin/python"
 let g:python_host_prog="~/.pynvim/bin/python"
 let mapleader = " "
-" use <CR> to open file in the same split
 
 """"""""""""""""""""""""""""""Theme""""""""""""""""""""""""""""""
 """"" Plugin settings
-
 
 """"""""""""""""""""""""""""""General Remaps""""""""""""""""""""""""""""""
 " easy source vimrc
@@ -59,10 +57,9 @@ require'nvim-treesitter.configs'.setup {
 incremental_selection = {
     enable = true,
     keymaps = {
-      init_selection = "gnn",
-      node_incremental = "grn",
-      scope_incremental = "grc",
-      node_decremental = "grm",
+      init_selection = "gs",
+      node_incremental = "gi",
+      node_decremental = "gd",
     },
   },
 highlight = {
@@ -75,17 +72,13 @@ folding = {
     enable = true,
     },
 }
-EOF
 
-" For nvim-lsp completion
-lua << EOF
+-- For nvim-lsp completion
 require'lspconfig'.pyright.setup{}
 require'lspconfig'.tsserver.setup{}
 EOF
-" require'lspconfig'.vimls.setup{}
-" require'lspconfig'.bashls.setup{}
+
 nnoremap gd :lua vim.lsp.buf.definition()<CR>
-nnoremap gi :lua vim.lsp.buf.implementation()<CR>
 nnoremap gs :lua vim.lsp.buf.signature_help()<CR>
 nnoremap <leader>rn :lua vim.lsp.buf.rename()<CR>
 nnoremap gr :lua vim.lsp.buf.references()<CR>
@@ -94,11 +87,6 @@ nnoremap <leader>ca :lua vim.lsp.buf.code_action()<CR>
 nnoremap ]g :lua vim.lsp.diagnostic.goto_next()<CR>
 nnoremap [g :lua vim.lsp.diagnostic.goto_prev()<CR>
 let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
-" I don't think I'll use this, still I'll keep it, you never know
-" lua << EOF
-" local on_attach = require'completion'.on_attach
-" require'lspconfig'.pyright.setup{ on_attach=on_attach }
-" EOF
 
 " fugitive remaps
 nnoremap <leader>gc :GBranches<CR>
@@ -122,15 +110,13 @@ require('telescope').setup {
     qflist_previewer = require('telescope.previewers').vim_buffer_qflist.new,
     mappings = {
       i = {
-        ["<C-x>"] = false,
-        -- ["<C-s>"] = actions.goto_file_selection_split,
         ["<C-q>"] = actions.send_to_qflist,
       },
     }
   },
   extensions = {
       fzy_native = {
-          override_generic_sorter = false,
+          override_generic_sorter = true,
           override_file_sorter = true,
       }
   }
@@ -139,13 +125,11 @@ require('telescope').load_extension('fzy_native')
 EOF
 
 " haha vscode go brrr
-nnoremap <C-p> :lua require('telescope.builtin').git_files()<CR>
-nnoremap <Leader>f :lua require('telescope.builtin').find_files()<CR>
-nnoremap <leader>ss :lua require('telescope.builtin').grep_string({ search = vim.fn.input("Grep For > ")})<CR>
-nnoremap <leader>sw :lua require('telescope.builtin').grep_string { search = vim.fn.expand("<cword>") }<CR>
-nnoremap gb :lua require('telescope.builtin').buffers()<CR>
-" what does this even do?
-" nnoremap <leader>st :lua require('telescope.builtin').help_tags()<CR>
+nnoremap <leader>ff :lua require('telescope.builtin').git_files()<CR>
+nnoremap <leader>fi :lua require('telescope.builtin').find_files()<CR>
+nnoremap <leader>bu :lua require('telescope.builtin').buffers()<CR>
+nnoremap <leader>rs :lua require('telescope.builtin').grep_string({ search = vim.fn.input("Grep For > ")})<CR>
+nnoremap <leader>rw :lua require('telescope.builtin').grep_string { search = vim.fn.expand("<cword>") }<CR>
 
 " vimspector remaps
 fun! GotoWindow(id)
@@ -199,6 +183,7 @@ let g:compe.source.treesitter = v:true
 let g:compe.source.omni = v:true
 
 inoremap <silent><expr> <C-Space> compe#complete()
+" Why did I comment this?
 " inoremap <silent><expr> <CR>      compe#confirm('<CR>')
 inoremap <silent><expr> <C-e>     compe#close('<C-e>')
 inoremap <silent><expr> <C-f>     compe#scroll({ 'delta': +4 })
@@ -206,7 +191,6 @@ inoremap <silent><expr> <C-d>     compe#scroll({ 'delta': -4 })
 
 """"""""""""""""""""""""""""""Experimental Remaps"""""""""""""""""""""""""""""
 " I might keep these, I might not, we'll see
-" nmap <Esc> <Esc>`^
 
 " Start term session
 nnoremap <leader>t :vs<CR>:term<CR>i
@@ -214,5 +198,8 @@ nnoremap <leader>t :vs<CR>:term<CR>i
 " tnoremap <C-\> <C-\><C-n>
 tnoremap <Left> <C-\><C-n><C-w>h
 tnoremap <Right> <C-\><C-n><C-w>l
-" Meh, I don't really know how to feel about this one
-" tnoremap <leader><Esc> <C-\><C-n>
+" Really considering removing this, I could simply do <Left> or <Right>, in the
+" direction where there is no other window
+tnoremap <leader><Esc> <C-\><C-n>
+
+" TODO think about snippets, you might like them

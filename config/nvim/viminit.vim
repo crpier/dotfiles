@@ -1,32 +1,30 @@
+" Put the plugins in the .vim folder so that I can rsync it along with the 
+" vimrc to other machines where it's too complicated to install nvim
 call plug#begin('~/.vim/plugged')
 Plug 'morhetz/gruvbox'
 Plug 'lifepillar/vim-gruvbox8'
 " " improved motion
 Plug 'bkad/CamelCaseMotion'
-" git plugins
 Plug 'szw/vim-maximizer'
 " " Easy commenting
 Plug 'tpope/vim-commentary'
 " " Cheat Sheet
 Plug 'dbeniamine/cheat.sh-vim'
-" " prettier Experimental, might remove
+" pretty Experimental, might remove
 " Plug 'sbdchd/neoformat'
-" " manage surrounding characters
+" manage surrounding characters
 Plug 'tpope/vim-surround'
 " Neovim plugins
 Plug 'nvim-telescope/telescope.nvim', has('nvim') ? {} : { 'on': [] }
-" undecided between gruvbox variants, so I keep them both
-" Plug 'numirias/semshi', has('nvim') ? {'do': ':UpdateRemotePlugins' } :  {'do': ':UpdateRemotePlugins', 'on': [] }
 " fuzzy finder
 Plug 'nvim-lua/popup.nvim', has('nvim') ? {} : { 'on': [] }
 Plug 'nvim-lua/plenary.nvim', has('nvim') ? {} : { 'on': [] }
 Plug 'nvim-telescope/telescope.nvim', has('nvim') ? {} : { 'on': [] }
 Plug 'nvim-telescope/telescope-fzy-native.nvim', has('nvim') ? {} : { 'on': [] }
-" a fuzzy finders needs ripgrep
-Plug 'jremmen/vim-ripgrep', has('nvim') ? {} : { 'on': [] }
 " git plugins
 Plug 'tpope/vim-fugitive', has('nvim') ? {} : { 'on': [] }
 Plug 'airblade/vim-gitgutter', has('nvim') ? {} : { 'on': [] }
+Plug 'tpope/vim-rhubarb', has('nvim') ? {} : { 'on': [] }
 " Neovim lsp
 Plug 'neovim/nvim-lspconfig', has('nvim') ? {} : { 'on': [] }
 " Plug 'nvim-lua/completion-nvim'
@@ -39,19 +37,17 @@ Plug 'nvim-treesitter/nvim-treesitter', has('nvim') ? {'do': ':TSUpdate' } : { '
 Plug 'nvim-treesitter/playground', has('nvim') ? {} : { 'on': [] }
 " Debugger
 Plug 'puremourning/vimspector'
-" prettier Experimental, might remove
-Plug 'sbdchd/neoformat', has('nvim') ? {} : { 'on': [] }
-Plug 'hrsh7th/vim-vsnip', has('nvim') ? {} : { 'on': [] }
-Plug 'itspriddle/vim-shellcheck', has('nvim') ? {} : { 'on': [] }
-Plug 'skywind3000/asyncrun.vim', has('nvim') ? {} : { 'on': [] }
-Plug 'preservim/tagbar', has('nvim') ? {} : { 'on': [] }
-Plug 'mg979/vim-visual-multi', has('nvim') ? {'branch': 'master'} : {'branch': 'master', 'on': []}
 Plug 'tpope/vim-sensible'
+" File explorer
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+" Repeat commands from plugins using .
 Plug 'tpope/vim-repeat', has('nvim') ? {} : { 'on': [] }
-" Plug 'itchyny/lightline.vim'
-" Plug 'shinchu/lightline-gruvbox.vim'
+" Airline is so slow it doubles my startup time, but I haven't figured out 
+" how to make lightline do what I want, so ¯\_(ツ)_/¯
 Plug 'vim-airline/vim-airline'
+" Add additional text objects
+Plug 'wellle/targets.vim'
+Plug 'kyazdani42/nvim-web-devicons'
 call plug#end()
 
 """"""""""""""""""""""""""""""General Options""""""""""""""""""""""""""""""
@@ -60,12 +56,14 @@ set shiftwidth=4
 set expandtab
 set smartindent
 " if there's a vimrc in curent directory, use that
+" TODO I copied this off the internet like a good boy, but do I really need it?
 set exrc
 " show current line number and relative line number for other lines
 set number relativenumber
 " set nohlsearch
 " keep buffers open in the background even when not saved
 set hidden
+" self explanatory
 set noerrorbells
 " when searching, if there are no uppercases, then search is case insensitive
 set ignorecase
@@ -79,16 +77,12 @@ set undofile
 set incsearch
 " keep 4 lines above and below the cursor at all times
 set scrolloff=4
-" add an additional column to the left to be used by linters and other plugins
-" set signcolumn=yes
-" show the limit to line length
-" set colorcolumn=100
+" show the preferred limit to line length
+set colorcolumn=80
 " refresh the file if it was edited outside vim
 set autoread
 " load filetype, even when a plugin provides definitins
 filetype plugin on
-" default register is also clipboard
-" set clipboard+=unnamedplus
 " Open splits from either right or bottom (instead of left or up)
 set splitbelow
 set splitright
@@ -115,13 +109,13 @@ hi Normal guibg=NONE ctermbg=NONE
 " Airline settings
 if has('nvim') 
     call airline#parts#define_function('filetype', 'nvim_treesitter#statusline')
+    let g:airline#extensions#tagbar#enabled = 0
 endif
 
 
 " Airline settings
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1
-let g:airline#extensions#tagbar#enabled = 0
 
 
 """"""""""""""""""""""""""""""General Remaps""""""""""""""""""""""""""""""
@@ -140,7 +134,7 @@ nnoremap <leader>P "+P
 vnoremap <leader>p "+p
 vnoremap <leader>P "+P
 " easy source vimrc
-nnoremap <Leader><CR> :so ~/.config/nvim/init.vim<CR>
+nnoremap <leader><CR> :so ~/.config/nvim/init.vim<CR>
 " move lines up/down when in visual mode
 " might give these up, [e and ]e from vim-unimpaired seem better
 " vnoremap J :m '>+1<CR>gv=gv
@@ -162,6 +156,13 @@ nnoremap <leader>" :cclose<CR>
 " control buffers
 nnoremap <leader>bd :bdel<CR>
 
+""""""""""""""""""""""""""""""Abbreviations""""""""""""""""""""""""""""""
+" These should really go in an ftplugin folder lol
+augroup python_abbrev
+    autocmd BufNewFile,BufRead *.py ab pdb import pdb; pdb.set_trace()
+augroup END
+
+
 """"""""""""""""""""""""""""""Useful functions""""""""""""""""""""""""""""""
 fun! EmptyRegisters()
     let regs=split('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789/-"', '\zs')
@@ -182,20 +183,22 @@ augroup END
 
 " persist cursor location between sessions
 autocmd BufReadPost *
-  \ if line("'\"") >= 1 && line("'\"") <= line("$") && &ft !~# 'commit'
-  \ |   exe "normal! g`\""
-  \ | endif
+            \ if line("'\"") >= 1 && line("'\"") <= line("$") && &ft !~# 'commit'
+            \ |   exe "normal! g`\""
+            \ | endif
 " Edit files within Nvim's terminal without nesting sessions.
-  augroup prevent_nested_edit
+augroup prevent_nested_edit
     autocmd VimEnter * if !empty($NVIM_LISTEN_ADDRESS) && $NVIM_LISTEN_ADDRESS !=# v:servername
-            \ |let g:r=jobstart(['nc', '-U', $NVIM_LISTEN_ADDRESS],{'rpc':v:true})
-            \ |let g:f=fnameescape(expand('%:p'))
-            \ |noau bwipe
-            \ |call rpcrequest(g:r, "nvim_command", "edit ".g:f)
-            \ |call rpcrequest(g:r, "nvim_command", "call lib#SetNumberDisplay(1)")
-            \ |qa
-            \ |endif
-  augroup END
+                \ |let g:r=jobstart(['nc', '-U', $NVIM_LISTEN_ADDRESS],{'rpc':v:true})
+                \ |let g:f=fnameescape(expand('%:p'))
+                \ |noau bwipe
+                \ |call rpcrequest(g:r, "nvim_command", "edit ".g:f)
+                \ |call rpcrequest(g:r, "nvim_command", "call lib#SetNumberDisplay(1)")
+                \ |qa
+                \ |endif
+augroup END
+" Don't insert comments automatically
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 """"""""""""""""""""""""""""""Plugin settings""""""""""""""""""""""""""""""
 " CamelCaseMotion mappings
 let g:camelcasemotion_key = '<leader>'
@@ -203,13 +206,13 @@ let g:camelcasemotion_key = '<leader>'
 " project root is cwd
 let g:rg_derive_root='true'
 
+" maximizer plugin
 nnoremap <leader>m :MaximizerToggle!<CR>
 
-" Nerdtree mapping
+" Nerdtree settings
 " nnoremap <leader>n :NERDTreeFocus<CR>
-" nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
-" nnoremap <C-f> :NERDTreeFind<CR>
+nnoremap <leader>nf :NERDTreeFind<CR>
 
 " Nerdtree settings
 " Exit Vim if NERDTree is the only window left.
@@ -220,10 +223,6 @@ autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTr
 
 imap jw <Esc>:w<CR>
 
-" Quickly append semicolon or comma
-imap ;; <Esc>A;<Esc>
-imap ,, <Esc>A,<Esc>
-
 " Navigate window splits with the arrow keys
 nnoremap <Left> <C-w>h
 nnoremap <Down> <C-w>j
@@ -233,8 +232,7 @@ nnoremap <Right> <C-w>l
 nnoremap <S-Down> :vertical resize -10<CR>
 nnoremap <S-Up> :vertical resize +10<CR>
 
-" Newline at end of file - actually I came up with this one lol
-nnoremap <leader>n Go<Esc>zz
+nnoremap <leader>na Go<Esc>zz
 
 " Clear search highlight
 nnoremap <Esc> <Cmd>nohlsearch<CR>
@@ -249,7 +247,7 @@ set shortmess+=c
 nnoremap <C-s> :exec "normal i".nr2char(getchar())."\e"<CR>
 
 " Sort selected lines alphabetically
-vnoremap <Leader>s :sort<CR>
+vnoremap <leader>s :sort<CR>
 
 " Center screen after search result
 nnoremap n nzzzv
@@ -262,7 +260,7 @@ nmap <CR> o<Esc>
 " Start term session
 nnoremap <leader>t :vs<CR>:term<CR>i
 
-" Move when using surroinding chars
+" Move when using surrounding chars
 imap "" ""<Esc>i
 imap '' ''<Esc>i
 imap () ()<Esc>i
@@ -274,8 +272,8 @@ imap {} {}<Esc>i
 " nnoremap <S-Tab> ???
 
 " Same as o and O, but escape indentation
-nnoremap <Leader>o o<Esc>^Da
-nnoremap <Leader>O O<Esc>^Da
+nnoremap <leader>o o<Esc>^Da
+nnoremap <leader>O O<Esc>^Da
 
 " Blackhole x and c
 nnoremap x "_x
@@ -283,3 +281,6 @@ nnoremap c "_c
 
 " Copy unnamed register to p register
 nnoremap <leader>cp :let @p=@""<CR>
+
+" TODO figure out these colors and make :Gdiffsplit more gruvbox friendly
+" highlight DiffAdd ctermfg=253 ctermbg=237 guifg=#dadada guibg=#3a3a3a
