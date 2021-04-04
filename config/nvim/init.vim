@@ -89,13 +89,13 @@ nnoremap [g :lua vim.lsp.diagnostic.goto_prev()<CR>
 let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
 
 " fugitive remaps
-nnoremap <leader>gc :GBranches<CR>
 nnoremap <leader>gb :Git blame<CR>
-nnoremap <leader>ga :Git fetch --all<CR>
-nnoremap <leader>grom :Git pull origin/main<CR>
+nnoremap <leader>gd :Gdiffsplit<CR>
+nnoremap <leader>gpl :Git pull<CR>
+nnoremap <leader>gps :Git push<CR>
 nmap <leader>gh :diffget //3<CR>
 nmap <leader>gu :diffget //2<CR>
-nmap <leader>gs :G<CR>
+nmap <leader>gg :G<CR>
 
 " telescope settings and remaps
 lua << EOF
