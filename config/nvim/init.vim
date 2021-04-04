@@ -9,6 +9,7 @@ endif
 """"" Set general options
 let g:python3_host_prog="~/.pynvim3/bin/python"
 let g:python_host_prog="~/.pynvim/bin/python"
+let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
 let mapleader = " "
 
 """"""""""""""""""""""""""""""Theme""""""""""""""""""""""""""""""
@@ -78,15 +79,17 @@ require'lspconfig'.pyright.setup{}
 require'lspconfig'.tsserver.setup{}
 EOF
 
+" The least used commands have leader mappings
 nnoremap gd :lua vim.lsp.buf.definition()<CR>
+" Do I even use this? Maybe I should just delete it
 nnoremap gs :lua vim.lsp.buf.signature_help()<CR>
-nnoremap <leader>rn :lua vim.lsp.buf.rename()<CR>
 nnoremap gr :lua vim.lsp.buf.references()<CR>
 nnoremap gh :lua vim.lsp.buf.hover()<CR>
-nnoremap <leader>ca :lua vim.lsp.buf.code_action()<CR>
 nnoremap ]g :lua vim.lsp.diagnostic.goto_next()<CR>
 nnoremap [g :lua vim.lsp.diagnostic.goto_prev()<CR>
-let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
+nnoremap <leader>rn :lua vim.lsp.buf.rename()<CR>
+nnoremap <leader>ca :lua vim.lsp.buf.code_action()<CR>
+
 
 " fugitive remaps
 nnoremap <leader>gb :Git blame<CR>

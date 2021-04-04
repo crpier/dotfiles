@@ -1,6 +1,7 @@
 " Put the plugins in the .vim folder so that I can rsync it along with the 
 " vimrc to other machines where it's too complicated to install nvim
 call plug#begin('~/.vim/plugged')
+" Common plugins first
 Plug 'morhetz/gruvbox'
 Plug 'lifepillar/vim-gruvbox8'
 " " improved motion
@@ -14,8 +15,18 @@ Plug 'dbeniamine/cheat.sh-vim'
 " Plug 'sbdchd/neoformat'
 " manage surrounding characters
 Plug 'tpope/vim-surround'
-" Neovim plugins
+" File explorer
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+" Sensible defaults
+Plug 'tpope/vim-sensible'
+" Airline is so slow it doubles my startup time, but I haven't figured out 
+" how to make something light like lightline do what I want, so ¯\_(ツ)_/¯
+Plug 'vim-airline/vim-airline'
+
+" Neovim plugins second
 Plug 'nvim-telescope/telescope.nvim', has('nvim') ? {} : { 'on': [] }
+" Add additional text objects
+Plug 'wellle/targets.vim'
 " fuzzy finder
 Plug 'nvim-lua/popup.nvim', has('nvim') ? {} : { 'on': [] }
 Plug 'nvim-lua/plenary.nvim', has('nvim') ? {} : { 'on': [] }
@@ -36,18 +47,10 @@ Plug 'tpope/vim-unimpaired', has('nvim') ? {} : { 'on': [] }
 Plug 'nvim-treesitter/nvim-treesitter', has('nvim') ? {'do': ':TSUpdate' } : { 'on': [], 'do': ':TSUpdate' }
 Plug 'nvim-treesitter/playground', has('nvim') ? {} : { 'on': [] }
 " Debugger
-Plug 'puremourning/vimspector'
-Plug 'tpope/vim-sensible'
-" File explorer
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'puremourning/vimspector', has('nvim') ? {} : { 'on': [] }
 " Repeat commands from plugins using .
 Plug 'tpope/vim-repeat', has('nvim') ? {} : { 'on': [] }
-" Airline is so slow it doubles my startup time, but I haven't figured out 
-" how to make lightline do what I want, so ¯\_(ツ)_/¯
-Plug 'vim-airline/vim-airline'
-" Add additional text objects
-Plug 'wellle/targets.vim'
-Plug 'kyazdani42/nvim-web-devicons'
+Plug 'kyazdani42/nvim-web-devicons', has('nvim') ? {} : { 'on': [] }
 call plug#end()
 
 """"""""""""""""""""""""""""""General Options""""""""""""""""""""""""""""""
@@ -243,9 +246,6 @@ nnoremap Y yg_
 " not really sure that this does but I'll keep it for now lol
 set shortmess+=c
 
-" Insert one char then exit nmode
-nnoremap <C-s> :exec "normal i".nr2char(getchar())."\e"<CR>
-
 " Sort selected lines alphabetically
 vnoremap <leader>s :sort<CR>
 
@@ -281,6 +281,10 @@ nnoremap c "_c
 
 " Copy unnamed register to p register
 nnoremap <leader>cp :let @p=@""<CR>
+
+" I have a bad feeling about this one, but I want something better than ZQ when :q just doesn't cut it
+" If this stops being experimental, move it to the one where Q is mapped to noop
+nnoremap Q ZQ
 
 " TODO figure out these colors and make :Gdiffsplit more gruvbox friendly
 " highlight DiffAdd ctermfg=253 ctermbg=237 guifg=#dadada guibg=#3a3a3a
