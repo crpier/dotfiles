@@ -17,6 +17,7 @@ alias gd "git diff"
 alias gac "git add . && git commit -m"
 alias gp "git push"
 alias gr "git reset HEAD --hard"
+alias lg lazygit
 
 set -gx PATH $PATH $HOME/Tools $HOME/go/bin
 

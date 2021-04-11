@@ -96,12 +96,10 @@ nnoremap <leader>gb :Git blame<CR>
 nnoremap <leader>gd :Gdiffsplit<CR>
 nnoremap <leader>gpl :Git pull<CR>
 nnoremap <leader>gps :Git push<CR>
-nmap <leader>gh :diffget //3<CR>
-nmap <leader>gu :diffget //2<CR>
-nmap <leader>gg :G<CR>
 
 " telescope settings and remaps
 lua << EOF
+-- require('telescope').load_extension('gh')
 local actions = require('telescope.actions')
 require('telescope').setup {
   defaults = {
@@ -127,10 +125,11 @@ require('telescope').setup {
 require('telescope').load_extension('fzy_native')
 EOF
 
-" haha vscode go brrr
 nnoremap <leader>ff :lua require('telescope.builtin').git_files()<CR>
 nnoremap <leader>fi :lua require('telescope.builtin').find_files()<CR>
 nnoremap <leader>bu :lua require('telescope.builtin').buffers()<CR>
+nnoremap <leader>bl :lua require('telescope.builtin').current_buffer_fuzzy_find()<CR>
+nnoremap <leader>st :lua require('telescope.builtin').treesitter()<CR>
 nnoremap <leader>rs :lua require('telescope.builtin').grep_string({ search = vim.fn.input("Grep For > ")})<CR>
 nnoremap <leader>rw :lua require('telescope.builtin').grep_string { search = vim.fn.expand("<cword>") }<CR>
 
