@@ -53,6 +53,8 @@ Plug 'tpope/vim-repeat', has('nvim') ? {} : { 'on': [] }
 Plug 'kyazdani42/nvim-web-devicons', has('nvim') ? {} : { 'on': [] }
 " Create terminals on demand
 Plug 'voldikss/vim-floaterm', has('nvim') ? {} : { 'on': [] }
+Plug 'junegunn/fzf', has('nvim') ? { 'do': { -> fzf#install() } } : { 'on': [], 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim', has('nvim') ? {} : { 'on': [] }
 call plug#end()
 
 """"""""""""""""""""""""""""""General Options""""""""""""""""""""""""""""""
