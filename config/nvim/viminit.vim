@@ -51,6 +51,8 @@ Plug 'puremourning/vimspector', has('nvim') ? {} : { 'on': [] }
 " Repeat commands from plugins using .
 Plug 'tpope/vim-repeat', has('nvim') ? {} : { 'on': [] }
 Plug 'kyazdani42/nvim-web-devicons', has('nvim') ? {} : { 'on': [] }
+" Create terminals on demand
+Plug 'voldikss/vim-floaterm', has('nvim') ? {} : { 'on': [] }
 call plug#end()
 
 """"""""""""""""""""""""""""""General Options""""""""""""""""""""""""""""""
@@ -257,12 +259,12 @@ nnoremap N Nzzzv
 nmap <Backspace> O<Esc>
 nmap <CR> o<Esc>
 
-" Move when using surrounding chars
-imap "" ""<Esc>i
-imap '' ''<Esc>i
-imap () ()<Esc>i
-imap [] []<Esc>i
-imap {} {}<Esc>i
+" " Move when using surrounding chars
+" imap "" ""<Esc>i
+" imap '' ''<Esc>i
+" imap () ()<Esc>i
+" imap [] []<Esc>i
+" imap {} {}<Esc>i
 
 " Tab is wasted in normal mode, map it to something!
 " nnoremap <Tab> ???

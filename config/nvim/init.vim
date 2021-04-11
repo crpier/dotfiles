@@ -206,3 +206,6 @@ tnoremap <Right> <C-\><C-n><C-w>l
 
 " TODO figure out these colors and make :Gdiffsplit more gruvbox friendly
 " highlight DiffAdd ctermfg=253 ctermbg=237 guifg=#dadada guibg=#3a3a3a
+
+nnoremap <leader>fg :FloatermNew --autoclose=2 --height=0.9 --width=0.9 --wintype=floating lazygit<CR>
+nnoremap <leader>ft :FloatermNew --autoclose=2 --height=0.9 --width=0.9 --wintype=floating<CR>
