@@ -276,9 +276,17 @@ nmap <CR> o<Esc>
 nnoremap <leader>o o<Esc>^Da
 nnoremap <leader>O O<Esc>^Da
 
-" Blackhole x and c
+" Blackhole x, c and d
 nnoremap x "_x
+nnoremap X "_X
 nnoremap c "_c
+nnoremap C "_C
+nnoremap d "_d
+nnoremap D "_D
+
+" But allow <leader>d to record to default register
+nnoremap <leader>d d
+nnoremap <leader>D D
 
 " Copy unnamed register to p register
 nnoremap <leader>cp :let @p=@""<CR>
@@ -287,3 +295,8 @@ nnoremap <leader>cp :let @p=@""<CR>
 " If this stops being experimental, move it to the one where Q is mapped to noop
 nnoremap Q ZQ
 
+" Prepare to run the g command on word under cursor
+nnoremap <leader>g :global/vim.fn.expand("<cword>")lol
+
+" Edit macro on register a
+nnoremap <leader>ed :let @a='a'
