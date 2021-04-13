@@ -272,6 +272,8 @@ nmap <CR> o<Esc>
 " nnoremap <Tab> ???
 " nnoremap <S-Tab> ???
 
+" On the same note, gs for sleep and gq for format are not useful to me..map them too
+
 " Same as o and O, but escape indentation
 nnoremap <leader>o o<Esc>^Da
 nnoremap <leader>O O<Esc>^Da
