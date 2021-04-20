@@ -258,8 +258,8 @@ nnoremap n nzzzv
 nnoremap N Nzzzv
 
 " Insert line
-nmap <Backspace> O<Esc>
-nmap <CR> o<Esc>
+nmap <Tab> o<Esc>
+nmap <S-Tab> O<Esc>
 
 " " Move when using surrounding chars
 " imap "" ""<Esc>i
@@ -267,10 +267,6 @@ nmap <CR> o<Esc>
 " imap () ()<Esc>i
 " imap [] []<Esc>i
 " imap {} {}<Esc>i
-
-" Tab is wasted in normal mode, map it to something!
-" nnoremap <Tab> ???
-" nnoremap <S-Tab> ???
 
 " On the same note, gs for sleep and gq for format are not useful to me..map them too
 
@@ -283,8 +279,6 @@ nnoremap x "_x
 nnoremap X "_X
 nnoremap c "_c
 nnoremap C "_C
-nnoremap d "_d
-nnoremap D "_D
 
 " But allow <leader>d to record to default register
 nnoremap <leader>d d

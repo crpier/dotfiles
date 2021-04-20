@@ -79,14 +79,12 @@ require'lspconfig'.pyright.setup{}
 require'lspconfig'.tsserver.setup{}
 EOF
 
-" The least used commands have leader mappings
 nnoremap gd :lua vim.lsp.buf.definition()<CR>
-" Do I even use this? Maybe I should just delete it
-nnoremap gs :lua vim.lsp.buf.signature_help()<CR>
 nnoremap gr :lua vim.lsp.buf.references()<CR>
 nnoremap gh :lua vim.lsp.buf.hover()<CR>
 nnoremap ]g :lua vim.lsp.diagnostic.goto_next()<CR>
 nnoremap [g :lua vim.lsp.diagnostic.goto_prev()<CR>
+" The least used commands have leader mappings
 nnoremap <leader>rn :lua vim.lsp.buf.rename()<CR>
 nnoremap <leader>ca :lua vim.lsp.buf.code_action()<CR>
 
@@ -138,6 +136,7 @@ fun! GotoWindow(id)
     call win_gotoid(a:id)
     MaximizerToggle
 endfun
+
 " nnoremap <leader>dd :call vimspector#Launch()<CR>
 " nnoremap <leader>dc :call GotoWindow(g:vimspector_session_windows.code)<CR>
 " nnoremap <leader>dt :call GotoWindow(g:vimspector_session_windows.tagpage)<CR>
