@@ -48,6 +48,25 @@ augroup prevent_nested_edit
 augroup END
 
 """"""""""""""""""""""""""""""Plugin settings""""""""""""""""""""""""""""""
+" For symbols-outline
+
+lua <<EOF
+local opts = {
+    -- whether to highlight the currently hovered symbol
+    -- disable if your cpu usage is higher than you want it
+    -- or you just hate the highlight
+    -- default: true
+    highlight_hovered_item = true,
+
+    -- whether to show outline guides 
+    -- default: true
+    show_guides = true,
+}
+
+require('symbols-outline').setup(opts)
+EOF
+
+
 " For rg
 " project root is cwd
 let g:rg_derive_root='true'

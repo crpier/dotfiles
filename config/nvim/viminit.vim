@@ -55,6 +55,8 @@ Plug 'kyazdani42/nvim-web-devicons', has('nvim') ? {} : { 'on': [] }
 Plug 'voldikss/vim-floaterm', has('nvim') ? {} : { 'on': [] }
 Plug 'junegunn/fzf', has('nvim') ? { 'do': { -> fzf#install() } } : { 'on': [], 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim', has('nvim') ? {} : { 'on': [] }
+" LSP Symbols tree-viewer
+Plug 'simrat39/symbols-outline.nvim'
 call plug#end()
 
 """"""""""""""""""""""""""""""General Options""""""""""""""""""""""""""""""
