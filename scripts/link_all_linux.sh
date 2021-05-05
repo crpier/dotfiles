@@ -8,6 +8,7 @@ ln -sf  $(pwd)/kde4 $HOME/.kde4
 
 # Individual files
 ln -sf $(pwd)/tmux.conf $HOME/.tmux.conf
+ln -sf $(pwd)/config/nvim/init.vim $HOME/.vimrc
 
 # Make sure .gitconfig sources extra.gitconfig
 ./scripts/setup_gitconfig.sh
