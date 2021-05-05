@@ -301,11 +301,11 @@ hi Normal guibg=NONE ctermbg=NONE
 " easy source vimrc
 nnoremap <leader><CR> :so ~/.config/nvim/init.vim<CR>
 " use tab to select from suggestions
-inoremap <silent><expr> <TAB>
+inoremap <silent><expr> <Tab>
       \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
+      \ <SID>check_back_space() ? "\<Tab>" :
       \ "\<C-n>"
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+inoremap <expr><S-Tab> pumvisible() ? "\<C-p>" : "\<C-h>"
 " I don't use EX mode, and I keep pressing it by mistake when I want to quit
 nnoremap Q ZQ
 " Search for selected text using '//'
@@ -329,8 +329,8 @@ omap il :normal vil<CR>
 nnoremap <leader>' :copen<CR>
 nnoremap <leader>" :cclose<CR>
 " Insert line
-nmap <Tab> o<Esc>
-nmap <S-Tab> O<Esc>
+nnoremap go o<Esc>
+nnoremap gO O<Esc>
 
 """"""""""""""""""""""""""""""Useful functions""""""""""""""""""""""""""""""
 fun! EmptyRegisters()
