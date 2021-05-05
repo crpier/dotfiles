@@ -26,10 +26,11 @@ if !empty(expand(glob("~/.vim/plugged"))) && ((!empty(expand(glob("~/.local/shar
     " Telescope, that'all
     Plug 'nvim-telescope/telescope.nvim', has('nvim') ? {} : { 'on': [] }
     " Faster sort algorithm for telescope (or so they claim)
-    Plug 'nvim-telescope/telescope-fzy-native.nvim', has('nvim') ? {} : { 'on': [] }
     Plug 'nvim-lua/popup.nvim', has('nvim') ? {} : { 'on': [] }
     " Dependency for telescop and other nvim plugins
     Plug 'nvim-lua/plenary.nvim', has('nvim') ? {} : { 'on': [] }
+    " Fzf for telescope
+    Plug 'nvim-telescope/telescope-fzf-native.nvim', has('nvim') ? {} : { 'on': [] } 
     " Nice icons for telescope
     Plug 'kyazdani42/nvim-web-devicons', has('nvim') ? {} : { 'on': [] }
     " File explorer
@@ -54,9 +55,6 @@ if !empty(expand(glob("~/.vim/plugged"))) && ((!empty(expand(glob("~/.local/shar
     Plug 'puremourning/vimspector', has('nvim') ? {} : { 'on': [] }
     " Create terminals on demand
     Plug 'voldikss/vim-floaterm', has('nvim') ? {} : { 'on': [] }
-    " I use fzf for the sole purpose of using ! in file queries....one day that will be added to telescope and I can get rid of this ( ͡° ͜ʖ ͡°)
-    Plug 'junegunn/fzf', has('nvim') ? { 'do': { -> fzf#install() } } : { 'on': [], 'do': { -> fzf#install() } }
-    Plug 'junegunn/fzf.vim', has('nvim') ? {} : { 'on': [] }
     call plug#end()
 
 
@@ -192,7 +190,6 @@ lua << EOF
 local actions = require('telescope.actions')
 require('telescope').setup {
   defaults = {
-    file_sorter = require('telescope.sorters').get_fzy_sorter,
     prompt_prefix = '⟩ ',
     color_devicons = true,
     file_previewer   = require('telescope.previewers').vim_buffer_cat.new,
@@ -205,13 +202,14 @@ require('telescope').setup {
     }
   },
   extensions = {
-      fzy_native = {
-          override_generic_sorter = true,
-          override_file_sorter = true,
-      }
+      fzf = {
+      override_generic_sorter = true, -- override the generic sorter
+      override_file_sorter = true,     -- override the file sorter
+      case_mode = "smart_case",        -- or "ignore_case" or "respect_case"
+    }
   }
 }
-require('telescope').load_extension('fzy_native')
+require('telescope').load_extension('fzf')
 EOF
 
 nnoremap <leader>ff :lua require('telescope.builtin').git_files()<CR>
