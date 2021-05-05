@@ -2,12 +2,11 @@ function fish_mode_prompt
 end
 
 alias n nvim
-alias nconfig "nvim ~/.config/nvim/init.vim"
-alias nlconfig "nvim ~/.config/local_configs/init.local.vim"
-alias vconfig "nvim ~/.vimrc"
-alias fconfig "nvim ~/.config/fish/config.fish"
-alias flconfig "nvim ~/.config/local_configs/config.local.fish"
-alias rsource "source ~/.config/fish/config.fish"
+alias nconfig "nvim $HOME/.config/nvim/init.vim"
+alias nlconfig "nvim $HOME/.config/local_configs/init.local.vim"
+alias fconfig "nvim $HOME/.config/fish/config.fish"
+alias flconfig "nvim $HOME/.config/local_configs/config.local.fish"
+alias rsource "source $HOME/.config/fish/config.fish"
 
 alias g "git"
 alias gs "git status"
@@ -20,6 +19,7 @@ alias gr "git reset HEAD --hard"
 alias lg lazygit
 
 set -gx PATH $PATH $HOME/Tools $HOME/go/bin
+set -gx EDITOR (which vim)
 
 if test -f $HOME/.config/local_configs/config.local.fish
     source $HOME/.config/local_configs/config.local.fish
