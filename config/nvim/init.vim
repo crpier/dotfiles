@@ -67,10 +67,10 @@ let g:python3_host_prog="~/.pynvim3/bin/python"
 let g:python_host_prog="~/.pynvim/bin/python"
 let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
 let mapleader = " "
-" set tabstop=4 softtabstop=4
-" set shiftwidth=4
-" set expandtab
-" set smartindent
+set tabstop=4 softtabstop=4
+set shiftwidth=4
+set expandtab
+set smartindent
 " if there's a vimrc in curent directory, use that
 " TODO I copied this off the internet like a good boi, but do I really need it?
 set exrc
