@@ -57,6 +57,7 @@ if !empty(expand(glob("~/.vim/plugged"))) && ((!empty(expand(glob("~/.local/shar
     Plug 'voldikss/vim-floaterm', has('nvim') ? {} : { 'on': [] }
     " Quick access to a few files
     Plug 'ThePrimeagen/harpoon', has('nvim') ? {} : { 'on': [] }
+    Plug 'pearofducks/ansible-vim', has('nvim') ? { 'do': './UltiSnips/generate.sh' } : { 'on': [] }
     call plug#end()
 endif
 
@@ -181,6 +182,7 @@ nnoremap <leader>rn :lua vim.lsp.buf.rename()<CR>
 nnoremap <leader>ca :lua vim.lsp.buf.code_action()<CR>
 
 " fugitive remaps
+nnoremap <leader>gi :Git 
 nnoremap <leader>gb :Git blame<CR>
 nnoremap <leader>gd :Gdiffsplit<CR>
 nnoremap <leader>gpl :Git pull<CR>
@@ -428,8 +430,6 @@ nnoremap <leader>O O<Esc>^Da
 " Blackhole x, c and d
 nnoremap x "_x
 nnoremap X "_X
-nnoremap c "_c
-nnoremap C "_C
 
 " But allow <leader>d to record to default register
 nnoremap <leader>d d
@@ -437,9 +437,6 @@ nnoremap <leader>D D
 
 " Copy unnamed register to p register
 nnoremap <leader>cp :let @p=@""<CR>
-
-" Prepare to run the g command on word under cursor
-nnoremap <leader>g :global/vim.fn.expand("<cword>")lol
 
 " TODO better mapping for this...unless I don't actually use it
 " Edit macro on register a
