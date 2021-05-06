@@ -10,6 +10,10 @@ ln -sf  $(pwd)/kde4 $HOME/.kde4
 ln -sf $(pwd)/tmux.conf $HOME/.tmux.conf
 ln -sf $(pwd)/config/nvim/init.vim $HOME/.vimrc
 
+# Link misc folders
+rm -rf $HOME/.local/share/konsole
+ln -sf $(pwd)/misc/konsole/ $HOME/.local/share/
+
 # Make sure .gitconfig sources extra.gitconfig
 ./scripts/setup_gitconfig.sh
 
@@ -19,3 +23,4 @@ touch $HOME/.config/local_configs/init.local.vim
 touch $HOME/.config/local_configs/config.local.fish
 touch $HOME/.config/local_configs/kitty.local.conf
 touch $HOME/.config/local_configs/tmux.conf
+
