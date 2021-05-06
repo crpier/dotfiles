@@ -55,6 +55,8 @@ if !empty(expand(glob("~/.vim/plugged"))) && ((!empty(expand(glob("~/.local/shar
     Plug 'puremourning/vimspector', has('nvim') ? {} : { 'on': [] }
     " Create terminals on demand
     Plug 'voldikss/vim-floaterm', has('nvim') ? {} : { 'on': [] }
+    " Quick access to a few files
+    Plug 'ThePrimeagen/harpoon', has('nvim') ? {} : { 'on': [] }
     call plug#end()
 endif
 
@@ -299,6 +301,8 @@ hi Normal guibg=NONE ctermbg=NONE
 """"""""""""""""""""""""""""""General Remaps""""""""""""""""""""""""""""""
 " easy source vimrc
 nnoremap <leader><CR> :so ~/.config/nvim/init.vim<CR>
+nnoremap <leader>ee :e ~/.config/nvim/init.vim<CR>
+nnoremap <leader>ev :vsp ~/.config/nvim/init.vim<CR>
 " use tab to select from suggestions
 inoremap <silent><expr> <Tab>
       \ pumvisible() ? "\<C-n>" :
@@ -356,37 +360,23 @@ augroup highlight_yank
     autocmd TextYankPost * silent! lua require'vim.highlight'.on_yank({timeout = 200})
 augroup END
 
-" Edit files within Nvim's terminal without nesting sessions.
-augroup prevent_nested_edit
-	autocmd VimEnter * if !empty($NVIM_LISTEN_ADDRESS) && $NVIM_LISTEN_ADDRESS !=# v:servername
-	    \ |let g:r=jobstart(['nc', '-U', $NVIM_LISTEN_ADDRESS],{'rpc':v:true})
-	    \ |let g:f=fnameescape(expand('%:p'))
-	    \ |noau bwipe
-	    \ |call rpcrequest(g:r, "nvim_command", "edit ".g:f)
-	    \ |call rpcrequest(g:r, "nvim_command", "call lib#SetNumberDisplay(1)")
-	    \ |qa
-	    \ |endif
-augroup END
-
 " When switching to a terminal buffer, autoenter insert mode
 autocmd BufEnter * if &buftype == 'terminal' | :startinsert | endif
+
 """"""""""""""""""""""""""""""Abbreviations""""""""""""""""""""""""""""""
 " These should really go in an ftplugin folder lol
 augroup python_abbrev
     autocmd BufNewFile,BufRead *.py ab pdb import pdb; pdb.set_trace()
 augroup END
 
+" Don't auto insert comments
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 """"""""""""""""""""""""""""""Experimental Remaps"""""""""""""""""""""""""""""
 " I might keep these, I might not, we'll see
 
 " Start term session
-nnoremap <leader>t :vs<CR>:term<CR>i
-" This only makes sense because I use vi mode in shell
-tnoremap <C-\> <C-\><C-n>
-tnoremap <C-Left> <C-\><C-n><C-w>h
-" tnoremap <Left> <C-\><C-n><C-w>h
-" tnoremap <Right> <C-\><C-n><C-w>l
+nnoremap <leader>te :vs<CR>:term<CR>i
 
 " TODO think about snippets, you might like them
 
@@ -403,14 +393,15 @@ nnoremap <Left> <C-w>h
 nnoremap <Down> <C-w>j
 nnoremap <Up> <C-w>k
 nnoremap <Right> <C-w>l
+tnoremap <C-Left> <C-\><C-n><C-w>h
+tnoremap <C-Right> <C-\><C-n><C-w>l
+" too lazy to write remaps for up and down, but not lazy enough for a comment ¯\_(ツ)_/¯
 
-" nnoremap <C-h> <C-w>h
-" nnoremap <C-l> <C-w>l
+" Exit terminal easier
+tnoremap <C-\> <C-\><C-n>
 
 nnoremap <S-Down> :vertical resize -10<CR>
 nnoremap <S-Up> :vertical resize +10<CR>
-
-nnoremap <leader>na Go<Esc>zz
 
 " Clear search highlight
 nnoremap <Esc> <Cmd>nohlsearch<CR>
@@ -450,5 +441,26 @@ nnoremap <leader>cp :let @p=@""<CR>
 " Prepare to run the g command on word under cursor
 nnoremap <leader>g :global/vim.fn.expand("<cword>")lol
 
+" TODO better mapping for this...unless I don't actually use it
 " Edit macro on register a
-nnoremap <leader>a :let @a='a'
+" nnoremap <leader>a :let @a='a'
+
+if has("nvim")
+" Harpoon
+lua <<EOF
+require("harpoon").setup({
+    global_settings = {
+        save_on_toggle = true,
+        save_on_change = true,
+    },
+})
+EOF
+
+nnoremap <leader>a :lua require("harpoon.mark").add_file()<CR>
+nnoremap <C-e> :lua require("harpoon.ui").toggle_quick_menu()<CR>
+nnoremap <C-h> :lua require("harpoon.ui").nav_file(1)<CR>
+nnoremap <C-j> :lua require("harpoon.ui").nav_file(2)<CR>
+nnoremap <C-k> :lua require("harpoon.ui").nav_file(3)<CR>
+nnoremap <leader>tj :lua require("harpoon.term").gotoTerminal(1)<CR>
+nnoremap <leader>cu :lua require("harpoon.term").sendCommand(1, 1)<CR>
+endif
