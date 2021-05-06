@@ -56,8 +56,6 @@ if !empty(expand(glob("~/.vim/plugged"))) && ((!empty(expand(glob("~/.local/shar
     " Create terminals on demand
     Plug 'voldikss/vim-floaterm', has('nvim') ? {} : { 'on': [] }
     call plug#end()
-
-
 endif
 
 """"""""""""""""""""""""""""""General Options""""""""""""""""""""""""""""""
@@ -107,16 +105,17 @@ set nobackup
 set undofile
 " undodirs for vim and neovim are incompatible, thus we should not use
 " different editors for the same file
+
 if has('nvim')
 	set undodir=~/.vim/nvim_undodir
 else
 	set undodir=~/.vim/undodir
 endif
 
-" TODO for some reason I can't indent this section ???
 """"""""""""""""""""""""""""""Plugin settings""""""""""""""""""""""""""""""
 " maximizer plugin
 nnoremap <leader>m :MaximizerToggle!<CR>
+let g:camelcasemotion_key = '<leader>'
 
 " TODO This also needs to be indented :(
 if has("nvim")
@@ -369,6 +368,8 @@ augroup prevent_nested_edit
 	    \ |endif
 augroup END
 
+" When switching to a terminal buffer, autoenter insert mode
+autocmd BufEnter * if &buftype == 'terminal' | :startinsert | endif
 """"""""""""""""""""""""""""""Abbreviations""""""""""""""""""""""""""""""
 " These should really go in an ftplugin folder lol
 augroup python_abbrev
@@ -382,9 +383,10 @@ augroup END
 " Start term session
 nnoremap <leader>t :vs<CR>:term<CR>i
 " This only makes sense because I use vi mode in shell
-" tnoremap <C-\> <C-\><C-n>
-tnoremap <Left> <C-\><C-n><C-w>h
-tnoremap <Right> <C-\><C-n><C-w>l
+tnoremap <C-\> <C-\><C-n>
+tnoremap <C-Left> <C-\><C-n><C-w>h
+" tnoremap <Left> <C-\><C-n><C-w>h
+" tnoremap <Right> <C-\><C-n><C-w>l
 
 " TODO think about snippets, you might like them
 
@@ -401,6 +403,9 @@ nnoremap <Left> <C-w>h
 nnoremap <Down> <C-w>j
 nnoremap <Up> <C-w>k
 nnoremap <Right> <C-w>l
+
+" nnoremap <C-h> <C-w>h
+" nnoremap <C-l> <C-w>l
 
 nnoremap <S-Down> :vertical resize -10<CR>
 nnoremap <S-Up> :vertical resize +10<CR>
