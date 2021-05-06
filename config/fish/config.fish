@@ -21,7 +21,13 @@ alias lg lazygit
 set -gx PATH $PATH $HOME/Tools $HOME/go/bin
 set -gx EDITOR (which vim)
 
+function take
+    set folder $argv[1]
+    set args $argv[2..]
+    mkdir $args $folder
+    cd $folder
+end
+
 if test -f $HOME/.config/local_configs/config.local.fish
     source $HOME/.config/local_configs/config.local.fish
 end
-
