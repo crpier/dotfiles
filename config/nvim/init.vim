@@ -186,6 +186,7 @@ require'lspconfig'.pyright.setup{
 capabilities = capabilities
 }
 require'lspconfig'.tsserver.setup{}
+require'lspconfig'.vimls.setup{}
 EOF
 
 nnoremap gd :lua vim.lsp.buf.definition()<CR>
@@ -310,9 +311,15 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 
+let g:markdown_fenced_languages = [
+      \ 'vim',
+      \ 'help'
+      \]
+
 inoremap <silent><expr> <C-Space> compe#complete()
 inoremap <silent><expr> <CR>      compe#confirm('<CR>')
 inoremap <silent><expr> <C-e>     compe#close('<C-e>')
+
 
 endif
 
