@@ -46,6 +46,9 @@ if !empty(expand(glob("~/.vim/plugged"))) && ((!empty(expand(glob("~/.local/shar
     Plug 'tjdevries/lsp_extensions.nvim', has('nvim') ? {} : { 'on': [] }
     " Completion plugin that ties in with the LSP
     Plug 'hrsh7th/nvim-compe', has('nvim') ? {} : { 'on': [] }
+    " Snippets, nice
+    Plug 'SirVer/ultisnips'
+    Plug 'honza/vim-snippets'
     " Syntax highlighting using LSP
     Plug 'nvim-treesitter/nvim-treesitter', has('nvim') ? {'do': ':TSUpdate' } : { 'on': [], 'do': ':TSUpdate' }
     " LSP Symbols tree-viewer
@@ -57,6 +60,7 @@ if !empty(expand(glob("~/.vim/plugged"))) && ((!empty(expand(glob("~/.local/shar
     Plug 'voldikss/vim-floaterm', has('nvim') ? {} : { 'on': [] }
     " Quick access to a few files
     Plug 'ThePrimeagen/harpoon', has('nvim') ? {} : { 'on': [] }
+    " Haha Ansible go brr
     Plug 'pearofducks/ansible-vim', has('nvim') ? { 'do': './UltiSnips/generate.sh' } : { 'on': [] }
     call plug#end()
 endif
@@ -168,7 +172,19 @@ folding = {
 }
 
 -- For nvim-lsp completion
-require'lspconfig'.pyright.setup{}
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities.textDocument.completion.completionItem.snippetSupport = true
+capabilities.textDocument.completion.completionItem.resolveSupport = {
+  properties = {
+    'documentation',
+    'detail',
+    'additionalTextEdits',
+  }
+}
+
+require'lspconfig'.pyright.setup{
+capabilities = capabilities
+}
 require'lspconfig'.tsserver.setup{}
 EOF
 
@@ -276,21 +292,27 @@ let g:compe.source = {}
 let g:compe.source.path = v:true
 let g:compe.source.buffer = v:true
 let g:compe.source.calc = v:true
-let g:compe.source.vsnip = v:true
+let g:compe.source.vsnip = v:false
 let g:compe.source.nvim_lsp = v:true
 let g:compe.source.nvim_lua = v:true
-let g:compe.source.spell = v:true
-let g:compe.source.tags = v:true
-let g:compe.source.snippets_nvim = v:true
+let g:compe.source.spell = v:false
+let g:compe.source.tags = v:false
+let g:compe.source.snippets_nvim = v:false
 let g:compe.source.treesitter = v:true
-let g:compe.source.omni = v:true
+let g:compe.source.omni = v:false
+let g:compe.source.ultisnips = v:true
+
+" ultisnips settings
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
 
 inoremap <silent><expr> <C-Space> compe#complete()
-" Why did I comment this?
-" inoremap <silent><expr> <CR>      compe#confirm('<CR>')
+inoremap <silent><expr> <CR>      compe#confirm('<CR>')
 inoremap <silent><expr> <C-e>     compe#close('<C-e>')
-inoremap <silent><expr> <C-f>     compe#scroll({ 'delta': +4 })
-inoremap <silent><expr> <C-d>     compe#scroll({ 'delta': -4 })
 
 endif
 
@@ -305,12 +327,7 @@ hi Normal guibg=NONE ctermbg=NONE
 nnoremap <leader><CR> :so ~/.config/nvim/init.vim<CR>
 nnoremap <leader>ee :e ~/.config/nvim/init.vim<CR>
 nnoremap <leader>ev :vsp ~/.config/nvim/init.vim<CR>
-" use tab to select from suggestions
-inoremap <silent><expr> <Tab>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<Tab>" :
-      \ "\<C-n>"
-inoremap <expr><S-Tab> pumvisible() ? "\<C-p>" : "\<C-h>"
+
 " I don't use EX mode, and I keep pressing it by mistake when I want to quit
 nnoremap Q ZQ
 " Search for selected text using '//'
