@@ -1,6 +1,7 @@
 function fish_mode_prompt
 end
 
+set -U fish_prompt_pwd_dir_length 100
 alias n nvim
 alias nconfig "nvim $HOME/.config/nvim/init.vim"
 alias nlconfig "nvim $HOME/.config/local_configs/init.local.vim"
