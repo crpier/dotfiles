@@ -1,8 +1,7 @@
 #! /bin/bash
 
 # do the .config folder
-for i in $(ls config); do
-    ln -sf  $(pwd)/config/$i $HOME/.config/
+for i in $(ls $HOME/.local/dotfiles/config); do
+    ln -sf  $HOME/.local/dotfiles/config/$i $HOME/.config/
 done
-
 
