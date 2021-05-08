@@ -62,6 +62,7 @@ if !empty(expand(glob("~/.vim/plugged"))) && ((!empty(expand(glob("~/.local/shar
     Plug 'ThePrimeagen/harpoon', has('nvim') ? {} : { 'on': [] }
     " Haha Ansible go brr
     Plug 'pearofducks/ansible-vim', has('nvim') ? { 'do': './UltiSnips/generate.sh' } : { 'on': [] }
+    Plug 'neomake/neomake', has('nvim') ? {} : { 'on': [] }
     call plug#end()
 endif
 
@@ -126,6 +127,8 @@ let g:camelcasemotion_key = '<leader>'
 
 " TODO This also needs to be indented :(
 if has("nvim")
+" Neomake mapping
+nnoremap <leader>fo :Neomake<CR>
 " Nerdtree settings
 " nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
@@ -187,6 +190,7 @@ capabilities = capabilities
 }
 require'lspconfig'.tsserver.setup{}
 require'lspconfig'.vimls.setup{}
+require'lspconfig'.yamlls.setup{}
 EOF
 
 nnoremap gd :lua vim.lsp.buf.definition()<CR>
@@ -389,6 +393,9 @@ augroup END
 " When switching to a terminal buffer, autoenter insert mode
 autocmd BufEnter * if &buftype == 'terminal' | :startinsert | endif
 
+" Yaml uses spaces, no tabs
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
 """"""""""""""""""""""""""""""Abbreviations""""""""""""""""""""""""""""""
 " These should really go in an ftplugin folder lol
 augroup python_abbrev
@@ -485,3 +492,4 @@ nnoremap <C-k> :lua require("harpoon.ui").nav_file(3)<CR>
 nnoremap <leader>tj :lua require("harpoon.term").gotoTerminal(1)<CR>
 nnoremap <leader>cu :lua require("harpoon.term").sendCommand(1, 1)<CR>
 endif
+
