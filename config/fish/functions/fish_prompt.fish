@@ -1,6 +1,5 @@
 # Defined interactively
 function fish_prompt --description 'Write out the prompt'
-    echo -e ''
     set -l last_status $status
 
     # # User
@@ -17,10 +16,18 @@ function fish_prompt --description 'Write out the prompt'
 
     # echo -n ':'
 
+    echo -e ''
     # PWD
     set_color $fish_color_cwd
     echo -n (prompt_pwd)
     set_color normal
+    echo -n ' '
+
+    if set -q VIRTUAL_ENV
+        set_color $fish_color_escape
+        echo -n \((basename $VIRTUAL_ENV)\)
+        set_color normal
+    end
 
     __terlar_git_prompt
     fish_hg_prompt
