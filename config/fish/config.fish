@@ -18,7 +18,7 @@ alias gp "git push"
 alias gr "git reset HEAD --hard"
 alias lg lazygit
 
-set -gx PATH $PATH $HOME/Tools $HOME/go/bin
+set -gx PATH $PATH $HOME/Tools $HOME/Tools/go/bin
 set -gx EDITOR (which vim)
 
 function take
