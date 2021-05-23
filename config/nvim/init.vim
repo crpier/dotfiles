@@ -1,4 +1,4 @@
-" Translation: if vim-plug is installed and the ~/.vim/plugged folder was 
+" Translation: if vim-plug is installed and the ~/.vim/plugged folder was
 " created, it means we can use plugins
 " This goes for both vim and nvim
 if !empty(expand(glob("~/.vim/plugged"))) && ((!empty(expand(glob("~/.local/share/nvim/site/autoload/plug.vim"))) && has("nvim")) || (!empty(expand(glob("~/.vim/autoload/plug.vim"))) && !has("nvim")))
@@ -123,9 +123,9 @@ set undofile
 " undodirs for vim and neovim are incompatible, thus we should not use
 " different editors for the same file
 if has('nvim')
-	set undodir=~/.vim/nvim_undodir
+    set undodir=~/.vim/nvim_undodir
 else
-	set undodir=~/.vim/undodir
+    set undodir=~/.vim/undodir
 endif
 
 """"""""""""""""""""""""""""""Plugin settings""""""""""""""""""""""""""""""
@@ -143,7 +143,7 @@ nnoremap <leader>m :MaximizerToggle!<CR>
 let g:camelcasemotion_key = '\'
 
 """" These are plugins enabled for nvim only, because they provide an IDE like
-"""" exerience that regular vim doesn't much care for, and which would be 
+"""" exerience that regular vim doesn't much care for, and which would be
 """" difficult to replicate on a remote server like a raspberry 3 lol
 if has("nvim")
     """""""""""" Nerdtree
@@ -157,7 +157,7 @@ if has("nvim")
     local opts = {
         -- whether to highlight the currently hovered symbol
         highlight_hovered_item = true,
-        -- whether to show outline guides 
+        -- whether to show outline guides
         show_guides = true,
     }
     require('symbols-outline').setup(opts)
@@ -168,7 +168,7 @@ EOF
     incremental_selection = {
         enable = true,
         keymaps = {
-          --  Keymaps for LSP-powered incremental selection lol  
+          --  Keymaps for LSP-powered incremental selection lol
           init_selection = "gs",
           node_incremental = "gi",
           node_decremental = "gd",
@@ -214,7 +214,7 @@ EOF
     nnoremap <leader>rn :lua vim.lsp.buf.rename()<CR>
     nnoremap <leader>ca :lua vim.lsp.buf.code_action()<CR>
     """""""""""" Fugitive
-    nnoremap <leader>gi :Git 
+    nnoremap <leader>gi :Git
     nnoremap <leader>gb :Git blame<CR>
     nnoremap <leader>gd :Gdiffsplit<CR>
     nnoremap <leader>gpl :Git pull<CR>
