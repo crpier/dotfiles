@@ -403,8 +403,6 @@ augroup END
 " I might keep these, I might not, we'll see
 " Start term session
 nnoremap <leader>te :vs<CR>:term<CR>i
-" TODO figure out these colors and make :Gdiffsplit more gruvbox friendly
-" highlight DiffAdd ctermfg=253 ctermbg=237 guifg=#dadada guibg=#3a3a3a
 nnoremap <leader>lg :FloatermNew --autoclose=2 --height=0.95 --width=0.99 --wintype=floating lazygit<CR>
 nnoremap <leader>fn :FloatermNew --autoclose=2 --height=0.9 --width=0.9 --wintype=floating<CR>
 imap jw <Esc>:w<CR>
