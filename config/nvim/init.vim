@@ -69,6 +69,8 @@ if !empty(expand(glob("~/.vim/plugged"))) && ((!empty(expand(glob("~/.local/shar
             Plug 'ThePrimeagen/harpoon', has('nvim') ? {} : { 'on': [] }
             " Haha Ansible go brr
             Plug 'pearofducks/ansible-vim', has('nvim') ? { 'do': './UltiSnips/generate.sh' } : { 'on': [] }
+            " Go
+            Plug 'fatih/vim-go', has('nvim') ? { 'do': ':GoUpdateBinaries'} : { 'on': [] }
         endif
     call plug#end()
 endif
@@ -127,6 +129,15 @@ else
 endif
 
 """"""""""""""""""""""""""""""Plugin settings""""""""""""""""""""""""""""""
+" vim-go stuff
+let g:go_code_completion_enabled = 0
+let g:go_snippet_engine = "ultisnips"
+let g:go_textobj_enabled = 0
+let g:go_list_type = "quickfix"
+" TODO is there anything bad that will happen if I disable this?
+let g:go_gopls_enabled = 1
+
+
 " maximizer plugin
 nnoremap <leader>m :MaximizerToggle!<CR>
 let g:camelcasemotion_key = '\'
@@ -189,6 +200,7 @@ EOF
     require'lspconfig'.pyright.setup{capabilities = capabilities}
     require'lspconfig'.tsserver.setup{}
     require'lspconfig'.yamlls.setup{}
+    require'lspconfig'.gopls.setup{}
 EOF
     """""""""""" LSP keybindings
     " Most used commands have g-key mappings
