@@ -8,12 +8,6 @@
 	defaultBranch = main
 [core]
     editor = nvim
-[alias]
-; reddit got the darndest tricks
-    lg1 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
-    lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
-    lg = !"git lg1"
-
 [delta]
   line-numbers = true
   syntax-theme = gruvbox
@@ -25,6 +19,10 @@
   diffFilter = delta --color-only
 
 [alias]
+  # reddit got the darndest tricks
+    lg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+    lg1 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+
   # list files which have changed since REVIEW_BASE
   files = !git diff --name-only $(git merge-base HEAD main)
 
@@ -32,10 +30,7 @@
   # (better for interactive use)
   stat = !git diff --stat $(git merge-base HEAD main)
 
-  # NOTE: These aliases depend on the `git files` alias from
-  # a few sections ago!
-
-  # Open all files changed since REVIEW_BASE in Vim tabs
+  # Open all files changed in Vim tabs
   # Then, run fugitive's :Gdiff in each tab, and finally
   # tell vim-gitgutter to show +/- for changes since REVIEW_BASE
   review = !nvim -p $(git files) +\"tabdo Gdiff main\" +\"let g:gitgutter_diff_base = 'main'\"
