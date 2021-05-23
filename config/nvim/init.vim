@@ -325,7 +325,6 @@ EOF
 endif
 
 """"""""""""""""""""""""""""""Theme"""""""""""""""""""""""""""""""""""""""""
-" TODO airline has a ton of clutter...do some cleaning
 colorscheme gruvbox
 set background=dark
 " Transparent background
@@ -334,6 +333,11 @@ hi Normal guibg=NONE ctermbg=NONE
 let g:highlightedyank_highlight_duration = 200
 let g:highlightedyank_highlight_duration = 200
 
+let g:airline_section_x = ""
+let g:airline_section_y = ""    
+" TODO find a way to toggle these sections
+" let g:airline_section_error = ""
+" let g:airline_section_warning = ""
 """"""""""""""""""""""""""""""General Remaps""""""""""""""""""""""""""""""""
 " easy source vimrc
 nnoremap <leader><CR> :so ~/.config/nvim/init.vim<CR>
