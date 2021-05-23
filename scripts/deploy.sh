@@ -34,11 +34,10 @@ for i in $(ls $REPO_PATH/config); do
     backup_and_link $REPO_PATH/config/$i $HOME/.config/$i
 done
 
-# TODO this should happen in the utils repo 
 # Make sure there are local config files
 mkdir -p ~/.config/local_configs
 touch $HOME/.config/local_configs/init.local.vim
 touch $HOME/.config/local_configs/config.local.fish
 touch $HOME/.config/local_configs/kitty.local.conf
-touch $HOME/.config/local_configs/tmux.conf
+touch $HOME/.config/local_configs/tmux.local.conf
 
