@@ -1,5 +1,6 @@
 [ActivityManager]
 _k_friendly_name=Activity Manager
+switch-to-activity-502cdf57-b3ca-4c93-a671-4124394cf973=none,none,Switch to activity "Default"
 switch-to-activity-7f16be11-4383-4273-9448-443c0525f288=none,none,Switch to activity "Default"
 switch-to-activity-c17e7bc4-69e1-416d-9395-1be7f330e59f=none,none,Switch to activity "Default"
 
@@ -25,9 +26,7 @@ display=Display\tMeta+P,Display\tMeta+P,Switch Display
 
 [khotkeys]
 _k_friendly_name=Custom Shortcuts Service
-{0d0b4e90-fc7c-4479-bfd7-8aced14e4b8e}=Meta+Ctrl+Alt+Shift+Return,none,start term
-{88c1fae5-7dac-4cb9-bbe9-21db2f96361e}=none,none,Launch Konsole
-{a160637c-91c8-4366-80f6-1b0d045382df}=Meta+F,none,firefox cool
+{0acbe191-a3fb-49f3-b1f2-040d939b0638}=Ctrl+Alt+T,none,Launch Konsole
 {d03619b6-9b3c-48cc-9d9c-a2aadb485550}=,none,Search
 
 [kmix]
@@ -169,8 +168,8 @@ Window No Border=Meta+B,none,Hide Window Border
 Window On All Desktops=none,none,Keep Window on All Desktops
 Window One Desktop Down=none,Meta+Ctrl+Shift+Down,Window One Desktop Down
 Window One Desktop Up=none,Meta+Ctrl+Shift+Up,Window One Desktop Up
-Window One Desktop to the Left=Meta+Ctrl+Alt+Shift+Left,Meta+Ctrl+Shift+Left,Window One Desktop to the Left
-Window One Desktop to the Right=Meta+Ctrl+Alt+Shift+Right,Meta+Ctrl+Shift+Right,Window One Desktop to the Right
+Window One Desktop to the Left=Meta+Shift+Left,Meta+Ctrl+Shift+Left,Window One Desktop to the Left
+Window One Desktop to the Right=Meta+Shift+Right,Meta+Ctrl+Shift+Right,Window One Desktop to the Right
 Window Operations Menu=Alt+F3,Alt+F3,Window Operations Menu
 Window Pack Down=none,none,Pack Window Down
 Window Pack Left=none,none,Pack Window to the Left
