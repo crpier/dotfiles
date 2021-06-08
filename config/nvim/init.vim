@@ -25,9 +25,11 @@ if !empty(expand(glob("~/.vim/plugged"))) && ((!empty(expand(glob("~/.local/shar
         Plug 'dag/vim-fish'
         " Show me what I yanked lol
         Plug 'machakann/vim-highlightedyank'
+        " Remote copy, local paste
+        Plug 'ojroques/vim-oscyank'
 
         if has("nvim")
-            " Airline is so slow it doubles my startup time, but I haven't figured out 
+            " Airline is so slow it doubles my startup time, but I haven't figured out
             " how to make something light like lightline do what I want, so ¯\_(ツ)_/¯
             Plug 'vim-airline/vim-airline', has('nvim') ? {} : { 'on': [] }
             " Telescope, that'all
@@ -141,7 +143,8 @@ let g:go_gopls_enabled = 1
 " maximizer plugin
 nnoremap <leader>m :MaximizerToggle!<CR>
 let g:camelcasemotion_key = '\'
-
+" Yank on remote server
+vnoremap <leader>c :OSCYank<CR>
 """" These are plugins enabled for nvim only, because they provide an IDE like
 """" exerience that regular vim doesn't much care for, and which would be
 """" difficult to replicate on a remote server like a raspberry 3 lol
@@ -201,6 +204,9 @@ EOF
     require'lspconfig'.tsserver.setup{}
     require'lspconfig'.yamlls.setup{}
     require'lspconfig'.gopls.setup{}
+    require'lspconfig'.groovyls.setup{
+        cmd = { "java", "-jar", "/usr/local/bin/groovy-language-server-all.jar" },
+    }
 EOF
     """""""""""" LSP keybindings
     " Most used commands have g-key mappings
@@ -334,7 +340,7 @@ let g:highlightedyank_highlight_duration = 200
 let g:highlightedyank_highlight_duration = 200
 
 let g:airline_section_x = ""
-let g:airline_section_y = ""    
+let g:airline_section_y = ""
 " TODO find a way to toggle these sections
 " let g:airline_section_error = ""
 " let g:airline_section_warning = ""
@@ -464,3 +470,4 @@ if has('nvim')
     command WQ :lua bufnr=vim.api.nvim_create_buf(false, false); require"popup".create(bufnr, {minwidth=60, minheight=10, col=65, line=15}); vim.api.nvim_buf_set_lines(bufnr, 0, 2, false, {"                  That's not how you exit vim...try :X   ", "             Press 'Q' to exit this screen"})<CR><CR>
     command X :lua bufnr=vim.api.nvim_create_buf(false, false); require"popup".create(bufnr, {minwidth=60, minheight=10, col=65, line=15}); vim.api.nvim_buf_set_lines(bufnr, 0, 2, false, {"                  That's not how you exit vim...use ZQ   ", "             Press 'Q' to exit this screen"})<CR><CR>
 endif
+au BufNewFile,BufRead Jenkinsfile setf groovy

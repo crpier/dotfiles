@@ -28,6 +28,13 @@ alias lg lazygit
 set -gx PATH $PATH $HOME/Tools $HOME/Tools/go/bin
 set -gx EDITOR (which vim)
 
+function gacp 
+    set message $argv[1]
+    git add .
+    git commit -m "$message"
+    git push
+end
+
 function take
     set folder $argv[1]
     set args $argv[2..]
