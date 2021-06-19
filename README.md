@@ -14,6 +14,3 @@ store private configuration, maybe under another repository.
 
 ### Extra
 Keyboard layout: https://configure.ergodox-ez.com/ergodox-ez/layouts/APZKR/latest
-
-# Future features
-- handle ssh config
