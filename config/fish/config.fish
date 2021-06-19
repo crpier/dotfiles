@@ -11,6 +11,7 @@ alias flconfig "nvim $HOME/.config/local_configs/config.local.fish"
 alias tconfig "nvim $HOME/.tmux.conf"
 alias tlconfig "nvim $HOME/.config/local_configs/tmux.local.conf"
 alias rsource "source $HOME/.config/fish/config.fish"
+alias k kubectl
 
 alias g "git"
 alias gs "git status"
@@ -25,7 +26,7 @@ alias gl "git lg"
 alias gl2 "git lg2"
 alias lg lazygit
 
-set -gx PATH $PATH $HOME/Tools $HOME/Tools/go/bin
+set -gx PATH $PATH $HOME/Tools $HOME/go/bin
 set -gx EDITOR (which vim)
 
 function gacp 

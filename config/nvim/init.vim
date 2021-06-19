@@ -73,6 +73,7 @@ if !empty(expand(glob("~/.vim/plugged"))) && ((!empty(expand(glob("~/.local/shar
             Plug 'pearofducks/ansible-vim', has('nvim') ? { 'do': './UltiSnips/generate.sh' } : { 'on': [] }
             " Go
             Plug 'fatih/vim-go', has('nvim') ? { 'do': ':GoUpdateBinaries'} : { 'on': [] }
+            Plug 'saltstack/salt-vim'
         endif
     call plug#end()
 endif
@@ -138,6 +139,7 @@ let g:go_textobj_enabled = 0
 let g:go_list_type = "quickfix"
 " TODO is there anything bad that will happen if I disable this?
 let g:go_gopls_enabled = 1
+let g:go_build_tags = 'integration'
 
 
 " maximizer plugin
@@ -150,7 +152,7 @@ vnoremap <leader>c :OSCYank<CR>
 """" difficult to replicate on a remote server like a raspberry 3 lol
 if has("nvim")
     """""""""""" Nerdtree
-    nnoremap <C-t> :NERDTreeToggle<CR>
+    nnoremap <leader>nt :NERDTreeToggle<CR>
     nnoremap <leader>nf :NERDTreeFind<CR>
     " Exit Vim if NERDTree is the only window left.
     autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
@@ -203,10 +205,19 @@ EOF
     require'lspconfig'.pyright.setup{capabilities = capabilities}
     require'lspconfig'.tsserver.setup{}
     require'lspconfig'.yamlls.setup{}
-    require'lspconfig'.gopls.setup{}
-    require'lspconfig'.groovyls.setup{
-        cmd = { "java", "-jar", "/usr/local/bin/groovy-language-server-all.jar" },
+    require'lspconfig'.gopls.setup{
+    settings = {
+        gopls =  {
+            env = {
+                GOFLAGS="-tags=integration"
+                }
+        }
     }
+}
+    require'lspconfig'.groovyls.setup{
+    -- Unix
+    cmd = { "java", "-jar", "/usr/local/bin/groovy-language-server-all.jar" },
+}
 EOF
     """""""""""" LSP keybindings
     " Most used commands have g-key mappings
@@ -399,7 +410,7 @@ autocmd BufReadPost *
 "     autocmd TextYankPost * silent! lua require'vim.highlight'.on_yank({timeout = 200})
 " augroup END
 " When switching to a terminal buffer, autoenter insert mode
-autocmd BufEnter * if &buftype == 'terminal' | :startinsert | endif
+" autocmd BufEnter * if &buftype == 'terminal' | :startinsert | endif
 " Don't auto insert comments
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 """""""""""" Filetype autocmds

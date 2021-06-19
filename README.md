@@ -1,8 +1,14 @@
-### Usage
-The intstallation script creates a folder ~/.config/local_configs, where non-vcs-nable settings be stored for sourcing
-
 ### Installing
-As the use of the `pwd` indicates, the scripts should be run from the repo root directory.
+```bash
+git clone git@github.com:tiannaru/dotfiles ~/.local/dotfiles
+cd ~/.local/dotfiles
+./scripts/deploy.sh
+```
+The `deploy.sh` script create symbolic link from repo to configuration files.
+Backups are created in `~/.backup`.
+
+### Usage
+Install and run install script.
 
 ### Extra
 Keyboard layout: https://configure.ergodox-ez.com/ergodox-ez/layouts/APZKR/latest
