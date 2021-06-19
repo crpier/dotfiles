@@ -8,7 +8,9 @@ The `deploy.sh` script create symbolic link from repo to configuration files.
 Backups are created in `~/.backup`.
 
 ### Usage
-Install and run install script.
+`tmux`, `vim`, `nvim` and other applications use this repository's config.
+On install, a folder `~/.config/local_configs` is created, and it can be used to 
+store private configuration, maybe under another repository.
 
 ### Extra
 Keyboard layout: https://configure.ergodox-ez.com/ergodox-ez/layouts/APZKR/latest
