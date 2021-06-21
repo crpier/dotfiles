@@ -3,6 +3,9 @@
 REPO_PATH=$HOME/.local/dotfiles
 BACKUP_DIR=$HOME/.backup
 
+# This is a terrible way to do this
+sudo=$1
+
 backup_and_link () {
     src=$1
     target=$2
@@ -12,9 +15,18 @@ backup_and_link () {
     mkdir -p $(dirname $BACKUP_DIR$target)
     # There is not "/" between the 2 vars because $target is an absolute path
     cp -r $target_path $BACKUP_DIR$target
-    rm -rf $target
+    if [ -z $sudo ]; then
+        rm -rf $target
+    else
+        sudo rm -rf $target
+    fi
 
-    ln -sf $src $target
+    # Misc files
+    if [ -z $sudo ]; then
+        ln -sf $src $target
+    else
+        sudo ln -sf $src $target
+    fi
 }
 
 mkdir -p $BACKUP_DIR
@@ -25,6 +37,7 @@ backup_and_link $REPO_PATH/kde4 $HOME/.kde4
 # Individual files
 backup_and_link $REPO_PATH/tmux.conf $HOME/.tmux.conf
 backup_and_link $REPO_PATH/config/nvim/init.vim $HOME/.vimrc
+backup_and_link $REPO_PATH/misc/plasma-i3.desktop /usr/share/xsessions/plasma-i3.desktop
 
 # Make sure .gitconfig sources extra.gitconfig
 ./scripts/setup_gitconfig.sh
