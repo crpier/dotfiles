@@ -140,6 +140,7 @@ let g:go_list_type = "quickfix"
 " TODO is there anything bad that will happen if I disable this?
 let g:go_gopls_enabled = 1
 let g:go_build_tags = 'integration'
+let g:go_def_mapping_enabled = 0
 
 
 " maximizer plugin
