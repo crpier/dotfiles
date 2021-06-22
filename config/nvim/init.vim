@@ -474,12 +474,4 @@ nnoremap n :keepjumps normal! n<cr>
 nnoremap N :keepjumps normal! N<cr>
 nnoremap * :keepjumps normal! *<cr>
 nnoremap # :keepjumps normal! #<cr>
-" haha l'humour
-if has('nvim')
-    nnoremap  <silent> ZZ :lua bufnr=vim.api.nvim_create_buf(false, false); require"popup".create(bufnr, {minwidth=60, minheight=10, col=65, line=15}); vim.api.nvim_buf_set_lines(bufnr, 0, 2, false, {"                  You cannot exim vim :(   ", "             Press 'Q' to exit this screen"})<CR><CR>
-    nnoremap <silent> ZQ :lua bufnr=vim.api.nvim_create_buf(false, false); require"popup".create(bufnr, {minwidth=60, minheight=10, col=65, line=15}); vim.api.nvim_buf_set_lines(bufnr, 0, 3, false, {"                  You cannot exim vim :(     ", "...try :W", "             Press 'Q' to exit this screen"})<CR><CR>
-    command W :lua bufnr=vim.api.nvim_create_buf(false, false); require"popup".create(bufnr, {minwidth=60, minheight=10, col=65, line=15}); vim.api.nvim_buf_set_lines(bufnr, 0, 2, false, {"                  That's not how you exit vim...use :WQ   ", "             Press 'Q' to exit this screen"})<CR><CR>
-    command WQ :lua bufnr=vim.api.nvim_create_buf(false, false); require"popup".create(bufnr, {minwidth=60, minheight=10, col=65, line=15}); vim.api.nvim_buf_set_lines(bufnr, 0, 2, false, {"                  That's not how you exit vim...try :X   ", "             Press 'Q' to exit this screen"})<CR><CR>
-    command X :lua bufnr=vim.api.nvim_create_buf(false, false); require"popup".create(bufnr, {minwidth=60, minheight=10, col=65, line=15}); vim.api.nvim_buf_set_lines(bufnr, 0, 2, false, {"                  That's not how you exit vim...use ZQ   ", "             Press 'Q' to exit this screen"})<CR><CR>
-endif
 au BufNewFile,BufRead Jenkinsfile setf groovy
