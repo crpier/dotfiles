@@ -30,6 +30,11 @@ function fish_prompt --description 'Write out the prompt'
     end
 
     __terlar_git_prompt
+    if test $SSH_CLIENT
+        set_color $fish_color_quote
+        echo -n  " "(hostname)
+        set_color normal
+    end
     echo
 
     if not test $last_status -eq 0
