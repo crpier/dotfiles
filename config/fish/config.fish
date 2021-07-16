@@ -1,14 +1,15 @@
-# Disable fish mode prompt
 function fish_mode_prompt
 end
 
 set -U fish_prompt_pwd_dir_length 100
 set -U VIRTUAL_ENV_DISABLE_PROMPT yas
+
+alias P "cd ~/Projects"
 alias n nvim
 alias nconfig "nvim $HOME/.config/nvim/init.vim"
 alias nlconfig "nvim $HOME/.config/local_configs/init.local.vim"
 alias fconfig "nvim $HOME/.config/fish/config.fish"
-alias flconfig "nvim $HOME/.config/local_configs/config.local.fish"
+alias flconfig "cd $HOME/.config/local_configs; and nvim $HOME/.config/local_configs/config.local.fish; and cd -"
 alias tconfig "nvim $HOME/.tmux.conf"
 alias tlconfig "nvim $HOME/.config/local_configs/tmux.local.conf"
 alias rsource "source $HOME/.config/fish/config.fish"
@@ -25,6 +26,7 @@ alias gr "git reset HEAD --hard"
 alias glo "git log"
 alias gl "git lg"
 alias gl2 "git lg2"
+alias gw "git worktree"
 alias lg lazygit
 
 set -gx PATH $PATH $HOME/Tools $HOME/go/bin
