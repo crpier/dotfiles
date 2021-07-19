@@ -31,13 +31,9 @@ backup_and_link () {
 
 mkdir -p $BACKUP_DIR
 
-# The .kde4 directory can be linked directly
-backup_and_link $REPO_PATH/kde4 $HOME/.kde4
-
 # Individual files
 backup_and_link $REPO_PATH/tmux.conf $HOME/.tmux.conf
 backup_and_link $REPO_PATH/config/nvim/init.vim $HOME/.vimrc
-backup_and_link $REPO_PATH/misc/plasma-i3.desktop /usr/share/xsessions/plasma-i3.desktop
 
 # Make sure .gitconfig sources extra.gitconfig
 ./scripts/setup_gitconfig.sh
