@@ -11,6 +11,10 @@ cd ~/.dotfiles
 ```
 The deploy script just does `stow */` and links my .gitconfig to your .gitconfig, so that you can run `git config --global` to you heart's content. Honestly, I'd rather move it to an Ansible role, but maybe later.
 
+### Structure
+There are 2 important branches: `main` and `fast`.
+On main I will try to be tidy and only add meaningful self-contained pull requests, so the history looks good as well. On fast I just push whatever crazy idea I have. Not stable, but cutting edge. Feel free to open issues for any of these 2 branches.
+
 ### Usage
 `tmux`, `vim`, `nvim`, `i3` and other applications use this repository's config.
 
