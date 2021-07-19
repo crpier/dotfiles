@@ -1,7 +1,7 @@
 ### Description
 These are my dotfiles. I am using `stow` to manage them, so you could call them `stowfiles` lmao.
 
-Much inspiration from https://github.com/ChristianChiarulli/Machfiles. Much wow.
+Much inspiration from https://github.com/ChristianChiarulli/Machfiles.
 
 ### Installing
 ```bash
