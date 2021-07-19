@@ -1,10 +1,12 @@
+bat
+dwm
+fd
 fish
 fzf
 i3
 i3-gaps
-dwm
-ranger
-vim
-nvim
-tmux
 kitty
+nvim
+ranger
+tmux
+vim
