@@ -33,3 +33,4 @@ Also my keyboard layout: https://configure.ergodox-ez.com/ergodox-ez/layouts/APZ
 
 ### TODO
 - fish plugins `fisher` and `fzf-fish` are saved as-is in the repo. That's probably not good.
+- backup script in case you try this on a not fresh install of manjaro (or not on manjaro lol)
