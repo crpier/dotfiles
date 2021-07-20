@@ -13,7 +13,7 @@ export QT_QPA_PLATFORMTHEME=qt5ct
 dwmblocks &
 
 # Random Photo Every Login
-feh --bg-fill --randomize ~/Downloads
+feh --bg-fill --randomize ~/.local/wallpapers
 
 # Monitor Config
 xrandr --output eDP1 --mode 1920x1080
