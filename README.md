@@ -30,3 +30,6 @@ There is also a list of programs that these dotfiles serve in the `programs` dir
 
 ### Extra
 Also my keyboard layout: https://configure.ergodox-ez.com/ergodox-ez/layouts/APZKR/latest
+
+### TODO
+- fish plugins `fisher` and `fzf-fish` are saved as-is in the repo. That's probably not good.
