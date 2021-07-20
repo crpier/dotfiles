@@ -12,7 +12,7 @@ cd ~/.dotfiles
 The deploy script just does `stow */` and links my .gitconfig to your .gitconfig, so that you can run `git config --global` to you heart's content. Honestly, I'd rather move it to an Ansible role, but maybe later.
 
 ### Structure
-There are 2 important branches: `main` and `fast`.
+There are 2 important branches: `main` and `very_fast`.
 On main I will try to be tidy and only add meaningful self-contained pull requests, so the history looks good as well. On fast I just push whatever crazy idea I have. Not stable, but cutting edge. Feel free to open issues for any of these 2 branches.
 
 ### Usage
@@ -34,3 +34,5 @@ Also my keyboard layout: https://configure.ergodox-ez.com/ergodox-ez/layouts/APZ
 ### TODO
 - fish plugins `fisher` and `fzf-fish` are saved as-is in the repo. That's probably not good.
 - backup script in case you try this on a not fresh install of manjaro (or not on manjaro lol)
+- copy goodies from .vimrc to init.vim
+- switch to lunarvim instead of my init.vim
