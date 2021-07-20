@@ -18,9 +18,11 @@ Plug 'tpope/vim-repeat'
 Plug 'morhetz/gruvbox'
 " improved motion
 Plug 'bkad/CamelCaseMotion'
+let g:camelcasemotion_key = '\'
 " Maximize one split
 Plug 'szw/vim-maximizer'
 " Easy commenting
+nnoremap <leader>m :MaximizerToggle!<CR>
 Plug 'tpope/vim-commentary'
 " Add additional text objects
 Plug 'wellle/targets.vim'
@@ -28,24 +30,31 @@ Plug 'wellle/targets.vim'
 Plug 'dag/vim-fish'
 " Show me what I yanked lol
 Plug 'machakann/vim-highlightedyank'
+let g:highlightedyank_highlight_duration = 200
 " Remote copy, local paste
 Plug 'ojroques/vim-oscyank'
+vnoremap <leader>c :OSCYank<CR>
 " Haha Ansible go brr
-Plug 'pearofducks/ansible-vim', has('nvim') ? { 'do': './UltiSnips/generate.sh' } : { 'on': [] }
+Plug 'pearofducks/ansible-vim', { 'do': './UltiSnips/generate.sh' }
 " salt too (╯°□°）╯︵ ┻━┻
 Plug 'saltstack/salt-vim'
-Plug 'tpope/vim-fugitive', has('nvim') ? {} : { 'on': [] }
-Plug 'airblade/vim-gitgutter', has('nvim') ? {} : { 'on': [] }
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 " Snippets, nice
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 " Debugger
-Plug 'puremourning/vimspector', has('nvim') ? {} : { 'on': [] }
+Plug 'puremourning/vimspector'
 call plug#end()
 
 """"""""""""""""""""""""""""""General Options""""""""""""""""""""""""""""""
-
-""""" Set general options
+" The colorscheme command has to be afte the `plug` section
+colorscheme gruvbox
+" Honestly, gruvbox looks weird without this
+set background=dark
+" Transparent background, this command needs to be after the `colorscheme`
+" command to work
+hi Normal guibg=NONE ctermbg=NONE
 let mapleader = " "
 set expandtab
 set smartindent
@@ -62,6 +71,8 @@ set ignorecase
 set smartcase
 " move cursor to search result while typing
 set incsearch
+" hightl search
+set hlsearch
 " keep 4 lines above and below the cursor at all times
 set scrolloff=4
 " show the preferred limit to line length
@@ -87,59 +98,15 @@ set undofile
 silent call mkdir($HOME . "/.vim/undodir", "p", 0700)
 set undodir=~/.vim/undodir
 
-""""""""""""""""""""""""""""""Plugin settings""""""""""""""""""""""""""""""
-" maximizer plugin
-nnoremap <leader>m :MaximizerToggle!<CR>
-" camelcase motion
-let g:camelcasemotion_key = '\'
-" Yank on remote server
-vnoremap <leader>c :OSCYank<CR>
-
-""""""""""""""""""""""""""""""Theme"""""""""""""""""""""""""""""""""""""""""
-colorscheme gruvbox
-set background=dark
-" Transparent background
-hi Normal guibg=NONE ctermbg=NONE
-" Duration of yank highlight
-let g:highlightedyank_highlight_duration = 200
-
 """"""""""""""""""""""""""""""General Remaps""""""""""""""""""""""""""""""""
+""""""""" Utility maps
 " easy source vimrc
 nnoremap <leader><CR> :so ~/.vimrc<CR>
-" I don't use EX mode, and I keep pressing it by mistake when I want to quit
-nnoremap Q ZQ
 " Search for selected text using '//'
 vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
-" select text inside line without spaces
-vnoremap al :<C-U>normal 0v$h<CR>
-omap al :normal val<CR>
-vnoremap il :<C-U>normal ^vg_<CR>
-omap il :normal vil<CR>
-" close quickfixlist easily (a toggle function would be better tho)
-nnoremap <C-Q> <cmd>copen<CR>
-" Insert line
+" Insert line without entering insert mode
 nnoremap go o<Esc>
 nnoremap gO O<Esc>
-
-""""""""""""""""""""""""""""""Autocommands""""""""""""""""""""""""""""""
-" persist cursor location between sessions
-autocmd BufReadPost *
-  \ if line("'\"") >= 1 && line("'\"") <= line("$") && &ft !~# 'commit'
-  \ |   exe "normal! g`\""
-  \ | endif
-" Don't auto insert comments
-autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
-"""""""""""" Filetype autocmds
-" Yaml uses spaces, not tabs
-autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
-augroup python_abbrev
-    autocmd BufNewFile,BufRead *.py ab pdb import pdb; pdb.set_trace()
-augroup END
-
-""""""""""""""""""""""""""""""Experimental"""""""""""""""""""""""""""""
-" I might keep these, I might not, we'll see
-" Start term session
-imap jw <Esc>:w<CR>
 " Navigate window splits with the arrow keys
 nnoremap <Left> <C-w>h
 nnoremap <Down> <C-w>j
@@ -152,15 +119,52 @@ nnoremap Y yg_
 " Center screen after search result
 nnoremap n nzzzv
 nnoremap N Nzzzv
-" Blackhole x by default
-nnoremap x "_x
-nnoremap X "_X
+" Blackhole d and D with leader
+nnoremap <leader>d "_d
+nnoremap <leader>D "_D
+" I don't use EX mode, and I keep pressing it by mistake when I want to quit
+nnoremap Q ZQ
 " Copy unnamed register to p register
 nnoremap <leader>cp :let @p=@""<CR>
+"""""""" New Operators
+" select text inside line without spaces
+vnoremap al :<C-U>normal 0v$h<CR>
+omap al :normal val<CR>
+vnoremap il :<C-U>normal ^vg_<CR>
+omap il :normal vil<CR>
+"""""""" Toggles
+" close quickfixlist easily (a toggle function would be better tho)
+nnoremap <C-Q> <cmd>copen<CR>
+"""""""" Insert mode mappings
+" Command mode
+imap jk <Esc>:w<CR>
+" Command mode and save
+imap jw <Esc>:w<CR>
+"""""""" Override default mappings
+" Blackhole x
+nnoremap x "_x
+nnoremap X "_X
 " Don't keep { and } on jumplist
 nnoremap } :keepjumps normal! }<cr>
 nnoremap { :keepjumps normal! {<cr>
 xnoremap } :<C-u>keepjumps normal! gv}<cr>
 xnoremap { :<C-u>keepjumps normal! gv{<cr>
-" Why do you not know this already?
+
+""""""""""""""""""""""""""""""Autocommands""""""""""""""""""""""""""""""
+" persist cursor location between sessions
+autocmd BufReadPost *
+  \ if line("'\"") >= 1 && line("'\"") <= line("$") && &ft !~# 'commit'
+  \ |   exe "normal! g`\""
+  \ | endif
+" Don't auto insert comments
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+"""""""""""" Filetype autocmds
+" Yaml 
+"" uses spaces, not tabs
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+" Python
+"" I am so lazy i need abbreviation for pdb lmao
+autocmd BufNewFile,BufRead *.py ab pdb import pdb; pdb.set_trace()
+" This is more of a filename autocmd lol
+"" Make sure Jenkinsfile have groovy syntax highlight
 au BufNewFile,BufRead Jenkinsfile setf groovy
