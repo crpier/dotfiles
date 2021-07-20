@@ -36,3 +36,4 @@ Also my keyboard layout: https://configure.ergodox-ez.com/ergodox-ez/layouts/APZ
 - backup script in case you try this on a not fresh install of manjaro (or not on manjaro lol)
 - copy goodies from .vimrc to init.vim
 - switch to lunarvim instead of my init.vim
+- create dwm mapping for brightness change (or switch to i3 maybe??)
