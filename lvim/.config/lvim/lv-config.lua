@@ -10,7 +10,10 @@ an executable
 
 -- general
 
+-- TODO -make this work, needs to be after fish plugin starts, maybe au?
+vim.cmd("set iskeyword-=/")
 -- TODO reorder and regroup
+vim.g.camelcasemotion_key = '\\'
 O.plugin.dap.active = true
 O.default_options.colorcolumn = "80"
 O.default_options.clipboard = ""
@@ -36,10 +39,16 @@ O.keys.normal_mode = {
   {'N', 'Nzz'},
   {'go', 'o<esc>'},
   {'gO', 'O<esc>'},
+  {'Q', '<nop>'},
+  {'<esc>', '<cmd>nohlsearch<cr>'},
+  -- TODO: leader mappings should go to which_key
   {'<leader>y', '"+y'},
   {'<leader>Y', '"+yg_'},
-  {'Q', '<nop>'},
-  {'<esc>', '<cmd>nohlsearch<cr>'}
+  {'<leader>d', '"_d'},
+  {'<leader>D', '"_D'},
+  {'<leader>ma', '<cmd>MaximizerToggle!<CR>'},
+  {'x', '"_x'},
+  {'X', '"_X'},
 }
 -- TODO figure out why these don't work and fix them (or PR)
 -- vim.api.nvim_set_keymap('v', 'al', ':normal 0o$h', {})
@@ -133,7 +142,6 @@ O.user_plugins = {
   {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' },
   {"folke/tokyonight.nvim"},
   {'morhetz/gruvbox'},
-  {'tpope/vim-sensible'},
   {'bkad/CamelCaseMotion'},
   {'pearofducks/ansible-vim'},
   {'szw/vim-maximizer'},
@@ -153,7 +161,7 @@ require('telescope').setup {
   extensions = {
     fzf = {
       fuzzy = true,                    -- false will only do exact matching
-      override_generic_sorter = false, -- override the generic sorter
+      override_generic_sorter = true, -- override the generic sorter
       override_file_sorter = true,     -- override the file sorter
       case_mode = "smart_case",        -- or "ignore_case" or "respect_case"
                                        -- the default case_mode is "smart_case"
@@ -178,4 +186,3 @@ O.user_which_key = {
     w = { "<cmd>lua require('telescope.builtin').grep_string()<cr>", "Search this word" },
   },
 }
-

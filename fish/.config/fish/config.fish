@@ -10,9 +10,11 @@ alias nconfig "lvim $HOME/.config/nvim/init.vim"
 alias nlconfig "lvim $HOME/.config/local_configs/init.local.vim"
 alias l lvim
 alias lconfig "lvim $HOME/.config/lvim/lv-config.lua"
+alias lvconfig "lvim $HOME/.local/share/lunarvim/lvim"
 alias fconfig "lvim $HOME/.config/fish/config.fish"
 alias flconfig "cd $HOME/.config/local_configs; and lvim $HOME/.config/local_configs/config.local.fish; and cd -"
 alias tconfig "lvim $HOME/.tmux.conf"
+alias vconfig "lvim $HOME/.vimrc"
 alias tlconfig "lvim $HOME/.config/local_configs/tmux.local.conf"
 alias rsource "source $HOME/.config/fish/config.fish"
 alias k kubectl
