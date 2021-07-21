@@ -10,7 +10,9 @@ an executable
 
 -- general
 
+-- TODO reorder and regroup
 O.plugin.dap.active = true
+O.default_options.colorcolumn = "80"
 O.default_options.clipboard = ""
 O.lsp.document_highlight = false
 O.default_options.cursorline = false
@@ -128,20 +130,39 @@ O.lang.latex.latexindent.modify_line_breaks = false
 
 -- Additional Plugins
 O.user_plugins = {
-    {"folke/tokyonight.nvim"},
-    {'morhetz/gruvbox'},
-    {'tpope/vim-sensible'},
-    {'bkad/CamelCaseMotion'},
-    {'pearofducks/ansible-vim'},
-    {'szw/vim-maximizer'},
-    {'tpope/vim-commentary'},
-    {'tpope/vim-surround'},
-    {'wellle/targets.vim'},
-    {'tpope/vim-unimpaired'},
-    {'tpope/vim-repeat'},
-    {'dag/vim-fish'},
-    {'saltstack/salt-vim'}
+  {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' },
+  {"folke/tokyonight.nvim"},
+  {'morhetz/gruvbox'},
+  {'tpope/vim-sensible'},
+  {'bkad/CamelCaseMotion'},
+  {'pearofducks/ansible-vim'},
+  {'szw/vim-maximizer'},
+  {'tpope/vim-commentary'},
+  {'tpope/vim-surround'},
+  {'wellle/targets.vim'},
+  {'tpope/vim-unimpaired'},
+  {'tpope/vim-repeat'},
+  {'dag/vim-fish'},
+  {'saltstack/salt-vim'},
+  {'mfussenegger/nvim-dap-python'}
 }
+-- TODO there must be a way to put this inside the plugin config using packer
+require('dap-python').setup('/usr/bin/python')
+-- TODO the above + ask about this
+require('telescope').setup {
+  extensions = {
+    fzf = {
+      fuzzy = true,                    -- false will only do exact matching
+      override_generic_sorter = false, -- override the generic sorter
+      override_file_sorter = true,     -- override the file sorter
+      case_mode = "smart_case",        -- or "ignore_case" or "respect_case"
+                                       -- the default case_mode is "smart_case"
+    }
+  }
+}
+-- To get fzf loaded and working with telescope, you need to call
+-- load_extension, somewhere after setup function:
+require('telescope').load_extension('fzf')
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
 O.user_which_key = {
@@ -157,3 +178,4 @@ O.user_which_key = {
     w = { "<cmd>lua require('telescope.builtin').grep_string()<cr>", "Search this word" },
   },
 }
+
