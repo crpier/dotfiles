@@ -1,4 +1,5 @@
 bat
+debugpy
 dwm
 fd
 fish
@@ -6,6 +7,7 @@ fzf
 i3
 i3-gaps
 kitty
+lazygit
 nvim
 ranger
 tmux
