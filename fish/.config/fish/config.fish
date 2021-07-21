@@ -6,6 +6,7 @@ set -U VIRTUAL_ENV_DISABLE_PROMPT yas
 
 alias P "cd ~/Projects"
 alias n nvim
+alias l lvim
 alias nconfig "nvim $HOME/.config/nvim/init.vim"
 alias nlconfig "nvim $HOME/.config/local_configs/init.local.vim"
 alias fconfig "nvim $HOME/.config/fish/config.fish"
