@@ -32,7 +32,6 @@ There is also a list of programs that these dotfiles serve in the `programs` dir
 Also my keyboard layout: https://configure.ergodox-ez.com/ergodox-ez/layouts/APZKR/latest
 
 ### TODO
-- fish plugins `fisher` and `fzf-fish` are saved as-is in the repo. That's probably not good.
 - backup script in case you try this on a not fresh install of manjaro (or not on manjaro lol)
 - copy goodies from .vimrc to init.vim
 - create dwm mapping for brightness change (or switch to i3 maybe??)
