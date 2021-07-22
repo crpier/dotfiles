@@ -72,6 +72,7 @@ O.plugin.zen.window.height = 0.90
 O.plugin.nvimtree.side = "left"
 O.plugin.nvimtree.show_icons.git = 0
 O.plugin.nvimtree.auto_close_tree = 1
+O.plugin.nvimtree.auto_open = false
 
 -- if you don't want all the parsers change this to a table of the ones you want
 O.treesitter.ensure_installed = "maintained"
@@ -152,7 +153,8 @@ O.user_plugins = {
   {'tpope/vim-repeat'},
   {'dag/vim-fish'},
   {'saltstack/salt-vim'},
-  {'mfussenegger/nvim-dap-python'}
+  {'mfussenegger/nvim-dap-python'},
+  {'farmergreg/vim-lastplace'}
 }
 -- TODO there must be a way to put this inside the plugin config using packer
 require('dap-python').setup('/usr/bin/python')
@@ -172,7 +174,6 @@ require('telescope').setup {
 -- load_extension, somewhere after setup function:
 require('telescope').load_extension('fzf')
 
--- Autocommands (https://neovim.io/doc/user/autocmd.html)
 O.user_which_key = {
   m = {
     name = "+custoM telescope",
