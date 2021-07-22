@@ -4,7 +4,7 @@ Plug 'morhetz/gruvbox'
 " improved motion
 Plug 'bkad/CamelCaseMotion'
 " Maximize one split
-Plug 'szw/vim-maximizer'
+Plug 'szw/vim-maximizer', { 'on': 'MaximizerToggle' }
 " Easy commenting
 Plug 'tpope/vim-commentary'
 " manage surrounding characters
@@ -21,21 +21,17 @@ Plug 'tpope/vim-repeat'
 Plug 'dag/vim-fish'
 " Show me what I yanked lol
 Plug 'machakann/vim-highlightedyank'
-" Airline is so slow it doubles my startup time, but I haven't figured out
-" how to make something light like lightline do what I want, so ¯\_(ツ)_/¯
-Plug 'vim-airline/vim-airline'
 " Telescope, that'all
 Plug 'nvim-telescope/telescope.nvim'
-" Faster sort algorithm for telescope (or so they claim)
 Plug 'nvim-lua/popup.nvim'
-" Dependency for telescop and other nvim plugins
+" Dependency for telescope and other nvim plugins
 Plug 'nvim-lua/plenary.nvim'
-" Fzf for telescope
+" Native fzf for telescope
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 " Nice icons for telescope
 Plug 'kyazdani42/nvim-web-devicons'
 " Tree finder
-Plug 'kyazdani42/nvim-tree.lua'
+Plug 'kyazdani42/nvim-tree.lua', { 'on': 'NvimTreeToggle' }
 " I don't really use these that often....maybe remove? ¯\_(ツ)_/¯
 " git plugins
 Plug 'tpope/vim-fugitive'
@@ -51,42 +47,34 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate' }
 " language Symbols tree-viewer
 Plug 'simrat39/symbols-outline.nvim'
 " TODO I don't really use this that often...maybe remove it?
-" Debugger
-Plug 'puremourning/vimspector'
-" Create terminals on demand
-Plug 'voldikss/vim-floaterm'
 " Haha Ansible go brr
 Plug 'pearofducks/ansible-vim', { 'do': './UltiSnips/generate.sh' }
 " Go
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries'}
 Plug 'saltstack/salt-vim'
+Plug 'mfussenegger/nvim-dap'
+Plug 'mfussenegger/nvim-dap-python'
 call plug#end()
 
 """"""""""""""""""""""""""""""General Options""""""""""""""""""""""""""""""
 
 """"" Set general options
-let g:python3_host_prog="~/.pynvim3/bin/python"
-let g:python_host_prog="~/.pynvim/bin/python"
-let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
 let mapleader = " "
 set tabstop=4 softtabstop=4
 set shiftwidth=4
 set expandtab
 set smartindent
-" if there's a vimrc in curent directory, use that
-" TODO I copied this off the internet like a good boi, but do I really need it?
-set exrc
 " show current line number and relative line number
 set number relativenumber
 " keep buffers open in the background even when not saved
 set hidden
-" self explanatory
 set noerrorbells
 " when searching, if there are no uppercases, then search is case insensitive
 set ignorecase
 set smartcase
 " move cursor to search result while typing
 set incsearch
+set hlsearch
 " keep 4 lines above and below the cursor at all times
 set scrolloff=4
 " show the preferred limit to line length
@@ -107,34 +95,17 @@ set updatetime=300
 set noswapfile
 set nobackup
 set undofile
-" undodirs for vim and neovim are incompatible, thus we should not use
-" different editors for the same file
+" where to store undo data. It is guaranteed that ~/.local/share/nvim exists
 set undodir=~/.local/share/nvim/undodir
+" This is because vim-fish wants / to be part of a word, and I don't 
 
 """"""""""""""""""""""""""""""Plugin settings""""""""""""""""""""""""""""""
-" vim-go stuff
-let g:go_code_completion_enabled = 0
-let g:go_snippet_engine = "ultisnips"
-let g:go_textobj_enabled = 0
-let g:go_list_type = "quickfix"
-" TODO is there anything bad that will happen if I disable this?
-let g:go_gopls_enabled = 1
-let g:go_build_tags = 'integration'
-let g:go_def_mapping_enabled = 0
-
-
 " maximizer plugin
 nnoremap <leader>m :MaximizerToggle!<CR>
 let g:camelcasemotion_key = '\'
-"""" These are plugins enabled for nvim only, because they provide an IDE like
-"""" exerience that regular vim doesn't much care for, and which would be
-"""" difficult to replicate on a remote server like a raspberry 3 lol
-"""""""""""" Nerdtree
-nnoremap <leader>nt :NERDTreeToggle<CR>
-nnoremap <leader>nf :NERDTreeFind<CR>
-" Exit Vim if NERDTree is the only window left.
-autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
-    \ quit | endif
+"""""""""""" nvimtree
+nnoremap <leader>e <cmd>NvimTreeToggle<CR>
+
 """""""""""" Symbols-outline
 lua <<EOF
 local opts = {
@@ -210,6 +181,7 @@ nnoremap <leader>st :lua require('telescope.builtin').treesitter()<CR>
 nnoremap <leader>rs :lua require('telescope.builtin').grep_string({ search = vim.fn.input("Grep For > ")})<CR>
 nnoremap <leader>rw :lua require('telescope.builtin').grep_string { search = vim.fn.expand("<cword>") }<CR>
 """""""""""" compe
+let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
 let g:compe = {}
 let g:compe.enabled = v:true
 let g:compe.autocomplete = v:true
@@ -244,13 +216,20 @@ let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
+"""""""""""" nvim-dap
+lua require('dap-python').setup('python')
+" these are examples from the docs and I don't like them, they need to be 
+" updated to be like the lunarvim defaults
+nnoremap <silent> <F5> :lua require'dap'.continue()<CR>
+nnoremap <silent> <F10> :lua require'dap'.step_over()<CR>
+nnoremap <silent> <F11> :lua require'dap'.step_into()<CR>
+nnoremap <silent> <F12> :lua require'dap'.step_out()<CR>
+nnoremap <silent> <leader>b :lua require'dap'.toggle_breakpoint()<CR>
+nnoremap <silent> <leader>B :lua require'dap'.set_breakpoint(vim.fn.input('Breakpoint condition: '))<CR>
+nnoremap <silent> <leader>lp :lua require'dap'.set_breakpoint(nil, nil, vim.fn.input('Log point message: '))<CR>
+nnoremap <silent> <leader>dr :lua require'dap'.repl.open()<CR>
+nnoremap <silent> <leader>dl :lua require'dap'.run_last()<CR>
 
-""""""""""""""""""""""""""""""Neovim Theme""""""""""""""""""""""""""""""
-" Airline settings
-call airline#parts#define_function('filetype', 'nvim_treesitter#statusline')
-let g:airline#extensions#tagbar#enabled = 0
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#buffer_nr_show = 1
 
 """"""""""""""""""""""""""""""Theme"""""""""""""""""""""""""""""""""""""""""
 colorscheme gruvbox
@@ -259,18 +238,10 @@ set background=dark
 hi Normal guibg=NONE ctermbg=NONE
 " Duration of yank highlight
 let g:highlightedyank_highlight_duration = 200
-let g:highlightedyank_highlight_duration = 200
 
-let g:airline_section_x = ""
-let g:airline_section_y = ""
-" TODO find a way to toggle these sections
-" let g:airline_section_error = ""
-" let g:airline_section_warning = ""
 """"""""""""""""""""""""""""""General Remaps""""""""""""""""""""""""""""""""
 " easy source vimrc
 nnoremap <leader><CR> :so ~/.config/nvim/init.vim<CR>
-nnoremap <leader>ee :e ~/.config/nvim/init.vim<CR>
-nnoremap <leader>ev :vsp ~/.config/nvim/init.vim<CR>
 " I don't use EX mode, and I keep pressing it by mistake when I want to quit
 nnoremap Q ZQ
 " Search for selected text using '//'
@@ -296,79 +267,44 @@ nnoremap <leader>" :cclose<CR>
 " Insert line
 nnoremap go o<Esc>
 nnoremap gO O<Esc>
-
-""""""""""""""""""""""""""""""Useful functions""""""""""""""""""""""""""""""
-fun! EmptyRegisters()
-    let regs=split('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789/-"', '\zs')
-    for r in regs
-        call setreg(r, [])
-    endfor
-endfun
-function! s:check_back_space() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~# '\s'
-endfunction
-
-""""""""""""""""""""""""""""""Autocommands""""""""""""""""""""""""""""""
-" persist cursor location between sessions
-autocmd BufReadPost *
-  \ if line("'\"") >= 1 && line("'\"") <= line("$") && &ft !~# 'commit'
-  \ |   exe "normal! g`\""
-  \ | endif
-" Highlight for a short moment after yanking
-" augroup highlight_yank
-"     autocmd!
-"     autocmd TextYankPost * silent! lua require'vim.highlight'.on_yank({timeout = 200})
-" augroup END
-" When switching to a terminal buffer, autoenter insert mode
-" autocmd BufEnter * if &buftype == 'terminal' | :startinsert | endif
-" Don't auto insert comments
-autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
-"""""""""""" Filetype autocmds
-" Yaml uses spaces, no tabs
-autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
-augroup python_abbrev
-    autocmd BufNewFile,BufRead *.py ab pdb import pdb; pdb.set_trace()
-augroup END
-
-""""""""""""""""""""""""""""""Experimental"""""""""""""""""""""""""""""
-" I might keep these, I might not, we'll see
-" Start term session
-nnoremap <leader>te :vs<CR>:term<CR>i
-nnoremap <leader>lg :FloatermNew --autoclose=2 --height=0.95 --width=0.99 --wintype=floating lazygit<CR>
-nnoremap <leader>fn :FloatermNew --autoclose=2 --height=0.9 --width=0.9 --wintype=floating<CR>
-imap jw <Esc>:w<CR>
-" Navigate window splits with the arrow keys
-nnoremap <Left> <C-w>h
-nnoremap <Down> <C-w>j
-nnoremap <Up> <C-w>k
-nnoremap <Right> <C-w>l
-" Get out from terminal instantly with ctrl+arrow_key
-tnoremap <C-Left> <C-\><C-n><C-w>h
-tnoremap <C-Right> <C-\><C-n><C-w>l
-" Exit terminal easier
-tnoremap <C-\> <C-\><C-n>
+" Easy exit from insert mode
+inoremap jk <Esc>
+inoremap jw <Esc>:w<CR>
+inoremap jx <Esc>:x<CR>
 " Clear search highlight
 nnoremap <Esc> <Cmd>nohlsearch<CR>
-" Yank until end of line
+" Y behaves like C and D
 nnoremap Y yg_
-" Sort selected lines alphabetically
-vnoremap <leader>s :sort<CR>
 " Center screen after search result
 nnoremap n nzzzv
 nnoremap N Nzzzv
-" On the same note, gs for sleep and gq for format are not useful to me..map them too
-" Same as o and O, but escape indentation
-nnoremap <leader>o o<Esc>^Da
-nnoremap <leader>O O<Esc>^Da
 " Blackhole x, c and d
 nnoremap x "_x
 nnoremap X "_X
-" But allow <leader>d to record to default register
-nnoremap <leader>d d
-nnoremap <leader>D D
-" Copy unnamed register to p register
+" Blackhole <leader>d
+nnoremap <leader>d "_d
+nnoremap <leader>D "_D
+" Copy unnamed register to p register so you can use it later
 nnoremap <leader>cp :let @p=@""<CR>
-au BufNewFile,BufRead Jenkinsfile setf groovy
 " vim-fish makes the / a keyword, but I don't like that
-set iskeyword-='/'
+
+""""""""""""""""""""""""""""""Autocommands""""""""""""""""""""""""""""""
+""" Filetype Autocommands
+" Yaml should have 2 spaces
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+" vim-fish makes / part of a word, but that's weird
+autocmd BufNewFile,BufRead *.fish set iskeyword-=/
+" Python debugging abbreviation
+autocmd BufNewFile,BufRead *.py ab pdb import pdb; pdb.set_trace()
+" Ensure Jenkinsfile has groovy syntax
+au BufNewFile,BufRead Jenkinsfile setf groovy
+
+" Don't auto-comment new lines
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+" persist cursor location between sessions
+autocmd BufReadPost * exe "normal! g`\""
+" Highlight for a short moment after yanking
+augroup highlight_yank
+    autocmd!
+    autocmd TextYankPost * silent! lua require'vim.highlight'.on_yank({timeout = 200})
+augroup END
