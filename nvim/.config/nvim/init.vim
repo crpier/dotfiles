@@ -21,8 +21,6 @@ Plug 'tpope/vim-repeat'
 Plug 'dag/vim-fish'
 " Show me what I yanked lol
 Plug 'machakann/vim-highlightedyank'
-" Remote copy, local paste
-Plug 'ojroques/vim-oscyank'
 " Airline is so slow it doubles my startup time, but I haven't figured out
 " how to make something light like lightline do what I want, so ¯\_(ツ)_/¯
 Plug 'vim-airline/vim-airline'
@@ -37,24 +35,20 @@ Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 " Nice icons for telescope
 Plug 'kyazdani42/nvim-web-devicons'
 " Tree finder
-Plug "kyazdani42/nvim-tree.lua"
+Plug 'kyazdani42/nvim-tree.lua'
 " I don't really use these that often....maybe remove? ¯\_(ツ)_/¯
 " git plugins
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-rhubarb'
-" Neovim LSP
-Plug 'neovim/nvim-lspconfig'
-Plug 'tjdevries/nlua.nvim'
-Plug 'tjdevries/lsp_extensions.nvim'
-" Completion plugin that ties in with the LSP
+" Completion plugin
 Plug 'hrsh7th/nvim-compe'
 " Snippets, nice
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
-" Syntax highlighting using LSP
+" Syntax highlighting using language parsing
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate' }
-" LSP Symbols tree-viewer
+" language Symbols tree-viewer
 Plug 'simrat39/symbols-outline.nvim'
 " TODO I don't really use this that often...maybe remove it?
 " Debugger
@@ -132,8 +126,6 @@ let g:go_def_mapping_enabled = 0
 " maximizer plugin
 nnoremap <leader>m :MaximizerToggle!<CR>
 let g:camelcasemotion_key = '\'
-" Yank on remote server
-vnoremap <leader>c :OSCYank<CR>
 """" These are plugins enabled for nvim only, because they provide an IDE like
 """" exerience that regular vim doesn't much care for, and which would be
 """" difficult to replicate on a remote server like a raspberry 3 lol
@@ -159,7 +151,7 @@ require'nvim-treesitter.configs'.setup {
 incremental_selection = {
 enable = true,
 keymaps = {
-  --  Keymaps for LSP-powered incremental selection lol
+  --  Keymaps for language incremental selection lol
   init_selection = "gs",
   node_incremental = "gi",
   node_decremental = "gd",
@@ -176,46 +168,6 @@ enable = true,
 },
 }
 EOF
-"""""""""""" For nvim-lsp completion:
-"            pyright with snippet support, typescript, yaml, golang
-lua <<EOF
-local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities.textDocument.completion.completionItem.snippetSupport = true
-capabilities.textDocument.completion.completionItem.resolveSupport = {
-properties = {
-  'documentation',
-  'detail',
-  'additionalTextEdits',
-  }
-}
-require'lspconfig'.pyright.setup{capabilities = capabilities}
-require'lspconfig'.tsserver.setup{}
-require'lspconfig'.yamlls.setup{}
-require'lspconfig'.gopls.setup{
-settings = {
-gopls =  {
-env = {
-  GOFLAGS="-tags=integration"
-  }
-}
-}
-}
-  require'lspconfig'.groovyls.setup{
-  -- Unix
-  cmd = { "java", "-jar", "/usr/local/bin/groovy-language-server-all.jar" },
-    }
-EOF
-"""""""""""" LSP keybindings
-" Most used commands have g-key mappings
-nnoremap gd :lua vim.lsp.buf.definition()<CR>
-nnoremap gr :lua vim.lsp.buf.references()<CR>
-nnoremap gh :lua vim.lsp.buf.hover()<CR>
-" Cyclical commands use the brackets
-nnoremap ]g :lua vim.lsp.diagnostic.goto_next()<CR>
-nnoremap [g :lua vim.lsp.diagnostic.goto_prev()<CR>
-" The least used commands have leader mappings
-nnoremap <leader>rn :lua vim.lsp.buf.rename()<CR>
-nnoremap <leader>ca :lua vim.lsp.buf.code_action()<CR>
 """""""""""" Fugitive
 nnoremap <leader>gi :Git
 nnoremap <leader>gb :Git blame<CR>
@@ -257,28 +209,6 @@ nnoremap <leader>bl :lua require('telescope.builtin').current_buffer_fuzzy_find(
 nnoremap <leader>st :lua require('telescope.builtin').treesitter()<CR>
 nnoremap <leader>rs :lua require('telescope.builtin').grep_string({ search = vim.fn.input("Grep For > ")})<CR>
 nnoremap <leader>rw :lua require('telescope.builtin').grep_string { search = vim.fn.expand("<cword>") }<CR>
-"""""""""""" Vimspector
-fun! GotoWindow(id)
-  call win_gotoid(a:id)
-  MaximizerToggle
-endfun
-" nnoremap <leader>dd :call vimspector#Launch()<CR>
-" nnoremap <leader>dc :call GotoWindow(g:vimspector_session_windows.code)<CR>
-" nnoremap <leader>dt :call GotoWindow(g:vimspector_session_windows.tagpage)<CR>
-" nnoremap <leader>dv :call GotoWindow(g:vimspector_session_windows.variables)<CR>
-" nnoremap <leader>dw :call GotoWindow(g:vimspector_session_windows.watches)<CR>
-" nnoremap <leader>ds :call GotoWindow(g:vimspector_session_windows.stack_trace)<CR>
-" nnoremap <leader>do :call GotoWindow(g:vimspector_session_windows.output)<CR>
-" nnoremap <leader>de :call vimspector#Reset()<CR>
-" nnoremap <leader>dtcb :call vimspector#CleanLineBreakpoint()<CR>
-" nmap <leader>dl <Plug>VimspectorStepInto
-" nmap <leader>dj <Plug>VimspectorStepOver
-" nmap <leader>dk <Plug>VimspectorStepOut
-" nmap <leader>d_ <Plug>VimspectorRestart
-" nnoremap <leader>d<space> :call vimspector#Continue()<CR>
-" nmap <leader>drc <Plug>VimspectorRunToCursor
-" nmap <leader>dbp <Plug>VimspectorToggleBreakpoint
-" nmap <leader>dcbp <Plug>VimspectorToggleConditionalBreakpoint
 """""""""""" compe
 let g:compe = {}
 let g:compe.enabled = v:true
@@ -298,7 +228,6 @@ let g:compe.source.path = v:true
 let g:compe.source.buffer = v:true
 let g:compe.source.calc = v:true
 let g:compe.source.vsnip = v:false
-let g:compe.source.nvim_lsp = v:true
 let g:compe.source.nvim_lua = v:true
 let g:compe.source.spell = v:false
 let g:compe.source.tags = v:false
@@ -419,15 +348,10 @@ tnoremap <C-Left> <C-\><C-n><C-w>h
 tnoremap <C-Right> <C-\><C-n><C-w>l
 " Exit terminal easier
 tnoremap <C-\> <C-\><C-n>
-" Ez vertical resize (I dont'use use horizontal splits lol)
-nnoremap <S-Down> :vertical resize -10<CR>
-nnoremap <S-Up> :vertical resize +10<CR>
 " Clear search highlight
 nnoremap <Esc> <Cmd>nohlsearch<CR>
 " Yank until end of line
 nnoremap Y yg_
-" not really sure that this does but I'll keep it for now lol
-set shortmess+=c
 " Sort selected lines alphabetically
 vnoremap <leader>s :sort<CR>
 " Center screen after search result
@@ -445,14 +369,6 @@ nnoremap <leader>d d
 nnoremap <leader>D D
 " Copy unnamed register to p register
 nnoremap <leader>cp :let @p=@""<CR>
-" Don't keep { and } on jumplist
-nnoremap } :keepjumps normal! }<cr>
-nnoremap { :keepjumps normal! {<cr>
-xnoremap } :<C-u>keepjumps normal! gv}<cr>
-xnoremap { :<C-u>keepjumps normal! gv{<cr>
-" Don't save to jumplist when searching
-nnoremap n :keepjumps normal! n<cr>
-nnoremap N :keepjumps normal! N<cr>
-nnoremap * :keepjumps normal! *<cr>
-nnoremap # :keepjumps normal! #<cr>
 au BufNewFile,BufRead Jenkinsfile setf groovy
+" vim-fish makes the / a keyword, but I don't like that
+set iskeyword-='/'
