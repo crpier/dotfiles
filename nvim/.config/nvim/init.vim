@@ -1,82 +1,72 @@
-" Translation: if vim-plug is installed and the ~/.vim/plugged folder was
-" created, it means we can use plugins
-" This goes for both vim and nvim
-if !empty(expand(glob("~/.vim/plugged"))) && ((!empty(expand(glob("~/.local/share/nvim/site/autoload/plug.vim"))) && has("nvim")) || (!empty(expand(glob("~/.vim/autoload/plug.vim"))) && !has("nvim")))
-    call plug#begin('~/.vim/plugged')
-        " Looks good
-        Plug 'morhetz/gruvbox'
-        " improved motion
-        Plug 'bkad/CamelCaseMotion'
-        " Maximize one split
-        Plug 'szw/vim-maximizer'
-        " Easy commenting
-        Plug 'tpope/vim-commentary'
-        " manage surrounding characters
-        Plug 'tpope/vim-surround'
-        " Sensible defaults
-        Plug 'tpope/vim-sensible'
-        " Add additional text objects
-        Plug 'wellle/targets.vim'
-        " Useful shortcuts, mostly using the square brackets
-        Plug 'tpope/vim-unimpaired'
-        " Repeat commands from plugins using period (.)
-        Plug 'tpope/vim-repeat'
-        " Fish syntax highlighting
-        Plug 'dag/vim-fish'
-        " Show me what I yanked lol
-        Plug 'machakann/vim-highlightedyank'
-        " Remote copy, local paste
-        Plug 'ojroques/vim-oscyank'
-
-        if has("nvim")
-            " Airline is so slow it doubles my startup time, but I haven't figured out
-            " how to make something light like lightline do what I want, so ¯\_(ツ)_/¯
-            Plug 'vim-airline/vim-airline', has('nvim') ? {} : { 'on': [] }
-            " Telescope, that'all
-            Plug 'nvim-telescope/telescope.nvim', has('nvim') ? {} : { 'on': [] }
-            " Faster sort algorithm for telescope (or so they claim)
-            Plug 'nvim-lua/popup.nvim', has('nvim') ? {} : { 'on': [] }
-            " Dependency for telescop and other nvim plugins
-            Plug 'nvim-lua/plenary.nvim', has('nvim') ? {} : { 'on': [] }
-            " Fzf for telescope
-            Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
-            " Nice icons for telescope
-            Plug 'kyazdani42/nvim-web-devicons', has('nvim') ? {} : { 'on': [] }
-            " File explorer
-            Plug 'scrooloose/nerdtree', has('nvim') ? { 'on':  'NERDTreeToggle' } : { 'on': [] }
-            " I don't really use these that often....maybe remove? ¯\_(ツ)_/¯
-            " git plugins
-            Plug 'tpope/vim-fugitive', has('nvim') ? {} : { 'on': [] }
-            Plug 'airblade/vim-gitgutter', has('nvim') ? {} : { 'on': [] }
-            Plug 'tpope/vim-rhubarb', has('nvim') ? {} : { 'on': [] }
-            " Neovim LSP
-            Plug 'neovim/nvim-lspconfig', has('nvim') ? {} : { 'on': [] }
-            Plug 'tjdevries/nlua.nvim', has('nvim') ? {} : { 'on': [] }
-            Plug 'tjdevries/lsp_extensions.nvim', has('nvim') ? {} : { 'on': [] }
-            " Completion plugin that ties in with the LSP
-            Plug 'hrsh7th/nvim-compe', has('nvim') ? {} : { 'on': [] }
-            " Snippets, nice
-            Plug 'SirVer/ultisnips'
-            Plug 'honza/vim-snippets'
-            " Syntax highlighting using LSP
-            Plug 'nvim-treesitter/nvim-treesitter', has('nvim') ? {'do': ':TSUpdate' } : { 'on': [], 'do': ':TSUpdate' }
-            " LSP Symbols tree-viewer
-            Plug 'simrat39/symbols-outline.nvim', has('nvim') ? {} : { 'on': [] }
-            " TODO I don't really use this that often...maybe remove it?
-            " Debugger
-            Plug 'puremourning/vimspector', has('nvim') ? {} : { 'on': [] }
-            " Create terminals on demand
-            Plug 'voldikss/vim-floaterm', has('nvim') ? {} : { 'on': [] }
-            " Quick access to a few files
-            Plug 'ThePrimeagen/harpoon', has('nvim') ? {} : { 'on': [] }
-            " Haha Ansible go brr
-            Plug 'pearofducks/ansible-vim', has('nvim') ? { 'do': './UltiSnips/generate.sh' } : { 'on': [] }
-            " Go
-            Plug 'fatih/vim-go', has('nvim') ? { 'do': ':GoUpdateBinaries'} : { 'on': [] }
-            Plug 'saltstack/salt-vim'
-        endif
-    call plug#end()
-endif
+call plug#begin('~/.local/share/nvim/plugged')
+" Looks good
+Plug 'morhetz/gruvbox'
+" improved motion
+Plug 'bkad/CamelCaseMotion'
+" Maximize one split
+Plug 'szw/vim-maximizer'
+" Easy commenting
+Plug 'tpope/vim-commentary'
+" manage surrounding characters
+Plug 'tpope/vim-surround'
+" Sensible defaults
+Plug 'tpope/vim-sensible'
+" Add additional text objects
+Plug 'wellle/targets.vim'
+" Useful shortcuts, mostly using the square brackets
+Plug 'tpope/vim-unimpaired'
+" Repeat commands from plugins using period (.)
+Plug 'tpope/vim-repeat'
+" Fish syntax highlighting
+Plug 'dag/vim-fish'
+" Show me what I yanked lol
+Plug 'machakann/vim-highlightedyank'
+" Remote copy, local paste
+Plug 'ojroques/vim-oscyank'
+" Airline is so slow it doubles my startup time, but I haven't figured out
+" how to make something light like lightline do what I want, so ¯\_(ツ)_/¯
+Plug 'vim-airline/vim-airline'
+" Telescope, that'all
+Plug 'nvim-telescope/telescope.nvim'
+" Faster sort algorithm for telescope (or so they claim)
+Plug 'nvim-lua/popup.nvim'
+" Dependency for telescop and other nvim plugins
+Plug 'nvim-lua/plenary.nvim'
+" Fzf for telescope
+Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
+" Nice icons for telescope
+Plug 'kyazdani42/nvim-web-devicons'
+" Tree finder
+Plug "kyazdani42/nvim-tree.lua"
+" I don't really use these that often....maybe remove? ¯\_(ツ)_/¯
+" git plugins
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-rhubarb'
+" Neovim LSP
+Plug 'neovim/nvim-lspconfig'
+Plug 'tjdevries/nlua.nvim'
+Plug 'tjdevries/lsp_extensions.nvim'
+" Completion plugin that ties in with the LSP
+Plug 'hrsh7th/nvim-compe'
+" Snippets, nice
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+" Syntax highlighting using LSP
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate' }
+" LSP Symbols tree-viewer
+Plug 'simrat39/symbols-outline.nvim'
+" TODO I don't really use this that often...maybe remove it?
+" Debugger
+Plug 'puremourning/vimspector'
+" Create terminals on demand
+Plug 'voldikss/vim-floaterm'
+" Haha Ansible go brr
+Plug 'pearofducks/ansible-vim', { 'do': './UltiSnips/generate.sh' }
+" Go
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries'}
+Plug 'saltstack/salt-vim'
+call plug#end()
 
 """"""""""""""""""""""""""""""General Options""""""""""""""""""""""""""""""
 
@@ -125,11 +115,7 @@ set nobackup
 set undofile
 " undodirs for vim and neovim are incompatible, thus we should not use
 " different editors for the same file
-if has('nvim')
-    set undodir=~/.vim/nvim_undodir
-else
-    set undodir=~/.vim/undodir
-endif
+set undodir=~/.local/share/nvim/undodir
 
 """"""""""""""""""""""""""""""Plugin settings""""""""""""""""""""""""""""""
 " vim-go stuff
@@ -151,196 +137,191 @@ vnoremap <leader>c :OSCYank<CR>
 """" These are plugins enabled for nvim only, because they provide an IDE like
 """" exerience that regular vim doesn't much care for, and which would be
 """" difficult to replicate on a remote server like a raspberry 3 lol
-if has("nvim")
-    """""""""""" Nerdtree
-    nnoremap <leader>nt :NERDTreeToggle<CR>
-    nnoremap <leader>nf :NERDTreeFind<CR>
-    " Exit Vim if NERDTree is the only window left.
-    autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
-                \ quit | endif
-    """""""""""" Symbols-outline
-    lua <<EOF
-    local opts = {
-        -- whether to highlight the currently hovered symbol
-        highlight_hovered_item = true,
-        -- whether to show outline guides
-        show_guides = true,
-    }
-    require('symbols-outline').setup(opts)
-EOF
-    """""""""""" Treesitter
-    lua <<EOF
-    require'nvim-treesitter.configs'.setup {
-    incremental_selection = {
-        enable = true,
-        keymaps = {
-          --  Keymaps for LSP-powered incremental selection lol
-          init_selection = "gs",
-          node_incremental = "gi",
-          node_decremental = "gd",
-        },
-      },
-    highlight = {
-        enable = true,
-        },
-    indentation = {
-        enable = true,
-        },
-    folding = {
-        enable = true,
-        },
-    }
-EOF
-    """""""""""" For nvim-lsp completion:
-    "            pyright with snippet support, typescript, yaml, golang
-    lua <<EOF
-    local capabilities = vim.lsp.protocol.make_client_capabilities()
-    capabilities.textDocument.completion.completionItem.snippetSupport = true
-    capabilities.textDocument.completion.completionItem.resolveSupport = {
-      properties = {
-        'documentation',
-        'detail',
-        'additionalTextEdits',
-      }
-    }
-    require'lspconfig'.pyright.setup{capabilities = capabilities}
-    require'lspconfig'.tsserver.setup{}
-    require'lspconfig'.yamlls.setup{}
-    require'lspconfig'.gopls.setup{
-    settings = {
-        gopls =  {
-            env = {
-                GOFLAGS="-tags=integration"
-                }
-        }
-    }
+"""""""""""" Nerdtree
+nnoremap <leader>nt :NERDTreeToggle<CR>
+nnoremap <leader>nf :NERDTreeFind<CR>
+" Exit Vim if NERDTree is the only window left.
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
+    \ quit | endif
+"""""""""""" Symbols-outline
+lua <<EOF
+local opts = {
+-- whether to highlight the currently hovered symbol
+highlight_hovered_item = true,
+-- whether to show outline guides
+show_guides = true,
 }
-    require'lspconfig'.groovyls.setup{
-    -- Unix
-    cmd = { "java", "-jar", "/usr/local/bin/groovy-language-server-all.jar" },
+require('symbols-outline').setup(opts)
+EOF
+"""""""""""" Treesitter
+lua <<EOF
+require'nvim-treesitter.configs'.setup {
+incremental_selection = {
+enable = true,
+keymaps = {
+  --  Keymaps for LSP-powered incremental selection lol
+  init_selection = "gs",
+  node_incremental = "gi",
+  node_decremental = "gd",
+  },
+},
+highlight = {
+enable = true,
+},
+  indentation = {
+  enable = true,
+  },
+folding = {
+enable = true,
+},
 }
 EOF
-    """""""""""" LSP keybindings
-    " Most used commands have g-key mappings
-    nnoremap gd :lua vim.lsp.buf.definition()<CR>
-    nnoremap gr :lua vim.lsp.buf.references()<CR>
-    nnoremap gh :lua vim.lsp.buf.hover()<CR>
-    " Cyclical commands use the brackets
-    nnoremap ]g :lua vim.lsp.diagnostic.goto_next()<CR>
-    nnoremap [g :lua vim.lsp.diagnostic.goto_prev()<CR>
-    " The least used commands have leader mappings
-    nnoremap <leader>rn :lua vim.lsp.buf.rename()<CR>
-    nnoremap <leader>ca :lua vim.lsp.buf.code_action()<CR>
-    """""""""""" Fugitive
-    nnoremap <leader>gi :Git
-    nnoremap <leader>gb :Git blame<CR>
-    nnoremap <leader>gd :Gdiffsplit<CR>
-    nnoremap <leader>gpl :Git pull<CR>
-    nnoremap <leader>gps :Git push<CR>
-    """"""""""""  Telescope
-    lua << EOF
-    local actions = require('telescope.actions')
-    require('telescope').setup {
-      defaults = {
-        prompt_prefix = '⟩ ',
-        color_devicons = true,
-        file_previewer   = require('telescope.previewers').vim_buffer_cat.new,
-        grep_previewer   = require('telescope.previewers').vim_buffer_vimgrep.new,
-        qflist_previewer = require('telescope.previewers').vim_buffer_qflist.new,
-        mappings = {
-          i = {
-            ["<C-q>"] = actions.send_to_qflist,
-          },
-        }
-      },
-      extensions = {
-          --  The fzf extension allows using fzf syntax when filtering files
-          fzf = {
-          override_generic_sorter = true, -- override the generic sorter
-          override_file_sorter = true,     -- override the file sorter
-          case_mode = "smart_case",        -- or "ignore_case" or "respect_case"
-        }
-      }
+"""""""""""" For nvim-lsp completion:
+"            pyright with snippet support, typescript, yaml, golang
+lua <<EOF
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities.textDocument.completion.completionItem.snippetSupport = true
+capabilities.textDocument.completion.completionItem.resolveSupport = {
+properties = {
+  'documentation',
+  'detail',
+  'additionalTextEdits',
+  }
+}
+require'lspconfig'.pyright.setup{capabilities = capabilities}
+require'lspconfig'.tsserver.setup{}
+require'lspconfig'.yamlls.setup{}
+require'lspconfig'.gopls.setup{
+settings = {
+gopls =  {
+env = {
+  GOFLAGS="-tags=integration"
+  }
+}
+}
+}
+  require'lspconfig'.groovyls.setup{
+  -- Unix
+  cmd = { "java", "-jar", "/usr/local/bin/groovy-language-server-all.jar" },
     }
-    require('telescope').load_extension('fzf')
 EOF
-    """""""""""" Telescope bindings, TODO add more bindings here brr
-    nnoremap <leader>ff :lua require('telescope.builtin').git_files()<CR>
-    nnoremap <leader>fi :lua require('telescope.builtin').find_files()<CR>
-    nnoremap <leader>bu :lua require('telescope.builtin').buffers()<CR>
-    nnoremap <leader>bl :lua require('telescope.builtin').current_buffer_fuzzy_find()<CR>
-    nnoremap <leader>st :lua require('telescope.builtin').treesitter()<CR>
-    nnoremap <leader>rs :lua require('telescope.builtin').grep_string({ search = vim.fn.input("Grep For > ")})<CR>
-    nnoremap <leader>rw :lua require('telescope.builtin').grep_string { search = vim.fn.expand("<cword>") }<CR>
-    """""""""""" Vimspector
-    fun! GotoWindow(id)
-        call win_gotoid(a:id)
-        MaximizerToggle
-    endfun
-    " nnoremap <leader>dd :call vimspector#Launch()<CR>
-    " nnoremap <leader>dc :call GotoWindow(g:vimspector_session_windows.code)<CR>
-    " nnoremap <leader>dt :call GotoWindow(g:vimspector_session_windows.tagpage)<CR>
-    " nnoremap <leader>dv :call GotoWindow(g:vimspector_session_windows.variables)<CR>
-    " nnoremap <leader>dw :call GotoWindow(g:vimspector_session_windows.watches)<CR>
-    " nnoremap <leader>ds :call GotoWindow(g:vimspector_session_windows.stack_trace)<CR>
-    " nnoremap <leader>do :call GotoWindow(g:vimspector_session_windows.output)<CR>
-    " nnoremap <leader>de :call vimspector#Reset()<CR>
-    " nnoremap <leader>dtcb :call vimspector#CleanLineBreakpoint()<CR>
-    " nmap <leader>dl <Plug>VimspectorStepInto
-    " nmap <leader>dj <Plug>VimspectorStepOver
-    " nmap <leader>dk <Plug>VimspectorStepOut
-    " nmap <leader>d_ <Plug>VimspectorRestart
-    " nnoremap <leader>d<space> :call vimspector#Continue()<CR>
-    " nmap <leader>drc <Plug>VimspectorRunToCursor
-    " nmap <leader>dbp <Plug>VimspectorToggleBreakpoint
-    " nmap <leader>dcbp <Plug>VimspectorToggleConditionalBreakpoint
-    """""""""""" compe
-    let g:compe = {}
-    let g:compe.enabled = v:true
-    let g:compe.autocomplete = v:true
-    let g:compe.debug = v:false
-    let g:compe.min_length = 1
-    let g:compe.preselect = 'enable'
-    let g:compe.throttle_time = 80
-    let g:compe.source_timeout = 200
-    let g:compe.incomplete_delay = 400
-    let g:compe.max_abbr_width = 100
-    let g:compe.max_kind_width = 100
-    let g:compe.max_menu_width = 100
-    let g:compe.documentation = v:true
-    let g:compe.source = {}
-    let g:compe.source.path = v:true
-    let g:compe.source.buffer = v:true
-    let g:compe.source.calc = v:true
-    let g:compe.source.vsnip = v:false
-    let g:compe.source.nvim_lsp = v:true
-    let g:compe.source.nvim_lua = v:true
-    let g:compe.source.spell = v:false
-    let g:compe.source.tags = v:false
-    let g:compe.source.snippets_nvim = v:false
-    let g:compe.source.treesitter = v:true
-    let g:compe.source.omni = v:false
-    let g:compe.source.ultisnips = v:true
-    inoremap <silent><expr> <C-Space> compe#complete()
-    inoremap <silent><expr> <CR>      compe#confirm('<CR>')
-    inoremap <silent><expr> <C-e>     compe#close('<C-e>')
-    """""""""""" Ultisnips bindings
-    let g:UltiSnipsExpandTrigger="<tab>"
-    let g:UltiSnipsJumpForwardTrigger="<c-b>"
-    let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-    " If you want :UltiSnipsEdit to split your window.
-    let g:UltiSnipsEditSplit="vertical"
+"""""""""""" LSP keybindings
+" Most used commands have g-key mappings
+nnoremap gd :lua vim.lsp.buf.definition()<CR>
+nnoremap gr :lua vim.lsp.buf.references()<CR>
+nnoremap gh :lua vim.lsp.buf.hover()<CR>
+" Cyclical commands use the brackets
+nnoremap ]g :lua vim.lsp.diagnostic.goto_next()<CR>
+nnoremap [g :lua vim.lsp.diagnostic.goto_prev()<CR>
+" The least used commands have leader mappings
+nnoremap <leader>rn :lua vim.lsp.buf.rename()<CR>
+nnoremap <leader>ca :lua vim.lsp.buf.code_action()<CR>
+"""""""""""" Fugitive
+nnoremap <leader>gi :Git
+nnoremap <leader>gb :Git blame<CR>
+nnoremap <leader>gd :Gdiffsplit<CR>
+nnoremap <leader>gpl :Git pull<CR>
+nnoremap <leader>gps :Git push<CR>
+""""""""""""  Telescope
+lua << EOF
+local actions = require('telescope.actions')
+require('telescope').setup {
+defaults = {
+prompt_prefix = '⟩ ',
+color_devicons = true,
+file_previewer   = require('telescope.previewers').vim_buffer_cat.new,
+grep_previewer   = require('telescope.previewers').vim_buffer_vimgrep.new,
+qflist_previewer = require('telescope.previewers').vim_buffer_qflist.new,
+mappings = {
+i = {
+["<C-q>"] = actions.send_to_qflist,
+},
+}
+    },
+  extensions = {
+  --  The fzf extension allows using fzf syntax when filtering files
+  fzf = {
+  override_generic_sorter = true, -- override the generic sorter
+  override_file_sorter = true,     -- override the file sorter
+  case_mode = "smart_case",        -- or "ignore_case" or "respect_case"
+  }
+}
+}
+require('telescope').load_extension('fzf')
+EOF
+"""""""""""" Telescope bindings, TODO add more bindings here brr
+nnoremap <leader>ff :lua require('telescope.builtin').git_files()<CR>
+nnoremap <leader>fi :lua require('telescope.builtin').find_files()<CR>
+nnoremap <leader>bu :lua require('telescope.builtin').buffers()<CR>
+nnoremap <leader>bl :lua require('telescope.builtin').current_buffer_fuzzy_find()<CR>
+nnoremap <leader>st :lua require('telescope.builtin').treesitter()<CR>
+nnoremap <leader>rs :lua require('telescope.builtin').grep_string({ search = vim.fn.input("Grep For > ")})<CR>
+nnoremap <leader>rw :lua require('telescope.builtin').grep_string { search = vim.fn.expand("<cword>") }<CR>
+"""""""""""" Vimspector
+fun! GotoWindow(id)
+  call win_gotoid(a:id)
+  MaximizerToggle
+endfun
+" nnoremap <leader>dd :call vimspector#Launch()<CR>
+" nnoremap <leader>dc :call GotoWindow(g:vimspector_session_windows.code)<CR>
+" nnoremap <leader>dt :call GotoWindow(g:vimspector_session_windows.tagpage)<CR>
+" nnoremap <leader>dv :call GotoWindow(g:vimspector_session_windows.variables)<CR>
+" nnoremap <leader>dw :call GotoWindow(g:vimspector_session_windows.watches)<CR>
+" nnoremap <leader>ds :call GotoWindow(g:vimspector_session_windows.stack_trace)<CR>
+" nnoremap <leader>do :call GotoWindow(g:vimspector_session_windows.output)<CR>
+" nnoremap <leader>de :call vimspector#Reset()<CR>
+" nnoremap <leader>dtcb :call vimspector#CleanLineBreakpoint()<CR>
+" nmap <leader>dl <Plug>VimspectorStepInto
+" nmap <leader>dj <Plug>VimspectorStepOver
+" nmap <leader>dk <Plug>VimspectorStepOut
+" nmap <leader>d_ <Plug>VimspectorRestart
+" nnoremap <leader>d<space> :call vimspector#Continue()<CR>
+" nmap <leader>drc <Plug>VimspectorRunToCursor
+" nmap <leader>dbp <Plug>VimspectorToggleBreakpoint
+" nmap <leader>dcbp <Plug>VimspectorToggleConditionalBreakpoint
+"""""""""""" compe
+let g:compe = {}
+let g:compe.enabled = v:true
+let g:compe.autocomplete = v:true
+let g:compe.debug = v:false
+let g:compe.min_length = 1
+let g:compe.preselect = 'enable'
+let g:compe.throttle_time = 80
+let g:compe.source_timeout = 200
+let g:compe.incomplete_delay = 400
+let g:compe.max_abbr_width = 100
+let g:compe.max_kind_width = 100
+let g:compe.max_menu_width = 100
+let g:compe.documentation = v:true
+let g:compe.source = {}
+let g:compe.source.path = v:true
+let g:compe.source.buffer = v:true
+let g:compe.source.calc = v:true
+let g:compe.source.vsnip = v:false
+let g:compe.source.nvim_lsp = v:true
+let g:compe.source.nvim_lua = v:true
+let g:compe.source.spell = v:false
+let g:compe.source.tags = v:false
+let g:compe.source.snippets_nvim = v:false
+let g:compe.source.treesitter = v:true
+let g:compe.source.omni = v:false
+let g:compe.source.ultisnips = v:true
+inoremap <silent><expr> <C-Space> compe#complete()
+inoremap <silent><expr> <CR>      compe#confirm('<CR>')
+inoremap <silent><expr> <C-e>     compe#close('<C-e>')
+"""""""""""" Ultisnips bindings
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
 
-    """"""""""""""""""""""""""""""Neovim Theme""""""""""""""""""""""""""""""
-    " Still undecided between lightline and airline
-    " let g:lightline = {}
-    " let g:lightline.colorscheme = 'jellybeans'
-    " Airline settings
-    call airline#parts#define_function('filetype', 'nvim_treesitter#statusline')
-    let g:airline#extensions#tagbar#enabled = 0
-    let g:airline#extensions#tabline#enabled = 1
-    let g:airline#extensions#tabline#buffer_nr_show = 1
-endif
+""""""""""""""""""""""""""""""Neovim Theme""""""""""""""""""""""""""""""
+" Airline settings
+call airline#parts#define_function('filetype', 'nvim_treesitter#statusline')
+let g:airline#extensions#tagbar#enabled = 0
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#buffer_nr_show = 1
 
 """"""""""""""""""""""""""""""Theme"""""""""""""""""""""""""""""""""""""""""
 colorscheme gruvbox
