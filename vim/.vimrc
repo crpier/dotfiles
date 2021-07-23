@@ -1,77 +1,50 @@
-" Install vimplug if it is not installed
+" Install vimplug and the plugins if not installed
 let data_dir = '~/.vim'
-if empty(glob(data_dir . '/autoload/plug.vim'))
+if empty(glob(data_dir.'/autoload/plug.vim'))
   silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
 call plug#begin('~/.vim/plugged')
-" manage surrounding characters
-Plug 'tpope/vim-surround'
-" Sensible defaults
-Plug 'tpope/vim-sensible'
-" Useful shortcuts, mostly using the square brackets
-Plug 'tpope/vim-unimpaired'
-" Repeat commands from plugins using period (.)
-Plug 'tpope/vim-repeat'
-" Looks good
-Plug 'morhetz/gruvbox'
-" improved motion
-Plug 'bkad/CamelCaseMotion'
-let g:camelcasemotion_key = '\'
-" Maximize one split
-Plug 'szw/vim-maximizer'
-" Easy commenting
-nnoremap <leader>m :MaximizerToggle!<CR>
-Plug 'tpope/vim-commentary'
-" Add additional text objects
-Plug 'wellle/targets.vim'
-" Fish syntax highlighting
-Plug 'dag/vim-fish'
-" Show me what I yanked lol
-Plug 'machakann/vim-highlightedyank'
-let g:highlightedyank_highlight_duration = 200
-" Remote copy, local paste
-Plug 'ojroques/vim-oscyank'
-vnoremap <leader>c :OSCYank<CR>
-" Haha Ansible go brr
-Plug 'pearofducks/ansible-vim', { 'do': './UltiSnips/generate.sh' }
-" salt too (╯°□°）╯︵ ┻━┻
-Plug 'saltstack/salt-vim'
-Plug 'tpope/vim-fugitive'
+" Common plugins
 Plug 'airblade/vim-gitgutter'
-" Snippets, nice
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
-" Debugger
-Plug 'puremourning/vimspector'
+Plug 'bkad/CamelCaseMotion'
+Plug 'dag/vim-fish'
+" TODO fzf keybinds
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'machakann/vim-highlightedyank'
+Plug 'morhetz/gruvbox'
+Plug 'ojroques/vim-oscyank'
+Plug 'pearofducks/ansible-vim'
+Plug 'saltstack/salt-vim'
+Plug 'szw/vim-maximizer', { 'on': 'MaximizerToggle' }
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-unimpaired'
+Plug 'wellle/targets.vim'
 call plug#end()
 
 """"""""""""""""""""""""""""""General Options""""""""""""""""""""""""""""""
-" The colorscheme command has to be afte the `plug` section
-colorscheme gruvbox
-" Honestly, gruvbox looks weird without this
-set background=dark
-" Transparent background, this command needs to be after the `colorscheme`
-" command to work
-hi Normal guibg=NONE ctermbg=NONE
+"" Common settings first
 let mapleader = " "
+set tabstop=4 softtabstop=4
+set shiftwidth=4
 set expandtab
 set smartindent
-" if there's a vimrc in curent directory, use that
-set exrc
 " show current line number and relative line number
 set number relativenumber
 " keep buffers open in the background even when not saved
 set hidden
-" self explanatory
 set noerrorbells
 " when searching, if there are no uppercases, then search is case insensitive
 set ignorecase
 set smartcase
 " move cursor to search result while typing
 set incsearch
-" hightl search
 set hlsearch
 " keep 4 lines above and below the cursor at all times
 set scrolloff=4
@@ -93,10 +66,34 @@ set updatetime=300
 set noswapfile
 set nobackup
 set undofile
-" undodirs for vim and neovim are incompatible, thus we should not use
-" different editors for the same file
+"" Vim specific settings last
+" ensure the undodir exists
 silent call mkdir($HOME . "/.vim/undodir", "p", 0700)
+" where to store undo data. It is guaranteed that ~/.local/share/nvim exists
 set undodir=~/.vim/undodir
+
+""""""""""""""""""""""""""""""Theme"""""""""""""""""""""""""""""""""""""""""
+colorscheme gruvbox
+set background=dark
+" Transparent background
+hi Normal guibg=NONE ctermbg=NONE
+" Duration of yank highlight
+let g:highlightedyank_highlight_duration = 200
+
+""""""""""""""""""""""""""""""Plugin settings""""""""""""""""""""""""""""""
+" Common plugins first
+" maximizer key
+nnoremap <leader>z :MaximizerToggle!<CR>
+" camelcase motion key
+let g:camelcasemotion_key = '\'
+" if using tmux on local machine, use this to yank selection to your clipboard
+vnoremap <leader>c :OSCYank<CR>
+" Fugitive stuff
+nnoremap <leader>gi :Git
+nnoremap <leader>gb :Git blame<CR>
+nnoremap <leader>gd :Gdiffsplit<CR>
+nnoremap <leader>gpl :Git pull<CR>
+nnoremap <leader>gps :Git push<CR>
 
 """"""""""""""""""""""""""""""General Remaps""""""""""""""""""""""""""""""""
 """"""""" Utility maps
@@ -107,11 +104,6 @@ vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
 " Insert line without entering insert mode
 nnoremap go o<Esc>
 nnoremap gO O<Esc>
-" Navigate window splits with the arrow keys
-nnoremap <Left> <C-w>h
-nnoremap <Down> <C-w>j
-nnoremap <Up> <C-w>k
-nnoremap <Right> <C-w>l
 " Clear search highlight
 nnoremap <Esc> <Cmd>nohlsearch<CR>
 " Yank until end of line
@@ -126,6 +118,16 @@ nnoremap <leader>D "_D
 nnoremap Q ZQ
 " Copy unnamed register to p register
 nnoremap <leader>cp :let @p=@""<CR>
+" Copy to clipboard
+vnoremap  <leader>y  "+y
+nnoremap  <leader>Y  "+yg_
+nnoremap  <leader>y  "+y
+nnoremap  <leader>yy  "+yy
+" Paste from clipboard
+nnoremap <leader>p "+p
+nnoremap <leader>P "+P
+vnoremap <leader>p "+p
+vnoremap <leader>P "+P
 """""""" New Operators
 " select text inside line without spaces
 vnoremap al :<C-U>normal 0v$h<CR>
@@ -168,3 +170,5 @@ autocmd BufNewFile,BufRead *.py ab pdb import pdb; pdb.set_trace()
 " This is more of a filename autocmd lol
 "" Make sure Jenkinsfile have groovy syntax highlight
 au BufNewFile,BufRead Jenkinsfile setf groovy
+" vim-fish makes / part of a word, but that's weird
+autocmd BufNewFile,BufRead *.fish set iskeyword-=/

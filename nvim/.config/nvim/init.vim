@@ -1,64 +1,44 @@
-call plug#begin('~/.local/share/nvim/plugged')
-" Looks good
-Plug 'morhetz/gruvbox'
-" improved motion
-Plug 'bkad/CamelCaseMotion'
-" Maximize one split
-Plug 'szw/vim-maximizer', { 'on': 'MaximizerToggle' }
-" Easy commenting
-Plug 'tpope/vim-commentary'
-" manage surrounding characters
-Plug 'tpope/vim-surround'
-" Sensible defaults
-Plug 'tpope/vim-sensible'
-" Add additional text objects
-Plug 'wellle/targets.vim'
-" Useful shortcuts, mostly using the square brackets
-Plug 'tpope/vim-unimpaired'
-" Repeat commands from plugins using period (.)
-Plug 'tpope/vim-repeat'
-" Fish syntax highlighting
-Plug 'dag/vim-fish'
-" Show me what I yanked lol
-Plug 'machakann/vim-highlightedyank'
-" Telescope, that'all
-Plug 'nvim-telescope/telescope.nvim'
-Plug 'nvim-lua/popup.nvim'
-" Dependency for telescope and other nvim plugins
-Plug 'nvim-lua/plenary.nvim'
-" Native fzf for telescope
-Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
-" Nice icons for telescope
-Plug 'kyazdani42/nvim-web-devicons'
-" Tree finder
-Plug 'kyazdani42/nvim-tree.lua', { 'on': 'NvimTreeToggle' }
-" I don't really use these that often....maybe remove? ¯\_(ツ)_/¯
-" git plugins
-Plug 'tpope/vim-fugitive'
+" Install vimplug and the plugins if not installed
+let data_dir = stdpath('data').'/site'
+if empty(glob(data_dir . '/autoload/plug.vim'))
+  silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+call plug#begin(stdpath('data').'/plugged')
+" Common plugins
 Plug 'airblade/vim-gitgutter'
-Plug 'tpope/vim-rhubarb'
-" Completion plugin
-Plug 'hrsh7th/nvim-compe'
-" Snippets, nice
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
-" Syntax highlighting using language parsing
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate' }
-" language Symbols tree-viewer
-Plug 'simrat39/symbols-outline.nvim'
-" TODO I don't really use this that often...maybe remove it?
-" Haha Ansible go brr
-Plug 'pearofducks/ansible-vim', { 'do': './UltiSnips/generate.sh' }
-" Go
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries'}
+Plug 'bkad/CamelCaseMotion'
+Plug 'dag/vim-fish'
+Plug 'machakann/vim-highlightedyank'
+Plug 'morhetz/gruvbox'
+Plug 'ojroques/vim-oscyank'
+Plug 'pearofducks/ansible-vim'
 Plug 'saltstack/salt-vim'
+Plug 'szw/vim-maximizer', { 'on': 'MaximizerToggle' }
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-rhubarb'
+Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-unimpaired'
+Plug 'wellle/targets.vim'
+" Neovim specific
+Plug 'hrsh7th/nvim-compe'
+Plug 'kyazdani42/nvim-tree.lua', { 'on': 'NvimTreeToggle' }
+Plug 'kyazdani42/nvim-web-devicons'
 Plug 'mfussenegger/nvim-dap'
 Plug 'mfussenegger/nvim-dap-python'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
+" TODO install ripgrep if not installed
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate' }
 call plug#end()
 
 """"""""""""""""""""""""""""""General Options""""""""""""""""""""""""""""""
-
-""""" Set general options
+"" Common settings first
 let mapleader = " "
 set tabstop=4 softtabstop=4
 set shiftwidth=4
@@ -95,84 +75,67 @@ set updatetime=300
 set noswapfile
 set nobackup
 set undofile
-" where to store undo data. It is guaranteed that ~/.local/share/nvim exists
+"" Neovim specific settings last
+silent call mkdir(stdpath('data').'undodir', "p", 0700)
+" where to store undo data. It is guaranteed that ~/.local/share/nvim exists 
+" TODO find a way to use a variable here
 set undodir=~/.local/share/nvim/undodir
-" This is because vim-fish wants / to be part of a word, and I don't 
+
+""""""""""""""""""""""""""""""Theme"""""""""""""""""""""""""""""""""""""""""
+colorscheme gruvbox
+set background=dark
+" Transparent background
+hi Normal guibg=NONE ctermbg=NONE
+" Duration of yank highlight
+let g:highlightedyank_highlight_duration = 200
 
 """"""""""""""""""""""""""""""Plugin settings""""""""""""""""""""""""""""""
-" maximizer plugin
-nnoremap <leader>m :MaximizerToggle!<CR>
+" Common plugins first
+" maximizer key
+nnoremap <leader>z :MaximizerToggle!<CR>
+" camelcase motion key
 let g:camelcasemotion_key = '\'
-"""""""""""" nvimtree
-nnoremap <leader>e <cmd>NvimTreeToggle<CR>
-
-"""""""""""" Symbols-outline
-lua <<EOF
-local opts = {
--- whether to highlight the currently hovered symbol
-highlight_hovered_item = true,
--- whether to show outline guides
-show_guides = true,
-}
-require('symbols-outline').setup(opts)
-EOF
-"""""""""""" Treesitter
-lua <<EOF
-require'nvim-treesitter.configs'.setup {
-incremental_selection = {
-enable = true,
-keymaps = {
-  --  Keymaps for language incremental selection lol
-  init_selection = "gs",
-  node_incremental = "gi",
-  node_decremental = "gd",
-  },
-},
-highlight = {
-enable = true,
-},
-  indentation = {
-  enable = true,
-  },
-folding = {
-enable = true,
-},
-}
-EOF
-"""""""""""" Fugitive
+" if using tmux on local machine, use this to yank selection to your clipboard
+vnoremap <leader>c :OSCYank<CR>
+" Fugitive stuff
 nnoremap <leader>gi :Git
 nnoremap <leader>gb :Git blame<CR>
 nnoremap <leader>gd :Gdiffsplit<CR>
 nnoremap <leader>gpl :Git pull<CR>
 nnoremap <leader>gps :Git push<CR>
+
+""" Neovim specific plugins after
+" Toggle file explore
+nnoremap <leader>e <cmd>NvimTreeToggle<CR>
+
 """"""""""""  Telescope
 lua << EOF
 local actions = require('telescope.actions')
 require('telescope').setup {
-defaults = {
-prompt_prefix = '⟩ ',
-color_devicons = true,
-file_previewer   = require('telescope.previewers').vim_buffer_cat.new,
-grep_previewer   = require('telescope.previewers').vim_buffer_vimgrep.new,
-qflist_previewer = require('telescope.previewers').vim_buffer_qflist.new,
-mappings = {
-i = {
-["<C-q>"] = actions.send_to_qflist,
-},
-}
-    },
-  extensions = {
-  --  The fzf extension allows using fzf syntax when filtering files
-  fzf = {
-  override_generic_sorter = true, -- override the generic sorter
-  override_file_sorter = true,     -- override the file sorter
-  case_mode = "smart_case",        -- or "ignore_case" or "respect_case"
-  }
-}
-}
+    defaults = {
+        prompt_prefix = '⟩ ',
+        color_devicons = true,
+        file_previewer   = require('telescope.previewers').vim_buffer_cat.new,
+        grep_previewer   = require('telescope.previewers').vim_buffer_vimgrep.new,
+        qflist_previewer = require('telescope.previewers').vim_buffer_qflist.new,
+        mappings = {
+            i = {
+                ["<C-q>"] = actions.send_to_qflist,
+                },
+            }
+        },
+    extensions = {
+        --  The fzf extension allows using fzf syntax when filtering files
+        fzf = {
+            override_generic_sorter = true, -- override the generic sorter
+            override_file_sorter = true,     -- override the file sorter
+            case_mode = "smart_case",        -- or "ignore_case" or "respect_case"
+            }
+        }
+    }
 require('telescope').load_extension('fzf')
 EOF
-"""""""""""" Telescope bindings, TODO add more bindings here brr
+" telescope bindings
 nnoremap <leader>ff :lua require('telescope.builtin').git_files()<CR>
 nnoremap <leader>fi :lua require('telescope.builtin').find_files()<CR>
 nnoremap <leader>bu :lua require('telescope.builtin').buffers()<CR>
@@ -180,7 +143,7 @@ nnoremap <leader>bl :lua require('telescope.builtin').current_buffer_fuzzy_find(
 nnoremap <leader>st :lua require('telescope.builtin').treesitter()<CR>
 nnoremap <leader>rs :lua require('telescope.builtin').grep_string({ search = vim.fn.input("Grep For > ")})<CR>
 nnoremap <leader>rw :lua require('telescope.builtin').grep_string { search = vim.fn.expand("<cword>") }<CR>
-"""""""""""" compe
+" compe
 let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
 let g:compe = {}
 let g:compe.enabled = v:true
@@ -210,13 +173,7 @@ let g:compe.source.ultisnips = v:true
 inoremap <silent><expr> <C-Space> compe#complete()
 inoremap <silent><expr> <CR>      compe#confirm('<CR>')
 inoremap <silent><expr> <C-e>     compe#close('<C-e>')
-"""""""""""" Ultisnips bindings
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-" If you want :UltiSnipsEdit to split your window.
-let g:UltiSnipsEditSplit="vertical"
-"""""""""""" nvim-dap
+" nvim-dap
 lua require('dap-python').setup('python')
 " these are examples from the docs and I don't like them, they need to be 
 " updated to be like the lunarvim defaults
@@ -230,22 +187,29 @@ nnoremap <silent> <leader>lp :lua require'dap'.set_breakpoint(nil, nil, vim.fn.i
 nnoremap <silent> <leader>dr :lua require'dap'.repl.open()<CR>
 nnoremap <silent> <leader>dl :lua require'dap'.run_last()<CR>
 
-
-""""""""""""""""""""""""""""""Theme"""""""""""""""""""""""""""""""""""""""""
-colorscheme gruvbox
-set background=dark
-" Transparent background
-hi Normal guibg=NONE ctermbg=NONE
-" Duration of yank highlight
-let g:highlightedyank_highlight_duration = 200
-
 """"""""""""""""""""""""""""""General Remaps""""""""""""""""""""""""""""""""
+""""""""" Utility maps
 " easy source vimrc
-nnoremap <leader><CR> :so ~/.config/nvim/init.vim<CR>
-" I don't use EX mode, and I keep pressing it by mistake when I want to quit
-nnoremap Q ZQ
+nnoremap <leader><CR> :so ~/.vimrc<CR>
 " Search for selected text using '//'
 vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
+" Insert line without entering insert mode
+nnoremap go o<Esc>
+nnoremap gO O<Esc>
+" Clear search highlight
+nnoremap <Esc> <Cmd>nohlsearch<CR>
+" Yank until end of line
+nnoremap Y yg_
+" Center screen after search result
+nnoremap n nzzzv
+nnoremap N Nzzzv
+" Blackhole d and D with leader
+nnoremap <leader>d "_d
+nnoremap <leader>D "_D
+" I don't use EX mode, and I keep pressing it by mistake when I want to quit
+nnoremap Q ZQ
+" Copy unnamed register to p register
+nnoremap <leader>cp :let @p=@""<CR>
 " Copy to clipboard
 vnoremap  <leader>y  "+y
 nnoremap  <leader>Y  "+yg_
@@ -256,55 +220,47 @@ nnoremap <leader>p "+p
 nnoremap <leader>P "+P
 vnoremap <leader>p "+p
 vnoremap <leader>P "+P
+"""""""" New Operators
 " select text inside line without spaces
 vnoremap al :<C-U>normal 0v$h<CR>
 omap al :normal val<CR>
 vnoremap il :<C-U>normal ^vg_<CR>
 omap il :normal vil<CR>
-" control quickfixlist
-nnoremap <leader>' :copen<CR>
-nnoremap <leader>" :cclose<CR>
-" Insert line
-nnoremap go o<Esc>
-nnoremap gO O<Esc>
-" Easy exit from insert mode
-inoremap jk <Esc>
-inoremap jw <Esc>:w<CR>
-inoremap jx <Esc>:x<CR>
-" Clear search highlight
-nnoremap <Esc> <Cmd>nohlsearch<CR>
-" Y behaves like C and D
-nnoremap Y yg_
-" Center screen after search result
-nnoremap n nzzzv
-nnoremap N Nzzzv
-" Blackhole x, c and d
+"""""""" Toggles
+" close quickfixlist easily (a toggle function would be better tho)
+nnoremap <C-Q> <cmd>copen<CR>
+"""""""" Insert mode mappings
+" Command mode
+imap jk <Esc>:w<CR>
+" Command mode and save
+imap jw <Esc>:w<CR>
+"""""""" Override default mappings
+" Blackhole x
 nnoremap x "_x
 nnoremap X "_X
-" Blackhole <leader>d
-nnoremap <leader>d "_d
-nnoremap <leader>D "_D
-" Copy unnamed register to p register so you can use it later
-nnoremap <leader>cp :let @p=@""<CR>
-" vim-fish makes the / a keyword, but I don't like that
+" Don't keep { and } on jumplist
+nnoremap } :keepjumps normal! }<cr>
+nnoremap { :keepjumps normal! {<cr>
+xnoremap } :<C-u>keepjumps normal! gv}<cr>
+xnoremap { :<C-u>keepjumps normal! gv{<cr>
 
 """"""""""""""""""""""""""""""Autocommands""""""""""""""""""""""""""""""
-""" Filetype Autocommands
-" Yaml should have 2 spaces
+" persist cursor location between sessions
+autocmd BufReadPost *
+  \ if line("'\"") >= 1 && line("'\"") <= line("$") && &ft !~# 'commit'
+  \ |   exe "normal! g`\""
+  \ | endif
+" Don't auto insert comments
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+"""""""""""" Filetype autocmds
+" Yaml 
+"" uses spaces, not tabs
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+" Python
+"" I am so lazy i need abbreviation for pdb lmao
+autocmd BufNewFile,BufRead *.py ab pdb import pdb; pdb.set_trace()
+" This is more of a filename autocmd lol
+"" Make sure Jenkinsfile have groovy syntax highlight
+au BufNewFile,BufRead Jenkinsfile setf groovy
 " vim-fish makes / part of a word, but that's weird
 autocmd BufNewFile,BufRead *.fish set iskeyword-=/
-" Python debugging abbreviation
-autocmd BufNewFile,BufRead *.py ab pdb import pdb; pdb.set_trace()
-" Ensure Jenkinsfile has groovy syntax
-au BufNewFile,BufRead Jenkinsfile setf groovy
-
-" Don't auto-comment new lines
-autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
-" persist cursor location between sessions
-autocmd BufReadPost * exe "normal! g`\""
-" Highlight for a short moment after yanking
-augroup highlight_yank
-    autocmd!
-    autocmd TextYankPost * silent! lua require'vim.highlight'.on_yank({timeout = 200})
-augroup END
