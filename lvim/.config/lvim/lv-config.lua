@@ -144,6 +144,7 @@ O.user_plugins = {
   {'pearofducks/ansible-vim'},
   {'szw/vim-maximizer'},
   {'tpope/vim-commentary'},
+  {'tpope/vim-fugitive'},
   {'tpope/vim-surround'},
   {'wellle/targets.vim'},
   {'tpope/vim-unimpaired'},
