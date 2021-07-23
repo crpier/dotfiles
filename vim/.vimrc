@@ -117,7 +117,7 @@ nnoremap <leader>D "_D
 " I don't use EX mode, and I keep pressing it by mistake when I want to quit
 nnoremap Q ZQ
 " Copy unnamed register to p register
-nnoremap <leader>cp :let @p=@""<CR>
+nnoremap cp :let @p=@""<CR>
 " Copy to clipboard
 vnoremap  <leader>y  "+y
 nnoremap  <leader>Y  "+yg_
@@ -136,7 +136,7 @@ vnoremap il :<C-U>normal ^vg_<CR>
 omap il :normal vil<CR>
 """""""" Toggles
 " close quickfixlist easily (a toggle function would be better tho)
-nnoremap <C-Q> <cmd>copen<CR>
+nnoremap <C-Q> <cmd>cclose<CR>
 """""""" Insert mode mappings
 " Command mode
 imap jk <Esc>:w<CR>
