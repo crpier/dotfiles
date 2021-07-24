@@ -136,13 +136,17 @@ require('telescope').setup {
 require('telescope').load_extension('fzf')
 EOF
 " telescope bindings
-nnoremap <leader>ff :lua require('telescope.builtin').git_files()<CR>
-nnoremap <leader>fi :lua require('telescope.builtin').find_files()<CR>
-nnoremap <leader>bu :lua require('telescope.builtin').buffers()<CR>
-nnoremap <leader>bl :lua require('telescope.builtin').current_buffer_fuzzy_find()<CR>
-nnoremap <leader>st :lua require('telescope.builtin').treesitter()<CR>
-nnoremap <leader>rs :lua require('telescope.builtin').grep_string({ search = vim.fn.input("Grep For > ")})<CR>
-nnoremap <leader>rw :lua require('telescope.builtin').grep_string { search = vim.fn.expand("<cword>") }<CR>
+nnoremap <leader>f :lua require('telescope.builtin').git_files()<CR>
+nnoremap <leader>mb :lua require('telescope.builtin').buffers()<CR>
+nnoremap <leader>md :lua require('telescope.builtin').lsp_document_diagnostics()<CR>
+nnoremap <leader>mf :lua require('telescope.builtin').find_files()<CR>
+nnoremap <leader>mh :lua require('telescope.builtin').command_history()<CR>
+nnoremap <leader>mj :lua require('telescope.builtin').jumplist()<CR>
+nnoremap <leader>ml :lua require('telescope.builtin').lsp_document_symbols()<CR>
+nnoremap <leader>mq :lua require('telescope.builtin').quickfix()<CR>
+nnoremap <leader>ms :lua require('telescope.builtin').grep_string({ search = vim.fn.input("Grep For > ")})<CR>
+nnoremap <leader>mw :lua require('telescope.builtin').grep_string { search = vim.fn.expand("<cword>") }<CR><CR>
+nnoremap <leader>mz :lua require('telescope.builtin').current_buffer_fuzzy_find()<CR>
 " compe
 let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
 let g:compe = {}
