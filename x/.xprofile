@@ -9,15 +9,12 @@ export BROWSER="firefox"
 # For QT Themes
 export QT_QPA_PLATFORMTHEME=qt5ct
 
-# Status Bar
-dwmblocks &
-
 # Random Photo Every Login
-feh --bg-fill --randomize ~/.local/wallpapers
+# feh --bg-fill --randomize ~/.local/wallpapers
 
 # Monitor Config
-xrandr --output eDP1 --mode 1920x1080
-xrandr --output HDMI1 --left-of eDP1
+# xrandr --output eDP1 --mode 1920x1080
+# xrandr --output HDMI1 --left-of eDP1
 
 # Settings for turning off screen saver, that I keep in case I want to go back
 # xset s off
@@ -28,14 +25,12 @@ xrandr --output HDMI1 --left-of eDP1
 xset r rate 210 100
 
 ### Useful/aesthetic apps
-# Compositor
-picom -b
 # Hide mouse when typing
-xbanish &
+# xbanish &
 # Screenshots
-flameshot &
+# flameshot &
 # helps with puls audio
-pasystray &
+# pasystray &
 
 # load Xresources
 xrdb ~/.Xresources
