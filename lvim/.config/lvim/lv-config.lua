@@ -185,3 +185,7 @@ O.user_which_key = {
     w = { "<cmd>lua require('telescope.builtin').grep_string()<cr>", "Search this word" },
   },
 }
+
+
+
+
