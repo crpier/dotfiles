@@ -172,22 +172,23 @@ require('telescope').setup {
 -- load_extension, somewhere after setup function:
 require('telescope').load_extension('fzf')
 
+
 O.user_which_key = {
-  m = {
-    name = "+custoM telescope",
-    b = { "<cmd>Telescope buffers<cr>", "Search buffers' titles" },
-    d = { "<cmd>Telescope lsp_document_diagnostics<cr>", "Search diagnostics" },
-    f = { "<cmd>Telescope find_files<cr>", "Search diagnostics" },
-    h = { "<cmd>Telescope command_history<cr>", "Search command history" },
-    j = { "<cmd>Telescope jumplist<cr>", "Search jumplist" },
-    l = { "<cmd>Telescope lsp_document_symbols<cr>", "Search symbols" },
-    q = { "<cmd>Telescope quickfix<cr>", "Search Quickfix list" },
-    s = { "<cmd>lua require('telescope.builtin').grep_string({ search = vim.fn.input('Grep For > ')})<cr>", "Search string" },
-    w = { "<cmd>lua require('telescope.builtin').grep_string()<cr>", "Search this word" },
-    z = { "<cmd>Telescope current_buffer_fuzzy_find<cr>", "Search symbols" },
-  },
+	f = { "<cmd>Telescope find_files find_command=rg,--ignore,--hidden,--files,--iglob,!.git<CR>", "Find files" },
+	m = {
+		name = "+custoM telescope",
+		b = { "<cmd>Telescope buffers<cr>", "Search buffers' titles" },
+		d = { "<cmd>Telescope lsp_document_diagnostics<cr>", "Search diagnostics" },
+		f = { "<cmd>Telescope git_files<cr>", "Search diagnostics" },
+		h = { "<cmd>Telescope command_history<cr>", "Search command history" },
+		j = { "<cmd>Telescope jumplist<cr>", "Search jumplist" },
+		l = { "<cmd>Telescope lsp_document_symbols<cr>", "Search symbols" },
+		q = { "<cmd>Telescope quickfix<cr>", "Search Quickfix list" },
+		s = {
+			"<cmd>lua require('telescope.builtin').grep_string({ search = vim.fn.input('Grep For > ')})<cr>",
+			"Search string",
+		},
+		w = { "<cmd>lua require('telescope.builtin').grep_string()<cr>", "Search this word" },
+		z = { "<cmd>Telescope current_buffer_fuzzy_find<cr>", "Search symbols" },
+	},
 }
-
-
-
-

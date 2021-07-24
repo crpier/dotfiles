@@ -76,6 +76,7 @@ set noswapfile
 set nobackup
 set undofile
 "" Neovim specific settings last
+set termguicolors
 silent call mkdir(stdpath('data').'undodir', "p", 0700)
 " where to store undo data. It is guaranteed that ~/.local/share/nvim exists 
 " TODO find a way to use a variable here
@@ -136,10 +137,14 @@ require('telescope').setup {
 require('telescope').load_extension('fzf')
 EOF
 " telescope bindings
-nnoremap <leader>f :lua require('telescope.builtin').git_files()<CR>
+if executable('rg')
+nnoremap <leader>f <cmd>Telescope find_files find_command=rg,--ignore,--hidden,--files,--iglob,!.git<CR>
+else
+nnoremap <leader>f <cmd>Telescope find_files hidden=true<CR>
+endif
 nnoremap <leader>mb :lua require('telescope.builtin').buffers()<CR>
 nnoremap <leader>md :lua require('telescope.builtin').lsp_document_diagnostics()<CR>
-nnoremap <leader>mf :lua require('telescope.builtin').find_files()<CR>
+nnoremap <leader>mf :lua require('telescope.builtin').git_files()<CR>
 nnoremap <leader>mh :lua require('telescope.builtin').command_history()<CR>
 nnoremap <leader>mj :lua require('telescope.builtin').jumplist()<CR>
 nnoremap <leader>ml :lua require('telescope.builtin').lsp_document_symbols()<CR>
