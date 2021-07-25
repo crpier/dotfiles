@@ -12,24 +12,24 @@ an executable
 
 -- TODO reorder and regroup
 vim.g.camelcasemotion_key = '\\'
-O.plugin.dap.active = true
-O.default_options.colorcolumn = "80"
-O.default_options.clipboard = ""
-O.lsp.document_highlight = false
-O.default_options.cursorline = false
-O.format_on_save = false
-O.background = "dark"
-O.lint_on_save = false
-O.completion.autocomplete = true
-O.default_options.relativenumber = true
-O.colorscheme = "gruvbox"
-O.transparent_window = true
-O.default_options.wrap = true
-O.default_options.timeoutlen = 800
+-- lvim.plugin.dap.active = true
+-- lvim.default_options.colorcolumn = "80"
+-- lvim.default_options.clipboard = ""
+lvim.lsp.document_highlight = false
+-- lvim.default_options.cursorline = false
+lvim.format_on_save = false
+lvim.background = "dark"
+lvim.lint_on_save = false
+lvim.completion.autocomplete = true
+-- lvim.default_options.relativenumber = true
+lvim.colorscheme = "gruvbox"
+lvim.transparent_window = true
+-- lvim.default_options.wrap = true
+-- lvim.default_options.timeoutlen = 800
 -- keymappings
-O.keys.leader_key = "space"
+lvim.keys.leader_key = "space"
 -- overwrite the key-mappings provided by LunarVim for any mode, or leave it empty to keep them
-O.keys.normal_mode = {
+lvim.keys.normal_mode = {
   -- Navigate buffers
   -- TODO: leader mappings should go to which_key
   {'<esc>', '<cmd>nohlsearch<cr>'},
@@ -62,24 +62,24 @@ require("lv-utils").add_keymap_insert_mode({ silent = true }, {
 
 -- TODO: User Config for predefined plugins
 -- After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
-O.plugin.dashboard.active = false
-O.plugin.terminal.active = true
-O.plugin.zen.active = false
-O.plugin.zen.window.height = 0.90
-O.plugin.nvimtree.side = "left"
-O.plugin.nvimtree.show_icons.git = 0
-O.plugin.nvimtree.auto_close_tree = 1
-O.plugin.nvimtree.auto_open = false
+-- lvim.plugin.dashboard.active = false
+-- lvim.plugin.terminal.active = true
+-- lvim.plugin.zen.active = false
+-- lvim.plugin.zen.window.height = 0.90
+-- lvim.plugin.nvimtree.side = "left"
+-- lvim.plugin.nvimtree.show_icons.git = 0
+-- lvim.plugin.nvimtree.auto_close_tree = 1
+-- lvim.plugin.nvimtree.auto_open = false
 
 -- if you don't want all the parsers change this to a table of the ones you want
-O.treesitter.ensure_installed = "maintained"
-O.treesitter.ignore_install = { "haskell" }
-O.treesitter.highlight.enabled = true
+-- lvim.treesitter.ensure_installed = "maintained"
+-- lvim.treesitter.ignore_install = { "haskell" }
+-- lvim.treesitter.highlight.enabled = true
 
 -- generic LSP settings
 -- you can set a custom on_attach function that will be used for all the language servers
 -- See <https://github.com/neovim/nvim-lspconfig#keybindings-and-completion>
--- O.lsp.on_attach_callback = function(client, bufnr)
+-- lvim.lsp.on_attach_callback = function(client, bufnr)
 --   local function buf_set_option(...)
 --     vim.api.nvim_buf_set_option(bufnr, ...)
 --   end
@@ -88,55 +88,55 @@ O.treesitter.highlight.enabled = true
 -- end
 
 -- python
-O.lang.python.diagnostics.virtual_text = true
-O.lang.python.analysis.use_library_code_types = true
+-- lvim.lang.python.diagnostics.virtual_text = true
+lvim.lang.python.analysis.use_library_code_types = true
 -- To change default formatter from yapf to black
-O.lang.python.formatter.exe = "black"
-O.lang.python.formatter.args = {"-"}
-O.lang.python.isort = true
+lvim.lang.python.formatter.exe = "black"
+lvim.lang.python.formatter.args = {"-"}
+lvim.lang.python.isort = true
 -- To change enabled linters
 -- https://github.com/mfussenegger/nvim-lint#available-linters
--- O.lang.python.linters = { "flake8", "pylint", "mypy", ... }
+-- lvim.lang.python.linters = { "flake8", "pylint", "mypy", ... }
 
 -- go
 -- To change default formatter from gofmt to goimports
-O.lang.go.formatter.exe = "goimports"
+lvim.lang.go.formatter.exe = "goimports"
 
 -- javascript
-O.lang.tsserver.linter = nil
+lvim.lang.tsserver.linter = nil
 
 -- rust
--- O.lang.rust.rust_tools = true
--- O.lang.rust.formatter = {
+-- lvim.lang.rust.rust_tools = true
+-- lvim.lang.rust.formatter = {
 --   exe = "rustfmt",
 --   args = {"--emit=stdout", "--edition=2018"},
 -- }
 
 -- scala
--- O.lang.scala.metals.active = true
--- O.lang.scala.metals.server_version = "0.10.5",
+-- lvim.lang.scala.metals.active = true
+-- lvim.lang.scala.metals.server_version = "0.10.5",
 
 --LaTeX
 -- Options: https://github.com/latex-lsp/texlab/blob/master/docs/options.md
-O.lang.latex.active = true
-O.lang.latex.aux_directory = "."
-O.lang.latex.bibtex_formatter = "texlab"
-O.lang.latex.build.args = { "-pdf", "-interaction=nonstopmode", "-synctex=1", "%f" }
-O.lang.latex.build.executable = "latexmk"
-O.lang.latex.build.forward_search_after = false
-O.lang.latex.build.on_save = false
-O.lang.latex.chktex.on_edit = false
-O.lang.latex.chktex.on_open_and_save = false
-O.lang.latex.diagnostics_delay = 300
-O.lang.latex.formatter_line_length = 80
-O.lang.latex.forward_search.executable = "zathura"
-O.lang.latex.latex_formatter = "latexindent"
-O.lang.latex.latexindent.modify_line_breaks = false
--- O.lang.latex.auto_save = false
--- O.lang.latex.ignore_errors = { }
+lvim.lang.latex.active = true
+lvim.lang.latex.aux_directory = "."
+lvim.lang.latex.bibtex_formatter = "texlab"
+lvim.lang.latex.build.args = { "-pdf", "-interaction=nonstopmode", "-synctex=1", "%f" }
+lvim.lang.latex.build.executable = "latexmk"
+lvim.lang.latex.build.forward_search_after = false
+lvim.lang.latex.build.on_save = false
+lvim.lang.latex.chktex.on_edit = false
+lvim.lang.latex.chktex.on_open_and_save = false
+lvim.lang.latex.diagnostics_delay = 300
+lvim.lang.latex.formatter_line_length = 80
+lvim.lang.latex.forward_search.executable = "zathura"
+lvim.lang.latex.latex_formatter = "latexindent"
+lvim.lang.latex.latexindent.modify_line_breaks = false
+-- lvim.lang.latex.auto_save = false
+-- lvim.lang.latex.ignore_errors = { }
 
 -- Additional Plugins
-O.user_plugins = {
+lvim.user_plugins = {
   {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' },
   {"folke/tokyonight.nvim"},
   {'morhetz/gruvbox'},
@@ -152,8 +152,9 @@ O.user_plugins = {
   {'blankname/vim-fish'},
   {'saltstack/salt-vim'},
   {'mfussenegger/nvim-dap-python'},
-  {'farmergreg/vim-lastplace'}
+  {'farmergreg/vim-lastplace'},
 }
+
 -- TODO there must be a way to put this inside the plugin config using packer
 require('dap-python').setup('/usr/bin/python')
 -- TODO the above + ask about this
@@ -173,7 +174,7 @@ require('telescope').setup {
 require('telescope').load_extension('fzf')
 
 
-O.user_which_key = {
+lvim.user_which_key = {
 	f = { "<cmd>Telescope find_files find_command=rg,--ignore,--hidden,--files,--iglob,!.git<CR>", "Find files" },
 	m = {
 		name = "+custoM telescope",
