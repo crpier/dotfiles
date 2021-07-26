@@ -18,7 +18,7 @@ alias vconfig "lvim $HOME/.vimrc"
 alias tlconfig "lvim $HOME/.config/local_configs/tmux.local.conf"
 alias rsource "source $HOME/.config/fish/config.fish"
 alias k kubectl
-alias g "git"
+alias g git
 alias gs "git status"
 alias ga "git add ."
 alias gc "git commit -m"
@@ -34,7 +34,7 @@ alias lg lazygit
 
 set -gx PATH $PATH $HOME/go/bin
 
-function gacp 
+function gacp
     set message $argv[1]
     git add .
     git commit -m "$message"
