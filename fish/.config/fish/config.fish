@@ -6,8 +6,8 @@ set -U VIRTUAL_ENV_DISABLE_PROMPT yas
 
 alias P "cd ~/Projects"
 alias n nvim
-alias nconfig "lvim $HOME/.config/nvim/init.vim"
-alias nlconfig "lvim $HOME/.config/local_configs/init.local.vim"
+alias nconfig "nvim $HOME/.config/nvim/init.vim"
+alias nlconfig "nvim $HOME/.config/local_configs/init.local.vim"
 alias l lvim
 alias lconfig "lvim $HOME/.config/lvim/lv-config.lua"
 alias lvconfig "lvim $HOME/.local/share/lunarvim/lvim"
