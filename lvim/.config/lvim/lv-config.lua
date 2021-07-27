@@ -21,7 +21,7 @@ lvim.keys.normal_mode = {
     {'<leader>Y', '"+yg_'},
     {'<leader>z', '<cmd>MaximizerToggle!<CR>'},
 }
-require("lv-utils").add_keymap_insert_mode({ silent = true }, {
+require("utils").add_keymap_insert_mode({ silent = true }, {
     { "jw", "<esc>:w<cr>" },
     { "jq", "<esc>ZZ" },
 })
