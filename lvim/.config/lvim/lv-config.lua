@@ -6,24 +6,24 @@ lvim.colorscheme = "gruvbox"
 lvim.leader = "space"
 -- overwrite the key-mappings provided by LunarVim for any mode, or leave it empty to keep them
 lvim.keys.normal_mode = {
-    {'<esc>', '<cmd>nohlsearch<cr>'},
-    {'N', 'Nzz'},
-    {'Q', '<nop>'},
-    {'[b', ':BufferPrevious<CR>'},
-    {']b', ':BufferNext<CR>'},
-    {'gO', 'O<esc>'},
-    {'go', 'o<esc>'},
-    {'n', 'nzz'},
-    {'x', '"_x'},
-    {'X', '"_X'},
-    {'cp', '<cmd>let @p=@""<CR>'},
-    {'<leader>y', '"+y'},
-    {'<leader>Y', '"+yg_'},
-    {'<leader>z', '<cmd>MaximizerToggle!<CR>'},
+	{ "<esc><esc>", "<cmd>nohlsearch<cr>" },
+	{ "N", "Nzz" },
+	{ "Q", "<nop>" },
+	{ "[b", ":BufferPrevious<CR>" },
+	{ "]b", ":BufferNext<CR>" },
+	{ "gO", "O<esc>" },
+	{ "go", "o<esc>" },
+	{ "n", "nzz" },
+	{ "x", '"_x' },
+	{ "X", '"_X' },
+	{ "cp", '<cmd>let @p=@""<CR>' },
+	{ "<leader>y", '"+y' },
+	{ "<leader>Y", '"+yg_' },
+	{ "<leader>z", "<cmd>MaximizerToggle!<CR>" },
 }
 require("utils").add_keymap_insert_mode({ silent = true }, {
-    { "jw", "<esc>:w<cr>" },
-    { "jq", "<esc>ZZ" },
+	{ "jw", "<esc>:w<cr>" },
+	{ "jq", "<esc>ZZ" },
 })
 
 lvim.builtin.dashboard.active = false
@@ -53,23 +53,23 @@ lvim.builtin.treesitter.document_highlight = false
 
 -- Additional Plugins
 lvim.plugins = {
-  {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' },
-  {"folke/tokyonight.nvim"},
-  {'christianchiarulli/nvcode-color-schemes.vim'},
-  {'bkad/CamelCaseMotion'},
-  {'pearofducks/ansible-vim'},
-  {'szw/vim-maximizer'},
-  {'tpope/vim-commentary'},
-  {'tpope/vim-fugitive'},
-  {'tpope/vim-surround'},
-  {'wellle/targets.vim'},
-  {'tpope/vim-unimpaired'},
-  {'tpope/vim-repeat'},
-  {'blankname/vim-fish'},
-  {'saltstack/salt-vim'},
-  {'mfussenegger/nvim-dap-python'},
-  {'farmergreg/vim-lastplace'},
-  {'nvim-treesitter/playground'},
+	{ "nvim-telescope/telescope-fzf-native.nvim", run = "make" },
+	{ "folke/tokyonight.nvim" },
+	{ "christianchiarulli/nvcode-color-schemes.vim" },
+	{ "bkad/CamelCaseMotion" },
+	{ "pearofducks/ansible-vim" },
+	{ "szw/vim-maximizer" },
+	{ "tpope/vim-commentary" },
+	{ "tpope/vim-fugitive" },
+	{ "tpope/vim-surround" },
+	{ "wellle/targets.vim" },
+	{ "tpope/vim-unimpaired" },
+	{ "tpope/vim-repeat" },
+	{ "blankname/vim-fish" },
+	{ "saltstack/salt-vim" },
+	{ "mfussenegger/nvim-dap-python" },
+	{ "farmergreg/vim-lastplace" },
+	{ "nvim-treesitter/playground" },
 }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
@@ -78,45 +78,46 @@ lvim.plugins = {
 -- Additional Leader bindings for WhichKey
 -- lvim.builtin.which_key.mappings.f = { "<cmd>Telescope find_files find_command=rg,--ignore,--hidden,--files,--iglob,!.git<CR>", "Find files" }
 lvim.builtin.which_key.mappings.m = {
-    name = "+custoM telescope",
-    b = { "<cmd>Telescope buffers<cr>", "Search buffers' titles" },
-    d = { "<cmd>Telescope lsp_document_diagnostics<cr>", "Search diagnostics" },
-    f = { "<cmd>Telescope git_files<cr>", "Search diagnostics" },
-    h = { "<cmd>Telescope command_history<cr>", "Search command history" },
-    j = { "<cmd>Telescope jumplist<cr>", "Search jumplist" },
-    l = { "<cmd>Telescope lsp_document_symbols<cr>", "Search symbols" },
-    q = { "<cmd>Telescope quickfix<cr>", "Search Quickfix list" },
-    s = {
-      "<cmd>lua require('telescope.builtin').grep_string({ search = vim.fn.input('Grep For > ')})<cr>",
-      "Search string",
-    },
-    w = { "<cmd>lua require('telescope.builtin').grep_string()<cr>", "Search this word" },
-    z = { "<cmd>Telescope current_buffer_fuzzy_find<cr>", "Search symbols" },
-  }
+	name = "+custoM telescope",
+	b = { "<cmd>Telescope buffers<cr>", "Search buffers' titles" },
+	d = { "<cmd>Telescope lsp_document_diagnostics<cr>", "Search diagnostics" },
+	f = { "<cmd>Telescope git_files<cr>", "Search diagnostics" },
+	h = { "<cmd>Telescope command_history<cr>", "Search command history" },
+	j = { "<cmd>Telescope jumplist<cr>", "Search jumplist" },
+	l = { "<cmd>Telescope lsp_document_symbols<cr>", "Search symbols" },
+	q = { "<cmd>Telescope quickfix<cr>", "Search Quickfix list" },
+	s = {
+		"<cmd>lua require('telescope.builtin').grep_string({ search = vim.fn.input('Grep For > ')})<cr>",
+		"Search string",
+	},
+	w = { "<cmd>lua require('telescope.builtin').grep_string()<cr>", "Search this word" },
+	z = { "<cmd>Telescope current_buffer_fuzzy_find<cr>", "Search symbols" },
+}
 
 vim.cmd("set nocursorline")
 -- TODO fix these again
-vim.api.nvim_set_keymap('o', 'al', ':normal v0o$h<CR>', {})
-vim.api.nvim_set_keymap('o', 'il', ':normal v^og_<CR>', {})
+vim.api.nvim_set_keymap("o", "al", ":normal v0o$h<CR>", {})
+vim.api.nvim_set_keymap("o", "il", ":normal v^og_<CR>", {})
 
 lvim.builtin.dap.active = true
-lvim.builtin.telescope.defaults.find_command = {"rg","--ignore","--hidden","--files","--iglob","!.git"}
+lvim.builtin.telescope.defaults.find_command = { "rg", "--ignore", "--hidden", "--files", "--iglob", "!.git" }
 lvim.builtin.telescope.extensions = {
-  fzf = {
-    fuzzy = true,                    -- false will only do exact matching
-    override_generic_sorter = true, -- override the generic sorter
-    override_file_sorter = true,     -- override the file sorter
-    case_mode = "smart_case",        -- or "ignore_case" or "respect_case"
-    -- the default case_mode is "smart_case"
-  }
+	fzf = {
+		fuzzy = true, -- false will only do exact matching
+		override_generic_sorter = true, -- override the generic sorter
+		override_file_sorter = true, -- override the file sorter
+		case_mode = "smart_case", -- or "ignore_case" or "respect_case"
+		-- the default case_mode is "smart_case"
+	},
 }
 
 lvim.builtin.telescope.on_config_done = function()
-  require('telescope').load_extension('fzf')
+	require("telescope").load_extension("fzf")
 end
 
 lvim.lsp.document_highlight = false
 
+lvim.builtin.telescope.defaults.path_display = {}
 lvim.lang.python.formatter.exe = "black"
 lvim.lang.python.linters = "flake8"
 lvim.lsp.diagnostics.virtual_text = true
@@ -128,3 +129,11 @@ vim.opt.timeoutlen = 800
 vim.opt.relativenumber = true
 vim.opt.colorcolumn = "80"
 lvim.lang.vim.lsp.active = false
+
+-- example configuration! (see CONFIG above to make your own)
+require("null-ls").config({
+	sources = { require("null-ls").builtins.diagnostics.golangci_lint },
+})
+require("lspconfig")["null-ls"].setup({})
+
+vim.g.camelcasemotionkey = "\\"
