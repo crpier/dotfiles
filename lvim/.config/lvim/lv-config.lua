@@ -6,7 +6,7 @@ lvim.colorscheme = "gruvbox"
 lvim.leader = "space"
 -- overwrite the key-mappings provided by LunarVim for any mode, or leave it empty to keep them
 lvim.keys.normal_mode = {
-	{ "<esc><esc>", "<cmd>nohlsearch<cr>" },
+	{ "<esc>", "<cmd>nohlsearch<cr>" },
 	{ "N", "Nzz" },
 	{ "Q", "<nop>" },
 	{ "[b", ":BufferPrevious<CR>" },
@@ -118,10 +118,10 @@ end
 lvim.lsp.document_highlight = false
 
 lvim.builtin.telescope.defaults.path_display = {}
-lvim.lang.python.formatter.exe = "black"
-lvim.lang.python.linters = "flake8"
+-- lvim.lang.python.formatter.exe = "black"
+-- lvim.lang.python.linters = "flake8"
 lvim.lsp.diagnostics.virtual_text = true
-lvim.lang.lua.formatter.exe = "stylua"
+-- lvim.lang.lua.formatter.exe = "stylua"
 vim.opt.cmdheight = 1
 vim.cmd("set background=dark")
 vim.opt.scrolloff = 4
@@ -129,11 +129,4 @@ vim.opt.timeoutlen = 800
 vim.opt.relativenumber = true
 vim.opt.colorcolumn = "80"
 lvim.lang.vim.lsp.active = false
-
--- example configuration! (see CONFIG above to make your own)
-require("null-ls").config({
-	sources = { require("null-ls").builtins.diagnostics.golangci_lint },
-})
-require("lspconfig")["null-ls"].setup({})
-
 vim.g.camelcasemotionkey = "\\"
