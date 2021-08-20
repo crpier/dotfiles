@@ -104,8 +104,6 @@ vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
 " Insert line without entering insert mode
 nnoremap go o<Esc>
 nnoremap gO O<Esc>
-" Clear search highlight
-nnoremap <Esc> <Cmd>nohlsearch<CR>
 " Yank until end of line
 nnoremap Y yg_
 " Center screen after search result
