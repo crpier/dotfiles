@@ -1,4 +1,5 @@
 {
+    "vim.camelCaseMotion.enable": true,
     "workbench.editor.showTabs": true,
     "workbench.list.automaticKeyboardNavigation": false,
     "editor.tokenColorCustomizations": {
@@ -108,7 +109,6 @@
     },
     "emmet.showSuggestionsAsSnippets": true,
     "git.autofetch": true,
-    "workbench.startupEditor": "newUntitledFile",
     "vim.useCtrlKeys": true,
     "vim.hlsearch": true,
     "vim.highlightedyank.enable": true,
@@ -135,19 +135,6 @@
             ]
         },
     ],
-    "vim.operatorPendingModeKeyBindings": [
-        {
-            "before": [
-                "i",
-                "l"
-            ],
-            "after": [
-                "^",
-                "g",
-                "_"
-            ]
-        }
-    ],
     "vim.visualModeKeyBindingsNonRecursive": [
         {
             "before": [
@@ -158,25 +145,6 @@
                 "g",
                 "v",
                 "y"
-            ]
-        }
-    ],
-    "vim.visualModeKeyBindings": [
-        {
-            "before": [
-                "n",
-                
-            ],
-            "commands": [
-                "editor.action.nextMatchFindAction"
-            ]
-        },{
-            "before": [
-                "N",
-                
-            ],
-            "commands": [
-                "editor.action.previousMatchFindAction"
             ]
         },
     ],
@@ -210,26 +178,125 @@
         },
         {
             "before": [
-                "<leader>",
-                "/"
+                "<Esc>",
             ],
             "commands": [
-                "actions.find"
+                "closeFindWidget",
+                ":nohlsearch"
+            ],
+        },
+        {
+            "before": [
+                "<C-h>",
+            ],
+            "after": [
+                "<C-w>",
+                "h"
             ]
         },
         {
             "before": [
-                "<Esc>",
+                "<C-j>",
+            ],
+            "after": [
+                "<C-w>",
+                "j"
+            ]
+        },
+        {
+            "before": [
+                "<C-k>",
+            ],
+            "after": [
+                "<C-w>",
+                "k"
+            ]
+        },
+        {
+            "before": [
+                "<C-l>",
+            ],
+            "after": [
+                "<C-w>",
+                "l"
+            ]
+        },
+        {
+            "before": [
+                "[",
+                "b"
+            ],
+            "after": [
+                "g",
+                "T"
+            ]
+        },
+        {
+            "before": [
+                "]",
+                "b"
+            ],
+            "after": [
+                "g",
+                "t"
+            ]
+        },
+        {
+            "before": [
+                "u"
             ],
             "commands": [
-                "closeFindWidget"
+                "undo"
+            ]
+        },
+        {
+            "before": [
+                "<C-r>"
+            ],
+            "commands": [
+                "redo"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "l",
+                "f"
+            ],
+            "commands": [
+                "editor.action.formatDocument"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "o"
+            ],
+            "after": [
+                "o",
+                "<Esc>"
+            ]
+        },
+        {
+            "before": [
+                "g",
+                "O"
+            ],
+            "after": [
+                "O",
+                "<Esc>"
             ]
         },
     ],
-    "vim.leader": "<space>",
     "editor.lineNumbers": "relative",
+    "vim.leader": "<space>",
     "vim.handleKeys": {
-        // "<C-a>": false,
-        "<C-f>": false
-    }
+        "<C-a>": true,
+        "<C-f>": true,
+    },
+    "editor.fontFamily": "Menlo",
+    "editor.fontSize": 14,
+    "terminal.integrated.fontSize": 16,
+    "vim.visualstar": true,
+    "workbench.colorTheme": "Gruvbox Dark Medium",
 }
