@@ -51,18 +51,18 @@ set -gx BAT_STYLE "numbers,changes"
 # open stuff in text editor
 alias n nvim
 alias l lvim
-alias nconfig "nvim $HOME/.config/nvim/init.vim"
-alias nlconfig "nvim $HOME/.config/local_configs/init.local.vim"
+alias nconfig "lvim $HOME/.config/nvim/init.vim"
+alias nlconfig "lvim $HOME/.config/local_configs/init.local.vim"
 alias lconfig "lvim $HOME/.config/lvim/config.lua"
 alias lvconfig "lvim $HOME/.local/share/lunarvim/lvim"
 alias fconfig "lvim $HOME/.config/fish/config.fish"
-alias flconfig "lvim $HOME/.config/local_configs/config.local.fish"
+alias flconfig "lvim $HOME/.config/local_configs/config.fish"
 alias tconfig "lvim $HOME/.tmux.conf"
 alias vconfig "lvim $HOME/.vimrc"
-alias tlconfig "lvim $HOME/.config/local_configs/tmux.local.conf"
+alias tlconfig "lvim $HOME/.config/local_configs/tmux.conf"
 
 # misc stuff
-alias "_" "cd -"
+# alias "_" "cd -"
 alias b "bat"
 alias pipi "pip install"
 alias fzfb "fzf --preview 'bat --color=always --style=numbers --line-range=:500 {}'"
@@ -113,6 +113,6 @@ function mkcd
 end
 
 # always source custom configs at the end
-if test -f ~/.config/local_configs/config.local.fish
-  source ~/.config/local_configs/config.local.fish
+if test -f ~/.config/local_configs/config.fish
+  source ~/.config/local_configs/config.fish
 end
