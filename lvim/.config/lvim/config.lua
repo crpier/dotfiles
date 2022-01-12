@@ -20,6 +20,7 @@ lvim.format_on_save = false
 lvim.colorscheme = "gruvbox"
 lvim.lsp.document_highlight = false
 vim.cmd("set nocursorline")
+
 lvim.builtin.dap.active = true
 vim.opt.cmdheight = 1
 vim.cmd("set background=dark")
@@ -28,18 +29,6 @@ vim.opt.timeoutlen = 800
 vim.opt.relativenumber = true
 vim.opt.colorcolumn = "80"
 vim.g.camelcasemotion_key = "\\"
-lvim.builtin.telescope.extensions = {
-	fzf = {
-		fuzzy = true, -- false will only do exact matching
-		override_generic_sorter = true, -- override the generic sorter
-		override_file_sorter = true, -- override the file sorter
-		case_mode = "smart_case", -- or "ignore_case" or "respect_case"
-		-- the default case_mode is "smart_case"
-	},
-}
-lvim.builtin.telescope.on_config_done = function()
-	require("telescope").load_extension("fzf")
-end
 lvim.builtin.telescope.defaults.path_display = {}
 
 -- keymappings [view all the defaults by pressing <leader>Lk]
@@ -62,8 +51,8 @@ lvim.keys.normal_mode["X"] = '"_X'
 
 lvim.keys.insert_mode.jw = "<ESC>:w<CR>"
 lvim.keys.insert_mode.jx = "<ESC>:x<CR>"
-lvim.keys.insert_mode.jj = ""
-lvim.keys.insert_mode.kj = ""
+-- unset lunarvim defaults
+lvim.keys.insert_mode.kj = "kj"
 -- unmap a default keymapping
 -- lvim.keys.normal_mode["<C-Up>"] = ""
 -- edit a default keymapping
@@ -93,7 +82,8 @@ lvim.keys.insert_mode.kj = ""
 --   l = { "<cmd>Trouble loclist<cr>", "LocationList" },
 --   w = { "<cmd>Trouble lsp_workspace_diagnostics<cr>", "Diagnostics" },
 -- }
-lvim.builtin.which_key.mappings["m"] = {
+-- Telescope commands
+lvim.builtin.which_key.mappings.m = {
 	name = "+custoM telescope",
 	b = { "<cmd>Telescope buffers<cr>", "Search buffers' titles" },
 	d = { "<cmd>Telescope lsp_document_diagnostics<cr>", "Search diagnostics" },
@@ -101,6 +91,7 @@ lvim.builtin.which_key.mappings["m"] = {
 	h = { "<cmd>Telescope command_history<cr>", "Search command history" },
 	j = { "<cmd>Telescope jumplist<cr>", "Search jumplist" },
 	l = { "<cmd>Telescope lsp_document_symbols<cr>", "Search symbols" },
+	m = { "<cmd>Telescope symbols<cr>", "Search emojis (or other unicode whatev)" },
 	q = { "<cmd>Telescope quickfix<cr>", "Search Quickfix list" },
 	s = {
 		"<cmd>lua require('telescope.builtin').grep_string({ search = vim.fn.input('Grep For > ')})<cr>",
@@ -183,7 +174,8 @@ lvim.builtin.treesitter.highlight.enabled = true
 --     },
 -- }
 lvim.plugins = {
-	{ "nvim-telescope/telescope-fzf-native.nvim", run = "make" },
+  { "rktjmp/lush.nvim" },
+  { "ellisonleao/gruvbox.nvim" },
 	{ "christianchiarulli/nvcode-color-schemes.vim" },
 	{ "bkad/CamelCaseMotion" },
 	{ "pearofducks/ansible-vim" },
@@ -197,6 +189,8 @@ lvim.plugins = {
 	{ "saltstack/salt-vim" },
 	{ "mfussenegger/nvim-dap-python" },
 	{ "farmergreg/vim-lastplace" },
+  { "mbbill/undotree" },
+  { "nvim-telescope/telescope-symbols.nvim" },
 }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
