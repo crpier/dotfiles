@@ -97,7 +97,8 @@ nnoremap <leader>z :MaximizerToggle!<CR>
 " camelcase motion key
 let g:camelcasemotion_key = '\'
 " if using tmux on local machine, use this to yank selection to your clipboard
-vnoremap <leader>c :OSCYank<CR>
+vnoremap <leader>y :OSCYank<CR>
+nmap <leader>y <Plug>OSCYank
 " Fugitive stuff
 nnoremap <leader>gi :Git
 nnoremap <leader>gb :Git blame<CR>
@@ -219,11 +220,6 @@ nnoremap <leader>D "_D
 nnoremap Q ZQ
 " Copy unnamed register to p register
 nnoremap cp :let @p=@""<CR>
-" Copy to clipboard
-vnoremap  <leader>y  "+y
-nnoremap  <leader>Y  "+yg_
-nnoremap  <leader>y  "+y
-nnoremap  <leader>yy  "+yy
 " Paste from clipboard
 nnoremap <leader>p "+p
 nnoremap <leader>P "+P

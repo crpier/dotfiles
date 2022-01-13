@@ -35,8 +35,8 @@ lvim.builtin.telescope.defaults.path_display = {}
 lvim.leader = "space"
 -- add your own keymapping
 
-lvim.keys.normal_mode["<leader>y"] = "\"+y"
-lvim.keys.normal_mode["<leader>Y"] = "\"+Y"
+lvim.keys.visual_mode["<leader>y"] = ":OSCYank<CR>"
+
 lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 lvim.keys.normal_mode["<esc>"] = "<cmd>nohlsearch<cr>"
 -- cancel Q key
@@ -191,6 +191,7 @@ lvim.plugins = {
 	{ "farmergreg/vim-lastplace" },
   { "mbbill/undotree" },
   { "nvim-telescope/telescope-symbols.nvim" },
+  { "ojroques/vim-oscyank" },
 }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)

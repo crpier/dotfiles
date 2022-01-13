@@ -1,4 +1,7 @@
 {
-  "python.analysis.typeCheckingMode": "strict",
-  "python.analysis.autoImportCompletions": true
+  "pyright.disableLanguageServices": false,
+  "python.analysis.logLevel": "Error",
+  "pyright.disableOrganizeImports": true,
+  "python.analysis.diagnosticMode": "openFilesOnly",
+  "python.analysis.typeCheckingMode": "off"
 }

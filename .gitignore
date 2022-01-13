@@ -66,3 +66,4 @@ config/plasmarc
 config/nvim/init.local.vim
 config/fish/config.local.fish
 config/gtkrc-2.0
+lvim/.config/lvim/plugin
