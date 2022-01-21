@@ -1,0 +1,7 @@
+{
+  "pyright.disableLanguageServices": false,
+  "python.analysis.logLevel": "Error",
+  "pyright.disableOrganizeImports": true,
+  "python.analysis.diagnosticMode": "openFilesOnly",
+  "python.analysis.typeCheckingMode": "off"
+}
