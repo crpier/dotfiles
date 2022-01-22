@@ -11,6 +11,7 @@ optional_npm_packages:
 private_dotfiles_url: 
 
 # Variables the user shouldn't try to change
+dotfiles_repo_url: git@github.com:tiannaru/dotfiles.git
 mandatory_packages:
   - bat
   - fd

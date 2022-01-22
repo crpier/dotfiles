@@ -1,0 +1,13 @@
+---
+- name: Clone the dotfiles repo
+  git:
+    repo: "{{ dotfiles_repo_url }}"
+    dest: "{{ home }}/.dotfiles"
+    update: true
+  register: dotfiles
+
+- name: Deploy dotfiles
+  shell:
+    cmd: "{{ home }}/.dotfiles/deploy.sh"
+    chdir: "{{ home }}./dotfiles"
+  when: dotfiles.changed
