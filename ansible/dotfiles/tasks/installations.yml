@@ -21,10 +21,9 @@
 
 - name: Install required npm packages
   npm:
-    name: "{{ item.name }}"
+    name: "{{ item }}"
     global: true
-  with_items:
-    - name: "{{ mandatory_npm_packages }}"
+  with_items: "{{ mandatory_npm_packages }}"
   become: true
 
 - name: Install optional npm packages
@@ -53,7 +52,7 @@
     - name: Install latest neovim
       get_url:
         url: >
-          https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage
+          https://github.com/neovim/neovim/releases/download/v0.6.1/nvim.appimage
         dest: /usr/local/bin/nvim
         mode: '755'
       become: true
