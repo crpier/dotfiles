@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  vars_files:
+    - vars.yaml
+  roles:
+    - basics
+    - lunarvim
+    - misc
+    - dotfiles
+    - private_dotfiles

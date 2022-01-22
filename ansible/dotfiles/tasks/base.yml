@@ -1,0 +1,9 @@
+---
+- name: Create home folder structure
+  file:
+    path: "{{ home }}/{{ item }}"
+    state: directory
+  with_items:
+    - "{{ repos_folder }}"
+    - "{{ additional_folders }}"
+

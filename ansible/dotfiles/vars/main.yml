@@ -1,0 +1,46 @@
+---
+# Variables that the user needs to set
+user: 
+
+# Variables that the user can set to customize
+repos_folder: Projects
+additional_folders:
+optional_packages: 
+optional_pip_libraries: 
+optional_npm_packages:
+private_dotfiles_url: 
+
+# Variables the user shouldn't try to change
+mandatory_packages:
+  - bat
+  - fd
+  - exa
+  - fish
+  - vim
+  - fzf
+  - npm
+  - ripgrep
+  - tmux
+  - xclip
+  - yarn
+  - yay
+  - lazygit
+
+mandatory_pip_libraries:
+  - virtualenv
+  - black
+  - yamllint
+  - ansible-lint
+  - flake8
+  - pylint
+
+mandatory_npm_packages:
+  - neovim
+
+# Platform dependent
+vagrant:
+server:
+desktop:
+  yay_packages:
+    - otf-monego-git
+
