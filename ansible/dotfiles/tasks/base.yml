@@ -1,0 +1,30 @@
+---
+- name: Create home folder structure
+  file:
+    path: "{{ home }}/{{ item }}"
+    state: directory
+  with_items:
+    - "{{ repos_folder }}"
+    - "{{ additional_folders }}"
+
+- name: Add the github email to ~/.gitconfig
+  ini_file:
+    dest: "{{ home }}/.gitconfig"
+    section: user
+    option: email
+    value: "{{ github_email }}"
+  when: github_email != None
+
+- name: Add the github name to ~/.gitconfig
+  ini_file:
+    dest: "{{ home }}/.gitconfig"
+    section: user
+    option: name
+    value: "{{ github_name }}"
+  when: github_name != None
+
+- name: Create dir for local configs
+  file:
+    dest: "{{ home}}/.config/local_configs"
+    state: directory
+

@@ -43,7 +43,6 @@ set updatetime=300
 
 """"""""""""""""""""""""""""""Plugin settings""""""""""""""""""""""""""""""
 """"""""""""""""""""""""""""""General Remaps""""""""""""""""""""""""""""""""
-" TODO: does this work?
 " Copy to clipboard
 vnoremap  <leader>y  "+y
 nnoremap  <leader>Y  "+yg_

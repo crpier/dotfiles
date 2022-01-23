@@ -1,0 +1,46 @@
+---
+- name: Public dotfiles
+  block:
+  - name: Clone the dotfiles repo
+    git:
+      repo: "{{ dotfiles_repo_url }}"
+      dest: "{{ home }}/.dotfiles"
+      update: true
+
+  - name: Backup the config folders
+    copy:
+      src: "{{ item }}"
+      remote_src: yes
+      dest: "{{ item }}.bak"
+    with_items: "{{ backup_targets }}"
+    ignore_errors: yes
+    failed_when: false
+
+  # This is because stow doesn't want to overwrite configs
+  - name: Remove old config files after backup
+    file:
+      name: "{{ item }}"
+      state: absent
+    with_items: "{{ backup_targets }}"
+    ignore_errors: yes
+    failed_when: false
+
+  - name: Deploy the dotfiles
+    shell:
+      cmd: "{{ home }}/.dotfiles/deploy.sh"
+      chdir: "{{ home }}/.dotfiles"
+
+- name: Private dotfiles
+  when: private_dotfiles_url =! None
+  block:
+  - name: Clone the dotfiles repo
+    git:
+      repo: "{{ private_dotfiles_url }}"
+      dest: "{{ home }}/.private_dotfiles"
+      update: true
+
+  - name: Deploy the dotfiles
+    shell:
+      cmd: "{{ home }}/.private_dotfiles/deploy.sh"
+      chdir: "{{ home }}/.private_dotfiles"
+

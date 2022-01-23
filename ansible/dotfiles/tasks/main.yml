@@ -1,0 +1,15 @@
+---
+- name: Setup dynamic variables
+  block:
+    - name: Setup home folder
+      set_fact:
+        home: "/home/{{ user }}"
+
+- name: Run base tasks
+  include_tasks: base.yml
+
+- name: Run installations tasks
+  include_tasks: installations.yml
+
+- name: Run dotfiles tasks
+  include_tasks: dotfiles.yml

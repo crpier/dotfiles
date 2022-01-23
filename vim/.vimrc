@@ -2,7 +2,7 @@
 let data_dir = '~/.vim'
 if empty(glob(data_dir.'/autoload/plug.vim'))
   silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+  autocmd VimEnter * PlugInstall! --sync | source $MYVIMRC
 endif
 
 call plug#begin('~/.vim/plugged')
@@ -10,7 +10,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'airblade/vim-gitgutter'
 Plug 'bkad/CamelCaseMotion'
 Plug 'dag/vim-fish'
-" TODO fzf keybinds
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'machakann/vim-highlightedyank'
@@ -170,3 +169,7 @@ autocmd BufNewFile,BufRead *.py ab pdb import pdb; pdb.set_trace()
 au BufNewFile,BufRead Jenkinsfile setf groovy
 " vim-fish makes / part of a word, but that's weird
 autocmd BufNewFile,BufRead *.fish set iskeyword-=/
+
+if !empty(glob("~/.config/local_configs/.vimrc"))
+  source ~/.config/local_configs/.vimrc
+endif

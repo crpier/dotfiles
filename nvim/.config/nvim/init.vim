@@ -2,7 +2,7 @@
 let data_dir = stdpath('data').'/site'
 if empty(glob(data_dir . '/autoload/plug.vim'))
   silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+  autocmd VimEnter * PlugInstall! --sync | source $MYVIMRC
 endif
 call plug#begin(stdpath('data').'/plugged')
 " Common plugins
@@ -32,7 +32,6 @@ Plug 'mfussenegger/nvim-dap-python'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
-" TODO install ripgrep if not installed
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate' }
 call plug#end()
@@ -77,10 +76,10 @@ set nobackup
 set undofile
 "" Neovim specific settings last
 set termguicolors
-silent call mkdir(stdpath('data').'undodir', "p", 0700)
-" where to store undo data. It is guaranteed that ~/.local/share/nvim exists 
-" TODO find a way to use a variable here
-set undodir=~/.local/share/nvim/undodir
+let undo_dir = stdpath('data').'/undodir'
+" Ensure the undodir exists before using it
+silent call mkdir(undo_dir, "p", 0700)
+set undodir=undo_dir
 
 """"""""""""""""""""""""""""""Theme"""""""""""""""""""""""""""""""""""""""""
 colorscheme gruvbox
@@ -269,3 +268,8 @@ autocmd BufNewFile,BufRead *.py ab pdb import pdb; pdb.set_trace()
 au BufNewFile,BufRead Jenkinsfile setf groovy
 " vim-fish makes / part of a word, but that's weird
 autocmd BufNewFile,BufRead *.fish set iskeyword-=/
+
+let local_config = "~/.config/local_configs/init.vim"
+if !empty(glob(local_config))
+  source local_config
+endif
