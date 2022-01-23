@@ -15,7 +15,7 @@
   with_items: "{{ backup_targets }}"
   ignore_errors: yes
   failed_when: false
-  when: dotfiles.changed
+  # when: dotfiles.changed
 
 - name: Remove old config files
   file:
@@ -24,11 +24,11 @@
   with_items: "{{ backup_targets }}"
   ignore_errors: yes
   failed_when: false
-  when: dotfiles.changed
+  # when: dotfiles.changed
 
 - name: Symlink dotfiles with stow
   shell:
     cmd: "{{ home }}/.dotfiles/deploy.sh"
     chdir: "{{ home }}/.dotfiles"
-  when: dotfiles.changed
+  # when: dotfiles.changed
 
