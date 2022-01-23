@@ -32,6 +32,7 @@ mandatory_packages:
   - stow
   - make
   - fakeroot
+  - rg
 
 mandatory_pip_libraries:
   - virtualenv

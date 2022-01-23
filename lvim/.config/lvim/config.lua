@@ -101,7 +101,6 @@ lvim.builtin.which_key.mappings.m = {
 	z = { "<cmd>Telescope current_buffer_fuzzy_find<cr>", "Search symbols" },
 }
 
--- TODO: User Config for predefined plugins
 -- After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
 lvim.builtin.dashboard.active = false
 lvim.builtin.terminal.active = true

@@ -23,3 +23,8 @@
     value: "{{ github_name }}"
   when: github_name != None
 
+- name: Create dir for local configs
+  file:
+    dest: "{{ home}}/.config/local_configs"
+    state: directory
+
