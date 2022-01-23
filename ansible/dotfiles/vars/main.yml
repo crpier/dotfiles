@@ -42,6 +42,18 @@ mandatory_pip_libraries:
 mandatory_npm_packages:
   - neovim
 
+backup_targets:
+  - ~/.config/fish
+  - ~/.config/kitty
+  - ~/.config/nvim
+  - ~/.config/lvim
+  - ~/.config/ranger
+  - ~/.tmux.conf
+  - ~/.config/vim
+  - ~/.xinitrc
+  - ~/.xprofile
+  - ~/.Xresources
+
 # Platform dependent
 vagrant:
 server:

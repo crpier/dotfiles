@@ -6,8 +6,24 @@
     update: true
   register: dotfiles
 
-- name: Deploy dotfiles
+- name: Backup the config folders
+  copy:
+    src: "{{ item }}"
+    remote_src: yes
+    dest: "{{ item }}.bak"
+  with_items: "{{ backup_targets }}"
+  ignore_errors: yes
+
+- name: Remove old config files
+  file:
+    name: "{{ item }}"
+    state: absent
+  with_items: "{{ backup_targets }}"
+  ignore_errors: yes
+
+- name: Symlink dotfiles with stow
   shell:
     cmd: "{{ home }}/.dotfiles/deploy.sh"
     chdir: "{{ home }}/.dotfiles"
   when: dotfiles.changed
+
