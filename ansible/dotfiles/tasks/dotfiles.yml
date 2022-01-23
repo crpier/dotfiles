@@ -9,5 +9,5 @@
 - name: Deploy dotfiles
   shell:
     cmd: "{{ home }}/.dotfiles/deploy.sh"
-    chdir: "{{ home }}./dotfiles"
+    chdir: "{{ home }}/.dotfiles"
   when: dotfiles.changed

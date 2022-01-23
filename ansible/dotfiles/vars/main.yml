@@ -26,6 +26,10 @@ mandatory_packages:
   - yarn
   - yay
   - lazygit
+  - kitty
+  - stow
+  - make
+  - fakeroot
 
 mandatory_pip_libraries:
   - virtualenv

@@ -4,6 +4,11 @@ These are my dotfiles. I am using `stow` to manage them, so you could call them 
 Much inspiration from https://github.com/ChristianChiarulli/Machfiles.
 
 ### Installing
+After you just installed your OS, you need a few things:
+- create ssh key and add it to github
+- install git and ansible if they don't exist
+- update your system
+
 ```bash
 git clone git@github.com:tiannaru/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
@@ -32,5 +37,4 @@ There is also a list of programs that these dotfiles serve in the `programs` dir
 Also my keyboard layout: https://configure.ergodox-ez.com/ergodox-ez/layouts/APZKR/latest
 
 ### TODO
-- backup script in case you try this on a not fresh install of manjaro (or not on manjaro lol)
-- create dwm mapping for brightness change (or switch to i3 maybe??)
+- improve the deploy script to do proper backup
