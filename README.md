@@ -18,6 +18,14 @@ You'll need to do a few more things to seal the deal:
 This isn't in maintenance mode yet, but in development. As such, there are a few catches:
 - can't install lunarvim from ansible yet, so there is a script `install_lunarvim.sh` that we use until we have a proper package for lunarvim that can be used to also install dependencies without any user involvement
 
+### Known issues
+- You might encounter something an with this is in it in `nvim` or `vim` (though not in `lvim`)
+```
+This extension doesn't exist or is not installed: fzf
+```
+Happens because the post-install hook for `telescope-fzf-native.nvim` didn't run. No idea why 😔
+You can fix it by running `PlugInstall!` in vim/nvim to force the post-install hooks to run.
+
 ```bash
 git clone git@github.com:tiannaru/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
