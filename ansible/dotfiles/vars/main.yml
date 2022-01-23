@@ -1,9 +1,8 @@
 ---
 # Variables that the user needs to set
 user: deault
-github:
-  name:
-  email:
+github_name:
+github_email:
 
 # Variables that the user can set to customize
 repos_folder: Projects

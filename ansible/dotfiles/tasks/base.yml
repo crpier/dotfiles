@@ -12,14 +12,14 @@
     dest: "{{ home }}/.gitconfig"
     section: user
     option: email
-    value: "{{ github.email }}"
-  when: github.email != ""
+    value: "{{ github_email }}"
+  when: github_email != None
 
 - name: Add the github name to ~/.gitconfig
   ini_file:
     dest: "{{ home }}/.gitconfig"
     section: user
     option: name
-    value: "{{ github.name }}"
-  when: github.name != ""
+    value: "{{ github_name }}"
+  when: github_name != None
 
