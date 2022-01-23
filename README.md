@@ -52,5 +52,5 @@ Also my keyboards' layouts:
 - Drop Preonic: 
 
 ### TODO
-- do the vagrant thingie
 - either remove ranger config or add it to ansible role
+- create tmux scripts based on templates (for example using the `repos_folder` to select repos)
