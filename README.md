@@ -8,6 +8,7 @@ After you just installed your OS, you need a few things:
 - update your system
 - create ssh key and add it to github
 - install git and ansible if they don't exist
+- if you want to install lunarvim, install it now using the `install_lunarvim.sh` script
 
 ### Post installation
 You'll need to do a few more things to seal the deal:
@@ -44,7 +45,4 @@ Also my keyboards' layouts:
 
 ### TODO
 - do the vagrant thingie
-- spelling:
-  - add the /home/cris/.config/lvim/spell/en.utf-8.add and track it in repo
-- add config.lua for lvim to `local_configs`
 - either remove ranger config or add it to ansible role
