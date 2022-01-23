@@ -83,17 +83,3 @@
           - pynvim
           - neovim
         virtualenv: "{{ home }}/.pynvim3"
-
-# Check when there is a pacman package for lunarvim so we can get rid of this
-- name: Lunarvim
-  block:
-  - name: Check if lunarvim is installed
-    shell:
-      cmd: "which lvim"
-    register: lvim_installed
-    failed_when: false
-
-  - name: Install lunarvim
-    shell:
-      cmd: "LV_BRANCH=rolling bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/rolling/utils/installer/install.sh) --no-install-dependencies"
-    when: lvim_installed.rc == 1

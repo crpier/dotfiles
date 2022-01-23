@@ -39,8 +39,6 @@ Also my keyboards' layouts:
 - Drop Preonic: 
 
 ### TODO
-- add backup to the ansible role
-- add variable that decides when to install lunarvim (or just install it separately from a little script?)
 - gitconfig management: link the .extra.gitconfig file and also optionally set up user and email in gitconfig
 - do the vagrant thingie
 - spelling:
