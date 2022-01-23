@@ -13,6 +13,9 @@ After you just installed your OS, you need a few things:
 You'll need to do a few more things to seal the deal:
 - open `lvim` and run a `:PackerInstall` and a `:PackerCompile`
 
+### Work in progress
+This isn't in maintenance mode yet, but in development. As such, there are a few catches:
+- can't install lunarvim from ansible yet, so there is a script `install_lunarvim.sh` that we use until we have a proper package for lunarvim that can be used to also install dependencies without any user involvement
 
 ```bash
 git clone git@github.com:tiannaru/dotfiles.git ~/.dotfiles
@@ -39,7 +42,6 @@ Also my keyboards' layouts:
 - Drop Preonic: 
 
 ### TODO
-- gitconfig management: link the .extra.gitconfig file and also optionally set up user and email in gitconfig
 - do the vagrant thingie
 - spelling:
   - add the /home/cris/.config/lvim/spell/en.utf-8.add and track it in repo
