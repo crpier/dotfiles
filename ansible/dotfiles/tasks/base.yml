@@ -13,7 +13,7 @@
     section: user
     option: email
     value: "{{ github.email }}"
-  when: github.email != ''
+  when: github.email != ""
 
 - name: Add the github name to ~/.gitconfig
   ini_file:
@@ -21,5 +21,5 @@
     section: user
     option: name
     value: "{{ github.name }}"
-  when: github.name != ''
+  when: github.name != ""
 
