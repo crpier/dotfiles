@@ -31,9 +31,9 @@ This is also nicely extensible. Many dotfiles here source other files from `~/.c
 For example, you can fork this public repo, on both your work and personal laptops, and then extend it with private dotfiles repos. All that these other repos need is to keep config files in the `~/.config/local_configs/` folder.
 ATM these files are used in local_configs:
 - ~/.config/local_configs/config.fish
-- ~/.config/local_configs/init.vim (for nvim)
-- ~/.config/local_configs/kitty.local.conf (TODO rename this)
-- ~/.config/local_configs/tmux.local.conf (TODO rename this)
+- ~/.config/local_configs/init.vim (for nvim) (TODO)
+- ~/.config/local_configs/kitty.conf
+- ~/.config/local_configs/tmux.conf
 
 ### Extra
 Also my keyboards' layouts: 
