@@ -11,6 +11,5 @@
 - name: Run installations tasks
   include_tasks: installations.yml
 
-
 - name: Run dotfiles tasks
   include_tasks: dotfiles.yml

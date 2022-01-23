@@ -54,3 +54,4 @@ Also my keyboards' layouts:
 ### TODO
 - either remove ranger config or add it to ansible role
 - create tmux scripts based on templates (for example using the `repos_folder` to select repos)
+- put all the config backups in one place

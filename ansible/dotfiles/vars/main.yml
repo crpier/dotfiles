@@ -1,6 +1,6 @@
 ---
 # Variables that the user needs to set
-user: deault
+user: default
 github_name:
 github_email:
 
