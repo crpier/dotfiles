@@ -6,4 +6,17 @@
   with_items:
     - "{{ repos_folder }}"
     - "{{ additional_folders }}"
+- name: Add the github email to ~/.gitconfig
+  ini_file:
+    dest: "{{ home }}/.gitconfig"
+    section: user
+    option: email
+    value: "{{ github.email }}"
+
+- name: Add the github name to ~/.gitconfig
+  ini_file:
+    dest: "{{ home }}/.gitconfig"
+    section: user
+    option: name
+    value: "{{ github.name }}"
 
