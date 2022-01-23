@@ -13,6 +13,7 @@
     dest: "{{ item }}.bak"
   with_items: "{{ backup_targets }}"
   ignore_errors: yes
+  failed_when: false
 
 - name: Remove old config files
   file:
@@ -20,6 +21,7 @@
     state: absent
   with_items: "{{ backup_targets }}"
   ignore_errors: yes
+  failed_when: false
 
 - name: Symlink dotfiles with stow
   shell:
