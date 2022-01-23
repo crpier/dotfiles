@@ -48,8 +48,8 @@ ATM these files are used in local_configs:
 ### Extra
 Also my keyboards' layouts: 
 - Ergodox EZ: https://configure.ergodox-ez.com/ergodox-ez/layouts/APZKR/latest
-- Dactyl Manuform 4x6: 
-- Drop Preonic: 
+- Dactyl Manuform 4x6: https://github.com/tiannaru/qmk_firmware/tree/master/keyboards/handwired/dactyl_manuform/4x6/keymaps/based_vim
+- Drop Preonic: https://github.com/tiannaru/qmk_firmware/tree/master/keyboards/preonic/keymaps/based_vim
 
 ### TODO
 - either remove ranger config or add it to ansible role
