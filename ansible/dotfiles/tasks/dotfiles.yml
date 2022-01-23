@@ -4,6 +4,7 @@
     repo: "{{ dotfiles_repo_url }}"
     dest: "{{ home }}/.dotfiles"
     update: true
+    version: ansible
   register: dotfiles
 
 - name: Backup the config folders
