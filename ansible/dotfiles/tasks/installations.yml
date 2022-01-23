@@ -84,6 +84,7 @@
           - neovim
         virtualenv: "{{ home }}/.pynvim3"
 
+# Check when there is a pacman package for lunarvim so we can get rid of this
 - name: Lunarvim
   block:
   - name: Check if lunarvim is installed
