@@ -94,5 +94,5 @@
 
   - name: Install lunarvim
     shell:
-      cmd: "LV_BRANCH=rolling bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/rolling/utils/installer/install.sh --no-install-dependencies)"
+      cmd: "LV_BRANCH=rolling bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/rolling/utils/installer/install.sh) --no-install-dependencies"
     when: lvim_installed.rc == 1
