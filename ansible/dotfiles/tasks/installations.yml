@@ -40,11 +40,7 @@
       file:
         path: "{{ home }}/.vim/autoload"
         state: directory
-    - name: install vimplug for vim
       get_url:
-        url: >
-          https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-        dest: "{{ home }}/.vim/autoload/plug.vim"
 
 - name: Neovim
   block:
@@ -60,12 +56,6 @@
       file:
         path: "{{ home }}/.local/share/nvim/site/autoload"
         state: directory
-
-    - name: Install vimplug for neovim
-      get_url:
-        url: >
-          https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-        dest: "{{ home }}/.local/share/nvim/site/autoload/plug.vim"
 
     # TODO: decide around March if this needs to be removed for real
     # - name: Install python2 env for neovim
