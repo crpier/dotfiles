@@ -1,0 +1,3 @@
+[submodule "ansible/dotfiles-role"]
+	path = ansible/dotfiles-role
+	url = git@github.com:tiannaru/dotfiles-role.git
