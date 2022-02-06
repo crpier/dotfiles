@@ -1,4 +1,4 @@
-stow $(ls -d */ | grep -v ansible)
+stow */
 # Instead of mucking around with the gitconfig file, I'd rather have it source
 # a gitconfig file I have in git, and let the default ~/.gitconfig file loose
 if grep -q "extra.gitconfig" ~/.gitconfig; then
