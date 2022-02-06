@@ -35,6 +35,7 @@ function fish_prompt --description 'Write out the prompt'
 end
 
 
+set -gx TERM xterm-256color
 set -U fish_prompt_pwd_dir_length 100
 set -U VIRTUAL_ENV_DISABLE_PROMPT yes
 
