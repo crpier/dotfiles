@@ -76,10 +76,10 @@ set nobackup
 set undofile
 "" Neovim specific settings last
 set termguicolors
-let undo_dir = stdpath('data').'/undodir'
+let $undo_dir = stdpath('data').'/undodir'
 " Ensure the undodir exists before using it
-silent call mkdir(undo_dir, "p", 0700)
-set undodir=undo_dir
+silent call mkdir($undo_dir, "p", 0700)
+set undodir=$undo_dir
 
 """"""""""""""""""""""""""""""Theme"""""""""""""""""""""""""""""""""""""""""
 colorscheme gruvbox
