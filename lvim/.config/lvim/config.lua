@@ -101,6 +101,23 @@ lvim.builtin.which_key.mappings.m = {
 	z = { "<cmd>Telescope current_buffer_fuzzy_find<cr>", "Search symbols" },
 }
 
+lvim.builtin.which_key.mappings.z = {
+	name = "+Zk commands",
+	d = { "<cmd>ZkNew { dir = 'daybook' }<cr>", "Creates a daybook entry" },
+	n = { "<cmd>ZkNew<cr>", "Creates a new ZK note" },
+	i = { "<cmd>ZkIndex<cr>", "Index the ZK notebook" },
+	s = { "<cmd>ZkNotes<cr>", "Open notes in telescope" },
+	b = { "<cmd>ZkBacklinks<cr>", "Search links to this note" },
+	l = { "<cmd>ZkLinks<cr>", "Search links in this note" },
+	t = { "<cmd>ZkTags<cr>", "Search notes by tags" },
+}
+
+lvim.builtin.which_key.vmappings.z = {
+	name = "+Zk commands",
+	c = { ":'<,'>ZkNewFromContentSelection<cr>", "Create note with selected content" },
+	t = { ":'<,'>ZkNewFromTitleSelection<cr>", "Create note with selected title" },
+	s = { ":'<,'>ZkMatch<cr>", "Search notes that match selection" },
+}
 -- After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
 lvim.builtin.dashboard.active = false
 lvim.builtin.terminal.active = true
@@ -133,7 +150,6 @@ formatters.setup({
 
 local linters = require("lvim.lsp.null-ls.linters")
 linters.setup({
-	{ exe = "pylint", args = { "-E" } },
 	{ exe = "luacheck", args = { "-g" } },
 })
 -- Additional Plugins
@@ -147,7 +163,6 @@ linters.setup({
 lvim.plugins = {
 	{ "rktjmp/lush.nvim" },
 	{ "ellisonleao/gruvbox.nvim" },
-	{ "christianchiarulli/nvcode-color-schemes.vim" },
 	{ "bkad/CamelCaseMotion" },
 	{ "pearofducks/ansible-vim" },
 	{ "tpope/vim-commentary" },
@@ -163,6 +178,13 @@ lvim.plugins = {
 	{ "mbbill/undotree" },
 	{ "nvim-telescope/telescope-symbols.nvim" },
 	{ "ojroques/vim-oscyank" },
+	{ "sindrets/diffview.nvim" },
+	{
+		"mickael-menu/zk-nvim",
+		config = function()
+			require("zk").setup({ picker = "telescope" })
+		end,
+	},
 }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)

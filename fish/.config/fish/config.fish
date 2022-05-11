@@ -52,7 +52,7 @@ set -gx BAT_STYLE "numbers,changes"
 # open stuff in text editor
 alias n nvim
 alias l lvim
-alias nconfig "lvim $HOME/.config/nvim/init.vim"
+alias nconfig "nvim $HOME/.config/nvim/init.vim"
 alias nlconfig "lvim $HOME/.config/local_configs/init.local.vim"
 alias lconfig "lvim $HOME/.config/lvim/config.lua"
 alias lvconfig "lvim $HOME/.local/share/lunarvim/lvim"
@@ -117,3 +117,6 @@ end
 if test -f ~/.config/local_configs/config.fish
   source ~/.config/local_configs/config.fish
 end
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/crpier/Downloads/google-cloud-sdk/path.fish.inc' ]; . '/home/crpier/Downloads/google-cloud-sdk/path.fish.inc'; end
