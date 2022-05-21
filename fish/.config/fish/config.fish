@@ -35,7 +35,6 @@ function fish_prompt --description 'Write out the prompt'
 end
 
 
-set -gx TERM xterm-256color
 set -U fish_prompt_pwd_dir_length 100
 set -U VIRTUAL_ENV_DISABLE_PROMPT yes
 
@@ -49,6 +48,8 @@ set -gx BAT_THEME "gruvbox-dark"
 set -gx BAT_STYLE "numbers,changes"
 
 # Aliases
+# kittens
+alias ks "kitty +kitten ssh"
 # open stuff in text editor
 alias n nvim
 alias l lvim
@@ -117,6 +118,3 @@ end
 if test -f ~/.config/local_configs/config.fish
   source ~/.config/local_configs/config.fish
 end
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/crpier/Downloads/google-cloud-sdk/path.fish.inc' ]; . '/home/crpier/Downloads/google-cloud-sdk/path.fish.inc'; end

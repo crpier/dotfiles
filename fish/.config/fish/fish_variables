@@ -3,12 +3,12 @@
 SETUVAR BAT_THEME:gruvbox\x2ddark
 SETUVAR FZF_LEGACY_KEYBINDINGS:0
 SETUVAR VIRTUAL_ENV_DISABLE_PROMPT:yes
-SETUVAR __fish_initialized:3100
+SETUVAR __fish_initialized:3400
 SETUVAR _fisher_PatrickF1_2F_fzf_2E_fish_files:/home/tiannaru/\x2econfig/fish/functions/_fzf_configure_bindings_help\x2efish\x1e/home/tiannaru/\x2econfig/fish/functions/_fzf_extract_var_info\x2efish\x1e/home/tiannaru/\x2econfig/fish/functions/_fzf_preview_file\x2efish\x1e/home/tiannaru/\x2econfig/fish/functions/_fzf_report_file_type\x2efish\x1e/home/tiannaru/\x2econfig/fish/functions/_fzf_search_directory\x2efish\x1e/home/tiannaru/\x2econfig/fish/functions/_fzf_search_git_log\x2efish\x1e/home/tiannaru/\x2econfig/fish/functions/_fzf_search_git_status\x2efish\x1e/home/tiannaru/\x2econfig/fish/functions/_fzf_search_history\x2efish\x1e/home/tiannaru/\x2econfig/fish/functions/_fzf_search_variables\x2efish\x1e/home/tiannaru/\x2econfig/fish/functions/fzf_configure_bindings\x2efish\x1e/home/tiannaru/\x2econfig/fish/conf\x2ed/fzf\x2efish\x1e/home/tiannaru/\x2econfig/fish/completions/fzf_configure_bindings\x2efish
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:/home/tiannaru/\x2econfig/fish/functions/fisher\x2efish\x1e/home/tiannaru/\x2econfig/fish/completions/fisher\x2efish
 SETUVAR _fisher_plugins:PatrickF1/fzf\x2efish\x1ejorgebucaran/fisher
 SETUVAR fish_color_autosuggestion:585858
-SETUVAR fish_color_cancel:\x2dr
+SETUVAR fish_color_cancel:\x2d\x2dreverse
 SETUVAR fish_color_command:a1b56c
 SETUVAR fish_color_comment:f7ca88
 SETUVAR fish_color_cwd:green
@@ -33,9 +33,10 @@ SETUVAR fish_color_valid_path:\x2d\x2dunderline
 SETUVAR fish_greeting:Welcome\x20to\x20fish\x2c\x20the\x20friendly\x20interactive\x20shell\x0aType\x20\x60help\x60\x20for\x20instructions\x20on\x20how\x20to\x20use\x20fish
 SETUVAR fish_key_bindings:fish_vi_key_bindings
 SETUVAR fish_pager_color_completion:normal
-SETUVAR fish_pager_color_description:B3A06D\x1eyellow
-SETUVAR fish_pager_color_prefix:white\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
+SETUVAR fish_pager_color_description:B3A06D
+SETUVAR fish_pager_color_prefix:normal\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
+SETUVAR fish_pager_color_selected_background:\x2d\x2dbackground\x3dbrblack
 SETUVAR fish_prompt_pwd_dir_length:100
 SETUVAR fish_user_paths:/usr/local/opt/avr\x2dgcc\x408/bin
 SETUVAR fzf_fd_opts:\x2d\x2dhidden\x1e\x2d\x2dexclude\x3d\x2egit
