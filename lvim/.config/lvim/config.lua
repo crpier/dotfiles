@@ -9,6 +9,7 @@ an executable
 -- THESE ARE EXAMPLE CONFIGS FEEL FREE TO CHANGE TO WHATEVER YOU WANT
 
 -- general
+lvim.builtin.autopairs.active = false
 lvim.builtin.bufferline.active = true
 lvim.builtin.bufferline.config = {
 	icons = "both",
@@ -21,7 +22,8 @@ lvim.colorscheme = "gruvbox"
 lvim.lsp.document_highlight = false
 vim.cmd("set nocursorline")
 
-lvim.builtin.dap.active = true
+lvim.builtin.dap.active = false
+
 vim.opt.cmdheight = 1
 vim.cmd("set background=dark")
 vim.opt.scrolloff = 4
@@ -48,6 +50,7 @@ lvim.keys.normal_mode["go"] = "o<esc>"
 -- blackhole x and X commands
 lvim.keys.normal_mode["x"] = '"_x'
 lvim.keys.normal_mode["X"] = '"_X'
+lvim.keys.normal_mode["Q"] = "ZQ"
 
 lvim.keys.insert_mode.jw = "<ESC>:w<CR>"
 lvim.keys.insert_mode.jx = "<ESC>:x<CR>"
@@ -92,6 +95,7 @@ lvim.builtin.which_key.mappings.m = {
 	j = { "<cmd>Telescope jumplist<cr>", "Search jumplist" },
 	l = { "<cmd>Telescope lsp_document_symbols<cr>", "Search symbols" },
 	m = { "<cmd>Telescope symbols<cr>", "Search emojis (or other unicode whatev)" },
+	p = { "<cmd>Telescope projects<cr>", "Search projects" },
 	q = { "<cmd>Telescope quickfix<cr>", "Search Quickfix list" },
 	s = {
 		"<cmd>lua require('telescope.builtin').grep_string({ search = vim.fn.input('Grep For > ')})<cr>",
@@ -118,8 +122,33 @@ lvim.builtin.which_key.vmappings.z = {
 	t = { ":'<,'>ZkNewFromTitleSelection<cr>", "Create note with selected title" },
 	s = { ":'<,'>ZkMatch<cr>", "Search notes that match selection" },
 }
+lvim.builtin.which_key.mappings.g.d = {
+	"<cmd>DiffviewOpen<CR>",
+	"Git diff",
+}
+lvim.builtin.which_key.mappings.g.t = {
+	"<cmd>DiffviewOpen HEAD~1<CR>",
+	"Git diff last commit",
+}
+lvim.builtin.which_key.mappings.g.D = {
+	":DiffviewOpen ",
+	"Git diff with user input",
+}
+lvim.builtin.which_key.mappings.g.f = {
+	"<cmd>DiffviewFileHistory<CR>",
+	"Git diff on a file",
+}
+lvim.builtin.which_key.mappings.g.e = {
+	"<cmd>DiffviewClose<CR>",
+	"Exit diffview",
+}
+lvim.builtin.which_key.mappings.g.a = {
+	"<cmd>Gitsigns stage_buffer<CR>",
+	"Git add file",
+}
 -- After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
 lvim.builtin.dashboard.active = false
+lvim.builtin.alpha.active = false
 lvim.builtin.terminal.active = true
 lvim.builtin.nvimtree.setup.view.side = "left"
 lvim.builtin.nvimtree.show_icons.git = 0
@@ -152,42 +181,45 @@ local linters = require("lvim.lsp.null-ls.linters")
 linters.setup({
 	{ exe = "luacheck", args = { "-g" } },
 })
--- Additional Plugins
--- lvim.plugins = {
---     {"folke/tokyonight.nvim"},
---     {
---       "folke/trouble.nvim",
---       cmd = "TroubleToggle",
---     },
--- }
+
 lvim.plugins = {
 	{ "rktjmp/lush.nvim" },
-	{ "ellisonleao/gruvbox.nvim" },
+	{ "crpier/gruvbox.nvim" },
 	{ "bkad/CamelCaseMotion" },
 	{ "pearofducks/ansible-vim" },
 	{ "tpope/vim-commentary" },
-	{ "tpope/vim-fugitive" },
 	{ "tpope/vim-surround" },
 	{ "wellle/targets.vim" },
 	{ "tpope/vim-unimpaired" },
 	{ "tpope/vim-repeat" },
 	{ "blankname/vim-fish" },
 	{ "saltstack/salt-vim" },
-	{ "mfussenegger/nvim-dap-python" },
 	{ "farmergreg/vim-lastplace" },
 	{ "mbbill/undotree" },
 	{ "nvim-telescope/telescope-symbols.nvim" },
 	{ "ojroques/vim-oscyank" },
 	{ "sindrets/diffview.nvim" },
 	{
+		"lukas-reineke/indent-blankline.nvim",
+		config = function()
+			require("indent_blankline").setup({
+				-- for example, context is off by default, use this to turn it on
+				show_current_context = true,
+				show_trailing_blankline_indent = false,
+			})
+		end,
+	},
+	{
 		"mickael-menu/zk-nvim",
 		config = function()
 			require("zk").setup({ picker = "telescope" })
 		end,
 	},
+	-- Still undecided on neoscroll
+	-- {
+	-- 	"karb94/neoscroll.nvim",
+	-- 	config = function()
+	-- 		require("neoscroll").setup()
+	-- 	end,
+	-- },
 }
-
--- Autocommands (https://neovim.io/doc/user/autocmd.html)
--- lvim.autocommands.custom_groups = {
---   { "BufWinEnter", "*.lua", "setlocal ts=8 sw=8" },
--- }
