@@ -200,7 +200,7 @@ nnoremap <silent> <leader>dl :lua require'dap'.run_last()<CR>
 """"""""""""""""""""""""""""""General Remaps""""""""""""""""""""""""""""""""
 """"""""" Utility maps
 " easy source vimrc
-nnoremap <leader><CR> <Cmd>so ~/.config/nvim/init.vim<CR>
+nnoremap <leader><CR> :so ~/.vimrc<CR>
 " Search for selected text using '//'
 vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
 " Insert line without entering insert mode
@@ -239,8 +239,6 @@ nnoremap <C-Q> <cmd>cclose<CR>
 imap jk <Esc>:w<CR>
 " Command mode and save
 imap jw <Esc>:w<CR>
-" Save and exit from insert mode
-imap jx <Esc>:x<CR>
 """""""" Override default mappings
 " Blackhole x
 nnoremap x "_x
@@ -250,11 +248,6 @@ nnoremap } :keepjumps normal! }<cr>
 nnoremap { :keepjumps normal! {<cr>
 xnoremap } :<C-u>keepjumps normal! gv}<cr>
 xnoremap { :<C-u>keepjumps normal! gv{<cr>
-" Mappings for <C-w> commands
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
 
 """"""""""""""""""""""""""""""Autocommands""""""""""""""""""""""""""""""
 " persist cursor location between sessions
