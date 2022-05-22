@@ -1,27 +1,10 @@
---[[
-lvim is the global options object
-
-Linters should be
-filled in as strings with either
-a global executable or a path to
-an executable
-]]
--- THESE ARE EXAMPLE CONFIGS FEEL FREE TO CHANGE TO WHATEVER YOU WANT
-
--- general
 lvim.builtin.autopairs.active = false
-lvim.builtin.bufferline.active = true
-lvim.builtin.bufferline.config = {
-	icons = "both",
-}
 vim.opt.clipboard = ""
 lvim.transparent_window = true
-lvim.log.level = "warn"
 lvim.format_on_save = false
 lvim.colorscheme = "gruvbox"
 lvim.lsp.document_highlight = false
 vim.cmd("set nocursorline")
-
 lvim.builtin.dap.active = false
 
 vim.opt.cmdheight = 1
@@ -39,52 +22,25 @@ lvim.leader = "space"
 
 lvim.keys.visual_mode["<leader>y"] = ":OSCYank<CR>"
 
-lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
+lvim.keys.visual_mode["il"] = "^og_"
+lvim.keys.visual_mode["al"] = "0o$"
+vim.api.nvim_set_keymap("o", "al", ":normal val<CR>", {})
+vim.api.nvim_set_keymap("o", "il", ":normal vil<CR>", {})
+
 lvim.keys.normal_mode["<esc>"] = "<cmd>nohlsearch<cr>"
--- cancel Q key
-lvim.keys.normal_mode["Q"] = "<nop>"
-lvim.keys.normal_mode["[b"] = ":BufferPrevious<CR>"
-lvim.keys.normal_mode["]b"] = ":BufferNext<CR>"
+lvim.keys.normal_mode["[b"] = "<cmd>BufferLineCyclePrev<CR>"
+lvim.keys.normal_mode["]b"] = "<cmd>BufferLineCycleNext<CR>"
+lvim.keys.normal_mode["L"] = "L"
+lvim.keys.normal_mode["H"] = "H"
 lvim.keys.normal_mode["gO"] = "O<esc>"
 lvim.keys.normal_mode["go"] = "o<esc>"
--- blackhole x and X commands
 lvim.keys.normal_mode["x"] = '"_x'
 lvim.keys.normal_mode["X"] = '"_X'
 lvim.keys.normal_mode["Q"] = "ZQ"
 
-lvim.keys.insert_mode.jw = "<ESC>:w<CR>"
-lvim.keys.insert_mode.jx = "<ESC>:x<CR>"
--- unset lunarvim defaults
-lvim.keys.insert_mode.kj = "kj"
--- unmap a default keymapping
--- lvim.keys.normal_mode["<C-Up>"] = ""
--- edit a default keymapping
--- lvim.keys.normal_mode["<C-q>"] = ":q<cr>"
+lvim.keys.insert_mode["jw"] = "<ESC>:w<CR>"
+lvim.keys.insert_mode["jx"] = "<ESC>:x<CR>"
 
--- Change Telescope navigation to use j and k for navigation and n and p for history in both input and normal mode.
--- lvim.builtin.telescope.on_config_done = function()
---   local actions = require "telescope.actions"
---   -- for input mode
---   lvim.builtin.telescope.defaults.mappings.i["<C-j>"] = actions.move_selection_next
---   lvim.builtin.telescope.defaults.mappings.i["<C-k>"] = actions.move_selection_previous
---   lvim.builtin.telescope.defaults.mappings.i["<C-n>"] = actions.cycle_history_next
---   lvim.builtin.telescope.defaults.mappings.i["<C-p>"] = actions.cycle_history_prev
---   -- for normal mode
---   lvim.builtin.telescope.defaults.mappings.n["<C-j>"] = actions.move_selection_next
---   lvim.builtin.telescope.defaults.mappings.n["<C-k>"] = actions.move_selection_previous
--- end
-
--- Use which-key to add extra bindings with the leader-key prefix
--- lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
--- lvim.builtin.which_key.mappings["t"] = {
---   name = "+Trouble",
---   r = { "<cmd>Trouble lsp_references<cr>", "References" },
---   f = { "<cmd>Trouble lsp_definitions<cr>", "Definitions" },
---   d = { "<cmd>Trouble lsp_document_diagnostics<cr>", "Diagnostics" },
---   q = { "<cmd>Trouble quickfix<cr>", "QuickFix" },
---   l = { "<cmd>Trouble loclist<cr>", "LocationList" },
---   w = { "<cmd>Trouble lsp_workspace_diagnostics<cr>", "Diagnostics" },
--- }
 -- Telescope commands
 lvim.builtin.which_key.mappings.m = {
 	name = "+custoM telescope",
@@ -199,6 +155,35 @@ lvim.plugins = {
 	{ "nvim-telescope/telescope-symbols.nvim" },
 	{ "ojroques/vim-oscyank" },
 	{ "sindrets/diffview.nvim" },
+	{
+		"ggandor/leap.nvim",
+		config = function()
+			require("leap").set_default_keymaps()
+		end,
+	},
+	{
+		"nvim-treesitter/nvim-treesitter-textobjects",
+		config = function()
+			require("nvim-treesitter.configs").setup({
+				textobjects = {
+					select = {
+						enable = true,
+
+						-- Automatically jump forward to textobj, similar to targets.vim
+						lookahead = true,
+
+						keymaps = {
+							-- You can use the capture groups defined in textobjects.scm
+							["af"] = "@function.outer",
+							["if"] = "@function.inner",
+							["ac"] = "@class.outer",
+							["ic"] = "@class.inner",
+						},
+					},
+				},
+			})
+		end,
+	},
 	{
 		"lukas-reineke/indent-blankline.nvim",
 		config = function()
