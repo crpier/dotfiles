@@ -37,6 +37,7 @@ lvim.keys.normal_mode["go"] = "o<esc>"
 lvim.keys.normal_mode["x"] = '"_x'
 lvim.keys.normal_mode["X"] = '"_X'
 lvim.keys.normal_mode["Q"] = "ZQ"
+lvim.keys.normal_mode["gz"] = "<cmd>TZFocus<CR>"
 
 lvim.keys.insert_mode["jw"] = "<ESC>:w<CR>"
 lvim.keys.insert_mode["jx"] = "<ESC>:x<CR>"
@@ -70,6 +71,19 @@ lvim.builtin.which_key.mappings.z = {
 	b = { "<cmd>ZkBacklinks<cr>", "Search links to this note" },
 	l = { "<cmd>ZkLinks<cr>", "Search links in this note" },
 	t = { "<cmd>ZkTags<cr>", "Search notes by tags" },
+}
+
+lvim.builtin.which_key.mappings.h = {
+	name = "+Harpoon commands",
+	m = { ':lua require("harpoon.mark").add_file()<CR>', "Mark file" },
+	q = { ':lua require("harpoon.ui").toggle_quick_menu()<CR>', "Toggle quick menu" },
+	h = { ':lua require("harpoon.ui").nav_file(1)<CR>', "Go to file 1" },
+	j = { ':lua require("harpoon.ui").nav_file(2)<CR>', "Go to file 2" },
+	k = { ':lua require("harpoon.ui").nav_file(3)<CR>', "Go to file 3" },
+	l = { ':lua require("harpoon.ui").nav_file(4)<CR>', "Go to file 4" },
+	t = { ':lua require("harpoon.term").gotoTerminal(1)<CR>', "Go to file 4" },
+	n = { ':lua require("harpoon.ui").nav_next()<CR>', "Go to next mark" },
+	p = { ':lua require("harpoon.ui").nav_prev()<CR>', "Go to previous mark" },
 }
 
 lvim.builtin.which_key.vmappings.z = {
@@ -150,11 +164,23 @@ lvim.plugins = {
 	{ "tpope/vim-repeat" },
 	{ "blankname/vim-fish" },
 	{ "saltstack/salt-vim" },
-	{ "farmergreg/vim-lastplace" },
+	{
+		"ThePrimeagen/harpoon",
+		config = function()
+			require("harpoon").setup()
+		end,
+	},
+	{
+		"ethanholz/nvim-lastplace",
+		config = function()
+			require("nvim-lastplace").setup({ lastplace_open_folds = true })
+		end,
+	},
 	{ "mbbill/undotree" },
 	{ "nvim-telescope/telescope-symbols.nvim" },
 	{ "ojroques/vim-oscyank" },
 	{ "sindrets/diffview.nvim" },
+	{ "Pocco81/TrueZen.nvim" },
 	{
 		"ggandor/leap.nvim",
 		config = function()
