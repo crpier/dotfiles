@@ -165,12 +165,6 @@ lvim.plugins = {
 	{ "blankname/vim-fish" },
 	{ "saltstack/salt-vim" },
 	{
-		"TimUntersberger/neogit",
-		config = function()
-			require("neogit").setup({})
-		end,
-	},
-	{
 		"ThePrimeagen/harpoon",
 		config = function()
 			require("harpoon").setup()
@@ -186,6 +180,7 @@ lvim.plugins = {
 	{ "nvim-telescope/telescope-symbols.nvim" },
 	{ "ojroques/vim-oscyank" },
 	{ "sindrets/diffview.nvim" },
+	{ "tpope/vim-fugitive" },
 	{ "Pocco81/TrueZen.nvim" },
 	{
 		"ggandor/leap.nvim",
