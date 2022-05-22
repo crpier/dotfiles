@@ -165,6 +165,12 @@ lvim.plugins = {
 	{ "blankname/vim-fish" },
 	{ "saltstack/salt-vim" },
 	{
+		"TimUntersberger/neogit",
+		config = function()
+			require("neogit").setup({})
+		end,
+	},
+	{
 		"ThePrimeagen/harpoon",
 		config = function()
 			require("harpoon").setup()
