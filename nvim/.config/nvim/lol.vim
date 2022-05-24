@@ -10,7 +10,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'bkad/CamelCaseMotion'
 Plug 'dag/vim-fish'
 Plug 'machakann/vim-highlightedyank'
-Plug 'morhetz/gruvbox'
+Plug 'crpier/gruvbox'
 Plug 'ojroques/vim-oscyank'
 Plug 'pearofducks/ansible-vim'
 Plug 'saltstack/salt-vim'
@@ -274,3 +274,4 @@ let local_config = "~/.config/local_configs/init.vim"
 if !empty(glob(local_config))
   source local_config
 endif
+ 

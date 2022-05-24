@@ -53,7 +53,7 @@ alias ks "kitty +kitten ssh"
 # open stuff in text editor
 alias n nvim
 alias l lvim
-alias nconfig "nvim $HOME/.config/nvim/init.vim"
+alias nconfig "nvim $HOME/.config/nvim/init.lua"
 alias nlconfig "lvim $HOME/.config/local_configs/init.local.vim"
 alias lconfig "lvim $HOME/.config/lvim/config.lua"
 alias lvconfig "lvim $HOME/.local/share/lunarvim/lvim"
