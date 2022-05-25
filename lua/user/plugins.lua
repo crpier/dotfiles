@@ -44,31 +44,18 @@ return packer.startup(function(use)
   use "wbthomason/packer.nvim" -- Have packer manage itself
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
-  use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
   use "numToStr/Comment.nvim"
   use "kyazdani42/nvim-web-devicons"
   use { "kyazdani42/nvim-tree.lua" }
-  use "tamago324/lir.nvim"
   use "akinsho/bufferline.nvim"
-  use "moll/vim-bbye"
   use "nvim-lualine/lualine.nvim"
   use "akinsho/toggleterm.nvim"
   use "ahmedkhalf/project.nvim"
   use "lewis6991/impatient.nvim"
   use "lukas-reineke/indent-blankline.nvim"
-  use "goolord/alpha-nvim"
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   use "folke/which-key.nvim"
-  use "unblevable/quick-scope"
-  use "phaazon/hop.nvim"
   use "andymass/vim-matchup"
-  use "nacro90/numb.nvim"
-  use "monaqa/dial.nvim"
-  use "norcalli/nvim-colorizer.lua"
-  use "windwp/nvim-spectre"
-  use "folke/zen-mode.nvim"
-  use "karb94/neoscroll.nvim"
-  use "folke/todo-comments.nvim"
   use "kevinhwang91/nvim-bqf"
   use "ThePrimeagen/harpoon"
   use "MattesGroeger/vim-bookmarks"
@@ -79,15 +66,8 @@ return packer.startup(function(use)
   use "rcarriga/nvim-notify"
   use "tversteeg/registers.nvim"
   -- use "metakirby5/codi.vim"
-  use { "nyngwang/NeoZoom.lua", branch = "neo-zoom-original" }
   use { "christianchiarulli/nvim-gps", branch = "text_hl" }
   use { "michaelb/sniprun", run = "bash ./install.sh" }
-  use {
-
-    "iamcco/markdown-preview.nvim",
-    run = "cd app && npm install",
-    ft = "markdown",
-  }
   use {
     "christianchiarulli/JABS.nvim",
     requires = { "kyazdani42/nvim-web-devicons" }, --optional
@@ -105,7 +85,7 @@ return packer.startup(function(use)
   use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
   use "lunarvim/darkplus.nvim"
   use "rose-pine/neovim"
-  -- use "rebelot/kanagawa.nvim"
+  use "rebelot/kanagawa.nvim"
 
   -- cmp plugins
   -- use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -121,26 +101,6 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-emoji"
   use "hrsh7th/cmp-nvim-lua"
   use "rcarriga/cmp-dap"
-  use {
-    "tzachar/cmp-tabnine",
-    config = function()
-      local tabnine = require "cmp_tabnine.config"
-      tabnine:setup {
-        max_lines = 1000,
-        max_num_results = 20,
-        sort = true,
-        run_on_every_keystroke = true,
-        snippet_placeholder = "..",
-        ignored_file_types = { -- default is not to ignore
-          -- uncomment to ignore in lua:
-          -- lua = true
-        },
-      }
-    end,
-
-    run = "./install.sh",
-    requires = "hrsh7th/nvim-cmp",
-  }
 
   -- use 'David-Kunz/cmp-npm' -- doesn't seem to work
 
@@ -161,11 +121,7 @@ return packer.startup(function(use)
     "folke/trouble.nvim",
     cmd = "TroubleToggle",
   }
-  use "github/copilot.vim"
   use "RRethy/vim-illuminate"
-
-  -- Java
-  use "mfussenegger/nvim-jdtls"
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
