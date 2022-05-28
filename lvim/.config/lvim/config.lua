@@ -7,6 +7,58 @@ lvim.lsp.document_highlight = false
 vim.cmd("set nocursorline")
 lvim.builtin.dap.active = false
 
+lvim.builtin.treesitter.textobjects = {
+	select = {
+		enable = true,
+
+		-- Automatically jump forward to textobj, similar to targets.vim
+		lookahead = true,
+
+		keymaps = {
+			-- You can use the capture groups defined in textobjects.scm
+			["af"] = "@function.outer",
+			["if"] = "@function.inner",
+			["ac"] = "@class.outer",
+			["ic"] = "@class.inner",
+		},
+	},
+	swap = {
+		enable = true,
+		swap_next = {
+			["<leader>a"] = "@parameter.inner",
+		},
+		swap_previous = {
+			["<leader>A"] = "@parameter.inner",
+		},
+	},
+	move = {
+		enable = true,
+		set_jumps = true, -- whether to set jumps in the jumplist
+		goto_next_start = {
+			["]m"] = "@function.outer",
+			["]]"] = "@class.outer",
+		},
+		goto_next_end = {
+			["]M"] = "@function.outer",
+			["]["] = "@class.outer",
+		},
+		goto_previous_start = {
+			["[m"] = "@function.outer",
+			["[["] = "@class.outer",
+		},
+		goto_previous_end = {
+			["[M"] = "@function.outer",
+			["[]"] = "@class.outer",
+		},
+	},
+	lsp_interop = {
+		enable = true,
+		peek_definition_code = {
+			["<leader>df"] = "@function.outer",
+			["<leader>dF"] = "@class.outer",
+		},
+	},
+}
 vim.opt.cmdheight = 1
 vim.cmd("set background=dark")
 vim.opt.scrolloff = 4
@@ -81,10 +133,10 @@ lvim.builtin.which_key.mappings.h = {
 	j = { ':lua require("harpoon.ui").nav_file(2)<CR>', "Go to file 2" },
 	k = { ':lua require("harpoon.ui").nav_file(3)<CR>', "Go to file 3" },
 	l = { ':lua require("harpoon.ui").nav_file(4)<CR>', "Go to file 4" },
-	t = { ':lua require("harpoon.term").gotoTerminal(1)<CR>', "Go to file 4" },
 	n = { ':lua require("harpoon.ui").nav_next()<CR>', "Go to next mark" },
 	p = { ':lua require("harpoon.ui").nav_prev()<CR>', "Go to previous mark" },
 }
+lvim.builtin.which_key.mappings.h[";"] = { ':lua require("harpoon.term").gotoTerminal(1)<CR>', "Go to terminal" }
 
 lvim.builtin.which_key.vmappings.z = {
 	name = "+Zk commands",
@@ -164,6 +216,13 @@ lvim.plugins = {
 	{ "tpope/vim-repeat" },
 	{ "blankname/vim-fish" },
 	{ "saltstack/salt-vim" },
+	{ "tpope/vim-fugitive" },
+	{
+		"pwntester/octo.nvim",
+		config = function()
+			require("octo").setup()
+		end,
+	},
 	{
 		"ThePrimeagen/harpoon",
 		config = function()
@@ -180,7 +239,6 @@ lvim.plugins = {
 	{ "nvim-telescope/telescope-symbols.nvim" },
 	{ "ojroques/vim-oscyank" },
 	{ "sindrets/diffview.nvim" },
-	{ "tpope/vim-fugitive" },
 	{ "Pocco81/TrueZen.nvim" },
 	{
 		"ggandor/leap.nvim",
@@ -190,26 +248,7 @@ lvim.plugins = {
 	},
 	{
 		"nvim-treesitter/nvim-treesitter-textobjects",
-		config = function()
-			require("nvim-treesitter.configs").setup({
-				textobjects = {
-					select = {
-						enable = true,
-
-						-- Automatically jump forward to textobj, similar to targets.vim
-						lookahead = true,
-
-						keymaps = {
-							-- You can use the capture groups defined in textobjects.scm
-							["af"] = "@function.outer",
-							["if"] = "@function.inner",
-							["ac"] = "@class.outer",
-							["ic"] = "@class.inner",
-						},
-					},
-				},
-			})
-		end,
+		requires = { { "nvim-treesitter/nvim-treesitter" } },
 	},
 	{
 		"lukas-reineke/indent-blankline.nvim",
