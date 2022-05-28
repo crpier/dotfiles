@@ -54,14 +54,14 @@ alias ks "kitty +kitten ssh"
 alias n nvim
 alias l lvim
 alias nconfig "nvim $HOME/.config/nvim/init.lua"
-alias nlconfig "lvim $HOME/.config/local_configs/init.local.vim"
+alias nlconfig "nvim $HOME/.config/local_configs/init.local.vim"
 alias lconfig "lvim $HOME/.config/lvim/config.lua"
 alias lvconfig "lvim $HOME/.local/share/lunarvim/lvim"
-alias fconfig "lvim $HOME/.config/fish/config.fish"
-alias flconfig "lvim $HOME/.config/local_configs/config.fish"
-alias tconfig "lvim $HOME/.tmux.conf"
-alias vconfig "lvim $HOME/.vimrc"
-alias tlconfig "lvim $HOME/.config/local_configs/tmux.conf"
+alias fconfig "nvim $HOME/.config/fish/config.fish"
+alias flconfig "nvim $HOME/.config/local_configs/config.fish"
+alias tconfig "nvim $HOME/.tmux.conf"
+alias vconfig "nvim $HOME/.vimrc"
+alias tlconfig "nvim $HOME/.config/local_configs/tmux.conf"
 
 # misc stuff
 # alias "_" "cd -"
@@ -80,6 +80,7 @@ alias g git
 alias gs "git status"
 alias ga "git add ."
 alias gc "git commit -m"
+alias gcl "git clone"
 alias gd "git diff"
 alias gac "git add . && git commit -m"
 alias gp "git push"
