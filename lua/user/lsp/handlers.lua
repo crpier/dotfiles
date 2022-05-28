@@ -16,7 +16,7 @@ M.setup = function()
 
   local config = {
     -- disable virtual text
-    virtual_text = false,
+    virtual_text = true,
     -- show signs
     signs = {
       active = signs,
@@ -55,9 +55,10 @@ local function lsp_highlight_document(client)
   -- end
 end
 
-local function lsp_keymaps(bufnr)
+local function set_lsp_keymaps(bufnr)
   local opts = { noremap = true, silent = true }
   vim.api.nvim_buf_set_keymap(bufnr, "n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", opts)
+  -- TODO: `gd` should save its position in the jumplist
   vim.api.nvim_buf_set_keymap(bufnr, "n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", opts)
   vim.api.nvim_buf_set_keymap(bufnr, "n", "K", "<cmd>lua vim.lsp.buf.hover()<CR>", opts)
   vim.api.nvim_buf_set_keymap(bufnr, "n", "gI", "<cmd>lua vim.lsp.buf.implementation()<CR>", opts)
@@ -82,12 +83,7 @@ M.on_attach = function(client, bufnr)
   -- vim.notify(client.name .. " starting...")
   -- TODO: refactor this into a method that checks if string in list
 
-  if client.name == "jdt.ls" then
-    require("jdtls").setup_dap { hotcodereplace = "auto" }
-    require("jdtls.dap").setup_dap_main_class_configs()
-    vim.lsp.codelens.refresh()
-  end
-  lsp_keymaps(bufnr)
+  set_lsp_keymaps(bufnr)
   lsp_highlight_document(client)
 end
 

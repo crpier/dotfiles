@@ -1,55 +1,10 @@
 local M = {}
 
-vim.cmd [[
-  function Test()
-    %SnipRun
-    call feedkeys("\<esc>`.")
-  endfunction
-
-  function TestI()
-    let b:caret = winsaveview()    
-    %SnipRun
-    call winrestview(b:caret)
-  endfunction
-]]
-
-function M.sniprun_enable()
-  vim.cmd [[
-    %SnipRun
-
-    augroup _sniprun
-     autocmd!
-     autocmd TextChanged * call Test()
-     autocmd TextChangedI * call TestI()
-    augroup end
-  ]]
-  vim.notify "Enabled SnipRun"
-end
-
-function M.disable_sniprun()
-  M.remove_augroup "_sniprun"
-  vim.cmd [[
-    SnipClose
-    SnipTerminate
-    ]]
-  vim.notify "Disabled SnipRun"
-end
-
-function M.toggle_sniprun()
-  if vim.fn.exists "#_sniprun#TextChanged" == 0 then
-    M.sniprun_enable()
-  else
-    M.disable_sniprun()
-  end
-end
-
 function M.remove_augroup(name)
   if vim.fn.exists("#" .. name) == 1 then
     vim.cmd("au! " .. name)
   end
 end
-
-vim.cmd [[ command! SnipRunToggle execute 'lua require("user.functions").toggle_sniprun()' ]]
 
 -- get length of current word
 function M.get_word_length()
@@ -116,4 +71,38 @@ function M.smart_quit()
   end
 end
 
+M.toggle_qf = function()
+  local qf_exists = false
+  for _, win in pairs(vim.fn.getwininfo()) do
+    if win["quickfix"] == 1 then
+      qf_exists = true
+    end
+  end
+  if qf_exists == true then
+    vim.cmd "cclose"
+    return
+  end
+  if not vim.tbl_isempty(vim.fn.getqflist()) then
+    vim.cmd "copen"
+  end
+end
+
+M.project_files = function()
+  local opts = {} -- define here if you want to define something
+  local ok = pcall(require("telescope.builtin").git_files, opts)
+  if not ok then
+    require("telescope.builtin").find_files(opts)
+  end
+end
+
+-- TODO: figure it out
+M.appropriate_yank = function()
+  -- local on_ssh = os.getenv "$SSH_CLIENT"
+  --
+  -- if on_ssh == nil then
+  --   vim.cmd("yank +")
+  -- else
+  --   print "on remote, will oscyank"
+  -- end
+end
 return M

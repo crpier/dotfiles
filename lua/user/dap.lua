@@ -64,3 +64,14 @@ end
 dap.listeners.before.event_exited["dapui_config"] = function()
   dapui.close()
 end
+
+
+require('dap-python').setup('/opt/homebrew/bin/python')
+table.insert(require('dap').configurations.python, {
+  type = 'python',
+  request = 'launch',
+  name = 'My custom launch configuration',
+  program = '${file}',
+  cwd = '${workspaceFolder}',
+  justMyCode = false,
+})

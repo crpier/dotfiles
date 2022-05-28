@@ -52,19 +52,46 @@ local branch = {
 
 local location = {
   "location",
-  padding = 0,
+  padding = 0.5,
+}
+
+local lsp = {
+  function(msg)
+    msg = msg or "LS Inactive"
+    local buf_clients = vim.lsp.buf_get_clients()
+    if next(buf_clients) == nil then
+      -- TODO: clean up this if statement
+      if type(msg) == "boolean" or #msg == 0 then
+        return vim.bo.filetype
+      end
+      return msg
+    end
+    local buf_ft = vim.bo.filetype
+    local buf_client_names = {}
+
+    -- add client
+    for _, client in pairs(buf_clients) do
+      if client.name ~= "null-ls" then
+        table.insert(buf_client_names, client.name)
+      end
+    end
+
+    -- add formatter
+    local formatters = require "lvim.lsp.null-ls.formatters"
+    local supported_formatters = formatters.list_registered(buf_ft)
+    vim.list_extend(buf_client_names, supported_formatters)
+
+    -- add linter
+    local linters = require "lvim.lsp.null-ls.linters"
+    local supported_linters = linters.list_registered(buf_ft)
+    vim.list_extend(buf_client_names, supported_linters)
+
+    return "[" .. table.concat(buf_client_names, ", ") .. "]"
+  end,
+  color = { gui = "bold" },
 }
 
 -- cool function for progress
-local progress = function()
-  local current_line = vim.fn.line "."
-  local total_lines = vim.fn.line "$"
-  local chars = { "__", "▁▁", "▂▂", "▃▃", "▄▄", "▅▅", "▆▆", "▇▇", "██" }
-  local line_ratio = current_line / total_lines
-  local index = math.ceil(line_ratio * #chars)
-  return chars[index]
-end
-
 local spaces = function()
   return "spaces: " .. vim.api.nvim_buf_get_option(0, "shiftwidth")
 end
@@ -89,9 +116,9 @@ lualine.setup {
     --   { nvim_gps, cond = hide_in_width },
     -- },
     -- lualine_x = { "encoding", "fileformat", "filetype" },
-    lualine_x = { diff, spaces, "encoding", filetype },
+    lualine_x = { diff, spaces, lsp },
     lualine_y = { location },
-    lualine_z = { progress },
+    lualine_z = {},
   },
   inactive_sections = {
     lualine_a = {},

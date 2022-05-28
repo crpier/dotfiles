@@ -8,9 +8,7 @@ local servers = {
   "cssmodules_ls",
   "emmet_ls",
   "html",
-  -- "jdtls",
   "jsonls",
-  "solc",
   "sumneko_lua",
   "tflint",
   "tsserver",
@@ -75,16 +73,6 @@ for _, server in pairs(servers) do
   if server == "pyright" then
     local pyright_opts = require "user.lsp.settings.pyright"
     opts = vim.tbl_deep_extend("force", pyright_opts, opts)
-  end
-
-  if server == "solang" then
-    local solang_opts = require "user.lsp.settings.solang"
-    opts = vim.tbl_deep_extend("force", solang_opts, opts)
-  end
-
-  if server == "solc" then
-    local solc_opts = require "user.lsp.settings.solc"
-    opts = vim.tbl_deep_extend("force", solc_opts, opts)
   end
 
   if server == "emmet_ls" then

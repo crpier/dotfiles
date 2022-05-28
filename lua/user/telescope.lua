@@ -5,14 +5,34 @@ end
 
 local actions = require "telescope.actions"
 telescope.load_extension "media_files"
-local icons = require("user.icons")
+local icons = require "user.icons"
 
 telescope.setup {
   defaults = {
 
     prompt_prefix = icons.ui.Telescope .. " ",
     selection_caret = " ",
-    path_display = { "smart" },
+    -- path_display = { "smart" },
+    -- TODO: change layout strategy based on window size
+    sorting_strategy = "descending",
+    layout_config = {
+      horizontal = {
+        width = 0.99,
+        preview_cutoff = 100,
+      },
+    },
+    vimgrep_arguments = {
+      "rg",
+      "--color=never",
+      "--no-heading",
+      "--with-filename",
+      "--line-number",
+      "--column",
+      "--smart-case",
+      "--hidden",
+      "--trim",
+      "--glob=!.git/",
+    },
 
     mappings = {
       i = {
@@ -28,11 +48,11 @@ telescope.setup {
         ["<Up>"] = actions.move_selection_previous,
 
         ["<CR>"] = actions.select_default,
-        ["<C-s>"] = actions.select_horizontal,
+        ["<C-x>"] = actions.select_horizontal,
         ["<C-v>"] = actions.select_vertical,
         ["<C-t>"] = actions.select_tab,
 
-        ['<c-d>'] = require('telescope.actions').delete_buffer,
+        ["<c-d>"] = require("telescope.actions").delete_buffer,
 
         -- ["<C-u>"] = actions.preview_scrolling_up,
         -- ["<C-d>"] = actions.preview_scrolling_down,
@@ -43,9 +63,9 @@ telescope.setup {
         ["<Tab>"] = actions.toggle_selection + actions.move_selection_worse,
         ["<S-Tab>"] = actions.toggle_selection + actions.move_selection_better,
         ["<C-q>"] = actions.send_to_qflist + actions.open_qflist,
-        ["<M-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
+        ["<C-s>"] = actions.send_selected_to_qflist + actions.open_qflist,
         ["<C-l>"] = actions.complete_tag,
-        ["<C-_>"] = actions.which_key, -- keys from pressing <C-/>
+        ["<C-/>"] = actions.which_key, -- keys from pressing <C-/>
       },
 
       n = {
@@ -58,7 +78,7 @@ telescope.setup {
         ["<Tab>"] = actions.toggle_selection + actions.move_selection_worse,
         ["<S-Tab>"] = actions.toggle_selection + actions.move_selection_better,
         ["<C-q>"] = actions.send_to_qflist + actions.open_qflist,
-        ["<M-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
+        ["<C-s>"] = actions.send_selected_to_qflist + actions.open_qflist,
 
         ["j"] = actions.move_selection_next,
         ["k"] = actions.move_selection_previous,
@@ -82,15 +102,21 @@ telescope.setup {
     },
   },
   pickers = {
-    -- Default configuration for builtin pickers goes here:
-    -- picker_name = {
-    --   picker_config_key = value,
-    --   ...
-    -- }
-    -- Now the picker_config_key will be applied every time you call this
-    -- builtin picker
+    find_files = {
+      hidden = true,
+    },
+    live_grep = {
+      --@usage don't include the filename in the search results
+      only_sort_text = true,
+    },
   },
   extensions = {
+    fzf = {
+      fuzzy = true, -- false will only do exact matching
+      override_generic_sorter = true, -- override the generic sorter
+      override_file_sorter = true, -- override the file sorter
+      case_mode = "smart_case", -- or "ignore_case" or "respect_case"
+    },
     media_files = {
       -- filetypes whitelist
       -- defaults to {"png", "jpg", "mp4", "webm", "pdf"}
@@ -123,3 +149,5 @@ telescope.setup {
 
 -- telescope.load_extension "ui-select"
 telescope.load_extension "file_browser"
+telescope.load_extension "fzf"
+telescope.load_extension "git_worktree"

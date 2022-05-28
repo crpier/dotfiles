@@ -93,22 +93,13 @@ M.get_winbar = function()
   local f = require "user.functions"
   local value = get_filename()
 
-  local gps_added = false
   if not f.isempty(value) then
     local gps_value = get_gps()
     value = value .. " " .. gps_value
-    if not f.isempty(gps_value) then
-      gps_added = true
-    end
   end
 
-  if not f.isempty(value) and f.get_buf_option "mod" then
-    local mod = "%#LineNr#" .. require("user.icons").ui.Circle .. "%*"
-    if gps_added then
-      value = value .. " " .. mod
-    else
-      value = value .. mod
-    end
+  if not f.isempty(value) then
+    value = value
   end
 
   local status_ok, _ = pcall(vim.api.nvim_set_option_value, "winbar", value, { scope = "local" })
