@@ -66,7 +66,7 @@ dap.listeners.before.event_exited["dapui_config"] = function()
 end
 
 
-require('dap-python').setup('/opt/homebrew/bin/python')
+require('dap-python').setup('/home/crpier/.cache/pypoetry/virtualenvs/mptreasury-totEAk67-py3.10/bin/python')
 table.insert(require('dap').configurations.python, {
   type = 'python',
   request = 'launch',

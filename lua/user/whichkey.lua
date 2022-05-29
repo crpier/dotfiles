@@ -93,7 +93,7 @@ local m_mappings = {
   d = { '<cmd>lua require("harpoon.ui").nav_file(3)<cr>', "Harpoon file 3" },
   f = { '<cmd>lua require("harpoon.ui").nav_file(4)<cr>', "Harpoon file 4" },
   g = { '<cmd>lua require("harpoon.term").gotoTerminal(1)<cr>', "Harpoon terminal" },
-  m = { '<cmd>lua require("harpoon.mark").add_file()<cr>', "Harpoon" },
+  m = { '<cmd>lua require("harpoon.mark").add_file()<cr>', "Harpoon mark" },
   q = { '<cmd>lua require("harpoon.ui").toggle_quick_menu()<cr>', "Harpoon UI" },
 }
 
@@ -194,7 +194,8 @@ local mappings = {
     l = { "<cmd>lua require 'gitsigns'.blame_line()<cr>", "Blame" },
     L = { "<cmd>Git blame<CR>", "Blame" },
     o = { "<cmd>Telescope git_status<cr>", "Open changed file" },
-    p = { "<cmd>lua require 'gitsigns'.preview_hunk()<cr>", "Preview Hunk" },
+    p = { "<cmd>Git pull<cr>", "Preview Hunk" },
+    P = { "<cmd>Git push<cr>", "Preview Hunk" },
     r = { "<cmd>lua require 'gitsigns'.reset_hunk()<cr>", "Reset Hunk" },
     R = { "<cmd>lua require 'gitsigns'.reset_buffer()<cr>", "Reset Buffer" },
     s = { "<cmd>lua require 'gitsigns'.stage_hunk()<cr>", "Stage Hunk" },

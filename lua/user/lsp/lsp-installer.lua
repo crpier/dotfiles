@@ -14,7 +14,8 @@ local servers = {
   "tsserver",
   "pyright",
   "yamlls",
-  "bashls"
+  "bashls",
+  "gopls"
 }
 
 local settings = {
@@ -73,6 +74,11 @@ for _, server in pairs(servers) do
   if server == "pyright" then
     local pyright_opts = require "user.lsp.settings.pyright"
     opts = vim.tbl_deep_extend("force", pyright_opts, opts)
+  end
+
+  if server == "gopls" then
+    local gopls_opts = require "user.lsp.settings.gopls"
+    opts = vim.tbl_deep_extend("force", gopls_opts, opts)
   end
 
   if server == "emmet_ls" then

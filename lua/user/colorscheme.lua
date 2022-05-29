@@ -1,6 +1,6 @@
 vim.g.gruvbox_underline = false
-local colorscheme = "gruvbox"
--- local colorscheme = "darkplus"
+-- local colorscheme = "gruvbox"
+local colorscheme = "darkplus"
 
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
 
