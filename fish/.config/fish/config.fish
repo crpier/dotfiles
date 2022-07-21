@@ -51,7 +51,7 @@ set -gx BAT_STYLE "numbers,changes"
 # kittens
 alias ks "kitty +kitten ssh"
 # open stuff in text editor
-alias n nvim
+alias n "nvim --startuptime ~/.local/share/nvim/startuptime.out"
 alias l lvim
 alias nconfig "nvim $HOME/.config/nvim/init.lua"
 alias nlconfig "nvim $HOME/.config/local_configs/init.local.vim"
@@ -89,6 +89,8 @@ alias glo "git log"
 alias gl "git lg"
 alias gl2 "git lg2"
 alias gw "git worktree"
+# sometimes helps when git worktree is not updating
+alias gsf "git fetch origin 'refs/heads/*:refs/heads/*'"
 alias lg lazygit
 
 # exa aliases
