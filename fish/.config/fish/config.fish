@@ -39,7 +39,7 @@ set -U fish_prompt_pwd_dir_length 100
 set -U VIRTUAL_ENV_DISABLE_PROMPT yes
 
 # General settings
-set -gx PATH $PATH /opt/neovim/bin ~/Projects/devutils/scripts/local ~/.local/bin $HOME/go/bin
+set -gx PATH $PATH /opt/neovim/bin ~/Projects/devutils/scripts/local ~/.local/bin $HOME/go/bin $HOME/.cargo/bin
 set -gx EDITOR nvim
 set -gx MANPAGER "/bin/sh -c \"col -b | vim -c 'set ft=man ts=8 nomod nolist nonu noma' -\""
 
