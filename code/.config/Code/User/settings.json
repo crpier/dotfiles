@@ -294,9 +294,11 @@
         "<C-a>": true,
         "<C-f>": true,
     },
-    "editor.fontFamily": "Menlo",
+    "editor.fontFamily": "Fantasque Sans Mono",
     "editor.fontSize": 14,
     "terminal.integrated.fontSize": 16,
     "vim.visualstar": true,
     "workbench.colorTheme": "Gruvbox Dark Medium",
+    "editor.fontLigatures": true,
+    "window.zoomLevel": 1,
 }
