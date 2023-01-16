@@ -1,6 +1,0 @@
-[submodule "ansible/dotfiles-role"]
-	path = ansible/dotfiles-role
-	url = git@github.com:tiannaru/dotfiles-role.git
-[submodule "nvim/.config/nvim"]
-	path = nvim/.config/nvim
-	url = git@github.com:ChristianChiarulli/nvim.git
