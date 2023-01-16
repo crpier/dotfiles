@@ -1,0 +1,5 @@
+2023-01-10 23:31:11.394 [info] Started initializing default profile extensions in extensions installation folder. file:///home/crpier/.vscode/extensions
+2023-01-10 23:31:11.448 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/crpier/.vscode/extensions
+2023-01-10 23:31:14.037 [info] [perf] Render performance baseline is 31ms
+2023-01-10 23:31:31.805 [error] RequestService#request (browser) - error https://marketplace.visualstudio.com/_apis/public/gallery/extensionquery {"name":"Canceled"}
+2023-01-10 23:31:32.093 [error] RequestService#request (browser) - error https://marketplace.visualstudio.com/_apis/public/gallery/extensionquery {"name":"Canceled"}

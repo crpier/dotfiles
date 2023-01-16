@@ -1,0 +1,22 @@
+[Info  - 11:31:46 PM] (128663) Pylance language server 2023.1.10 (pyright bbf0ae78) starting
+[Info  - 11:31:46 PM] (128663) Server root directory: /home/crpier/.vscode/extensions/ms-python.vscode-pylance-2023.1.10/dist
+[Info  - 11:31:46 PM] (128663) Starting service instance "mptreasury"
+[Info  - 11:31:46 PM] (128663) Notebook support: LSP
+[Info  - 11:31:46 PM] (128663) Interactive window support: LSP
+[Info  - 11:31:46 PM] (128663) No configuration file found.
+[Info  - 11:31:46 PM] (128663) pyproject.toml file found at /home/crpier/Projects/mptreasury.
+[Info  - 11:31:46 PM] (128663) Setting pythonPath for service "mptreasury": "/home/crpier/.pyenv/versions/3.11.1/bin/python"
+[Info  - 11:31:46 PM] (128663) Loading pyproject.toml file at /home/crpier/Projects/mptreasury/pyproject.toml
+[Error - 11:31:46 PM] (128663) Pyproject file "/home/crpier/Projects/mptreasury/pyproject.toml" is missing "[tool.pyright]" section.
+[Warn  - 11:31:46 PM] (128663) stubPath /home/crpier/Projects/mptreasury/typings is not a valid directory.
+[Info  - 11:31:46 PM] (128663) Assuming Python version 3.11
+[Info  - 11:31:46 PM] (128663) Assuming Python platform Linux
+[Info  - 11:31:46 PM] (128663) Searching for source files
+[Info  - 11:31:46 PM] (128663) Found 16 source files
+[Info  - 11:31:46 PM] (128663) Background analysis(1) root directory: /home/crpier/.vscode/extensions/ms-python.vscode-pylance-2023.1.10/dist
+[Info  - 11:31:46 PM] (128663) Background analysis(1) started
+[Info  - 11:31:46 PM] (128663) Indexer background runner(2) root directory: /home/crpier/.vscode/extensions/ms-python.vscode-pylance-2023.1.10/dist (index)
+[Info  - 11:31:46 PM] (128663) Indexing(2) started
+[Info  - 11:31:47 PM] (128663) scanned(2) 26 files over 1 exec env
+[Info  - 11:31:47 PM] (128663) indexed(2) 12 files over 1 exec env
+[Info  - 11:31:47 PM] (128663) Indexing finished(2).

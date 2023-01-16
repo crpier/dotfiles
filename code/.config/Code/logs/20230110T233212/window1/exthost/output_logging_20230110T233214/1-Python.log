@@ -1,0 +1,12 @@
+> poetry env list --full-path
+cwd: .
+LSP Notebooks experiment is enabled
+LSP Notebooks interactive window support is enabled
+> conda info --json
+Python interpreter path: ~/.pyenv/versions/3.11.1/bin/python
+> ~/.pyenv/versions/3.11.1/bin/python ~/.vscode/extensions/ms-python.python-2022.20.1/pythonFiles/get_output_via_markers.py ~/.vscode/extensions/ms-python.python-2022.20.1/pythonFiles/interpreterInfo.py
+> ~/.cache/pypoetry/virtualenvs/mptreasury-totEAk67-py3.11/bin/python ~/.vscode/extensions/ms-python.python-2022.20.1/pythonFiles/get_output_via_markers.py ~/.vscode/extensions/ms-python.python-2022.20.1/pythonFiles/interpreterInfo.py
+> /bin/python3 ~/.vscode/extensions/ms-python.python-2022.20.1/pythonFiles/get_output_via_markers.py ~/.vscode/extensions/ms-python.python-2022.20.1/pythonFiles/interpreterInfo.py
+> /usr/bin/python3 ~/.vscode/extensions/ms-python.python-2022.20.1/pythonFiles/get_output_via_markers.py ~/.vscode/extensions/ms-python.python-2022.20.1/pythonFiles/interpreterInfo.py
+> ~/.pyenv/versions/3.11.1/bin/python3.11 ~/.vscode/extensions/ms-python.python-2022.20.1/pythonFiles/get_output_via_markers.py ~/.vscode/extensions/ms-python.python-2022.20.1/pythonFiles/interpreterInfo.py
+Starting Pylance language server.

@@ -38,7 +38,8 @@
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reopen Closed Editor"
+                                    "label": "&&Reopen Closed Editor",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -47,6 +48,18 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
+                                        "external": "file:///home/crpier/Projects/mptreasury",
+                                        "path": "/home/crpier/Projects/mptreasury",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Projects/mptreasury"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/crpier/Projects/village-peace/game",
                                         "path": "/home/crpier/Projects/village-peace/game",
                                         "scheme": "file"
                                     },
@@ -112,6 +125,19 @@
                                 {
                                     "id": "github.copyVscodeDevLinkFile",
                                     "label": "Copy vscode.dev Link"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "workbench.profiles.actions.exportProfile",
+                                    "label": "Export Profile (Default)...",
+                                    "enabled": false
+                                },
+                                {
+                                    "id": "workbench.profiles.actions.importProfile",
+                                    "label": "Import Profile...",
+                                    "enabled": false
                                 }
                             ]
                         }
@@ -260,7 +286,7 @@
                     },
                     {
                         "id": "workbench.action.replaceInFiles",
-                        "label": "Replace &&in Files"
+                        "label": "Replace in Files"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -474,6 +500,29 @@
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
+                                    "id": "editor.action.toggleMinimap",
+                                    "label": "&&Minimap",
+                                    "checked": true
+                                },
+                                {
+                                    "id": "breadcrumbs.toggle",
+                                    "label": "&&Breadcrumbs",
+                                    "checked": true
+                                },
+                                {
+                                    "id": "editor.action.toggleRenderWhitespace",
+                                    "label": "&&Render Whitespace",
+                                    "checked": true
+                                },
+                                {
+                                    "id": "editor.action.toggleRenderControlCharacter",
+                                    "label": "Render &&Control Characters",
+                                    "checked": true
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
                                     "id": "workbench.action.zoomIn",
                                     "label": "&&Zoom In"
                                 },
@@ -585,6 +634,10 @@
                         "label": "E&&xtensions"
                     },
                     {
+                        "id": "workbench.view.extension.test",
+                        "label": "T&&esting"
+                    },
+                    {
                         "id": "vscode.menubar.separator"
                     },
                     {
@@ -608,28 +661,7 @@
                     },
                     {
                         "id": "editor.action.toggleWordWrap",
-                        "label": "&&Word Wrap",
-                        "checked": true
-                    },
-                    {
-                        "id": "editor.action.toggleMinimap",
-                        "label": "&&Minimap",
-                        "checked": true
-                    },
-                    {
-                        "id": "breadcrumbs.toggle",
-                        "label": "&&Breadcrumbs",
-                        "checked": true
-                    },
-                    {
-                        "id": "editor.action.toggleRenderWhitespace",
-                        "label": "&&Render Whitespace",
-                        "checked": true
-                    },
-                    {
-                        "id": "editor.action.toggleRenderControlCharacter",
-                        "label": "Render &&Control Characters",
-                        "checked": true
+                        "label": "&&Word Wrap"
                     },
                     {
                         "id": "editor.action.toggleStickyScroll",
@@ -791,23 +823,28 @@
                     },
                     {
                         "id": "editor.action.revealDefinition",
-                        "label": "Go to &&Definition"
+                        "label": "Go to &&Definition",
+                        "enabled": false
                     },
                     {
                         "id": "editor.action.revealDeclaration",
-                        "label": "Go to &&Declaration"
+                        "label": "Go to &&Declaration",
+                        "enabled": false
                     },
                     {
                         "id": "editor.action.goToTypeDefinition",
-                        "label": "Go to &&Type Definition"
+                        "label": "Go to &&Type Definition",
+                        "enabled": false
                     },
                     {
                         "id": "editor.action.goToImplementation",
-                        "label": "Go to &&Implementations"
+                        "label": "Go to &&Implementations",
+                        "enabled": false
                     },
                     {
                         "id": "editor.action.goToReferences",
-                        "label": "Go to &&References"
+                        "label": "Go to &&References",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -869,8 +906,7 @@
                     },
                     {
                         "id": "workbench.action.debug.configure",
-                        "label": "Open &&Configurations",
-                        "enabled": false
+                        "label": "Open &&Configurations"
                     },
                     {
                         "id": "debug.addConfiguration",
@@ -1035,7 +1071,7 @@
                     },
                     {
                         "id": "update.showCurrentReleaseNotes",
-                        "label": "&&Release Notes"
+                        "label": "Show &&Release Notes"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1245,12 +1281,12 @@
                 "userSettingsLabel": "alt+down"
             },
             "editor.action.insertCursorAbove": {
-                "label": "Ctrl+Shift+Up",
-                "userSettingsLabel": "ctrl+shift+up"
+                "label": "Shift+Alt+Up",
+                "userSettingsLabel": "shift+alt+up"
             },
             "editor.action.insertCursorBelow": {
-                "label": "Ctrl+Shift+Down",
-                "userSettingsLabel": "ctrl+shift+down"
+                "label": "Shift+Alt+Down",
+                "userSettingsLabel": "shift+alt+down"
             },
             "editor.action.insertCursorAtEndOfEachLineSelected": {
                 "label": "Shift+Alt+I",
@@ -1552,16 +1588,25 @@
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/crpier/Projects/village-peace/game",
-            "backupPath": "/home/crpier/.config/Code/Backups/927a1a1bf9e735802e898c40edffc754",
+            "folder": "file:///home/crpier/Projects/mptreasury",
+            "backupPath": "/home/crpier/.config/Code/Backups/5744382bfac5f3de78153e6166392677",
             "uiState": {
-                "mode": 1,
-                "x": 1922,
-                "y": 20,
-                "width": 1916,
-                "height": 2138
+                "mode": 0,
+                "x": 1920,
+                "y": 29,
+                "width": 3840,
+                "height": 2131
             }
         },
         "openedWindows": []
+    },
+    "backupWorkspaces": {
+        "workspaces": [],
+        "folders": [
+            {
+                "folderUri": "file:///home/crpier/Projects/mptreasury"
+            }
+        ],
+        "emptyWindows": []
     }
 }
