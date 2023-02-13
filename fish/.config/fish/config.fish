@@ -43,22 +43,6 @@ set -gx PATH $PATH /opt/neovim/bin ~/Projects/devutils/scripts/local ~/.local/bi
 set -gx EDITOR nvim
 set -gx MANPAGER "/bin/sh -c \"col -b | vim -c 'set ft=man ts=8 nomod nolist nonu noma' -\""
 
-# fish theme
-if status is-interactive
-    set -l onedark_options '-b'
-
-    if set -q VIM
-        # Using from vim/neovim.
-        set onedark_options "-256"
-    else if string match -iq "eterm*" $TERM
-        # Using from emacs.
-        function fish_title; true; end
-        set onedark_options "-256"
-    end
-
-    set_onedark $onedark_options
-end
-
 # bat settings
 set -gx BAT_THEME "gruvbox-dark"
 set -gx BAT_STYLE "numbers,changes"
