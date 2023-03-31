@@ -1,0 +1,22 @@
+2023-03-03 10:07:28.940 [info] update#setState idle
+2023-03-03 10:07:29.699 [info] Starting extension host with pid 1418924 (fork() took 6 ms).
+2023-03-03 10:07:58.943 [info] update#setState checking for updates
+2023-03-03 10:07:58.952 [info] update#setState available for download
+2023-03-03 10:26:20.735 [info] Extension host with pid 1418924 exited with code: 0, signal: null.
+2023-03-03 10:26:21.311 [info] Starting extension host with pid 1421956 (fork() took 6 ms).
+2023-03-03 13:12:49.932 [info] Extension host with pid 1421956 exited with code: 0, signal: null.
+2023-03-03 13:12:50.478 [info] Starting extension host with pid 1429713 (fork() took 6 ms).
+2023-03-03 14:33:04.868 [info] Extension host with pid 1429713 exited with code: 0, signal: null.
+2023-03-03 14:33:05.462 [info] Starting extension host with pid 1448881 (fork() took 8 ms).
+2023-03-03 14:33:14.987 [info] Extension host with pid 1448881 exited with code: 0, signal: null.
+2023-03-03 14:33:15.474 [info] Starting extension host with pid 1449057 (fork() took 6 ms).
+2023-03-03 14:33:18.588 [info] Extension host with pid 1449057 exited with code: 0, signal: null.
+2023-03-03 14:33:18.895 [info] Starting extension host with pid 1449218 (fork() took 5 ms).
+2023-03-03 14:33:22.307 [info] Extension host with pid 1449218 exited with code: 0, signal: null.
+2023-03-03 14:33:22.742 [info] Starting extension host with pid 1449351 (fork() took 8 ms).
+2023-03-03 15:37:21.215 [info] Extension host with pid 1449351 exited with code: 0, signal: null.
+2023-03-03 15:37:21.754 [info] Starting extension host with pid 1457904 (fork() took 10 ms).
+2023-03-03 15:37:24.868 [info] Extension host with pid 1457904 exited with code: 0, signal: null.
+2023-03-03 15:37:25.416 [info] Starting extension host with pid 1457998 (fork() took 6 ms).
+2023-03-04 21:43:42.820 [info] Waiting for extension host with pid 1457998 to exit.
+2023-03-04 21:43:42.891 [info] Extension host with pid 1457998 exited with code: 0, signal: null.

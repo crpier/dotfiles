@@ -1,0 +1,648 @@
+2023-03-04 22:09:20.562 [info] Configuration changed
+2023-03-04 22:09:20.804 [info] Configuration changed
+2023-03-04 22:11:10.742 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/memecry.ts
+2023-03-04 22:11:21.784 [info] /home/crpier/Projects/memecry/frontend/src/memecry.ts closed
+2023-03-04 22:11:21.784 [info] /home/crpier/Projects/memecry/frontend/src/memecry.ts.git closed
+2023-03-04 22:11:21.784 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-04 22:43:08.944 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/memecry.ts
+2023-03-04 22:43:12.308 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-04 22:43:13.536 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/memecry.ts
+2023-03-04 22:43:27.783 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-04 22:50:25.008 [info] Configuration changed
+2023-03-04 22:51:56.892 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/memecry.ts
+2023-03-04 22:51:56.893 [warning] invalid cursor position. [[22, 30] | [22, 30]].
+2023-03-04 22:51:56.904 [warning] invalid cursor position. [[22, 30] | [22, 30]].
+2023-03-04 22:51:59.967 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-04 22:52:02.370 [info] /home/crpier/Projects/memecry/frontend/src/memecry.ts closed
+2023-03-04 22:52:02.370 [info] /home/crpier/Projects/memecry/frontend/src/memecry.ts.git closed
+2023-03-04 22:52:02.396 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/node_modules/openapi-typescript-fetch/dist/cjs/fetcher.d.ts
+2023-03-04 22:52:02.397 [warning] getLineLength() called with out-of-bounds line 22
+2023-03-04 22:52:02.397 [warning] invalid cursor position. [[22, 26] | [22, 26]].
+2023-03-04 22:52:02.405 [warning] getLineLength() called with out-of-bounds line 22
+2023-03-04 22:52:02.405 [warning] invalid cursor position. [[22, 26] | [22, 26]].
+2023-03-04 22:52:12.244 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-04 22:52:17.359 [info] /home/crpier/Projects/memecry/frontend/node_modules/openapi-typescript-fetch/dist/cjs/fetcher.d.ts closed
+2023-03-04 22:52:17.359 [info] /home/crpier/Projects/memecry/frontend/node_modules/openapi-typescript-fetch/dist/cjs/fetcher.d.ts.git closed
+2023-03-04 22:52:17.408 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/memecry.ts
+2023-03-04 22:52:22.687 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-04 22:52:55.920 [info] /home/crpier/Projects/memecry/frontend/src/memecry.ts closed
+2023-03-04 22:52:55.920 [info] /home/crpier/Projects/memecry/frontend/src/memecry.ts.git closed
+2023-03-04 22:52:55.949 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/node_modules/openapi-typescript-fetch/dist/cjs/fetcher.d.ts
+2023-03-04 22:52:55.950 [warning] getLineLength() called with out-of-bounds line 22
+2023-03-04 22:52:55.950 [warning] invalid cursor position. [[22, 28] | [22, 28]].
+2023-03-04 22:52:55.958 [warning] getLineLength() called with out-of-bounds line 22
+2023-03-04 22:52:55.958 [warning] invalid cursor position. [[22, 28] | [22, 28]].
+2023-03-04 22:53:06.288 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/node_modules/openapi-typescript-fetch/dist/cjs/types.d.ts
+2023-03-04 22:53:06.289 [warning] invalid cursor position. [[2, 34] | [2, 34]].
+2023-03-04 22:53:06.295 [warning] invalid cursor position. [[2, 34] | [2, 34]].
+2023-03-04 22:53:11.750 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/node_modules/openapi-typescript-fetch/dist/cjs/fetcher.d.ts
+2023-03-04 22:53:12.817 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-04 22:53:55.560 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/node_modules/openapi-typescript-fetch/dist/cjs/fetcher.d.ts
+2023-03-04 22:54:20.868 [info] /home/crpier/Projects/memecry/frontend/node_modules/openapi-typescript-fetch/dist/cjs/types.d.ts closed
+2023-03-04 22:54:20.868 [info] /home/crpier/Projects/memecry/frontend/node_modules/openapi-typescript-fetch/dist/cjs/types.d.ts.git closed
+2023-03-04 22:54:20.897 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/node_modules/openapi-typescript-fetch/dist/cjs/fetcher.js
+2023-03-04 22:54:26.341 [info] Searching for Fetcher
+2023-03-04 22:54:40.705 [info] /home/crpier/Projects/memecry/frontend/node_modules/openapi-typescript-fetch/dist/cjs/fetcher.js closed
+2023-03-04 22:54:40.705 [info] /home/crpier/Projects/memecry/frontend/node_modules/openapi-typescript-fetch/dist/cjs/fetcher.js.git closed
+2023-03-04 22:54:40.705 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/node_modules/openapi-typescript-fetch/dist/cjs/fetcher.d.ts
+2023-03-04 22:54:41.664 [info] /home/crpier/Projects/memecry/frontend/node_modules/openapi-typescript-fetch/dist/cjs/fetcher.d.ts closed
+2023-03-04 22:54:41.664 [info] /home/crpier/Projects/memecry/frontend/node_modules/openapi-typescript-fetch/dist/cjs/fetcher.d.ts.git closed
+2023-03-04 22:54:41.664 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-04 22:55:04.464 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/package.json
+2023-03-04 22:55:13.845 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-04 22:55:17.308 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/package.json
+2023-03-04 22:55:17.860 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-04 22:55:34.041 [info] /home/crpier/Projects/memecry/frontend/package.json closed
+2023-03-04 22:55:34.041 [info] /home/crpier/Projects/memecry/frontend/package.json.git closed
+2023-03-04 22:55:34.052 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/node_modules/openapi-typescript-fetch/package.json
+2023-03-04 22:55:40.334 [info] Searching for type
+2023-03-04 22:56:04.534 [info] Searching for "type"
+2023-03-04 22:56:31.070 [info] /home/crpier/Projects/memecry/frontend/node_modules/openapi-typescript-fetch/package.json closed
+2023-03-04 22:56:31.070 [info] /home/crpier/Projects/memecry/frontend/node_modules/openapi-typescript-fetch/package.json.git closed
+2023-03-04 22:56:31.070 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-04 22:56:38.016 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/node_modules/openapi-typescript-fetch/dist/cjs/index.d.ts
+2023-03-04 22:56:57.196 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/node_modules/openapi-typescript-fetch/dist/cjs/fetcher.d.ts
+2023-03-04 22:57:03.749 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/node_modules/openapi-typescript-fetch/dist/cjs/index.d.ts
+2023-03-04 22:57:05.548 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-04 22:58:04.949 [info] /vscode-extensions closed
+2023-03-04 22:58:05.030 [info] /settings/configurationDefaults closed
+2023-03-04 22:58:05.148 [info] /settings/resourceLanguage closed
+2023-03-04 22:58:05.179 [info] /launch closed
+2023-03-04 22:58:05.179 [info] /token-styling closed
+2023-03-04 22:58:05.179 [info] /textmate-colors closed
+2023-03-04 22:58:05.179 [info] /workbench-colors closed
+2023-03-04 22:58:10.873 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-04 23:06:00.199 [info] Executing :w
+2023-03-04 23:08:15.733 [info] /home/crpier/Projects/memecry/frontend/src/root.tsx closed
+2023-03-04 23:16:45.791 [info] /home/crpier/Projects/memecry/frontend/src/root.tsx closed
+2023-03-04 23:16:57.323 [info] Active editor: untitled:Untitled-1
+2023-03-04 23:16:58.801 [info] Untitled-1 closed
+2023-03-04 23:16:58.801 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-04 23:19:13.002 [info] Executing :w
+2023-03-04 23:19:15.683 [info] Executing :w
+2023-03-04 23:30:42.625 [info] /home/crpier/Projects/memecry/frontend/node_modules/openapi-typescript-fetch/dist/cjs/fetcher.d.ts closed
+2023-03-04 23:30:42.625 [info] /home/crpier/Projects/memecry/frontend/node_modules/openapi-typescript-fetch/dist/cjs/fetcher.d.ts.git closed
+2023-03-04 23:30:42.655 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/memecry-gen/types/PromiseAPI.ts
+2023-03-04 23:30:42.656 [warning] invalid cursor position. [[21, 18] | [21, 18]].
+2023-03-04 23:30:42.666 [warning] invalid cursor position. [[21, 18] | [21, 18]].
+2023-03-04 23:30:51.977 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/memecry-gen/configuration.ts
+2023-03-04 23:30:51.977 [warning] invalid cursor position. [[18, 35] | [18, 35]].
+2023-03-04 23:30:51.983 [warning] invalid cursor position. [[18, 35] | [18, 35]].
+2023-03-04 23:31:02.418 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/memecry-gen/types/PromiseAPI.ts
+2023-03-04 23:31:02.546 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-04 23:31:02.963 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/memecry-gen/types/PromiseAPI.ts
+2023-03-04 23:31:03.114 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/memecry-gen/configuration.ts
+2023-03-04 23:31:05.354 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/memecry-gen/types/PromiseAPI.ts
+2023-03-04 23:31:05.494 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-04 23:31:32.408 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/memecry-gen/configuration.ts
+2023-03-04 23:31:34.413 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/memecry-gen/servers.ts
+2023-03-04 23:31:34.414 [warning] invalid cursor position. [[7, 46] | [7, 46]].
+2023-03-04 23:31:34.423 [warning] invalid cursor position. [[7, 46] | [7, 46]].
+2023-03-04 23:31:42.217 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/memecry-gen/http/http.ts
+2023-03-04 23:31:42.218 [warning] invalid cursor position. [[3, 53] | [3, 53]].
+2023-03-04 23:31:42.225 [warning] invalid cursor position. [[3, 53] | [3, 53]].
+2023-03-04 23:31:48.339 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-04 23:32:06.284 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/memecry-gen/configuration.ts
+2023-03-04 23:32:08.360 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/memecry-gen/servers.ts
+2023-03-04 23:32:08.361 [warning] invalid cursor position. [[7, 25] | [7, 25]].
+2023-03-04 23:32:08.361 [warning] invalid cursor position. [[7, 25] | [7, 25]].
+2023-03-04 23:32:13.396 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/memecry-gen/configuration.ts
+2023-03-04 23:32:17.260 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-04 23:36:06.997 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/memecry-gen/types/PromiseAPI.ts
+2023-03-04 23:36:06.997 [warning] invalid cursor position. [[21, 18] | [21, 18]].
+2023-03-04 23:36:06.997 [warning] invalid cursor position. [[21, 18] | [21, 18]].
+2023-03-04 23:36:11.499 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/memecry-gen/configuration.ts
+2023-03-04 23:36:11.499 [warning] invalid cursor position. [[18, 34] | [18, 34]].
+2023-03-04 23:36:11.499 [warning] invalid cursor position. [[18, 34] | [18, 34]].
+2023-03-04 23:36:18.832 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/memecry-gen/servers.ts
+2023-03-04 23:36:18.833 [warning] invalid cursor position. [[7, 25] | [7, 25]].
+2023-03-04 23:36:18.833 [warning] invalid cursor position. [[7, 25] | [7, 25]].
+2023-03-04 23:37:40.080 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-04 23:38:34.056 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-04 23:38:41.026 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/memecry-gen/servers.ts
+2023-03-04 23:38:44.933 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/memecry-gen/configuration.ts
+2023-03-04 23:38:45.095 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/memecry-gen/types/PromiseAPI.ts
+2023-03-04 23:38:45.248 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-04 23:38:45.405 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/node_modules/openapi-typescript-fetch/dist/cjs/index.d.ts
+2023-03-04 23:38:46.176 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-04 23:38:55.132 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-04 23:39:03.893 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/node_modules/openapi-typescript-fetch/dist/cjs/index.d.ts
+2023-03-04 23:39:08.434 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-04 23:39:10.196 [info] /home/crpier/.config/Code/User/settings.json closed
+2023-03-04 23:39:10.219 [info] Configuration changed
+2023-03-04 23:39:13.039 [info] /home/crpier/.config/Code/User/settings.json closed
+2023-03-04 23:39:13.055 [info] Configuration changed
+2023-03-04 23:39:14.376 [info] /home/crpier/.config/Code/User/settings.json closed
+2023-03-04 23:39:14.391 [info] Configuration changed
+2023-03-04 23:39:15.683 [info] /home/crpier/.config/Code/User/settings.json closed
+2023-03-04 23:39:15.697 [info] Configuration changed
+2023-03-04 23:40:33.282 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/memecry-gen/configuration.ts
+2023-03-04 23:40:37.094 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-04 23:43:15.198 [info] Active editor: untitled:Untitled-1
+2023-03-04 23:43:16.152 [info] Untitled-1 closed
+2023-03-04 23:43:16.153 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-04 23:44:31.814 [info] Executing :w
+2023-03-04 23:44:54.668 [info] Executing :w
+2023-03-04 23:45:00.327 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-04 23:45:42.448 [info] /home/crpier/Projects/memecry/frontend/tsconfig.json closed
+2023-03-04 23:46:57.772 [info] Executing :w
+2023-03-05 00:06:26.965 [info] Executing :w
+2023-03-05 00:14:30.695 [info] /home/crpier/Projects/memecry/frontend/src/memecry-gen/http/http.ts closed
+2023-03-05 00:14:30.695 [info] /home/crpier/Projects/memecry/frontend/src/memecry-gen/http/http.ts.git closed
+2023-03-05 00:14:30.726 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/memecry-backend/MemecryClient.ts
+2023-03-05 00:14:36.684 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/memecry-backend/services/DefaultService.ts
+2023-03-05 00:14:49.069 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/memecry-backend/models/Post.ts
+2023-03-05 00:14:54.491 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/memecry-backend/services/DefaultService.ts
+2023-03-05 00:14:55.487 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/memecry-backend/MemecryClient.ts
+2023-03-05 00:15:07.346 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 00:15:12.274 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/node_modules/openapi-typescript-fetch/dist/cjs/index.d.ts
+2023-03-05 00:15:13.306 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 00:32:52.432 [info] /home/crpier/Projects/memecry/frontend/src/memecry-backend/MemecryClient.ts closed
+2023-03-05 00:32:52.432 [info] /home/crpier/Projects/memecry/frontend/src/memecry-backend/MemecryClient.ts.git closed
+2023-03-05 00:32:52.812 [info] /home/crpier/Projects/memecry/frontend/src/memecry-backend/services/DefaultService.ts closed
+2023-03-05 00:32:52.812 [info] /home/crpier/Projects/memecry/frontend/src/memecry-backend/services/DefaultService.ts.git closed
+2023-03-05 00:32:53.238 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/memecry-backend/models/Post.ts
+2023-03-05 00:32:54.495 [info] /home/crpier/Projects/memecry/frontend/src/memecry-backend/models/Post.ts closed
+2023-03-05 00:32:54.495 [info] /home/crpier/Projects/memecry/frontend/src/memecry-backend/models/Post.ts.git closed
+2023-03-05 00:32:54.495 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 00:32:55.744 [info] /home/crpier/Projects/memecry/frontend/src/memecry-gen/types/PromiseAPI.ts closed
+2023-03-05 00:32:55.744 [info] /home/crpier/Projects/memecry/frontend/src/memecry-gen/types/PromiseAPI.ts.git closed
+2023-03-05 00:32:55.948 [info] /home/crpier/Projects/memecry/frontend/src/memecry-gen/configuration.ts closed
+2023-03-05 00:32:55.948 [info] /home/crpier/Projects/memecry/frontend/src/memecry-gen/configuration.ts.git closed
+2023-03-05 00:32:56.121 [info] /home/crpier/Projects/memecry/frontend/src/memecry-gen/servers.ts closed
+2023-03-05 00:32:56.121 [info] /home/crpier/Projects/memecry/frontend/src/memecry-gen/servers.ts.git closed
+2023-03-05 00:32:56.289 [info] /home/crpier/Projects/memecry/frontend/node_modules/openapi-typescript-fetch/dist/cjs/index.d.ts closed
+2023-03-05 00:32:56.289 [info] /home/crpier/Projects/memecry/frontend/node_modules/openapi-typescript-fetch/dist/cjs/index.d.ts.git closed
+2023-03-05 00:33:24.531 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 00:33:29.956 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 00:33:36.969 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 00:33:42.781 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 00:33:44.867 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 00:33:51.095 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 00:33:54.534 [info] Executing :w
+2023-03-05 00:33:55.525 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 00:34:02.446 [info] Executing :w
+2023-03-05 00:36:24.594 [info] /home/crpier/Projects/memecry/frontend/tsconfig.json closed
+2023-03-05 00:56:36.410 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/vite.config.ts
+2023-03-05 00:56:39.144 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 00:59:32.719 [info] Executing :w
+2023-03-05 00:59:53.585 [info] Executing :w
+2023-03-05 01:00:41.064 [info] Executing :w
+2023-03-05 01:00:49.128 [info] Executing :w
+2023-03-05 01:02:06.543 [info] Executing :w
+2023-03-05 01:02:17.033 [info] Configuration changed
+2023-03-05 01:02:21.796 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 01:02:22.920 [info] /home/crpier/Projects/memecry/frontend/vite.config.ts closed
+2023-03-05 01:02:22.920 [info] /home/crpier/Projects/memecry/frontend/vite.config.ts.git closed
+2023-03-05 01:02:38.260 [info] /home/crpier/.config/Code/User/settings.json closed
+2023-03-05 01:02:38.282 [info] Configuration changed
+2023-03-05 01:02:40.120 [info] /home/crpier/Projects/memecry/frontend/src/memecry-backend/MemecryClient.ts closed
+2023-03-05 01:02:40.716 [info] /home/crpier/Projects/memecry/frontend/src/memecry-backend/MemecryClient.ts closed
+2023-03-05 01:02:45.007 [info] Executing :w
+2023-03-05 01:02:46.075 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 01:02:51.977 [info] /home/crpier/.config/Code/User/settings.json closed
+2023-03-05 01:02:51.993 [info] Configuration changed
+2023-03-05 01:02:57.860 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 01:02:59.295 [info] Executing :w
+2023-03-05 01:03:53.039 [info] Executing :w
+2023-03-05 01:07:45.575 [info] Executing :w
+2023-03-05 01:07:48.335 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 01:08:38.976 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/node_modules/solid-start/session/index.ts
+2023-03-05 01:08:54.451 [info] /home/crpier/.config/Code/User/settings.json closed
+2023-03-05 01:08:54.489 [info] Configuration changed
+2023-03-05 01:08:56.529 [info] /home/crpier/.config/Code/User/settings.json closed
+2023-03-05 01:08:56.610 [info] Configuration changed
+2023-03-05 01:08:58.081 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 01:09:00.021 [info] /home/crpier/.config/Code/User/settings.json closed
+2023-03-05 01:09:00.046 [info] Configuration changed
+2023-03-05 01:09:00.713 [info] /home/crpier/.config/Code/User/settings.json closed
+2023-03-05 01:09:00.740 [info] Configuration changed
+2023-03-05 01:09:01.635 [info] /home/crpier/.config/Code/User/settings.json closed
+2023-03-05 01:09:01.729 [info] Configuration changed
+2023-03-05 01:09:04.202 [info] /home/crpier/.config/Code/User/settings.json closed
+2023-03-05 01:09:04.276 [info] Configuration changed
+2023-03-05 01:09:07.232 [info] Executing :w
+2023-03-05 01:09:12.827 [info] Executing :w
+2023-03-05 01:09:59.968 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/node_modules/solid-start/session/index.ts
+2023-03-05 01:10:21.241 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 01:10:37.048 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/node_modules/solid-start/session/index.ts
+2023-03-05 01:10:40.491 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 01:11:37.898 [info] Executing :w
+2023-03-05 01:11:46.663 [info] Executing :w
+2023-03-05 01:11:50.954 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/node_modules/solid-start/session/index.ts
+2023-03-05 01:11:55.511 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/node_modules/solid-start/session/cookies.ts
+2023-03-05 01:11:55.513 [warning] invalid cursor position. [[17, 45] | [17, 45]].
+2023-03-05 01:11:55.524 [warning] invalid cursor position. [[17, 45] | [17, 45]].
+2023-03-05 01:12:02.199 [info] /home/crpier/.config/Code/User/settings.json closed
+2023-03-05 01:12:02.228 [info] Configuration changed
+2023-03-05 01:12:03.869 [info] /home/crpier/.config/Code/User/settings.json closed
+2023-03-05 01:12:03.893 [info] Configuration changed
+2023-03-05 01:12:04.762 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/node_modules/solid-start/session/index.ts
+2023-03-05 01:12:05.000 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 01:12:32.209 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/node_modules/solid-start/session/index.ts
+2023-03-05 01:12:34.550 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/node_modules/solid-start/session/cookies.ts
+2023-03-05 01:12:40.344 [info] Searching for cookieop
+2023-03-05 01:12:47.707 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/node_modules/solid-start/session/cookie.ts
+2023-03-05 01:12:51.151 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/node_modules/solid-start/session/cookies.ts
+2023-03-05 01:12:52.674 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/node_modules/solid-start/session/cookie.ts
+2023-03-05 01:12:54.419 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/node_modules/solid-start/session/cookies.ts
+2023-03-05 01:13:00.330 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/node_modules/solid-start/session/index.ts
+2023-03-05 01:13:02.203 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/node_modules/solid-start/session/cookies.ts
+2023-03-05 01:13:19.893 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/node_modules/solid-start/session/index.ts
+2023-03-05 01:13:20.063 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/node_modules/solid-start/session/cookies.ts
+2023-03-05 01:13:20.218 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/node_modules/solid-start/session/index.ts
+2023-03-05 01:13:22.367 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 01:13:40.360 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 01:15:18.634 [warning] invalid cursor stop position. [18, 12].
+2023-03-05 01:15:18.634 [warning] invalid cursor start position. [18, 12].
+2023-03-05 01:15:49.511 [info] Executing :w
+2023-03-05 01:19:28.261 [info] Executing :w
+2023-03-05 01:19:30.310 [info] Executing :w
+2023-03-05 01:19:53.481 [info] Executing :w
+2023-03-05 01:25:18.747 [info] Executing :w
+2023-03-05 01:25:30.106 [info] Executing :w
+2023-03-05 01:25:55.413 [warning] invalid cursor stop position. [20, 14].
+2023-03-05 01:25:55.413 [warning] invalid cursor start position. [20, 14].
+2023-03-05 01:25:55.421 [warning] invalid cursor stop position. [20, 9].
+2023-03-05 01:25:55.421 [warning] invalid cursor start position. [20, 9].
+2023-03-05 01:25:55.421 [warning] invalid cursor stop position. [20, 10].
+2023-03-05 01:25:55.421 [warning] invalid cursor start position. [20, 10].
+2023-03-05 01:27:18.882 [info] Executing :w
+2023-03-05 01:28:37.999 [info] Searching for redirect
+2023-03-05 01:28:39.554 [info] /home/crpier/Projects/memecry/frontend/node_modules/solid-start/session/cookie.ts closed
+2023-03-05 01:28:39.554 [info] /home/crpier/Projects/memecry/frontend/node_modules/solid-start/session/cookie.ts.git closed
+2023-03-05 01:28:39.587 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/node_modules/solid-start/server/responses.ts
+2023-03-05 01:28:51.310 [info] Active editor: file:///usr/share/code/resources/app/extensions/node_modules/typescript/lib/lib.dom.d.ts
+2023-03-05 01:28:51.310 [warning] invalid cursor position. [[54, 41] | [54, 41]].
+2023-03-05 01:28:51.311 [warning] invalid cursor position. [[54, 41] | [54, 41]].
+2023-03-05 01:28:53.475 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/node_modules/solid-start/server/responses.ts
+2023-03-05 01:29:07.044 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 01:29:17.591 [info] Executing :w
+2023-03-05 01:29:32.191 [info] Active editor: file:///usr/share/code/resources/app/extensions/node_modules/typescript/lib/lib.dom.d.ts
+2023-03-05 01:29:32.192 [warning] invalid cursor position. [[20, 39] | [20, 39]].
+2023-03-05 01:29:32.192 [warning] invalid cursor position. [[20, 39] | [20, 39]].
+2023-03-05 01:29:42.535 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 01:31:53.693 [info] Executing :w
+2023-03-05 01:32:01.111 [info] Executing :w
+2023-03-05 01:32:30.802 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 01:32:42.738 [info] /usr/share/code/resources/app/extensions/node_modules/typescript/lib/lib.dom.d.ts closed
+2023-03-05 01:32:42.792 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+2023-03-05 01:32:53.164 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 01:32:55.042 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 01:41:03.411 [info] Executing :w
+2023-03-05 01:45:03.586 [info] Executing :w
+2023-03-05 01:45:13.933 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 01:45:14.413 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 01:45:18.240 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 01:45:44.159 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 01:45:48.950 [info] Searching for redir
+2023-03-05 01:45:54.116 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 01:47:01.837 [info] Executing :w
+2023-03-05 01:47:06.491 [info] Searching for button
+2023-03-05 01:47:43.125 [info] /home/crpier/Projects/memecry/frontend/node_modules/solid-js/types/jsx.d.ts closed
+2023-03-05 01:49:19.837 [info] Searching for redirect
+2023-03-05 01:49:52.836 [info] Executing :w
+2023-03-05 01:49:58.606 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 01:50:02.352 [info] Executing :w
+2023-03-05 01:50:06.476 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 01:50:11.582 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 01:50:25.111 [info] Executing :w
+2023-03-05 01:58:37.673 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 01:58:41.296 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 01:58:42.608 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 01:58:48.396 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 01:58:50.636 [info] Executing :w
+2023-03-05 01:59:55.862 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 01:59:58.037 [info] Searching for login
+2023-03-05 02:00:00.986 [info] Searching for log in
+2023-03-05 02:00:26.180 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 02:00:28.769 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 02:00:41.771 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 02:00:45.556 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 02:00:47.095 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 02:00:51.333 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 02:02:19.105 [info] Executing :w
+2023-03-05 02:02:20.603 [info] Executing :w
+2023-03-05 02:02:22.424 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+2023-03-05 02:02:23.880 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 02:02:27.322 [info] Executing :w
+2023-03-05 02:02:32.701 [info] Searching for log in
+2023-03-05 02:02:43.008 [info] Executing :w
+2023-03-05 02:06:17.230 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+2023-03-05 02:06:18.443 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 02:06:21.237 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 02:06:54.926 [info] Executing :w
+2023-03-05 02:08:00.137 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 02:10:59.405 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 02:16:04.542 [info] Executing :w
+2023-03-05 02:34:17.470 [info] Executing :w
+2023-03-05 02:35:59.157 [info] Executing :w
+2023-03-05 02:36:22.077 [info] Executing :w
+2023-03-05 02:39:03.739 [info] Executing :w
+2023-03-05 02:41:28.032 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 02:41:29.195 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 02:58:29.247 [info] Executing :w
+2023-03-05 03:39:05.252 [info] Executing :w
+2023-03-05 03:39:51.338 [info] Executing :w
+2023-03-05 03:41:43.116 [info] Executing :w
+2023-03-05 03:43:20.644 [info] Executing :w
+2023-03-05 03:48:49.976 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/memecry-backend/index.ts
+2023-03-05 03:48:49.978 [warning] invalid cursor position. [[2, 47] | [2, 47]].
+2023-03-05 03:48:49.992 [warning] invalid cursor position. [[2, 47] | [2, 47]].
+2023-03-05 03:48:53.249 [info] Searching for user
+2023-03-05 03:48:58.004 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 03:49:19.356 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/memecry-backend/index.ts
+2023-03-05 03:49:20.471 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 03:49:22.391 [info] Executing :w
+2023-03-05 03:49:58.936 [info] Executing :w
+2023-03-05 03:50:01.313 [info] Executing :w
+2023-03-05 03:52:25.161 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 03:52:34.589 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 03:53:01.667 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 03:53:18.091 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 03:53:21.119 [info] Searching for export
+2023-03-05 03:53:26.610 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 03:53:28.836 [info] Searching for backen
+2023-03-05 03:53:53.824 [info] Executing :w
+2023-03-05 03:57:14.929 [info] Active editor: untitled:Untitled-1
+2023-03-05 03:57:16.023 [info] Untitled-1 closed
+2023-03-05 03:57:16.023 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 03:57:24.077 [info] Executing :w
+2023-03-05 04:02:06.768 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 04:02:08.492 [info] Searching for prop
+2023-03-05 04:02:09.467 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 04:02:22.300 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+2023-03-05 04:02:25.851 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 04:02:46.711 [info] Executing :w
+2023-03-05 04:07:03.983 [info] /home/crpier/Projects/memecry/frontend/node_modules/solid-start/index.tsx closed
+2023-03-05 04:07:15.740 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/components/Nav.tsx
+2023-03-05 04:08:06.120 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 04:08:09.293 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/components/Nav.tsx
+2023-03-05 04:08:11.359 [info] Searching for A
+2023-03-05 04:08:19.813 [info] /home/crpier/Projects/memecry/frontend/src/memecry-backend/index.ts closed
+2023-03-05 04:08:19.813 [info] /home/crpier/Projects/memecry/frontend/src/memecry-backend/index.ts.git closed
+2023-03-05 04:08:21.352 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/components/Nav.tsx
+2023-03-05 04:08:26.968 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 04:08:28.336 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/components/Nav.tsx
+2023-03-05 04:08:28.671 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 04:08:56.010 [info] Searching for cristi
+2023-03-05 04:08:58.735 [info] Searching for cris
+2023-03-05 04:09:00.035 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/components/Nav.tsx
+2023-03-05 04:09:31.777 [info] Executing :w
+2023-03-05 04:09:39.790 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.css
+2023-03-05 04:10:15.814 [info] /home/crpier/Projects/memecry/frontend/tsconfig.json closed
+2023-03-05 04:29:38.030 [info] /home/crpier/Projects/memecry/frontend/src/root.css closed
+2023-03-05 04:29:38.030 [info] /home/crpier/Projects/memecry/frontend/src/root.css.git closed
+2023-03-05 04:29:38.030 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/components/Nav.tsx
+2023-03-05 04:29:38.797 [info] /home/crpier/Projects/memecry/frontend/src/components/Nav.tsx closed
+2023-03-05 04:29:38.797 [info] /home/crpier/Projects/memecry/frontend/src/components/Nav.tsx.git closed
+2023-03-05 04:29:38.797 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 04:29:38.936 [info] /home/crpier/Projects/memecry/frontend/src/root.tsx closed
+2023-03-05 04:29:38.936 [info] /home/crpier/Projects/memecry/frontend/src/root.tsx.git closed
+2023-03-05 04:29:38.936 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+2023-03-05 04:29:39.130 [info] /home/crpier/Projects/memecry/frontend/src/routes/index.tsx closed
+2023-03-05 04:29:39.130 [info] /home/crpier/Projects/memecry/frontend/src/routes/index.tsx.git closed
+2023-03-05 04:29:39.130 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 04:29:39.408 [info] /home/crpier/Projects/memecry/frontend/src/services.ts closed
+2023-03-05 04:29:39.408 [info] /home/crpier/Projects/memecry/frontend/src/services.ts.git closed
+2023-03-05 04:29:39.408 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/node_modules/solid-start/server/responses.ts
+2023-03-05 04:29:39.881 [info] /home/crpier/Projects/memecry/frontend/node_modules/solid-start/server/responses.ts closed
+2023-03-05 04:29:39.881 [info] /home/crpier/Projects/memecry/frontend/node_modules/solid-start/server/responses.ts.git closed
+2023-03-05 04:29:39.881 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/node_modules/solid-start/session/index.ts
+2023-03-05 04:29:40.096 [info] /home/crpier/Projects/memecry/frontend/node_modules/solid-start/session/index.ts closed
+2023-03-05 04:29:40.096 [info] /home/crpier/Projects/memecry/frontend/node_modules/solid-start/session/index.ts.git closed
+2023-03-05 04:29:40.096 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/node_modules/solid-start/session/cookies.ts
+2023-03-05 04:29:40.506 [info] /home/crpier/Projects/memecry/frontend/node_modules/solid-start/session/cookies.ts closed
+2023-03-05 04:29:40.506 [info] /home/crpier/Projects/memecry/frontend/node_modules/solid-start/session/cookies.ts.git closed
+2023-03-05 04:29:42.961 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/memecry-backend/index.ts
+2023-03-05 04:29:47.185 [info] /home/crpier/Projects/memecry/frontend/src/memecry-backend/index.ts closed
+2023-03-05 04:29:47.185 [info] /home/crpier/Projects/memecry/frontend/src/memecry-backend/index.ts.git closed
+2023-03-05 04:29:56.590 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+2023-03-05 04:30:05.989 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 04:30:23.679 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+2023-03-05 04:37:39.494 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/components/Nav.tsx
+2023-03-05 04:37:44.819 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+2023-03-05 04:39:48.608 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 04:39:56.750 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+2023-03-05 04:40:02.370 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 04:40:02.380 [warning] invalid cursor position. [[9, 56] | [9, 56]].
+2023-03-05 04:40:02.380 [warning] invalid cursor position. [[9, 56] | [9, 56]].
+2023-03-05 04:40:08.499 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+2023-03-05 04:40:11.195 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 04:41:00.467 [info] Searching for this.
+2023-03-05 04:42:06.223 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 04:42:21.667 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 04:42:35.641 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 04:42:43.034 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/components/Nav.tsx
+2023-03-05 04:43:23.915 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 04:43:23.917 [warning] invalid cursor position. [[6, 36] | [6, 36]].
+2023-03-05 04:43:23.917 [warning] invalid cursor position. [[6, 36] | [6, 36]].
+2023-03-05 04:43:26.615 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/components/Nav.tsx
+2023-03-05 04:43:50.139 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 04:45:53.688 [info] Executing :w
+2023-03-05 04:45:56.888 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/components/Nav.tsx
+2023-03-05 04:46:06.566 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+2023-03-05 04:47:42.630 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/components/Nav.tsx
+2023-03-05 04:47:53.232 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 04:47:53.788 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+2023-03-05 04:47:54.453 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 04:47:56.812 [warning] invalid cursor stop position. [16, 10].
+2023-03-05 04:47:56.812 [warning] invalid cursor start position. [16, 10].
+2023-03-05 04:47:59.895 [warning] invalid cursor stop position. [29, 39].
+2023-03-05 04:47:59.895 [warning] invalid cursor start position. [29, 39].
+2023-03-05 04:47:59.980 [warning] invalid cursor stop position. [29, 33].
+2023-03-05 04:47:59.980 [warning] invalid cursor start position. [29, 33].
+2023-03-05 04:47:59.999 [warning] invalid cursor stop position. [29, 27].
+2023-03-05 04:47:59.999 [warning] invalid cursor start position. [29, 27].
+2023-03-05 04:48:00.014 [warning] invalid cursor stop position. [29, 26].
+2023-03-05 04:48:00.014 [warning] invalid cursor start position. [29, 26].
+2023-03-05 04:48:43.991 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 04:49:13.562 [info] Searching for router
+2023-03-05 04:49:42.323 [info] Executing :w
+2023-03-05 04:49:53.222 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/components/Nav.tsx
+2023-03-05 04:49:53.509 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 04:49:55.693 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/components/Nav.tsx
+2023-03-05 04:49:56.097 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 04:49:56.665 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+2023-03-05 04:50:29.402 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 04:52:17.968 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/components/Nav.tsx
+2023-03-05 04:52:21.095 [info] Searching for children
+2023-03-05 04:52:23.092 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 04:52:24.081 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+2023-03-05 04:52:25.024 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 04:52:27.047 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/components/Nav.tsx
+2023-03-05 04:52:27.552 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 04:52:29.376 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+2023-03-05 04:54:55.652 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/node_modules/solid-services/dist/types/service.d.ts
+2023-03-05 04:54:55.653 [warning] getLineLength() called with out-of-bounds line 10
+2023-03-05 04:54:55.653 [warning] invalid cursor position. [[10, 28] | [10, 28]].
+2023-03-05 04:54:55.662 [warning] getLineLength() called with out-of-bounds line 10
+2023-03-05 04:54:55.662 [warning] invalid cursor position. [[10, 28] | [10, 28]].
+2023-03-05 04:55:00.392 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+2023-03-05 04:55:04.108 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/node_modules/solid-services/dist/types/service.d.ts
+2023-03-05 04:55:04.109 [warning] getLineLength() called with out-of-bounds line 10
+2023-03-05 04:55:04.109 [warning] invalid cursor position. [[10, 28] | [10, 28]].
+2023-03-05 04:55:04.109 [warning] getLineLength() called with out-of-bounds line 10
+2023-03-05 04:55:04.109 [warning] invalid cursor position. [[10, 28] | [10, 28]].
+2023-03-05 04:55:10.839 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+2023-03-05 04:55:24.065 [info] /home/crpier/Projects/memecry/frontend/node_modules/solid-services/dist/types/service.d.ts closed
+2023-03-05 04:55:24.065 [info] /home/crpier/Projects/memecry/frontend/node_modules/solid-services/dist/types/service.d.ts.git closed
+2023-03-05 04:55:24.087 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/memecry-backend/MemecryClient.ts
+2023-03-05 04:55:28.179 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+2023-03-05 04:55:28.739 [info] /home/crpier/Projects/memecry/frontend/src/memecry-backend/MemecryClient.ts closed
+2023-03-05 04:55:28.739 [info] /home/crpier/Projects/memecry/frontend/src/memecry-backend/MemecryClient.ts.git closed
+2023-03-05 04:55:28.768 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.css
+2023-03-05 04:55:30.257 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 04:56:30.725 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+2023-03-05 04:56:41.354 [info] Searching for post
+2023-03-05 04:58:38.618 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 04:58:57.009 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/memecry-backend/index.ts
+2023-03-05 04:58:59.503 [info] /home/crpier/Projects/memecry/frontend/src/memecry-backend/index.ts closed
+2023-03-05 04:58:59.503 [info] /home/crpier/Projects/memecry/frontend/src/memecry-backend/index.ts.git closed
+2023-03-05 04:58:59.503 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 04:58:59.798 [info] /home/crpier/Projects/memecry/frontend/src/root.tsx closed
+2023-03-05 04:58:59.798 [info] /home/crpier/Projects/memecry/frontend/src/root.tsx.git closed
+2023-03-05 04:58:59.798 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+2023-03-05 04:58:59.943 [info] /home/crpier/Projects/memecry/frontend/src/routes/index.tsx closed
+2023-03-05 04:58:59.943 [info] /home/crpier/Projects/memecry/frontend/src/routes/index.tsx.git closed
+2023-03-05 04:58:59.943 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.css
+2023-03-05 04:59:00.115 [info] /home/crpier/Projects/memecry/frontend/src/root.css closed
+2023-03-05 04:59:00.115 [info] /home/crpier/Projects/memecry/frontend/src/root.css.git closed
+2023-03-05 04:59:00.115 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/components/Nav.tsx
+2023-03-05 04:59:00.489 [info] /home/crpier/Projects/memecry/frontend/src/components/Nav.tsx closed
+2023-03-05 04:59:00.489 [info] /home/crpier/Projects/memecry/frontend/src/components/Nav.tsx.git closed
+2023-03-05 04:59:00.489 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 04:59:01.464 [info] /home/crpier/Projects/memecry/frontend/src/services.ts closed
+2023-03-05 04:59:01.464 [info] /home/crpier/Projects/memecry/frontend/src/services.ts.git closed
+2023-03-05 04:59:04.789 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+2023-03-05 04:59:32.241 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 05:01:03.565 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+2023-03-05 05:04:06.788 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 05:04:17.811 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/components/Nav.tsx
+2023-03-05 05:04:32.063 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 05:05:29.182 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/components/Nav.tsx
+2023-03-05 05:06:09.478 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 05:07:43.701 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/components/Nav.tsx
+2023-03-05 05:07:59.589 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/node_modules/solid-start/session/index.ts
+2023-03-05 05:08:02.106 [info] /home/crpier/Projects/memecry/frontend/node_modules/solid-start/session/index.ts closed
+2023-03-05 05:08:02.106 [info] /home/crpier/Projects/memecry/frontend/node_modules/solid-start/session/index.ts.git closed
+2023-03-05 05:08:02.106 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/components/Nav.tsx
+2023-03-05 05:08:03.156 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 05:08:03.450 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+2023-03-05 05:41:03.136 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 05:41:03.136 [warning] invalid cursor position. [[9, 48] | [9, 48]].
+2023-03-05 05:41:03.137 [warning] invalid cursor position. [[9, 48] | [9, 48]].
+2023-03-05 05:41:14.628 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+2023-03-05 05:42:13.346 [info] Executing :w
+2023-03-05 05:47:27.527 [info] /home/crpier/Projects/memecry/frontend/src/services.ts closed
+2023-03-05 05:47:27.527 [info] /home/crpier/Projects/memecry/frontend/src/services.ts.git closed
+2023-03-05 05:47:27.566 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.css
+2023-03-05 05:47:29.805 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 05:47:31.746 [info] /home/crpier/Projects/memecry/frontend/src/root.tsx closed
+2023-03-05 05:47:31.746 [info] /home/crpier/Projects/memecry/frontend/src/root.tsx.git closed
+2023-03-05 05:47:31.746 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.css
+2023-03-05 05:47:31.887 [info] /home/crpier/Projects/memecry/frontend/src/root.css closed
+2023-03-05 05:47:31.887 [info] /home/crpier/Projects/memecry/frontend/src/root.css.git closed
+2023-03-05 05:47:31.887 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+2023-03-05 05:47:32.019 [info] /home/crpier/Projects/memecry/frontend/src/routes/index.tsx closed
+2023-03-05 05:47:32.019 [info] /home/crpier/Projects/memecry/frontend/src/routes/index.tsx.git closed
+2023-03-05 05:47:32.019 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/components/Nav.tsx
+2023-03-05 05:47:32.432 [info] /home/crpier/Projects/memecry/frontend/src/components/Nav.tsx closed
+2023-03-05 05:47:32.432 [info] /home/crpier/Projects/memecry/frontend/src/components/Nav.tsx.git closed
+2023-03-05 05:47:34.196 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+2023-03-05 05:47:43.540 [info] /home/crpier/Projects/memecry/frontend/src/root.tsx closed
+2023-03-05 05:47:43.540 [info] /home/crpier/Projects/memecry/frontend/src/root.tsx.git closed
+2023-03-05 05:47:43.566 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+2023-03-05 05:54:31.717 [warning] invalid cursor stop position. [7, 40].
+2023-03-05 05:54:31.717 [warning] invalid cursor start position. [7, 40].
+2023-03-05 05:54:31.745 [warning] invalid cursor stop position. [7, 39].
+2023-03-05 05:54:31.745 [warning] invalid cursor start position. [7, 39].
+2023-03-05 05:54:31.745 [warning] invalid cursor stop position. [7, 38].
+2023-03-05 05:54:31.745 [warning] invalid cursor start position. [7, 38].
+2023-03-05 05:54:31.752 [warning] invalid cursor stop position. [7, 35].
+2023-03-05 05:54:31.752 [warning] invalid cursor start position. [7, 35].
+2023-03-05 05:54:31.763 [warning] invalid cursor stop position. [7, 32].
+2023-03-05 05:54:31.763 [warning] invalid cursor start position. [7, 32].
+2023-03-05 05:58:17.168 [info] Executing :w
+2023-03-05 05:59:43.568 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/components/Posts.tsx
+2023-03-05 06:00:49.976 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/components/Posts.tsx
+2023-03-05 06:00:52.590 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+2023-03-05 06:01:24.270 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/components/Posts.tsx
+2023-03-05 06:01:56.922 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+2023-03-05 06:02:43.610 [info] /home/crpier/Projects/memecry/frontend/tsconfig.json closed
+2023-03-05 06:11:50.544 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+2023-03-05 06:12:01.402 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/components/Posts.tsx
+2023-03-05 06:12:56.858 [info] Executing :w
+2023-03-05 06:13:38.572 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+2023-03-05 06:17:09.550 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/components/Posts.tsx
+2023-03-05 06:18:18.805 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/components/Nav.tsx
+2023-03-05 06:18:22.520 [info] Searching for login
+2023-03-05 06:21:09.816 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/components/Posts.tsx
+2023-03-05 10:33:29.858 [info] Searching for post.create
+2023-03-05 10:37:11.244 [info] Executing :w
+2023-03-05 10:43:17.345 [info] Searching for arrow
+2023-03-05 10:57:49.289 [info] Searching for up
+2023-03-05 10:58:21.875 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/components/Nav.tsx
+2023-03-05 10:58:35.081 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+2023-03-05 10:58:35.937 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/components/Nav.tsx
+2023-03-05 11:34:46.621 [info] Searching for cris
+2023-03-05 11:36:02.531 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 11:41:40.152 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/memecry-backend/services/DefaultService.ts
+2023-03-05 11:41:40.154 [warning] invalid cursor position. [[35, 54] | [35, 54]].
+2023-03-05 11:41:40.166 [warning] invalid cursor position. [[35, 54] | [35, 54]].
+2023-03-05 11:41:48.676 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/memecry-backend/core/BaseHttpRequest.ts
+2023-03-05 11:41:48.678 [warning] getLineLength() called with out-of-bounds line 312
+2023-03-05 11:41:48.678 [warning] invalid cursor position. [[312, 32] | [312, 32]].
+2023-03-05 11:41:48.696 [warning] getLineLength() called with out-of-bounds line 312
+2023-03-05 11:41:48.696 [warning] invalid cursor position. [[312, 32] | [312, 32]].
+2023-03-05 11:41:55.538 [info] /home/crpier/Projects/memecry/frontend/src/memecry-backend/core/BaseHttpRequest.ts closed
+2023-03-05 11:41:55.538 [info] /home/crpier/Projects/memecry/frontend/src/memecry-backend/core/BaseHttpRequest.ts.git closed
+2023-03-05 11:41:55.554 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/memecry-backend/core/request.ts
+2023-03-05 11:42:33.917 [info] Searching for eval
+2023-03-05 11:42:39.188 [info] /home/crpier/Projects/memecry/frontend/src/memecry-backend/core/request.ts closed
+2023-03-05 11:42:39.188 [info] /home/crpier/Projects/memecry/frontend/src/memecry-backend/core/request.ts.git closed
+2023-03-05 11:42:39.188 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/memecry-backend/services/DefaultService.ts
+2023-03-05 11:42:39.341 [info] /home/crpier/Projects/memecry/frontend/src/memecry-backend/services/DefaultService.ts closed
+2023-03-05 11:42:39.341 [info] /home/crpier/Projects/memecry/frontend/src/memecry-backend/services/DefaultService.ts.git closed
+2023-03-05 11:42:39.341 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 11:42:39.517 [info] /home/crpier/Projects/memecry/frontend/src/services.ts closed
+2023-03-05 11:42:39.517 [info] /home/crpier/Projects/memecry/frontend/src/services.ts.git closed
+2023-03-05 11:42:39.517 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/components/Nav.tsx
+2023-03-05 11:42:39.660 [info] /home/crpier/Projects/memecry/frontend/src/components/Nav.tsx closed
+2023-03-05 11:42:39.660 [info] /home/crpier/Projects/memecry/frontend/src/components/Nav.tsx.git closed
+2023-03-05 11:42:39.660 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+2023-03-05 11:42:39.897 [info] /home/crpier/Projects/memecry/frontend/src/routes/index.tsx closed
+2023-03-05 11:42:39.897 [info] /home/crpier/Projects/memecry/frontend/src/routes/index.tsx.git closed
+2023-03-05 11:42:39.897 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/components/Posts.tsx
+2023-03-05 11:42:40.633 [info] /home/crpier/Projects/memecry/frontend/src/components/Posts.tsx closed
+2023-03-05 11:42:40.633 [info] /home/crpier/Projects/memecry/frontend/src/components/Posts.tsx.git closed
+2023-03-05 11:42:42.086 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/components/Nav.tsx
+2023-03-05 11:43:01.654 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 11:43:13.573 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+2023-03-05 11:43:47.356 [info] Executing :w
+2023-03-05 11:43:50.756 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 11:44:24.538 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+2023-03-05 11:44:42.048 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 11:44:42.050 [warning] invalid cursor position. [[12, 38] | [12, 38]].
+2023-03-05 11:44:42.050 [warning] invalid cursor position. [[12, 38] | [12, 38]].
+2023-03-05 11:44:49.816 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+2023-03-05 11:44:50.781 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 11:45:50.879 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/components/Nav.tsx
+2023-03-05 11:46:13.828 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 11:46:57.984 [info] Searching for this.app
+2023-03-05 12:00:36.933 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/components/Nav.tsx
+2023-03-05 12:00:39.169 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 12:00:48.375 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/components/Nav.tsx
+2023-03-05 12:00:51.628 [info] Executing :wa
+2023-03-05 12:01:25.099 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/services.ts
+2023-03-05 12:02:43.113 [info] Searching for default
+2023-03-05 12:03:12.415 [info] Executing :w
+2023-03-05 12:03:13.540 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/components/Nav.tsx
+2023-03-05 12:03:24.175 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+2023-03-05 12:05:01.454 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/components/Posts.tsx
+2023-03-05 12:05:03.186 [info] Searching for pula
+2023-03-05 12:12:59.477 [info] Active editor: file:///home/crpier/Projects/memecry/frontend/src/components/Nav.tsx
+2023-03-05 20:05:46.293 [info] Searching for upload
+2023-03-05 20:08:03.315 [info] Executing :w
+2023-03-06 01:46:04.911 [info] Searching for uploa
+2023-03-06 01:46:24.296 [info] Searching for log in

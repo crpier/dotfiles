@@ -1,0 +1,14 @@
+[Info  - 3:37:23 PM] (1457956) Pylance language server 2023.3.10 (pyright 773a7cde) starting
+[Info  - 3:37:23 PM] (1457956) Server root directory: /home/crpier/.vscode/extensions/ms-python.vscode-pylance-2023.3.10/dist
+[Info  - 3:37:23 PM] (1457956) Starting service instance "jinja_playground"
+[Info  - 3:37:23 PM] (1457956) Auto-indent enabled
+[Info  - 3:37:23 PM] (1457956) No configuration file found.
+[Info  - 3:37:23 PM] (1457956) No pyproject.toml file found.
+[Info  - 3:37:23 PM] (1457956) Setting pythonPath for service "jinja_playground": "/home/crpier/.pyenv/versions/3.11.1/bin/python"
+[Warn  - 3:37:23 PM] (1457956) stubPath /home/crpier/Projects/jinja_playground/typings is not a valid directory.
+[Info  - 3:37:23 PM] (1457956) Assuming Python version 3.11
+[Info  - 3:37:23 PM] (1457956) Assuming Python platform Linux
+[Info  - 3:37:23 PM] (1457956) Searching for source files
+[Info  - 3:37:23 PM] (1457956) Found 3 source files
+[Info  - 3:37:23 PM] (1457956) Background analysis(1) root directory: /home/crpier/.vscode/extensions/ms-python.vscode-pylance-2023.3.10/dist
+[Info  - 3:37:23 PM] (1457956) Background analysis(1) started

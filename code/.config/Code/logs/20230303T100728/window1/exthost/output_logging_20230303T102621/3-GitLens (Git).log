@@ -1,0 +1,92 @@
+[2023-03-03 08:26:46.212] [      4ms] [/home/crpier/Projects/memecry] git rev-parse --show-toplevel
+[2023-03-03 08:26:46.231] [     16ms] [/home/crpier/Projects/memecry] git rev-parse --git-dir --git-common-dir
+[2023-03-03 08:26:46.231] [      6ms] [/home/crpier/Projects/memecry] git rev-parse --show-toplevel
+[2023-03-03 08:26:46.240] [      7ms] [/home/crpier/Projects/memecry] git remote -v
+[2023-03-03 08:26:46.756] [      8ms] [/home/crpier/Projects/memecry] git remote -v
+[2023-03-03 08:27:03.777] [      9ms] [/home/crpier/Projects/memecry] git ls-files -- src/entry-server.tsx
+[2023-03-03 08:27:04.000] [      9ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/entry-server.tsx
+[2023-03-03 08:27:04.007] [      6ms] [/home/crpier/Projects/memecry] git config --get-regex ^user\.
+[2023-03-03 08:27:04.011] [      3ms] [/home/crpier/Projects/memecry] git check-mailmap crpier <crpier42@gmail.com>
+[2023-03-03 08:27:04.378] [      4ms] [/home/crpier/Projects/memecry] git ls-files -- src/entry-client.tsx
+[2023-03-03 08:27:04.564] [     10ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/entry-server.tsx
+[2023-03-03 08:27:04.575] [      5ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M -- src/entry-server.tsx
+[2023-03-03 08:27:04.580] [      3ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M --staged -- src/entry-server.tsx
+[2023-03-03 08:27:04.594] [     14ms] [/home/crpier/Projects/memecry] git log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/entry-server.tsx
+[2023-03-03 08:27:04.627] [      5ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/entry-client.tsx
+[2023-03-03 08:27:04.822] [      8ms] [/home/crpier/Projects/memecry] git ls-files -- src/routes/index.tsx
+[2023-03-03 08:27:05.046] [      8ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/routes/index.tsx
+[2023-03-03 08:27:05.143] [      6ms] [/home/crpier/Projects/memecry] git ls-files -- src/components/Counter.tsx
+[2023-03-03 08:27:05.377] [      5ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/components/Counter.tsx
+[2023-03-03 08:27:05.913] [      9ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/components/Counter.tsx
+[2023-03-03 08:27:05.919] [      4ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M -- src/components/Counter.tsx
+[2023-03-03 08:27:05.923] [      4ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M --staged -- src/components/Counter.tsx
+[2023-03-03 08:27:05.929] [      5ms] [/home/crpier/Projects/memecry] git log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/components/Counter.tsx
+[2023-03-03 08:32:04.236] [      9ms] [/home/crpier/Projects/memecry] git for-each-ref --format=%3ch%3e%(HEAD)%3cn%3e%(refname)%3cu%3e%(upstream:short)%3ct%3e%(upstream:track)%3cr%3e%(objectname)%3cd%3e%(committerdate:iso8601) refs/heads refs/remotes
+[2023-03-03 08:32:04.244] [      5ms] [/home/crpier/Projects/memecry] git log -z --format=%H%x00%aN%x00%aE%x00%at%x00 --full-history -M -m --first-parent @{u} --
+[2023-03-03 08:34:14.936] [      7ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/routes/index.tsx
+[2023-03-03 08:34:15.448] [      6ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M -- src/routes/index.tsx
+[2023-03-03 08:34:15.456] [      6ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M --staged -- src/routes/index.tsx
+[2023-03-03 08:34:15.464] [      5ms] [/home/crpier/Projects/memecry] git log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+[2023-03-03 08:50:31.540] [     11ms] [/home/crpier/Projects/memecry] git ls-files -- src/root.tsx
+[2023-03-03 08:50:31.762] [     11ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/root.tsx
+[2023-03-03 08:50:32.303] [     11ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M -- src/root.tsx
+[2023-03-03 08:50:32.313] [      8ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M --staged -- src/root.tsx
+[2023-03-03 08:50:32.319] [      5ms] [/home/crpier/Projects/memecry] git log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+[2023-03-03 08:50:58.066] [     13ms] [/home/crpier/Projects/memecry] git tag -l --format=%3cn%3e%(refname)%3c*r%3e%(*objectname)%3cr%3e%(objectname)%3cd%3e%(creatordate:iso8601)%3cad%3e%(authordate:iso8601)%3cs%3e%(subject)
+[2023-03-03 09:07:01.737] [      9ms] [/home/crpier/Projects/memecry] git log --format=%x3cr%x3e%x20%H -n3 -m -L 27,27:src/root.tsx
+[2023-03-03 10:19:17.412] [     10ms] [/home/crpier/Projects/memecry] git log --format=%x3cr%x3e%x20%H -n3 -m -L 44,44:src/root.tsx
+[2023-03-03 11:03:51.289] [     12ms] [/home/crpier/Projects/memecry] git ls-files -- vite.config.ts
+[2023-03-03 11:03:51.537] [     14ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- vite.config.ts
+[2023-03-03 11:03:52.055] [     12ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M -- vite.config.ts
+[2023-03-03 11:03:52.070] [     13ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M --staged -- vite.config.ts
+[2023-03-03 11:03:52.080] [     10ms] [/home/crpier/Projects/memecry] git log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:vite.config.ts
+[2023-03-03 11:03:54.224] [      8ms] [/home/crpier/Projects/memecry] git ls-files -- src/components/Counter.tsx
+[2023-03-03 11:03:54.455] [      8ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/components/Counter.tsx
+[2023-03-03 11:03:54.983] [      7ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M -- src/components/Counter.tsx
+[2023-03-03 11:03:54.990] [      7ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M --staged -- src/components/Counter.tsx
+[2023-03-03 11:03:54.996] [      5ms] [/home/crpier/Projects/memecry] git log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/components/Counter.tsx
+[2023-03-03 11:09:22.358] [      9ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/root.tsx
+[2023-03-03 11:09:22.898] [     11ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M -- src/root.tsx
+[2023-03-03 11:09:22.911] [     12ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M --staged -- src/root.tsx
+[2023-03-03 11:09:22.923] [     10ms] [/home/crpier/Projects/memecry] git log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+[2023-03-03 11:09:34.650] [      9ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/components/Counter.tsx
+[2023-03-03 11:09:35.172] [     11ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M -- src/components/Counter.tsx
+[2023-03-03 11:09:35.185] [     11ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M --staged -- src/components/Counter.tsx
+[2023-03-03 11:09:35.195] [      9ms] [/home/crpier/Projects/memecry] git log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/components/Counter.tsx
+[2023-03-03 11:09:39.052] [     15ms] [/home/crpier/Projects/memecry] git ls-files -- src/components/Navbar.tsx
+[2023-03-03 11:09:39.059] [      6ms] [/home/crpier/Projects/memecry/src/components] git ls-files -- Navbar.tsx
+[2023-03-03 11:09:39.082] [      8ms] [/home/crpier/Projects/memecry/src/components] git rev-parse --show-toplevel
+[2023-03-03 11:10:12.840] [     11ms] [/home/crpier/Projects/memecry] git ls-files -- src/components/Navbar.tsx
+[2023-03-03 11:10:12.850] [     10ms] [/home/crpier/Projects/memecry/src/components] git ls-files -- Navbar.tsx
+[2023-03-03 11:10:29.240] [      9ms] [/home/crpier/Projects/memecry] git ls-files -- src/components/Navbar.tsx
+[2023-03-03 11:10:29.246] [      6ms] [/home/crpier/Projects/memecry/src/components] git ls-files -- Navbar.tsx
+[2023-03-03 11:10:32.235] [      9ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/root.tsx
+[2023-03-03 11:10:32.758] [     10ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M -- src/root.tsx
+[2023-03-03 11:10:32.772] [     11ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M --staged -- src/root.tsx
+[2023-03-03 11:10:32.785] [     12ms] [/home/crpier/Projects/memecry] git log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+[2023-03-03 11:10:44.608] [     11ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/root.tsx
+[2023-03-03 11:10:45.410] [      8ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M -- src/root.tsx
+[2023-03-03 11:10:45.417] [      6ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M --staged -- src/root.tsx
+[2023-03-03 11:10:45.425] [      7ms] [/home/crpier/Projects/memecry] git log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+[2023-03-03 11:11:44.309] [      9ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/root.tsx
+[2023-03-03 11:11:45.106] [      6ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M -- src/root.tsx
+[2023-03-03 11:11:45.112] [      5ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M --staged -- src/root.tsx
+[2023-03-03 11:11:45.116] [      4ms] [/home/crpier/Projects/memecry] git log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+[2023-03-03 11:11:58.960] [     10ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/root.tsx
+[2023-03-03 11:11:59.771] [     13ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M -- src/root.tsx
+[2023-03-03 11:11:59.778] [      6ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M --staged -- src/root.tsx
+[2023-03-03 11:11:59.785] [      6ms] [/home/crpier/Projects/memecry] git log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+[2023-03-03 11:12:12.207] [     10ms] [/home/crpier/Projects/memecry] git ls-files -- src/root.tsx
+[2023-03-03 11:12:14.904] [     10ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/root.tsx
+[2023-03-03 11:12:15.711] [     17ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M -- src/root.tsx
+[2023-03-03 11:12:15.718] [      6ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M --staged -- src/root.tsx
+[2023-03-03 11:12:15.723] [      5ms] [/home/crpier/Projects/memecry] git log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+[2023-03-03 11:12:16.557] [      9ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/root.tsx
+[2023-03-03 11:12:17.354] [     12ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M -- src/root.tsx
+[2023-03-03 11:12:17.366] [     10ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M --staged -- src/root.tsx
+[2023-03-03 11:12:17.376] [     10ms] [/home/crpier/Projects/memecry] git log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+[2023-03-03 11:12:25.126] [      8ms] [/home/crpier/Projects/memecry] git ls-files -- src/root.tsx
+[2023-03-03 11:12:28.801] [      9ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/root.tsx
+[2023-03-03 11:12:29.603] [     16ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M -- src/root.tsx
+[2023-03-03 11:12:29.609] [      5ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M --staged -- src/root.tsx
+[2023-03-03 11:12:29.614] [      4ms] [/home/crpier/Projects/memecry] git log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx

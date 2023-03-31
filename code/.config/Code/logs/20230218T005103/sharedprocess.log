@@ -1,0 +1,25 @@
+2023-02-18 00:51:04.910 [info] Starting worker process with pid 889414 (type: fileWatcher, window: 1).
+2023-02-18 00:51:07.889 [info] Getting Manifest... ms-python.python
+2023-02-18 00:51:07.890 [info] Getting Manifest... ms-python.vscode-pylance
+2023-02-18 00:51:07.890 [info] Getting Manifest... ms-toolsai.jupyter-renderers
+2023-02-18 00:51:08.520 [info] Installing extension: ms-python.vscode-pylance
+2023-02-18 00:51:08.544 [info] Installing extension: ms-toolsai.jupyter-renderers
+2023-02-18 00:51:08.551 [info] Installing extension: ms-python.python
+2023-02-18 00:51:09.292 [info] Getting Manifest... ms-python.python
+2023-02-18 00:51:09.327 [info] Waiting for already requested installing extension ms-python.python ms-python.vscode-pylance
+2023-02-18 00:51:10.199 [info] Extracted extension to /home/crpier/.vscode/extensions/.f07bd8a6-17a5-4648-bc84-4cea30e65183: ms-toolsai.jupyter-renderers
+2023-02-18 00:51:10.207 [info] Renamed to /home/crpier/.vscode/extensions/ms-toolsai.jupyter-renderers-1.0.14
+2023-02-18 00:51:10.208 [info] Extracting completed. ms-toolsai.jupyter-renderers
+2023-02-18 00:51:10.211 [info] Extension installed successfully: ms-toolsai.jupyter-renderers
+2023-02-18 00:51:10.226 [info] Marked extension as uninstalled ms-toolsai.jupyter-renderers-1.0.12
+2023-02-18 00:51:11.138 [info] Extracted extension to /home/crpier/.vscode/extensions/.aacdbf2d-85b7-4ff1-91fc-ba224ccdb4ca: ms-python.python
+2023-02-18 00:51:11.146 [info] Renamed to /home/crpier/.vscode/extensions/ms-python.python-2022.20.2
+2023-02-18 00:51:11.149 [info] Extracting completed. ms-python.python
+2023-02-18 00:51:11.153 [info] Extension installed successfully: ms-python.python
+2023-02-18 00:51:11.153 [info] Finished waiting for already requested installing extension ms-python.python ms-python.vscode-pylance
+2023-02-18 00:51:11.167 [info] Marked extension as uninstalled ms-python.python-2022.20.1
+2023-02-18 00:51:11.679 [info] Extracted extension to /home/crpier/.vscode/extensions/.f6e43efb-0aac-4166-97a6-d6dd268e24ff: ms-python.vscode-pylance
+2023-02-18 00:51:11.688 [info] Renamed to /home/crpier/.vscode/extensions/ms-python.vscode-pylance-2023.2.30
+2023-02-18 00:51:11.689 [info] Extracting completed. ms-python.vscode-pylance
+2023-02-18 00:51:11.692 [info] Extension installed successfully: ms-python.vscode-pylance
+2023-02-18 00:51:11.708 [info] Marked extension as uninstalled ms-python.vscode-pylance-2023.1.10

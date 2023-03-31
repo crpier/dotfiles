@@ -1,0 +1,12 @@
+[Info] /home/crpier/.ssh/config: ENOENT: no such file or directory, open '/home/crpier/.ssh/config'
+[Info] Looking for git repository
+[Info] Found 0 repositories during activation
+[Info] Git repository found, initializing review manager and pr tree view.
+[Info] Registering git provider
+[Info] Review> Validate state in progress
+[Info] Review> Validating state...
+[Info] Found GitHub remote
+[Info] Review> no matching pull request metadata found for current branch main
+[Info] Review> no matching pull request metadata found on GitHub for current branch main
+[Info] Repo state for file:///home/crpier/Projects/memecry changed.
+[Info] Repo file:///home/crpier/Projects/memecry has already been setup.

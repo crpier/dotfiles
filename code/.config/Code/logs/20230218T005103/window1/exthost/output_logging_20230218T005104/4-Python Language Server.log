@@ -1,0 +1,38 @@
+[Info  - 12:51:05 AM] (889445) Pylance language server 2023.1.10 (pyright bbf0ae78) starting
+[Info  - 12:51:05 AM] (889445) Server root directory: /home/crpier/.vscode/extensions/ms-python.vscode-pylance-2023.1.10/dist
+[Info  - 12:51:05 AM] (889445) Starting service instance "jinja_playground"
+[Info  - 12:51:05 AM] (889445) Notebook support: LSP
+[Info  - 12:51:05 AM] (889445) Interactive window support: LSP
+[Info  - 12:51:05 AM] (889445) No configuration file found.
+[Info  - 12:51:05 AM] (889445) No pyproject.toml file found.
+[Info  - 12:51:05 AM] (889445) Setting pythonPath for service "jinja_playground": "/home/crpier/.pyenv/versions/3.11.1/bin/python"
+[Warn  - 12:51:05 AM] (889445) stubPath /home/crpier/Projects/jinja_playground/typings is not a valid directory.
+[Info  - 12:51:05 AM] (889445) Assuming Python version 3.11
+[Info  - 12:51:05 AM] (889445) Assuming Python platform Linux
+[Info  - 12:51:05 AM] (889445) Searching for source files
+[Info  - 12:51:05 AM] (889445) Found 1 source file
+[Info  - 12:51:05 AM] (889445) Background analysis(1) root directory: /home/crpier/.vscode/extensions/ms-python.vscode-pylance-2023.1.10/dist
+[Info  - 12:51:05 AM] (889445) Background analysis(1) started
+[Info  - 12:51:06 AM] (889445) Indexer background runner(2) root directory: /home/crpier/.vscode/extensions/ms-python.vscode-pylance-2023.1.10/dist (index)
+[Info  - 12:51:06 AM] (889445) Indexing(2) started
+[Info  - 12:51:07 AM] (889445) scanned(2) 26 files over 1 exec env
+[Info  - 12:51:07 AM] (889474) Pylance language server 2023.1.10 (pyright bbf0ae78) starting
+[Info  - 12:51:07 AM] (889474) Server root directory: /home/crpier/.vscode/extensions/ms-python.vscode-pylance-2023.1.10/dist
+[Info  - 12:51:07 AM] (889474) Starting service instance "jinja_playground"
+[Info  - 12:51:07 AM] (889474) Notebook support: LSP
+[Info  - 12:51:07 AM] (889474) Interactive window support: LSP
+[Info  - 12:51:07 AM] (889474) No configuration file found.
+[Info  - 12:51:07 AM] (889474) No pyproject.toml file found.
+[Info  - 12:51:07 AM] (889474) Setting pythonPath for service "jinja_playground": "/home/crpier/.pyenv/versions/3.11.1/bin/python"
+[Warn  - 12:51:07 AM] (889474) stubPath /home/crpier/Projects/jinja_playground/typings is not a valid directory.
+[Info  - 12:51:07 AM] (889474) Assuming Python version 3.11
+[Info  - 12:51:07 AM] (889474) Assuming Python platform Linux
+[Info  - 12:51:07 AM] (889474) Searching for source files
+[Info  - 12:51:07 AM] (889474) Found 1 source file
+[Info  - 12:51:07 AM] (889474) Background analysis(1) root directory: /home/crpier/.vscode/extensions/ms-python.vscode-pylance-2023.1.10/dist
+[Info  - 12:51:07 AM] (889474) Background analysis(1) started
+[Info  - 12:51:07 AM] (889474) Indexer background runner(2) root directory: /home/crpier/.vscode/extensions/ms-python.vscode-pylance-2023.1.10/dist (index)
+[Info  - 12:51:07 AM] (889474) Indexing(2) started
+[Info  - 12:51:08 AM] (889474) scanned(2) 26 files over 1 exec env
+[Info  - 12:51:08 AM] (889474) indexed(2) 12 files over 1 exec env
+[Info  - 12:51:08 AM] (889474) Indexing finished(2).

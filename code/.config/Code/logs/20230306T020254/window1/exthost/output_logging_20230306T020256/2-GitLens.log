@@ -1,0 +1,72 @@
+[2023-03-06 00:03:00.870] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:frontend/src/components/Login.tsx
+fatal: There is no path frontend/src/components/Login.tsx in the commit
+
+[2023-03-06 00:03:30.499] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:frontend/src/components/Login.tsx
+fatal: There is no path frontend/src/components/Login.tsx in the commit
+
+[2023-03-06 00:07:45.978] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:frontend/src/components/Login.tsx
+fatal: There is no path frontend/src/components/Login.tsx in the commit
+
+[2023-03-06 00:19:15.744] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 17,17:frontend/src/components/Login.tsx
+fatal: There is no path frontend/src/components/Login.tsx in the commit
+
+[2023-03-06 00:20:02.164] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:frontend/src/components/Login.tsx
+fatal: There is no path frontend/src/components/Login.tsx in the commit
+
+[2023-03-06 00:20:32.149] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:frontend/src/components/Login.tsx
+fatal: There is no path frontend/src/components/Login.tsx in the commit
+
+[2023-03-06 00:20:55.447] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:frontend/src/components/Login.tsx
+fatal: There is no path frontend/src/components/Login.tsx in the commit
+
+[2023-03-06 00:20:58.528] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:frontend/src/components/Login.tsx
+fatal: There is no path frontend/src/components/Login.tsx in the commit
+
+[2023-03-06 00:34:23.367] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 9,9:frontend/src/components/Login.tsx
+fatal: There is no path frontend/src/components/Login.tsx in the commit
+
+[2023-03-06 00:35:51.313] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:frontend/src/components/Login.tsx
+fatal: There is no path frontend/src/components/Login.tsx in the commit
+
+[2023-03-06 00:35:57.368] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:frontend/src/components/Login.tsx
+fatal: There is no path frontend/src/components/Login.tsx in the commit
+
+[2023-03-06 00:36:13.473] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:frontend/src/components/Login.tsx
+fatal: There is no path frontend/src/components/Login.tsx in the commit
+
+[2023-03-06 00:36:25.468] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:frontend/src/components/Login.tsx
+fatal: There is no path frontend/src/components/Login.tsx in the commit
+
+[2023-03-06 00:36:33.377] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:frontend/src/components/Login.tsx
+fatal: There is no path frontend/src/components/Login.tsx in the commit
+
+[2023-03-06 00:36:49.599] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:frontend/src/components/Login.tsx
+fatal: There is no path frontend/src/components/Login.tsx in the commit
+
+[2023-03-06 16:00:30.259] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:frontend/src/components/Login.tsx
+fatal: There is no path frontend/src/components/Login.tsx in the commit
+
+[2023-03-11 09:08:32.924] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:frontend/src/store/index.tsx
+fatal: There is no path frontend/src/store/index.tsx in the commit
+
+[2023-03-11 09:08:42.982] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:frontend/src/store/index.tsx
+fatal: There is no path frontend/src/store/index.tsx in the commit
+

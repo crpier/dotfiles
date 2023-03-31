@@ -1,0 +1,38 @@
+[Info  - 2:33:07 PM] (1448944) Pylance language server 2023.3.10 (pyright 773a7cde) starting
+[Info  - 2:33:07 PM] (1448944) Server root directory: /home/crpier/.vscode/extensions/ms-python.vscode-pylance-2023.3.10/dist
+[Info  - 2:33:07 PM] (1448944) Starting service instance "mptreasury"
+[Info  - 2:33:07 PM] (1448944) Auto-indent enabled
+[Info  - 2:33:07 PM] (1448944) Starting service instance "<default>"
+[Info  - 2:33:07 PM] (1448944) No pyproject.toml file found.
+[Info  - 2:33:07 PM] (1448944) Setting pythonPath for service "<default>": "/home/crpier/.pyenv/versions/3.11.1/bin/python"
+[Warn  - 2:33:07 PM] (1448944) stubPath typings is not a valid directory.
+[Info  - 2:33:07 PM] (1448944) Assuming Python version 3.11
+[Info  - 2:33:07 PM] (1448944) Assuming Python platform Linux
+[Info  - 2:33:07 PM] (1448944) Searching for source files
+[Info  - 2:33:07 PM] (1448944) No source files found.
+[Info  - 2:33:07 PM] (1448944) No configuration file found.
+[Info  - 2:33:07 PM] (1448944) pyproject.toml file found at /home/crpier/Projects/mptreasury.
+[Info  - 2:33:07 PM] (1448944) Setting pythonPath for service "mptreasury": "/home/crpier/.pyenv/versions/3.11.1/bin/python"
+[Info  - 2:33:07 PM] (1448944) Loading pyproject.toml file at /home/crpier/Projects/mptreasury/pyproject.toml
+[Error - 2:33:07 PM] (1448944) Pyproject file "/home/crpier/Projects/mptreasury/pyproject.toml" is missing "[tool.pyright]" section.
+[Warn  - 2:33:07 PM] (1448944) stubPath /home/crpier/Projects/mptreasury/typings is not a valid directory.
+[Info  - 2:33:07 PM] (1448944) Assuming Python version 3.11
+[Info  - 2:33:07 PM] (1448944) Assuming Python platform Linux
+[Info  - 2:33:07 PM] (1448944) Searching for source files
+[Info  - 2:33:07 PM] (1448944) Found 15 source files
+[Info  - 2:33:07 PM] (1448944) No pyproject.toml file found.
+[Info  - 2:33:07 PM] (1448944) Setting pythonPath for service "<default>": "/home/crpier/.pyenv/versions/3.11.1/bin/python"
+[Warn  - 2:33:07 PM] (1448944) stubPath typings is not a valid directory.
+[Info  - 2:33:07 PM] (1448944) Assuming Python version 3.11
+[Info  - 2:33:07 PM] (1448944) Assuming Python platform Linux
+[Info  - 2:33:07 PM] (1448944) Searching for source files
+[Info  - 2:33:07 PM] (1448944) No source files found.
+[Info  - 2:33:07 PM] (1448944) Background analysis(1) root directory: /home/crpier/.vscode/extensions/ms-python.vscode-pylance-2023.3.10/dist
+[Info  - 2:33:07 PM] (1448944) Background analysis(1) started
+[Info  - 2:33:07 PM] (1448944) Background analysis(2) root directory: /home/crpier/.vscode/extensions/ms-python.vscode-pylance-2023.3.10/dist
+[Info  - 2:33:07 PM] (1448944) Background analysis(2) started
+[Info  - 2:33:07 PM] (1448944) Indexer background runner(3) root directory: /home/crpier/.vscode/extensions/ms-python.vscode-pylance-2023.3.10/dist (index)
+[Info  - 2:33:07 PM] (1448944) Indexing(3) started
+[Info  - 2:33:08 PM] (1448944) scanned(3) 26 files over 1 exec env
+[Info  - 2:33:08 PM] (1448944) indexed(3) 12 files over 1 exec env
+[Info  - 2:33:08 PM] (1448944) Indexing finished(3).

@@ -1,0 +1,127 @@
+[2023-03-03 13:37:26.572] [     20ms] [/home/crpier/Projects/memecry] git rev-parse --show-toplevel
+[2023-03-03 13:37:26.795] [     38ms] [/home/crpier/Projects/memecry] git rev-parse --show-toplevel
+[2023-03-03 13:37:26.795] [     38ms] [/home/crpier/Projects/memecry/src/routes] git rev-parse --show-toplevel
+[2023-03-03 13:37:26.795] [     70ms] [/home/crpier/Projects/memecry] git rev-parse --git-dir --git-common-dir
+[2023-03-03 13:37:26.864] [     18ms] [/home/crpier/Projects/memecry] git remote -v
+[2023-03-03 13:37:26.940] [     16ms] [/home/crpier/Projects/memecry] git ls-files -- src/routes/index.tsx
+[2023-03-03 13:37:26.962] [     20ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/routes/index.tsx
+[2023-03-03 13:37:26.986] [     24ms] [/home/crpier/Projects/memecry] git config --get-regex ^user\.
+[2023-03-03 13:37:27.011] [     24ms] [/home/crpier/Projects/memecry] git check-mailmap crpier <crpier42@gmail.com>
+[2023-03-03 13:37:27.362] [      6ms] [/home/crpier/Projects/memecry] git remote -v
+[2023-03-03 13:37:27.528] [      8ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M -- src/routes/index.tsx
+[2023-03-03 13:37:27.534] [      5ms] [/home/crpier/Projects/memecry] git log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+[2023-03-03 13:37:29.794] [     11ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/routes/index.tsx
+[2023-03-03 13:37:30.598] [     15ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M -- src/routes/index.tsx
+[2023-03-03 13:37:30.612] [     13ms] [/home/crpier/Projects/memecry] git log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+[2023-03-03 13:37:31.531] [      8ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/routes/index.tsx
+[2023-03-03 13:37:32.182] [      6ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/routes/index.tsx
+[2023-03-03 13:37:32.331] [      6ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M -- src/routes/index.tsx
+[2023-03-03 13:37:32.336] [      5ms] [/home/crpier/Projects/memecry] git log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+[2023-03-03 13:37:33.017] [     13ms] [/home/crpier/Projects/memecry] git log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+[2023-03-03 13:37:59.750] [     12ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/routes/index.tsx
+[2023-03-03 13:38:00.556] [     16ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M -- src/routes/index.tsx
+[2023-03-03 13:38:00.563] [      6ms] [/home/crpier/Projects/memecry] git log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+[2023-03-03 13:38:02.475] [     10ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/routes/index.tsx
+[2023-03-03 13:38:03.274] [     11ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M -- src/routes/index.tsx
+[2023-03-03 13:38:03.285] [     10ms] [/home/crpier/Projects/memecry] git log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+[2023-03-03 13:38:15.188] [      6ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/routes/index.tsx
+[2023-03-03 13:38:16.001] [     21ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M -- src/routes/index.tsx
+[2023-03-03 13:38:16.009] [      7ms] [/home/crpier/Projects/memecry] git log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+[2023-03-03 13:38:16.775] [     10ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/routes/index.tsx
+[2023-03-03 13:38:17.290] [     10ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M -- src/routes/index.tsx
+[2023-03-03 13:38:17.297] [      6ms] [/home/crpier/Projects/memecry] git log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+[2023-03-03 13:38:25.215] [      7ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/routes/index.tsx
+[2023-03-03 13:38:25.724] [      6ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M -- src/routes/index.tsx
+[2023-03-03 13:38:25.729] [      4ms] [/home/crpier/Projects/memecry] git log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+[2023-03-03 13:38:26.475] [      8ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/routes/index.tsx
+[2023-03-03 13:38:26.984] [      6ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M -- src/routes/index.tsx
+[2023-03-03 13:38:26.995] [      9ms] [/home/crpier/Projects/memecry] git log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+[2023-03-03 13:38:28.906] [     10ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/routes/index.tsx
+[2023-03-03 13:38:29.704] [     10ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M -- src/routes/index.tsx
+[2023-03-03 13:38:29.715] [      9ms] [/home/crpier/Projects/memecry] git log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+[2023-03-03 13:38:30.898] [     11ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/routes/index.tsx
+[2023-03-03 13:38:31.696] [     11ms] [/home/crpier/Projects/memecry] git blame --root --incremental --contents - -- src/routes/index.tsx
+[2023-03-03 13:38:31.709] [     10ms] [/home/crpier/Projects/memecry] git status --porcelain=v2 --find-renames -- src/routes/index.tsx
+[2023-03-03 13:38:32.185] [     10ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/routes/index.tsx
+[2023-03-03 13:38:32.982] [      6ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M -- src/routes/index.tsx
+[2023-03-03 13:38:32.991] [      9ms] [/home/crpier/Projects/memecry] git log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+[2023-03-03 13:38:35.970] [      9ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/routes/index.tsx
+[2023-03-03 13:38:36.767] [      7ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M -- src/routes/index.tsx
+[2023-03-03 13:38:36.774] [      6ms] [/home/crpier/Projects/memecry] git log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+[2023-03-03 13:38:40.861] [     11ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/routes/index.tsx
+[2023-03-03 13:38:41.660] [     10ms] [/home/crpier/Projects/memecry] git blame --root --incremental --contents - -- src/routes/index.tsx
+[2023-03-03 13:38:41.670] [      9ms] [/home/crpier/Projects/memecry] git status --porcelain=v2 --find-renames -- src/routes/index.tsx
+[2023-03-03 13:38:45.477] [      6ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/routes/index.tsx
+[2023-03-03 13:38:46.359] [     10ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M -- src/routes/index.tsx
+[2023-03-03 13:38:46.367] [      7ms] [/home/crpier/Projects/memecry] git log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+[2023-03-03 13:38:48.833] [     12ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/routes/index.tsx
+[2023-03-03 13:38:49.631] [     10ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M -- src/routes/index.tsx
+[2023-03-03 13:38:49.642] [      9ms] [/home/crpier/Projects/memecry] git log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+[2023-03-03 13:39:00.932] [      7ms] [/home/crpier/Projects/memecry] git ls-files -- src/root.tsx
+[2023-03-03 13:39:01.177] [      8ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/root.tsx
+[2023-03-03 13:39:04.939] [     13ms] [/home/crpier/Projects/memecry] git blame --root --incremental --contents - -- src/routes/index.tsx
+[2023-03-03 13:39:05.455] [     12ms] [/home/crpier/Projects/memecry] git status --porcelain=v2 --find-renames -- src/routes/index.tsx
+[2023-03-03 13:39:06.047] [     11ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M -- src/root.tsx
+[2023-03-03 13:39:06.060] [     11ms] [/home/crpier/Projects/memecry] git log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+[2023-03-03 13:40:08.013] [     11ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/routes/index.tsx
+[2023-03-03 13:40:08.805] [      6ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M -- src/routes/index.tsx
+[2023-03-03 13:40:08.812] [      7ms] [/home/crpier/Projects/memecry] git log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+[2023-03-03 13:40:14.627] [     11ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/routes/index.tsx
+[2023-03-03 13:40:15.430] [     16ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M -- src/routes/index.tsx
+[2023-03-03 13:40:15.436] [      5ms] [/home/crpier/Projects/memecry] git log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+[2023-03-03 13:40:19.087] [     11ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/routes/index.tsx
+[2023-03-03 13:40:19.887] [     12ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M -- src/routes/index.tsx
+[2023-03-03 13:40:19.899] [     11ms] [/home/crpier/Projects/memecry] git log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+[2023-03-03 13:40:23.163] [     11ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/routes/index.tsx
+[2023-03-03 13:40:23.950] [      5ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M -- src/routes/index.tsx
+[2023-03-03 13:40:23.956] [      5ms] [/home/crpier/Projects/memecry] git log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+[2023-03-03 13:40:38.324] [     11ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/routes/index.tsx
+[2023-03-03 13:40:39.130] [     19ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M -- src/routes/index.tsx
+[2023-03-03 13:40:39.139] [      7ms] [/home/crpier/Projects/memecry] git log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+[2023-03-03 13:40:42.932] [     12ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/routes/index.tsx
+[2023-03-03 13:40:43.726] [      6ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M -- src/routes/index.tsx
+[2023-03-03 13:40:43.736] [      9ms] [/home/crpier/Projects/memecry] git log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+[2023-03-03 13:40:46.604] [     13ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/routes/index.tsx
+[2023-03-03 13:40:47.397] [      9ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M -- src/routes/index.tsx
+[2023-03-03 13:40:47.404] [      7ms] [/home/crpier/Projects/memecry] git log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+[2023-03-03 13:40:50.459] [     12ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/routes/index.tsx
+[2023-03-03 13:40:51.260] [     12ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M -- src/routes/index.tsx
+[2023-03-03 13:40:51.271] [     10ms] [/home/crpier/Projects/memecry] git log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+[2023-03-03 13:40:55.506] [     13ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/routes/index.tsx
+[2023-03-03 13:40:56.300] [     11ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M -- src/routes/index.tsx
+[2023-03-03 13:40:56.308] [      7ms] [/home/crpier/Projects/memecry] git log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+[2023-03-03 13:41:01.691] [     12ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/routes/index.tsx
+[2023-03-03 13:41:02.486] [     11ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M -- src/routes/index.tsx
+[2023-03-03 13:41:02.493] [      5ms] [/home/crpier/Projects/memecry] git log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+[2023-03-03 13:41:06.296] [     12ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/routes/index.tsx
+[2023-03-03 13:41:07.088] [      5ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M -- src/routes/index.tsx
+[2023-03-03 13:41:07.098] [      9ms] [/home/crpier/Projects/memecry] git log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+[2023-03-03 13:41:09.679] [     10ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/routes/index.tsx
+[2023-03-03 13:41:10.475] [      9ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M -- src/routes/index.tsx
+[2023-03-03 13:41:10.483] [      7ms] [/home/crpier/Projects/memecry] git log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+[2023-03-03 13:42:02.740] [     12ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/routes/index.tsx
+[2023-03-03 13:42:03.544] [     25ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M -- src/routes/index.tsx
+[2023-03-03 13:42:03.551] [      6ms] [/home/crpier/Projects/memecry] git log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+[2023-03-03 13:42:06.612] [     12ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/routes/index.tsx
+[2023-03-03 13:42:07.411] [     12ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M -- src/routes/index.tsx
+[2023-03-03 13:42:07.425] [     12ms] [/home/crpier/Projects/memecry] git log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+[2023-03-03 13:42:21.259] [      9ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/routes/index.tsx
+[2023-03-03 13:42:22.051] [      8ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M -- src/routes/index.tsx
+[2023-03-03 13:42:22.056] [      4ms] [/home/crpier/Projects/memecry] git log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+[2023-03-03 13:42:36.450] [     10ms] [/home/crpier/Projects/memecry] git blame --root --incremental --contents - -- src/routes/index.tsx
+[2023-03-03 13:42:36.965] [     13ms] [/home/crpier/Projects/memecry] git blame --root --incremental --contents - -- src/routes/index.tsx
+[2023-03-03 13:42:36.977] [     10ms] [/home/crpier/Projects/memecry] git status --porcelain=v2 --find-renames -- src/routes/index.tsx
+[2023-03-03 13:42:43.534] [     11ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/routes/index.tsx
+[2023-03-03 13:42:43.823] [      6ms] [/home/crpier/Projects/memecry] git blame --root --incremental --contents - -- src/routes/index.tsx
+[2023-03-03 13:42:44.347] [     18ms] [/home/crpier/Projects/memecry] git blame --root --incremental --contents - -- src/routes/index.tsx
+[2023-03-03 13:42:44.353] [      6ms] [/home/crpier/Projects/memecry] git status --porcelain=v2 --find-renames -- src/routes/index.tsx
+[2023-03-03 13:42:49.605] [      9ms] [/home/crpier/Projects/memecry] git status --porcelain=v2 --find-renames -- src/routes/index.tsx
+[2023-03-03 13:43:20.446] [     18ms] [/home/crpier/Projects/memecry] git ls-files -- src/routes/index.tsx
+[2023-03-03 13:43:20.447] [     18ms] [/home/crpier/Projects/memecry] git remote -v
+[2023-03-03 13:58:20.468] [     13ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M -- src/routes/index.tsx
+[2023-03-03 13:58:20.474] [     11ms] [/home/crpier/Projects/memecry] git status --porcelain=v2 --find-renames -- src/routes/index.tsx
+[2023-03-03 13:58:20.484] [     15ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M --staged -- src/routes/index.tsx
+[2023-03-03 13:58:20.486] [     12ms] [/home/crpier/Projects/memecry] git log --format=%x3cr%x3e%x20%H -n3 -m -L 23,23:src/routes/index.tsx
+[2023-03-04 19:43:32.859] [      9ms] [/home/crpier/Projects/memecry] git remote -v
+[2023-03-04 19:43:33.742] [     14ms] [/home/crpier/Projects/memecry] git ls-files -- src/routes/index.tsx
+[2023-03-04 19:43:33.762] [     19ms] [/home/crpier/Projects/memecry/src/routes] git ls-files -- index.tsx

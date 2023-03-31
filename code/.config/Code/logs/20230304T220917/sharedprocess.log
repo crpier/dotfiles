@@ -1,0 +1,19 @@
+2023-03-04 22:09:19.846 [info] Starting worker process with pid 1555352 (type: fileWatcher, window: 1).
+2023-03-04 22:50:17.454 [info] Worker process with pid 1555352 terminated normally (type: fileWatcher, window: 1).
+2023-03-04 22:50:18.017 [info] Starting worker process with pid 1557961 (type: fileWatcher, window: 1).
+2023-03-04 22:50:20.275 [info] Worker process with pid 1557961 terminated normally (type: fileWatcher, window: 1).
+2023-03-04 22:50:20.735 [info] Starting worker process with pid 1558026 (type: fileWatcher, window: 1).
+2023-03-04 22:50:23.406 [info] Worker process with pid 1558026 terminated normally (type: fileWatcher, window: 1).
+2023-03-04 22:50:24.177 [info] Starting worker process with pid 1558108 (type: fileWatcher, window: 1).
+2023-03-05 00:58:53.343 [error] SharedProcess (worker, fileWatcher): Worker process with pid 1558108 terminated by itself with code null, signal: SIGSEGV (type: fileWatcher, window: 1)
+2023-03-05 00:58:53.377 [info] Starting worker process with pid 1574119 (type: fileWatcher, window: 1).
+2023-03-05 01:02:15.363 [info] Getting Manifest... esbenp.prettier-vscode
+2023-03-05 01:02:15.368 [info] Installing extension: esbenp.prettier-vscode
+2023-03-05 01:02:16.915 [info] Extracted extension to /home/crpier/.vscode/extensions/.1b8c3d26-0c04-4ba9-a54a-f176c95d4838: esbenp.prettier-vscode
+2023-03-05 01:02:16.917 [info] Renamed to /home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4
+2023-03-05 01:02:16.918 [info] Extracting completed. esbenp.prettier-vscode
+2023-03-05 01:02:16.923 [info] Extension installed successfully: esbenp.prettier-vscode
+2023-03-05 04:13:05.663 [error] SharedProcess (worker, fileWatcher): Worker process with pid 1574119 terminated by itself with code null, signal: SIGTRAP (type: fileWatcher, window: 1)
+2023-03-05 04:13:05.704 [info] Starting worker process with pid 1602094 (type: fileWatcher, window: 1).
+2023-03-05 04:13:23.626 [error] SharedProcess (worker, fileWatcher): Worker process with pid 1602094 terminated by itself with code null, signal: SIGTRAP (type: fileWatcher, window: 1)
+2023-03-05 04:13:23.663 [info] Starting worker process with pid 1602219 (type: fileWatcher, window: 1).

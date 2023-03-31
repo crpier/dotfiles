@@ -1,0 +1,2 @@
+[2023-03-04 23:28:51.334] [GIT  ] [/usr/share/code/resources/app/extensions/node_modules/typescript/lib] git rev-parse --show-toplevel • Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel • not a git repository (or any of the parent directories): .git • 9 ms
+

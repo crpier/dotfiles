@@ -1,0 +1,150 @@
+2023-03-10 21:54:35.586 [info] Extension host with pid 1767630 started
+2023-03-10 21:54:35.586 [info] Skipping acquiring lock for /home/crpier/.config/Code/User/workspaceStorage/65bd68d03aa3a57a9e2a476b3a34e563.
+2023-03-10 21:54:35.632 [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication, startup: false, activationEvent: 'onAuthenticationRequest:microsoft'
+2023-03-10 21:54:35.632 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2023-03-10 21:54:35.632 [info] ExtensionService#_doActivateExtension vscodevim.vim, startup: true, activationEvent: '*'
+2023-03-10 21:54:35.632 [info] ExtensionService#_doActivateExtension vscode.npm, startup: true, activationEvent: 'workspaceContains:package.json'
+2023-03-10 21:54:35.733 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2023-03-10 21:54:35.734 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2023-03-10 21:54:35.784 [info] Eager extensions activated
+2023-03-10 21:54:35.791 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2023-03-10 21:54:35.792 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2023-03-10 21:54:35.792 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+2023-03-10 21:54:35.792 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2023-03-10 21:54:35.792 [info] ExtensionService#_doActivateExtension bradlc.vscode-tailwindcss, startup: false, activationEvent: 'onStartupFinished'
+2023-03-10 21:54:35.792 [info] ExtensionService#_doActivateExtension eamodio.gitlens, startup: false, activationEvent: 'onStartupFinished'
+2023-03-10 21:54:35.792 [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+2023-03-10 21:54:36.033 [info] ExtensionService#_doActivateExtension GitHub.vscode-pull-request-github, startup: false, activationEvent: 'onStartupFinished'
+2023-03-10 21:55:04.776 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:javascript'
+2023-03-10 21:57:35.425 [warning] TextEditor is closed/disposed
+2023-03-10 21:57:53.739 [warning] TextEditor is closed/disposed
+2023-03-10 21:58:11.356 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2023-03-10 21:58:11.356 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2023-03-10 21:58:11.440 [info] ExtensionService#_doActivateExtension vscode.references-view, startup: false, activationEvent: 'onCommand:editor.action.showReferences'
+2023-03-10 21:58:38.790 [warning] TextEditor is closed/disposed
+2023-03-10 21:58:42.218 [warning] TextEditor is closed/disposed
+2023-03-10 21:58:56.791 [warning] TextEditor is closed/disposed
+2023-03-10 21:58:56.836 [warning] TextEditor is closed/disposed
+2023-03-10 21:58:56.836 [warning] TextEditor is closed/disposed
+2023-03-10 21:58:59.408 [warning] TextEditor is closed/disposed
+2023-03-10 21:59:06.405 [warning] TextEditor is closed/disposed
+2023-03-10 21:59:06.407 [warning] TextEditor is closed/disposed
+2023-03-10 21:59:06.407 [warning] TextEditor is closed/disposed
+2023-03-10 22:08:44.826 [warning] TextEditor is closed/disposed
+2023-03-10 22:08:44.882 [warning] TextEditor is closed/disposed
+2023-03-10 22:08:44.882 [warning] TextEditor is closed/disposed
+2023-03-10 22:08:51.322 [warning] TextEditor is closed/disposed
+2023-03-10 22:09:56.573 [warning] TextEditor is closed/disposed
+2023-03-10 22:09:56.615 [warning] TextEditor is closed/disposed
+2023-03-10 22:09:56.615 [warning] TextEditor is closed/disposed
+2023-03-10 22:11:25.905 [warning] TextEditor is closed/disposed
+2023-03-10 22:16:39.693 [warning] TextEditor is closed/disposed
+2023-03-10 22:16:46.755 [warning] TextEditor is closed/disposed
+2023-03-10 22:17:33.228 [warning] TextEditor is closed/disposed
+2023-03-10 22:18:06.176 [warning] TextEditor is closed/disposed
+2023-03-10 22:28:41.501 [warning] TextEditor is closed/disposed
+2023-03-10 22:28:41.548 [warning] TextEditor is closed/disposed
+2023-03-10 22:28:41.548 [warning] TextEditor is closed/disposed
+2023-03-10 22:28:46.190 [warning] TextEditor is closed/disposed
+2023-03-10 22:29:03.245 [warning] TextEditor is closed/disposed
+2023-03-10 22:29:04.964 [warning] TextEditor is closed/disposed
+2023-03-10 22:29:50.715 [warning] TextEditor is closed/disposed
+2023-03-10 22:29:50.716 [warning] TextEditor is closed/disposed
+2023-03-10 22:29:50.716 [warning] TextEditor is closed/disposed
+2023-03-10 22:31:37.416 [warning] TextEditor is closed/disposed
+2023-03-10 22:31:37.417 [warning] TextEditor is closed/disposed
+2023-03-10 22:31:37.417 [warning] TextEditor is closed/disposed
+2023-03-10 22:31:37.417 [warning] TextEditor is closed/disposed
+2023-03-10 22:32:02.980 [warning] TextEditor is closed/disposed
+2023-03-10 22:32:10.854 [warning] TextEditor is closed/disposed
+2023-03-10 22:32:10.856 [warning] TextEditor is closed/disposed
+2023-03-10 22:32:10.856 [warning] TextEditor is closed/disposed
+2023-03-10 22:32:10.856 [warning] TextEditor is closed/disposed
+2023-03-10 22:32:27.183 [warning] TextEditor is closed/disposed
+2023-03-10 22:33:22.912 [warning] TextEditor is closed/disposed
+2023-03-10 22:33:29.797 [warning] TextEditor is closed/disposed
+2023-03-10 22:33:49.951 [warning] TextEditor is closed/disposed
+2023-03-10 22:34:22.967 [warning] TextEditor is closed/disposed
+2023-03-10 22:34:22.992 [warning] TextEditor is closed/disposed
+2023-03-10 22:34:22.992 [warning] TextEditor is closed/disposed
+2023-03-10 22:35:29.028 [warning] TextEditor is closed/disposed
+2023-03-10 22:35:29.029 [warning] TextEditor is closed/disposed
+2023-03-10 22:35:29.029 [warning] TextEditor is closed/disposed
+2023-03-10 23:39:58.836 [warning] TextEditor is closed/disposed
+2023-03-10 23:40:00.531 [warning] TextEditor is closed/disposed
+2023-03-10 23:40:04.649 [warning] TextEditor is closed/disposed
+2023-03-10 23:40:05.534 [warning] TextEditor is closed/disposed
+2023-03-10 23:40:10.757 [warning] TextEditor is closed/disposed
+2023-03-10 23:40:14.384 [warning] TextEditor is closed/disposed
+2023-03-10 23:40:15.460 [warning] TextEditor is closed/disposed
+2023-03-10 23:40:47.624 [warning] TextEditor is closed/disposed
+2023-03-10 23:40:47.625 [warning] TextEditor is closed/disposed
+2023-03-10 23:40:47.625 [warning] TextEditor is closed/disposed
+2023-03-10 23:40:53.380 [warning] TextEditor is closed/disposed
+2023-03-10 23:40:53.381 [warning] TextEditor is closed/disposed
+2023-03-10 23:40:53.381 [warning] TextEditor is closed/disposed
+2023-03-10 23:40:53.381 [warning] TextEditor is closed/disposed
+2023-03-10 23:40:55.034 [warning] TextEditor is closed/disposed
+2023-03-10 23:40:56.066 [warning] TextEditor is closed/disposed
+2023-03-10 23:41:43.268 [info] ExtensionService#_doActivateExtension vscode.debug-server-ready, startup: false, activationEvent: 'onDebugResolve'
+2023-03-10 23:44:03.424 [warning] TextEditor is closed/disposed
+2023-03-10 23:44:03.425 [warning] TextEditor is closed/disposed
+2023-03-10 23:44:03.425 [warning] TextEditor is closed/disposed
+2023-03-10 23:44:46.715 [warning] TextEditor is closed/disposed
+2023-03-10 23:44:46.755 [warning] TextEditor is closed/disposed
+2023-03-10 23:44:46.755 [warning] TextEditor is closed/disposed
+2023-03-10 23:44:49.318 [warning] TextEditor is closed/disposed
+2023-03-10 23:45:01.383 [warning] TextEditor is closed/disposed
+2023-03-10 23:45:01.385 [warning] TextEditor is closed/disposed
+2023-03-10 23:45:01.385 [warning] TextEditor is closed/disposed
+2023-03-10 23:46:00.776 [warning] TextEditor is closed/disposed
+2023-03-10 23:46:05.447 [warning] TextEditor is closed/disposed
+2023-03-10 23:46:06.358 [warning] TextEditor is closed/disposed
+2023-03-10 23:46:43.791 [warning] TextEditor is closed/disposed
+2023-03-10 23:46:43.842 [warning] TextEditor is closed/disposed
+2023-03-10 23:46:43.842 [warning] TextEditor is closed/disposed
+2023-03-10 23:46:45.112 [warning] TextEditor is closed/disposed
+2023-03-10 23:46:45.882 [warning] TextEditor is closed/disposed
+2023-03-10 23:47:27.420 [warning] TextEditor is closed/disposed
+2023-03-10 23:47:30.406 [warning] TextEditor is closed/disposed
+2023-03-11 00:00:29.219 [warning] TextEditor is closed/disposed
+2023-03-11 00:00:34.400 [warning] TextEditor is closed/disposed
+2023-03-11 00:00:35.616 [warning] TextEditor is closed/disposed
+2023-03-11 00:01:19.565 [warning] TextEditor is closed/disposed
+2023-03-11 00:01:19.615 [warning] TextEditor is closed/disposed
+2023-03-11 00:01:19.615 [warning] TextEditor is closed/disposed
+2023-03-11 00:13:36.187 [warning] TextEditor is closed/disposed
+2023-03-11 00:17:08.984 [warning] TextEditor is closed/disposed
+2023-03-11 00:17:08.985 [warning] TextEditor is closed/disposed
+2023-03-11 00:17:08.985 [warning] TextEditor is closed/disposed
+2023-03-11 00:17:10.997 [warning] TextEditor is closed/disposed
+2023-03-11 00:17:14.803 [warning] TextEditor is closed/disposed
+2023-03-11 00:21:05.192 [warning] TextEditor is closed/disposed
+2023-03-11 00:21:13.115 [warning] TextEditor is closed/disposed
+2023-03-11 00:22:01.167 [warning] TextEditor is closed/disposed
+2023-03-11 00:24:11.485 [warning] TextEditor is closed/disposed
+2023-03-11 00:24:11.487 [warning] TextEditor is closed/disposed
+2023-03-11 00:24:11.487 [warning] TextEditor is closed/disposed
+2023-03-11 00:31:28.706 [warning] TextEditor is closed/disposed
+2023-03-11 00:35:51.422 [warning] TextEditor is closed/disposed
+2023-03-11 00:36:44.401 [warning] TextEditor is closed/disposed
+2023-03-11 00:37:47.520 [warning] TextEditor is closed/disposed
+2023-03-11 00:38:19.428 [warning] TextEditor is closed/disposed
+2023-03-11 00:38:24.068 [warning] TextEditor is closed/disposed
+2023-03-11 00:38:24.913 [warning] TextEditor is closed/disposed
+2023-03-11 00:38:25.630 [warning] TextEditor is closed/disposed
+2023-03-11 00:38:27.682 [warning] TextEditor is closed/disposed
+2023-03-11 01:25:18.818 [warning] TextEditor is closed/disposed
+2023-03-11 01:25:19.121 [warning] TextEditor is closed/disposed
+2023-03-11 01:25:19.443 [warning] TextEditor is closed/disposed
+2023-03-11 01:25:19.818 [warning] TextEditor is closed/disposed
+2023-03-11 01:25:53.322 [warning] TextEditor is closed/disposed
+2023-03-11 01:28:23.895 [warning] TextEditor is closed/disposed
+2023-03-11 01:32:19.310 [warning] TextEditor is closed/disposed
+2023-03-11 01:32:19.311 [warning] TextEditor is closed/disposed
+2023-03-11 01:32:19.311 [warning] TextEditor is closed/disposed
+2023-03-11 01:32:19.311 [warning] TextEditor is closed/disposed
+2023-03-11 01:43:18.292 [warning] TextEditor is closed/disposed
+2023-03-12 18:44:45.731 [info] Extension host terminating: received terminate message from renderer
+2023-03-12 18:44:45.761 [warning] {"name":"Canceled"}
+2023-03-12 18:44:45.793 [info] Extension host with pid 1767630 exiting with code 0

@@ -1,0 +1,4314 @@
+["INFO" - 1:02:17 AM] Extension Name: esbenp.prettier-vscode.
+["INFO" - 1:02:17 AM] Extension Version: 9.10.4.
+["INFO" - 1:02:38 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 1:02:38 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 1:02:38 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 1:02:38 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 1:02:38 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["INFO" - 1:02:38 AM] Formatting completed in 169ms.
+["INFO" - 1:02:40 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 1:02:40 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 1:02:40 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 1:02:40 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 1:02:40 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["INFO" - 1:02:40 AM] Formatting completed in 10ms.
+["INFO" - 1:02:51 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+["INFO" - 1:02:51 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 1:02:51 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 1:02:51 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 1:02:51 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/root.tsx",
+  "parser": "typescript"
+}
+["INFO" - 1:02:51 AM] Formatting completed in 24ms.
+["INFO" - 1:02:53 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+["INFO" - 1:02:53 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 1:02:53 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 1:02:53 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 1:02:53 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/root.tsx",
+  "parser": "typescript"
+}
+["INFO" - 1:02:53 AM] Formatting completed in 21ms.
+["INFO" - 1:02:55 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+["INFO" - 1:02:55 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 1:02:55 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 1:02:55 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 1:02:55 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/root.tsx",
+  "parser": "typescript"
+}
+["INFO" - 1:02:55 AM] Formatting completed in 19ms.
+["INFO" - 1:03:53 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 1:03:53 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 1:03:53 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 1:03:53 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 1:03:53 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["INFO" - 1:03:53 AM] Formatting completed in 14ms.
+["INFO" - 1:07:25 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 1:07:25 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 1:07:25 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 1:07:25 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 1:07:25 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["INFO" - 1:07:25 AM] Formatting completed in 24ms.
+["INFO" - 1:07:26 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 1:07:26 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 1:07:26 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 1:07:26 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 1:07:26 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["INFO" - 1:07:26 AM] Formatting completed in 12ms.
+["INFO" - 1:07:33 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 1:07:33 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 1:07:33 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 1:07:33 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 1:07:33 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["INFO" - 1:07:33 AM] Formatting completed in 12ms.
+["INFO" - 1:07:35 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 1:07:35 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 1:07:35 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 1:07:35 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 1:07:35 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["INFO" - 1:07:35 AM] Formatting completed in 18ms.
+["INFO" - 1:07:43 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 1:07:43 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 1:07:43 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 1:07:43 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 1:07:43 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["INFO" - 1:07:43 AM] Formatting completed in 15ms.
+["INFO" - 1:09:29 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 1:09:29 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 1:09:29 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 1:09:29 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 1:09:29 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["INFO" - 1:09:29 AM] Formatting completed in 14ms.
+["INFO" - 1:11:00 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 1:11:00 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 1:11:00 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 1:11:00 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 1:11:00 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["INFO" - 1:11:00 AM] Formatting completed in 14ms.
+["INFO" - 1:11:14 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 1:11:14 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 1:11:14 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 1:11:14 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 1:11:14 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["INFO" - 1:11:14 AM] Formatting completed in 11ms.
+["INFO" - 1:11:31 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 1:11:31 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 1:11:31 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 1:11:31 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 1:11:31 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["ERROR" - 1:11:31 AM] Error formatting document.
+["ERROR" - 1:11:31 AM] Property assignment expected. (25:7)
+  23 |         sameSite: "strict",
+  24 |         maxAge: 60 * 30,
+> 25 |       ,
+     |       ^
+  26 |     });
+  27 |   }
+  28 |
+SyntaxError: Property assignment expected. (25:7)
+  23 |         sameSite: "strict",
+  24 |         maxAge: 60 * 30,
+> 25 |       ,
+     |       ^
+  26 |     });
+  27 |   }
+  28 |
+	at k (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/parser-typescript.js:1:15225)
+	at cT (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/parser-typescript.js:257:10765)
+	at Object.uT [as parse] (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/parser-typescript.js:257:11074)
+	at Object.parse (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:7331:23)
+	at coreFormat (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:8645:18)
+	at formatWithCursor2 (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:8837:18)
+	at /home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:37832:12
+	at Object.format (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:37846:12)
+	at t.default.format (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/dist/extension.js:1:14731)
+	at async t.PrettierEditProvider.provideEdits (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/dist/extension.js:1:11417)
+	at async B.provideDocumentFormattingEdits (/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:96:39719)
+["INFO" - 1:11:31 AM] Formatting completed in 16ms.
+["INFO" - 1:11:41 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 1:11:41 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 1:11:41 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 1:11:41 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 1:11:41 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["ERROR" - 1:11:41 AM] Error formatting document.
+["ERROR" - 1:11:41 AM] Property assignment expected. (23:7)
+  21 |         sameSite: "strict",
+  22 |         maxAge: 60 * 30,
+> 23 |       ,
+     |       ^
+  24 |     });
+  25 |   }
+  26 |
+SyntaxError: Property assignment expected. (23:7)
+  21 |         sameSite: "strict",
+  22 |         maxAge: 60 * 30,
+> 23 |       ,
+     |       ^
+  24 |     });
+  25 |   }
+  26 |
+	at k (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/parser-typescript.js:1:15225)
+	at cT (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/parser-typescript.js:257:10765)
+	at Object.uT [as parse] (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/parser-typescript.js:257:11074)
+	at Object.parse (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:7331:23)
+	at coreFormat (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:8645:18)
+	at formatWithCursor2 (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:8837:18)
+	at /home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:37832:12
+	at Object.format (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:37846:12)
+	at t.default.format (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/dist/extension.js:1:14731)
+	at async t.PrettierEditProvider.provideEdits (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/dist/extension.js:1:11417)
+	at async B.provideDocumentFormattingEdits (/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:96:39719)
+["INFO" - 1:11:41 AM] Formatting completed in 13ms.
+["INFO" - 1:11:44 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 1:11:44 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 1:11:44 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 1:11:44 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 1:11:44 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["INFO" - 1:11:44 AM] Formatting completed in 11ms.
+["INFO" - 1:13:53 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 1:13:53 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 1:13:53 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 1:13:53 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 1:13:53 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["ERROR" - 1:13:53 AM] Error formatting document.
+["ERROR" - 1:13:53 AM] ',' expected. (21:7)
+  19 |     const storage = createCookie("login", {
+  20 |         secrets: [access_token]
+> 21 |       secure: true,
+     |       ^
+  22 |       sameSite: "strict",
+  23 |       maxAge: 60 * 30,
+  24 |     });
+SyntaxError: ',' expected. (21:7)
+  19 |     const storage = createCookie("login", {
+  20 |         secrets: [access_token]
+> 21 |       secure: true,
+     |       ^
+  22 |       sameSite: "strict",
+  23 |       maxAge: 60 * 30,
+  24 |     });
+	at k (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/parser-typescript.js:1:15225)
+	at cT (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/parser-typescript.js:257:10765)
+	at Object.uT [as parse] (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/parser-typescript.js:257:11074)
+	at Object.parse (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:7331:23)
+	at coreFormat (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:8645:18)
+	at formatWithCursor2 (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:8837:18)
+	at /home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:37832:12
+	at Object.format (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:37846:12)
+	at t.default.format (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/dist/extension.js:1:14731)
+	at async t.PrettierEditProvider.provideEdits (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/dist/extension.js:1:11417)
+	at async B.provideDocumentFormattingEdits (/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:96:39719)
+["INFO" - 1:13:53 AM] Formatting completed in 15ms.
+["INFO" - 1:13:55 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 1:13:55 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 1:13:55 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 1:13:55 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 1:13:55 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["INFO" - 1:13:55 AM] Formatting completed in 11ms.
+["INFO" - 1:25:16 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 1:25:16 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 1:25:16 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 1:25:16 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 1:25:16 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["INFO" - 1:25:16 AM] Formatting completed in 18ms.
+["INFO" - 1:30:46 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 1:30:46 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 1:30:46 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 1:30:46 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 1:30:46 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["INFO" - 1:30:46 AM] Formatting completed in 22ms.
+["INFO" - 1:31:18 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 1:31:18 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 1:31:18 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 1:31:18 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 1:31:18 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["INFO" - 1:31:18 AM] Formatting completed in 8ms.
+["INFO" - 1:58:42 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 1:58:42 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 1:58:42 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 1:58:42 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 1:58:42 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["INFO" - 1:58:42 AM] Formatting completed in 8ms.
+["INFO" - 1:58:43 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+["INFO" - 1:58:43 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 1:58:43 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 1:58:43 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 1:58:43 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/root.tsx",
+  "parser": "typescript"
+}
+["INFO" - 1:58:43 AM] Formatting completed in 18ms.
+["INFO" - 2:01:13 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+["INFO" - 2:01:13 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 2:01:13 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 2:01:13 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 2:01:13 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/root.tsx",
+  "parser": "typescript"
+}
+["INFO" - 2:01:13 AM] Formatting completed in 15ms.
+["INFO" - 2:12:22 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 2:12:22 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 2:12:22 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 2:12:22 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 2:12:22 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["INFO" - 2:12:22 AM] Formatting completed in 16ms.
+["INFO" - 2:12:29 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 2:12:29 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 2:12:29 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 2:12:29 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 2:12:29 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["INFO" - 2:12:29 AM] Formatting completed in 11ms.
+["INFO" - 2:13:34 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 2:13:34 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 2:13:34 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 2:13:34 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 2:13:34 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["INFO" - 2:13:34 AM] Formatting completed in 19ms.
+["INFO" - 2:20:38 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 2:20:38 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 2:20:38 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 2:20:38 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 2:20:38 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["INFO" - 2:20:38 AM] Formatting completed in 14ms.
+["INFO" - 2:34:43 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 2:34:43 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 2:34:43 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 2:34:43 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 2:34:43 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["INFO" - 2:34:43 AM] Formatting completed in 30ms.
+["INFO" - 2:35:39 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 2:35:39 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 2:35:39 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 2:35:39 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 2:35:39 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["INFO" - 2:35:39 AM] Formatting completed in 13ms.
+["INFO" - 2:36:06 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 2:36:06 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 2:36:06 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 2:36:06 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 2:36:06 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["INFO" - 2:36:06 AM] Formatting completed in 28ms.
+["INFO" - 2:36:19 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 2:36:19 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 2:36:19 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 2:36:19 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 2:36:19 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["INFO" - 2:36:19 AM] Formatting completed in 13ms.
+["INFO" - 2:36:38 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 2:36:38 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 2:36:38 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 2:36:38 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 2:36:38 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["INFO" - 2:36:38 AM] Formatting completed in 12ms.
+["INFO" - 2:36:55 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 2:36:55 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 2:36:55 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 2:36:55 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 2:36:55 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["INFO" - 2:36:55 AM] Formatting completed in 8ms.
+["INFO" - 2:58:32 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 2:58:32 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 2:58:32 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 2:58:32 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 2:58:32 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["ERROR" - 2:58:32 AM] Error formatting document.
+["ERROR" - 2:58:32 AM] Declaration or statement expected. (32:3)
+  30 |       );
+  31 |
+> 32 |   public async getTopPosts() {
+     |   ^
+  33 |     return this.appClient.default.getTopPostsApiV1Get();
+  34 |   }
+  35 | }
+SyntaxError: Declaration or statement expected. (32:3)
+  30 |       );
+  31 |
+> 32 |   public async getTopPosts() {
+     |   ^
+  33 |     return this.appClient.default.getTopPostsApiV1Get();
+  34 |   }
+  35 | }
+	at k (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/parser-typescript.js:1:15225)
+	at cT (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/parser-typescript.js:257:10765)
+	at Object.uT [as parse] (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/parser-typescript.js:257:11074)
+	at Object.parse (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:7331:23)
+	at coreFormat (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:8645:18)
+	at formatWithCursor2 (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:8837:18)
+	at /home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:37832:12
+	at Object.format (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:37846:12)
+	at t.default.format (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/dist/extension.js:1:14731)
+	at async t.PrettierEditProvider.provideEdits (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/dist/extension.js:1:11417)
+	at async B.provideDocumentFormattingEdits (/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:96:39719)
+["INFO" - 2:58:32 AM] Formatting completed in 9ms.
+["INFO" - 2:58:54 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 2:58:54 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 2:58:54 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 2:58:54 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 2:58:54 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["INFO" - 2:58:54 AM] Formatting completed in 17ms.
+["INFO" - 2:59:23 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 2:59:23 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 2:59:23 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 2:59:23 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 2:59:23 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["INFO" - 2:59:23 AM] Formatting completed in 9ms.
+["INFO" - 3:01:40 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 3:01:40 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 3:01:40 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 3:01:40 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 3:01:40 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["INFO" - 3:01:40 AM] Formatting completed in 11ms.
+["INFO" - 3:48:41 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 3:48:41 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 3:48:41 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 3:48:41 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 3:48:41 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["INFO" - 3:48:41 AM] Formatting completed in 30ms.
+["INFO" - 3:49:59 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 3:49:59 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 3:49:59 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 3:49:59 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 3:49:59 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["INFO" - 3:49:59 AM] Formatting completed in 15ms.
+["INFO" - 3:50:19 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 3:50:19 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 3:50:19 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 3:50:19 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 3:50:19 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["INFO" - 3:50:19 AM] Formatting completed in 13ms.
+["INFO" - 3:51:11 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 3:51:11 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 3:51:11 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 3:51:11 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 3:51:11 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["INFO" - 3:51:11 AM] Formatting completed in 12ms.
+["INFO" - 3:51:21 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 3:51:21 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 3:51:21 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 3:51:21 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 3:51:21 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["INFO" - 3:51:21 AM] Formatting completed in 8ms.
+["INFO" - 3:51:23 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 3:51:23 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 3:51:23 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 3:51:23 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 3:51:23 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["INFO" - 3:51:23 AM] Formatting completed in 7ms.
+["INFO" - 3:51:25 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 3:51:25 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 3:51:25 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 3:51:25 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 3:51:25 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["INFO" - 3:51:25 AM] Formatting completed in 17ms.
+["INFO" - 3:51:26 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 3:51:26 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 3:51:26 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 3:51:26 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 3:51:26 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["INFO" - 3:51:26 AM] Formatting completed in 19ms.
+["INFO" - 3:51:26 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 3:51:26 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 3:51:26 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 3:51:26 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 3:51:26 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["INFO" - 3:51:26 AM] Formatting completed in 21ms.
+["INFO" - 3:51:29 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 3:51:29 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 3:51:29 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 3:51:29 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 3:51:29 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["INFO" - 3:51:29 AM] Formatting completed in 13ms.
+["INFO" - 3:52:06 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 3:52:06 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 3:52:06 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 3:52:06 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 3:52:06 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["INFO" - 3:52:06 AM] Formatting completed in 13ms.
+["INFO" - 3:52:26 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+["INFO" - 3:52:26 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 3:52:26 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 3:52:26 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 3:52:26 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/root.tsx",
+  "parser": "typescript"
+}
+["INFO" - 3:52:26 AM] Formatting completed in 13ms.
+["INFO" - 3:53:46 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+["INFO" - 3:53:46 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 3:53:46 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 3:53:46 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 3:53:46 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/root.tsx",
+  "parser": "typescript"
+}
+["INFO" - 3:53:46 AM] Formatting completed in 16ms.
+["INFO" - 3:55:13 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+["INFO" - 3:55:13 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 3:55:13 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 3:55:13 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 3:55:13 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/root.tsx",
+  "parser": "typescript"
+}
+["INFO" - 3:55:13 AM] Formatting completed in 17ms.
+["INFO" - 3:56:17 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+["INFO" - 3:56:17 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 3:56:17 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 3:56:17 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 3:56:17 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/root.tsx",
+  "parser": "typescript"
+}
+["INFO" - 3:56:17 AM] Formatting completed in 18ms.
+["INFO" - 3:58:25 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+["INFO" - 3:58:25 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 3:58:25 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 3:58:25 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 3:58:25 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/root.tsx",
+  "parser": "typescript"
+}
+["ERROR" - 3:58:25 AM] Error formatting document.
+["ERROR" - 3:58:25 AM] JSX element 'ServiceRegistry' has no corresponding closing tag. (39:14)
+  37 |         <Suspense>
+  38 |           <ErrorBoundary>
+> 39 |             <ServiceRegistry>
+     |              ^
+  40 |             <nav class="bg-gray-800 font-semibold">
+  41 |               <ul class="flex items-center px-4 py-2 text-gray-200">
+  42 |                 <li class="mr-8">
+SyntaxError: JSX element 'ServiceRegistry' has no corresponding closing tag. (39:14)
+  37 |         <Suspense>
+  38 |           <ErrorBoundary>
+> 39 |             <ServiceRegistry>
+     |              ^
+  40 |             <nav class="bg-gray-800 font-semibold">
+  41 |               <ul class="flex items-center px-4 py-2 text-gray-200">
+  42 |                 <li class="mr-8">
+	at k (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/parser-typescript.js:1:15225)
+	at cT (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/parser-typescript.js:257:10765)
+	at Object.uT [as parse] (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/parser-typescript.js:257:11074)
+	at Object.parse (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:7331:23)
+	at coreFormat (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:8645:18)
+	at formatWithCursor2 (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:8837:18)
+	at /home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:37832:12
+	at Object.format (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:37846:12)
+	at t.default.format (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/dist/extension.js:1:14731)
+	at async t.PrettierEditProvider.provideEdits (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/dist/extension.js:1:11417)
+	at async B.provideDocumentFormattingEdits (/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:96:39719)
+["INFO" - 3:58:25 AM] Formatting completed in 13ms.
+["INFO" - 3:58:38 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+["INFO" - 3:58:38 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 3:58:38 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 3:58:38 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 3:58:38 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/root.tsx",
+  "parser": "typescript"
+}
+["INFO" - 3:58:38 AM] Formatting completed in 21ms.
+["INFO" - 4:00:42 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+["INFO" - 4:00:42 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 4:00:42 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 4:00:42 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 4:00:42 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/root.tsx",
+  "parser": "typescript"
+}
+["INFO" - 4:00:42 AM] Formatting completed in 13ms.
+["INFO" - 4:01:18 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+["INFO" - 4:01:18 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 4:01:18 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 4:01:18 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 4:01:18 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/root.tsx",
+  "parser": "typescript"
+}
+["INFO" - 4:01:18 AM] Formatting completed in 39ms.
+["INFO" - 4:03:00 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+["INFO" - 4:03:00 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 4:03:00 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 4:03:00 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 4:03:00 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/root.tsx",
+  "parser": "typescript"
+}
+["INFO" - 4:03:00 AM] Formatting completed in 29ms.
+["INFO" - 4:03:16 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+["INFO" - 4:03:16 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 4:03:16 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 4:03:16 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 4:03:16 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/root.tsx",
+  "parser": "typescript"
+}
+["INFO" - 4:03:16 AM] Formatting completed in 46ms.
+["INFO" - 4:05:02 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+["INFO" - 4:05:02 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 4:05:02 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 4:05:02 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 4:05:02 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/root.tsx",
+  "parser": "typescript"
+}
+["INFO" - 4:05:02 AM] Formatting completed in 24ms.
+["INFO" - 4:05:25 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+["INFO" - 4:05:25 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 4:05:25 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 4:05:25 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 4:05:25 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/root.tsx",
+  "parser": "typescript"
+}
+["INFO" - 4:05:25 AM] Formatting completed in 43ms.
+["INFO" - 4:06:50 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+["INFO" - 4:06:50 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 4:06:50 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 4:06:50 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 4:06:50 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/root.tsx",
+  "parser": "typescript"
+}
+["INFO" - 4:06:50 AM] Formatting completed in 18ms.
+["INFO" - 4:08:03 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/components/Nav.tsx
+["INFO" - 4:08:03 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 4:08:03 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 4:08:03 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 4:08:03 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/components/Nav.tsx",
+  "parser": "typescript"
+}
+["INFO" - 4:08:03 AM] Formatting completed in 19ms.
+["INFO" - 4:30:44 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+["INFO" - 4:30:44 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 4:30:44 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 4:30:44 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 4:30:44 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/routes/index.tsx",
+  "parser": "typescript"
+}
+["INFO" - 4:30:44 AM] Formatting completed in 12ms.
+["INFO" - 4:33:43 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+["INFO" - 4:33:43 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 4:33:43 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 4:33:43 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 4:33:43 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/routes/index.tsx",
+  "parser": "typescript"
+}
+["INFO" - 4:33:43 AM] Formatting completed in 11ms.
+["INFO" - 4:34:01 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+["INFO" - 4:34:01 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 4:34:01 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 4:34:01 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 4:34:01 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/routes/index.tsx",
+  "parser": "typescript"
+}
+["INFO" - 4:34:01 AM] Formatting completed in 33ms.
+["INFO" - 4:38:28 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+["INFO" - 4:38:28 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 4:38:28 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 4:38:28 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 4:38:28 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/routes/index.tsx",
+  "parser": "typescript"
+}
+["INFO" - 4:38:28 AM] Formatting completed in 15ms.
+["INFO" - 4:40:52 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 4:40:52 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 4:40:52 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 4:40:52 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 4:40:52 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["ERROR" - 4:40:52 AM] Error formatting document.
+["ERROR" - 4:40:52 AM] Declaration or statement expected. (17:3)
+  15 |     [this.getUser, this.setUser] = createSignal();
+  16 |
+> 17 |   public async login(username: string, password: string) {
+     |   ^
+  18 |     const { access_token } = await this.appClient.default.loginApiV1TokenPost({
+  19 |       username,
+  20 |       password,
+SyntaxError: Declaration or statement expected. (17:3)
+  15 |     [this.getUser, this.setUser] = createSignal();
+  16 |
+> 17 |   public async login(username: string, password: string) {
+     |   ^
+  18 |     const { access_token } = await this.appClient.default.loginApiV1TokenPost({
+  19 |       username,
+  20 |       password,
+	at k (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/parser-typescript.js:1:15225)
+	at cT (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/parser-typescript.js:257:10765)
+	at Object.uT [as parse] (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/parser-typescript.js:257:11074)
+	at Object.parse (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:7331:23)
+	at coreFormat (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:8645:18)
+	at formatWithCursor2 (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:8837:18)
+	at /home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:37832:12
+	at Object.format (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:37846:12)
+	at t.default.format (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/dist/extension.js:1:14731)
+	at async t.PrettierEditProvider.provideEdits (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/dist/extension.js:1:11417)
+	at async B.provideDocumentFormattingEdits (/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:96:39719)
+["INFO" - 4:40:52 AM] Formatting completed in 9ms.
+["INFO" - 4:41:07 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 4:41:07 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 4:41:07 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 4:41:07 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 4:41:07 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["ERROR" - 4:41:07 AM] Error formatting document.
+["ERROR" - 4:41:07 AM] Declaration or statement expected. (17:3)
+  15 |     [getUser, setUser] = createSignal();
+  16 |
+> 17 |   public async login(username: string, password: string) {
+     |   ^
+  18 |     const { access_token } = await appClient.default.loginApiV1TokenPost({
+  19 |       username,
+  20 |       password,
+SyntaxError: Declaration or statement expected. (17:3)
+  15 |     [getUser, setUser] = createSignal();
+  16 |
+> 17 |   public async login(username: string, password: string) {
+     |   ^
+  18 |     const { access_token } = await appClient.default.loginApiV1TokenPost({
+  19 |       username,
+  20 |       password,
+	at k (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/parser-typescript.js:1:15225)
+	at cT (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/parser-typescript.js:257:10765)
+	at Object.uT [as parse] (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/parser-typescript.js:257:11074)
+	at Object.parse (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:7331:23)
+	at coreFormat (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:8645:18)
+	at formatWithCursor2 (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:8837:18)
+	at /home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:37832:12
+	at Object.format (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:37846:12)
+	at t.default.format (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/dist/extension.js:1:14731)
+	at async t.PrettierEditProvider.provideEdits (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/dist/extension.js:1:11417)
+	at async B.provideDocumentFormattingEdits (/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:96:39719)
+["INFO" - 4:41:07 AM] Formatting completed in 11ms.
+["INFO" - 4:41:32 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 4:41:32 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 4:41:32 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 4:41:32 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 4:41:32 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["ERROR" - 4:41:32 AM] Error formatting document.
+["ERROR" - 4:41:32 AM] Unexpected keyword or identifier. (17:3)
+  15 |     [getUser, setUser] = createSignal();
+  16 |
+> 17 |   async login(username: string, password: string) {
+     |   ^
+  18 |     const { access_token } = await appClient.default.loginApiV1TokenPost({
+  19 |       username,
+  20 |       password,
+SyntaxError: Unexpected keyword or identifier. (17:3)
+  15 |     [getUser, setUser] = createSignal();
+  16 |
+> 17 |   async login(username: string, password: string) {
+     |   ^
+  18 |     const { access_token } = await appClient.default.loginApiV1TokenPost({
+  19 |       username,
+  20 |       password,
+	at k (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/parser-typescript.js:1:15225)
+	at cT (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/parser-typescript.js:257:10765)
+	at Object.uT [as parse] (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/parser-typescript.js:257:11074)
+	at Object.parse (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:7331:23)
+	at coreFormat (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:8645:18)
+	at formatWithCursor2 (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:8837:18)
+	at /home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:37832:12
+	at Object.format (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:37846:12)
+	at t.default.format (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/dist/extension.js:1:14731)
+	at async t.PrettierEditProvider.provideEdits (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/dist/extension.js:1:11417)
+	at async B.provideDocumentFormattingEdits (/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:96:39719)
+["INFO" - 4:41:32 AM] Formatting completed in 5ms.
+["INFO" - 4:41:37 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 4:41:37 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 4:41:37 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 4:41:37 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 4:41:37 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["ERROR" - 4:41:37 AM] Error formatting document.
+["ERROR" - 4:41:37 AM] Unexpected keyword or identifier. (17:3)
+  15 |     const [getUser, setUser] = createSignal();
+  16 |
+> 17 |   async login(username: string, password: string) {
+     |   ^
+  18 |     const { access_token } = await appClient.default.loginApiV1TokenPost({
+  19 |       username,
+  20 |       password,
+SyntaxError: Unexpected keyword or identifier. (17:3)
+  15 |     const [getUser, setUser] = createSignal();
+  16 |
+> 17 |   async login(username: string, password: string) {
+     |   ^
+  18 |     const { access_token } = await appClient.default.loginApiV1TokenPost({
+  19 |       username,
+  20 |       password,
+	at k (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/parser-typescript.js:1:15225)
+	at cT (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/parser-typescript.js:257:10765)
+	at Object.uT [as parse] (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/parser-typescript.js:257:11074)
+	at Object.parse (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:7331:23)
+	at coreFormat (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:8645:18)
+	at formatWithCursor2 (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:8837:18)
+	at /home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:37832:12
+	at Object.format (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:37846:12)
+	at t.default.format (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/dist/extension.js:1:14731)
+	at async t.PrettierEditProvider.provideEdits (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/dist/extension.js:1:11417)
+	at async B.provideDocumentFormattingEdits (/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:96:39719)
+["INFO" - 4:41:37 AM] Formatting completed in 8ms.
+["INFO" - 4:42:00 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 4:42:00 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 4:42:00 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 4:42:00 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 4:42:00 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["INFO" - 4:42:00 AM] Formatting completed in 13ms.
+["INFO" - 4:43:18 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/components/Nav.tsx
+["INFO" - 4:43:18 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 4:43:18 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 4:43:18 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 4:43:18 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/components/Nav.tsx",
+  "parser": "typescript"
+}
+["INFO" - 4:43:18 AM] Formatting completed in 13ms.
+["INFO" - 4:44:04 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 4:44:04 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 4:44:04 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 4:44:04 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 4:44:04 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["ERROR" - 4:44:04 AM] Error formatting document.
+["ERROR" - 4:44:04 AM] ':' expected. (18:18)
+  16 |
+  17 |   return {
+> 18 |   async function login(username: string, password: string) {
+     |                  ^
+  19 |     const { access_token } = await appClient.default.loginApiV1TokenPost({
+  20 |       username,
+  21 |       password,
+SyntaxError: ':' expected. (18:18)
+  16 |
+  17 |   return {
+> 18 |   async function login(username: string, password: string) {
+     |                  ^
+  19 |     const { access_token } = await appClient.default.loginApiV1TokenPost({
+  20 |       username,
+  21 |       password,
+	at k (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/parser-typescript.js:1:15225)
+	at cT (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/parser-typescript.js:257:10765)
+	at Object.uT [as parse] (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/parser-typescript.js:257:11074)
+	at Object.parse (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:7331:23)
+	at coreFormat (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:8645:18)
+	at formatWithCursor2 (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:8837:18)
+	at /home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:37832:12
+	at Object.format (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:37846:12)
+	at t.default.format (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/dist/extension.js:1:14731)
+	at async t.PrettierEditProvider.provideEdits (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/dist/extension.js:1:11417)
+	at async B.provideDocumentFormattingEdits (/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:96:39719)
+["INFO" - 4:44:04 AM] Formatting completed in 6ms.
+["INFO" - 4:44:24 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 4:44:24 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 4:44:24 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 4:44:24 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 4:44:24 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["ERROR" - 4:44:24 AM] Error formatting document.
+["ERROR" - 4:44:24 AM] ',' expected. (29:3)
+  27 |   }
+  28 |
+> 29 |   getTopPosts() {
+     |   ^
+  30 |     return appClient.default.getTopPostsApiV1Get();
+  31 |   }
+  32 |
+SyntaxError: ',' expected. (29:3)
+  27 |   }
+  28 |
+> 29 |   getTopPosts() {
+     |   ^
+  30 |     return appClient.default.getTopPostsApiV1Get();
+  31 |   }
+  32 |
+	at k (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/parser-typescript.js:1:15225)
+	at cT (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/parser-typescript.js:257:10765)
+	at Object.uT [as parse] (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/parser-typescript.js:257:11074)
+	at Object.parse (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:7331:23)
+	at coreFormat (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:8645:18)
+	at formatWithCursor2 (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:8837:18)
+	at /home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:37832:12
+	at Object.format (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:37846:12)
+	at t.default.format (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/dist/extension.js:1:14731)
+	at async t.PrettierEditProvider.provideEdits (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/dist/extension.js:1:11417)
+	at async B.provideDocumentFormattingEdits (/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:96:39719)
+["INFO" - 4:44:24 AM] Formatting completed in 11ms.
+["INFO" - 4:44:49 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 4:44:49 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 4:44:49 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 4:44:49 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 4:44:49 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["ERROR" - 4:44:49 AM] Error formatting document.
+["ERROR" - 4:44:49 AM] ',' expected. (29:3)
+  27 |   }
+  28 |
+> 29 |   getTopPosts() {
+     |   ^
+  30 |     return appClient.default.getTopPostsApiV1Get();
+  31 |   }
+  32 |
+SyntaxError: ',' expected. (29:3)
+  27 |   }
+  28 |
+> 29 |   getTopPosts() {
+     |   ^
+  30 |     return appClient.default.getTopPostsApiV1Get();
+  31 |   }
+  32 |
+	at k (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/parser-typescript.js:1:15225)
+	at cT (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/parser-typescript.js:257:10765)
+	at Object.uT [as parse] (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/parser-typescript.js:257:11074)
+	at Object.parse (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:7331:23)
+	at coreFormat (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:8645:18)
+	at formatWithCursor2 (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:8837:18)
+	at /home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:37832:12
+	at Object.format (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:37846:12)
+	at t.default.format (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/dist/extension.js:1:14731)
+	at async t.PrettierEditProvider.provideEdits (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/dist/extension.js:1:11417)
+	at async B.provideDocumentFormattingEdits (/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:96:39719)
+["INFO" - 4:44:49 AM] Formatting completed in 8ms.
+["INFO" - 4:45:04 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 4:45:04 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 4:45:04 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 4:45:04 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 4:45:04 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["INFO" - 4:45:04 AM] Formatting completed in 8ms.
+["INFO" - 4:45:49 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 4:45:49 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 4:45:49 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 4:45:49 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 4:45:49 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["INFO" - 4:45:49 AM] Formatting completed in 15ms.
+["INFO" - 4:48:53 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+["INFO" - 4:48:53 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 4:48:53 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 4:48:53 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 4:48:53 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/root.tsx",
+  "parser": "typescript"
+}
+["INFO" - 4:48:53 AM] Formatting completed in 10ms.
+["INFO" - 4:51:56 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+["INFO" - 4:51:56 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 4:51:56 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 4:51:56 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 4:51:56 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/root.tsx",
+  "parser": "typescript"
+}
+["INFO" - 4:51:56 AM] Formatting completed in 6ms.
+["INFO" - 4:52:05 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+["INFO" - 4:52:05 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 4:52:05 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 4:52:05 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 4:52:05 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/root.tsx",
+  "parser": "typescript"
+}
+["INFO" - 4:52:05 AM] Formatting completed in 7ms.
+["INFO" - 4:53:49 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+["INFO" - 4:53:49 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 4:53:49 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 4:53:49 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 4:53:49 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/routes/index.tsx",
+  "parser": "typescript"
+}
+["INFO" - 4:53:49 AM] Formatting completed in 19ms.
+["INFO" - 4:55:42 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+["INFO" - 4:55:42 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 4:55:42 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 4:55:42 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 4:55:42 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/root.tsx",
+  "parser": "typescript"
+}
+["INFO" - 4:55:42 AM] Formatting completed in 8ms.
+["INFO" - 4:59:43 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+["INFO" - 4:59:43 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 4:59:43 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 4:59:43 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 4:59:43 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/root.tsx",
+  "parser": "typescript"
+}
+["INFO" - 4:59:43 AM] Formatting completed in 13ms.
+["INFO" - 5:01:24 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+["INFO" - 5:01:24 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 5:01:24 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 5:01:24 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 5:01:24 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/routes/index.tsx",
+  "parser": "typescript"
+}
+["INFO" - 5:01:24 AM] Formatting completed in 21ms.
+["INFO" - 5:01:45 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+["INFO" - 5:01:45 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 5:01:45 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 5:01:45 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 5:01:45 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/routes/index.tsx",
+  "parser": "typescript"
+}
+["INFO" - 5:01:45 AM] Formatting completed in 13ms.
+["INFO" - 5:02:05 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+["INFO" - 5:02:05 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 5:02:05 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 5:02:05 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 5:02:05 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/routes/index.tsx",
+  "parser": "typescript"
+}
+["INFO" - 5:02:05 AM] Formatting completed in 18ms.
+["INFO" - 5:02:52 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+["INFO" - 5:02:52 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 5:02:52 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 5:02:52 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 5:02:52 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/routes/index.tsx",
+  "parser": "typescript"
+}
+["INFO" - 5:02:52 AM] Formatting completed in 25ms.
+["INFO" - 5:03:17 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+["INFO" - 5:03:17 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 5:03:17 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 5:03:17 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 5:03:17 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/routes/index.tsx",
+  "parser": "typescript"
+}
+["INFO" - 5:03:17 AM] Formatting completed in 16ms.
+["INFO" - 5:06:20 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+["INFO" - 5:06:20 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 5:06:20 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 5:06:20 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 5:06:20 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/root.tsx",
+  "parser": "typescript"
+}
+["INFO" - 5:06:20 AM] Formatting completed in 31ms.
+["INFO" - 5:06:30 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/root.tsx
+["INFO" - 5:06:30 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 5:06:30 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 5:06:30 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 5:06:30 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/root.tsx",
+  "parser": "typescript"
+}
+["INFO" - 5:06:30 AM] Formatting completed in 13ms.
+["INFO" - 5:42:15 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+["INFO" - 5:42:15 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 5:42:15 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 5:42:15 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 5:42:15 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/routes/index.tsx",
+  "parser": "typescript"
+}
+["INFO" - 5:42:15 AM] Formatting completed in 13ms.
+["INFO" - 5:43:10 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+["INFO" - 5:43:10 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 5:43:10 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 5:43:10 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 5:43:10 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/routes/index.tsx",
+  "parser": "typescript"
+}
+["INFO" - 5:43:10 AM] Formatting completed in 10ms.
+["INFO" - 5:46:26 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+["INFO" - 5:46:26 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 5:46:27 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 5:46:27 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 5:46:27 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/routes/index.tsx",
+  "parser": "typescript"
+}
+["ERROR" - 5:46:27 AM] Error formatting document.
+["ERROR" - 5:46:27 AM] Declaration or statement expected. (50:3)
+  48 |         </main>
+  49 |       )}
+> 50 |   );
+     |   ^
+  51 | }
+  52 |
+SyntaxError: Declaration or statement expected. (50:3)
+  48 |         </main>
+  49 |       )}
+> 50 |   );
+     |   ^
+  51 | }
+  52 |
+	at k (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/parser-typescript.js:1:15225)
+	at cT (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/parser-typescript.js:257:10765)
+	at Object.uT [as parse] (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/parser-typescript.js:257:11074)
+	at Object.parse (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:7331:23)
+	at coreFormat (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:8645:18)
+	at formatWithCursor2 (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:8837:18)
+	at /home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:37832:12
+	at Object.format (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:37846:12)
+	at t.default.format (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/dist/extension.js:1:14731)
+	at async t.PrettierEditProvider.provideEdits (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/dist/extension.js:1:11417)
+	at async B.provideDocumentFormattingEdits (/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:96:39719)
+["INFO" - 5:46:27 AM] Formatting completed in 12ms.
+["INFO" - 5:47:18 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+["INFO" - 5:47:18 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 5:47:18 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 5:47:18 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 5:47:18 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/routes/index.tsx",
+  "parser": "typescript"
+}
+["INFO" - 5:47:18 AM] Formatting completed in 35ms.
+["INFO" - 5:49:33 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+["INFO" - 5:49:33 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 5:49:33 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 5:49:33 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 5:49:33 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/routes/index.tsx",
+  "parser": "typescript"
+}
+["ERROR" - 5:49:33 AM] Error formatting document.
+["ERROR" - 5:49:33 AM] '{' expected. (10:47)
+   8 | export default function Home() {
+   9 |   const backendService = useService(() => new BackendService());
+> 10 |   backendService().getTopPosts().then((res)=> const posts = res)
+     |                                               ^
+  11 |   return (
+  12 |     <For each={posts}>
+  13 |       {(post, i) => (
+SyntaxError: '{' expected. (10:47)
+   8 | export default function Home() {
+   9 |   const backendService = useService(() => new BackendService());
+> 10 |   backendService().getTopPosts().then((res)=> const posts = res)
+     |                                               ^
+  11 |   return (
+  12 |     <For each={posts}>
+  13 |       {(post, i) => (
+	at k (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/parser-typescript.js:1:15225)
+	at cT (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/parser-typescript.js:257:10765)
+	at Object.uT [as parse] (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/parser-typescript.js:257:11074)
+	at Object.parse (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:7331:23)
+	at coreFormat (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:8645:18)
+	at formatWithCursor2 (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:8837:18)
+	at /home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:37832:12
+	at Object.format (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:37846:12)
+	at t.default.format (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/dist/extension.js:1:14731)
+	at async t.PrettierEditProvider.provideEdits (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/dist/extension.js:1:11417)
+	at async B.provideDocumentFormattingEdits (/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:96:39719)
+["INFO" - 5:49:33 AM] Formatting completed in 10ms.
+["INFO" - 5:51:03 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+["INFO" - 5:51:03 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 5:51:03 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 5:51:03 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 5:51:03 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/routes/index.tsx",
+  "parser": "typescript"
+}
+["ERROR" - 5:51:03 AM] Error formatting document.
+["ERROR" - 5:51:03 AM] ',' expected. (8:18)
+   6 | import { useService } from "solid-services";
+   7 |
+>  8 | export const Home() = lazy(async () => {
+     |                  ^
+   9 |   const backendService = useService(() => new BackendService());
+  10 |   const posts = await backendService().getTopPosts();
+  11 |   return (
+SyntaxError: ',' expected. (8:18)
+   6 | import { useService } from "solid-services";
+   7 |
+>  8 | export const Home() = lazy(async () => {
+     |                  ^
+   9 |   const backendService = useService(() => new BackendService());
+  10 |   const posts = await backendService().getTopPosts();
+  11 |   return (
+	at k (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/parser-typescript.js:1:15225)
+	at cT (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/parser-typescript.js:257:10765)
+	at Object.uT [as parse] (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/parser-typescript.js:257:11074)
+	at Object.parse (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:7331:23)
+	at coreFormat (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:8645:18)
+	at formatWithCursor2 (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:8837:18)
+	at /home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:37832:12
+	at Object.format (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/node_modules/prettier/index.js:37846:12)
+	at t.default.format (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/dist/extension.js:1:14731)
+	at async t.PrettierEditProvider.provideEdits (/home/crpier/.vscode/extensions/esbenp.prettier-vscode-9.10.4/dist/extension.js:1:11417)
+	at async B.provideDocumentFormattingEdits (/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:96:39719)
+["INFO" - 5:51:03 AM] Formatting completed in 30ms.
+["INFO" - 5:51:08 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+["INFO" - 5:51:08 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 5:51:08 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 5:51:08 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 5:51:08 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/routes/index.tsx",
+  "parser": "typescript"
+}
+["INFO" - 5:51:08 AM] Formatting completed in 41ms.
+["INFO" - 5:51:45 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+["INFO" - 5:51:45 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 5:51:45 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 5:51:45 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 5:51:45 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/routes/index.tsx",
+  "parser": "typescript"
+}
+["INFO" - 5:51:45 AM] Formatting completed in 11ms.
+["INFO" - 5:56:46 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+["INFO" - 5:56:46 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 5:56:46 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 5:56:46 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 5:56:46 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/routes/index.tsx",
+  "parser": "typescript"
+}
+["INFO" - 5:56:46 AM] Formatting completed in 12ms.
+["INFO" - 5:57:40 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+["INFO" - 5:57:40 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 5:57:40 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 5:57:40 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 5:57:40 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/routes/index.tsx",
+  "parser": "typescript"
+}
+["INFO" - 5:57:40 AM] Formatting completed in 13ms.
+["INFO" - 6:00:21 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/components/Posts.tsx
+["INFO" - 6:00:21 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 6:00:21 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 6:00:21 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 6:00:21 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/components/Posts.tsx",
+  "parser": "typescript"
+}
+["INFO" - 6:00:21 AM] Formatting completed in 11ms.
+["INFO" - 6:02:52 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+["INFO" - 6:02:52 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 6:02:52 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 6:02:52 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 6:02:52 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/routes/index.tsx",
+  "parser": "typescript"
+}
+["INFO" - 6:02:52 AM] Formatting completed in 14ms.
+["INFO" - 6:04:25 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+["INFO" - 6:04:25 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 6:04:25 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 6:04:25 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 6:04:25 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/routes/index.tsx",
+  "parser": "typescript"
+}
+["INFO" - 6:04:25 AM] Formatting completed in 12ms.
+["INFO" - 6:05:19 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+["INFO" - 6:05:19 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 6:05:19 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 6:05:19 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 6:05:19 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/routes/index.tsx",
+  "parser": "typescript"
+}
+["INFO" - 6:05:19 AM] Formatting completed in 23ms.
+["INFO" - 6:10:59 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+["INFO" - 6:10:59 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 6:10:59 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 6:10:59 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 6:10:59 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/routes/index.tsx",
+  "parser": "typescript"
+}
+["INFO" - 6:10:59 AM] Formatting completed in 10ms.
+["INFO" - 6:17:15 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/components/Posts.tsx
+["INFO" - 6:17:15 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 6:17:15 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 6:17:15 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 6:17:15 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/components/Posts.tsx",
+  "parser": "typescript"
+}
+["INFO" - 6:17:15 AM] Formatting completed in 14ms.
+["INFO" - 10:29:41 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/components/Posts.tsx
+["INFO" - 10:29:41 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 10:29:41 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 10:29:41 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 10:29:41 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/components/Posts.tsx",
+  "parser": "typescript"
+}
+["INFO" - 10:29:41 AM] Formatting completed in 35ms.
+["INFO" - 11:41:10 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 11:41:10 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 11:41:10 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 11:41:10 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 11:41:10 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["INFO" - 11:41:10 AM] Formatting completed in 17ms.
+["INFO" - 11:41:31 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/services.ts
+["INFO" - 11:41:31 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 11:41:31 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 11:41:31 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 11:41:31 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/services.ts",
+  "parser": "typescript"
+}
+["INFO" - 11:41:31 AM] Formatting completed in 14ms.
+["INFO" - 11:44:29 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/routes/index.tsx
+["INFO" - 11:44:29 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 11:44:29 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 11:44:29 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 11:44:29 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/routes/index.tsx",
+  "parser": "typescript"
+}
+["INFO" - 11:44:29 AM] Formatting completed in 14ms.
+["INFO" - 12:11:56 PM] Formatting file:///home/crpier/Projects/memecry/frontend/src/components/Posts.tsx
+["INFO" - 12:11:56 PM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 12:11:56 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 12:11:56 PM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 12:11:56 PM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/components/Posts.tsx",
+  "parser": "typescript"
+}
+["INFO" - 12:11:56 PM] Formatting completed in 18ms.
+["INFO" - 8:06:52 PM] Formatting file:///home/crpier/Projects/memecry/frontend/src/components/Nav.tsx
+["INFO" - 8:06:52 PM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 8:06:52 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 8:06:52 PM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 8:06:52 PM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/components/Nav.tsx",
+  "parser": "typescript"
+}
+["INFO" - 8:06:52 PM] Formatting completed in 14ms.
+["INFO" - 8:07:34 PM] Formatting file:///home/crpier/Projects/memecry/frontend/src/components/Nav.tsx
+["INFO" - 8:07:34 PM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 8:07:34 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 8:07:34 PM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 8:07:34 PM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/components/Nav.tsx",
+  "parser": "typescript"
+}
+["INFO" - 8:07:34 PM] Formatting completed in 12ms.
+["INFO" - 8:08:52 PM] Formatting file:///home/crpier/Projects/memecry/frontend/src/components/Nav.tsx
+["INFO" - 8:08:52 PM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 8:08:52 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 8:08:52 PM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 8:08:52 PM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/components/Nav.tsx",
+  "parser": "typescript"
+}
+["INFO" - 8:08:52 PM] Formatting completed in 13ms.
+["INFO" - 8:10:03 PM] Formatting file:///home/crpier/Projects/memecry/frontend/src/components/Nav.tsx
+["INFO" - 8:10:03 PM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 8:10:03 PM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 8:10:03 PM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 8:10:03 PM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/components/Nav.tsx",
+  "parser": "typescript"
+}
+["INFO" - 8:10:03 PM] Formatting completed in 14ms.
+["INFO" - 1:45:05 AM] Formatting file:///home/crpier/Projects/memecry/frontend/src/components/Nav.tsx
+["INFO" - 1:45:05 AM] Using ignore file (if present) at /home/crpier/Projects/memecry/frontend/.prettierignore
+["INFO" - 1:45:05 AM] File Info:
+{
+  "ignored": false,
+  "inferredParser": "typescript"
+}
+["INFO" - 1:45:05 AM] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 1:45:05 AM] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/crpier/Projects/memecry/frontend/src/components/Nav.tsx",
+  "parser": "typescript"
+}
+["INFO" - 1:45:05 AM] Formatting completed in 14ms.

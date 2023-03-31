@@ -1,0 +1,4 @@
+[2023-03-03 12:33:17.711] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+

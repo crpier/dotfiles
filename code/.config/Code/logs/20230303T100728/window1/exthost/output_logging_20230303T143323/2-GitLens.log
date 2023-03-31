@@ -1,0 +1,404 @@
+[2023-03-03 12:33:24.840] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 12:33:26.167] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:16:00.676] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:16:03.968] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:16:05.049] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:16:06.428] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:16:35.450] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:16:39.556] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:16:54.033] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:16:57.727] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:17:31.992] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:17:43.897] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:17:45.482] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:17:53.355] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:18:12.228] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:18:21.722] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:18:27.637] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:18:29.625] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:18:34.828] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:18:49.296] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:19:13.222] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:19:29.256] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:19:33.647] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:19:35.298] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:19:50.003] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:19:53.646] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:19:56.734] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:19:59.150] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:20:04.961] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:20:16.511] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:20:36.454] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:20:44.335] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:20:55.226] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:21:10.429] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:21:19.165] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:21:27.836] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:22:09.257] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:22:17.844] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:22:24.899] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:22:30.951] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:22:38.015] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:22:44.214] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:22:49.718] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:22:58.241] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:23:10.319] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:23:15.533] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:23:26.713] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:23:31.950] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:23:35.999] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:23:47.946] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:23:54.942] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:23:58.284] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:24:00.113] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:24:04.803] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:24:22.026] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:24:52.108] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:25:05.868] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+fatal: There is no path src/routes/index.tsx in the commit
+
+[2023-03-03 13:25:42.100] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+fatal: There is no path src/routes/index.tsx in the commit
+
+[2023-03-03 13:25:48.329] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+fatal: There is no path src/routes/index.tsx in the commit
+
+[2023-03-03 13:26:00.673] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
+fatal: There is no path src/root.tsx in the commit
+
+[2023-03-03 13:27:10.876] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+fatal: There is no path src/routes/index.tsx in the commit
+
+[2023-03-03 13:27:51.780] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+fatal: There is no path src/routes/index.tsx in the commit
+
+[2023-03-03 13:27:54.468] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+fatal: There is no path src/routes/index.tsx in the commit
+
+[2023-03-03 13:28:02.037] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+fatal: There is no path src/routes/index.tsx in the commit
+
+[2023-03-03 13:28:30.599] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+fatal: There is no path src/routes/index.tsx in the commit
+
+[2023-03-03 13:29:03.426] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+fatal: There is no path src/routes/index.tsx in the commit
+
+[2023-03-03 13:29:17.493] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+fatal: There is no path src/routes/index.tsx in the commit
+
+[2023-03-03 13:29:24.684] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+fatal: There is no path src/routes/index.tsx in the commit
+
+[2023-03-03 13:29:31.949] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+fatal: There is no path src/routes/index.tsx in the commit
+
+[2023-03-03 13:29:51.280] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+fatal: There is no path src/routes/index.tsx in the commit
+
+[2023-03-03 13:30:10.845] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+fatal: There is no path src/routes/index.tsx in the commit
+
+[2023-03-03 13:30:19.459] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+fatal: There is no path src/routes/index.tsx in the commit
+
+[2023-03-03 13:30:41.943] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+fatal: There is no path src/routes/index.tsx in the commit
+
+[2023-03-03 13:30:48.144] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+fatal: There is no path src/routes/index.tsx in the commit
+
+[2023-03-03 13:30:50.369] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+fatal: There is no path src/routes/index.tsx in the commit
+
+[2023-03-03 13:30:51.830] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+fatal: There is no path src/routes/index.tsx in the commit
+
+[2023-03-03 13:31:10.883] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+fatal: There is no path src/routes/index.tsx in the commit
+
+[2023-03-03 13:31:20.627] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+fatal: There is no path src/routes/index.tsx in the commit
+
+[2023-03-03 13:31:22.780] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+fatal: There is no path src/routes/index.tsx in the commit
+
+[2023-03-03 13:31:57.034] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+fatal: There is no path src/routes/index.tsx in the commit
+
+[2023-03-03 13:31:59.820] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+fatal: There is no path src/routes/index.tsx in the commit
+
+[2023-03-03 13:32:07.896] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+fatal: There is no path src/routes/index.tsx in the commit
+
+[2023-03-03 13:32:13.690] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+fatal: There is no path src/routes/index.tsx in the commit
+
+[2023-03-03 13:33:42.169] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+fatal: There is no path src/routes/index.tsx in the commit
+
+[2023-03-03 13:34:26.863] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+fatal: There is no path src/routes/index.tsx in the commit
+
+[2023-03-03 13:35:56.596] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+fatal: There is no path src/routes/index.tsx in the commit
+
+[2023-03-03 13:36:08.876] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+fatal: There is no path src/routes/index.tsx in the commit
+
+[2023-03-03 13:36:19.478] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+fatal: There is no path src/routes/index.tsx in the commit
+
+[2023-03-03 13:36:22.948] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+fatal: There is no path src/routes/index.tsx in the commit
+
+[2023-03-03 13:36:27.601] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+fatal: There is no path src/routes/index.tsx in the commit
+
+[2023-03-03 13:36:33.586] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+fatal: There is no path src/routes/index.tsx in the commit
+
+[2023-03-03 13:36:37.232] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+fatal: There is no path src/routes/index.tsx in the commit
+
+[2023-03-03 13:36:41.077] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+fatal: There is no path src/routes/index.tsx in the commit
+
+[2023-03-03 13:36:44.336] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+fatal: There is no path src/routes/index.tsx in the commit
+
+[2023-03-03 13:36:47.786] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+fatal: There is no path src/routes/index.tsx in the commit
+
+[2023-03-03 13:36:51.218] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+fatal: There is no path src/routes/index.tsx in the commit
+
+[2023-03-03 13:36:55.238] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+fatal: There is no path src/routes/index.tsx in the commit
+
+[2023-03-03 13:36:58.185] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+fatal: There is no path src/routes/index.tsx in the commit
+
+[2023-03-03 13:36:59.224] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+fatal: There is no path src/routes/index.tsx in the commit
+
+[2023-03-03 13:37:09.315] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+fatal: There is no path src/routes/index.tsx in the commit
+
+[2023-03-03 13:37:19.333] /home/crpier/.vscode/extensions/eamodio.gitlens-13.3.1/dist/gitlens.js:1:55840
+Error: Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false -c log.showSignature=false log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/routes/index.tsx
+fatal: There is no path src/routes/index.tsx in the commit
+

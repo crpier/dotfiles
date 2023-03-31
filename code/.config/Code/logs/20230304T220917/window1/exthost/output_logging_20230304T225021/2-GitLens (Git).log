@@ -1,0 +1,5 @@
+[2023-03-04 20:50:21.408] [      8ms] [/home/crpier/Projects/memecry] git rev-parse --show-toplevel
+[2023-03-04 20:50:21.466] [     21ms] [/home/crpier/Projects/memecry] git rev-parse --show-toplevel
+[2023-03-04 20:50:21.485] [     17ms] [/home/crpier/Projects/memecry] git rev-parse --git-dir --git-common-dir
+[2023-03-04 20:50:21.509] [     21ms] [/home/crpier/Projects/memecry] git remote -v
+[2023-03-04 20:50:22.008] [     10ms] [/home/crpier/Projects/memecry] git remote -v

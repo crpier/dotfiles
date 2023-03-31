@@ -1,0 +1,12 @@
+[2023-03-03 12:33:16.740] [     18ms] [/home/crpier/Projects/memecry] git rev-parse --show-toplevel
+[2023-03-03 12:33:16.805] [     18ms] [/home/crpier/Projects/memecry] git rev-parse --git-dir --git-common-dir
+[2023-03-03 12:33:16.965] [     53ms] [/home/crpier/Projects/memecry] git rev-parse --show-toplevel
+[2023-03-03 12:33:16.965] [     54ms] [/home/crpier/Projects/memecry/src] git rev-parse --show-toplevel
+[2023-03-03 12:33:16.966] [     78ms] [/home/crpier/Projects/memecry] git remote -v
+[2023-03-03 12:33:17.055] [     21ms] [/home/crpier/Projects/memecry] git ls-files -- src/root.tsx
+[2023-03-03 12:33:17.123] [     14ms] [/home/crpier/Projects/memecry] git blame --root --incremental -- src/root.tsx
+[2023-03-03 12:33:17.170] [     46ms] [/home/crpier/Projects/memecry] git config --get-regex ^user\.
+[2023-03-03 12:33:17.180] [     10ms] [/home/crpier/Projects/memecry] git check-mailmap crpier <crpier42@gmail.com>
+[2023-03-03 12:33:17.409] [      9ms] [/home/crpier/Projects/memecry] git remote -v
+[2023-03-03 12:33:17.696] [      7ms] [/home/crpier/Projects/memecry] git diff --no-ext-diff --minimal -U0 -M --diff-filter=M -- src/root.tsx
+[2023-03-03 12:33:17.710] [     13ms] [/home/crpier/Projects/memecry] git log --format=%x3cr%x3e%x20%H -n3 -m -L 2,2:src/root.tsx
