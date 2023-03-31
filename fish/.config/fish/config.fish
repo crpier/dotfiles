@@ -42,6 +42,7 @@ set -U VIRTUAL_ENV_DISABLE_PROMPT yes
 set -gx PATH $PATH /opt/neovim/bin ~/Projects/devutils/scripts/local ~/.local/bin $HOME/go/bin $HOME/.cargo/bin
 set -gx EDITOR nvim
 set -gx MANPAGER "/bin/sh -c \"col -b | vim -c 'set ft=man ts=8 nomod nolist nonu noma' -\""
+set -gx PYTHONDONTWRITEBYTECODE 1
 
 # bat settings
 set -gx BAT_THEME "gruvbox-dark"
@@ -58,6 +59,7 @@ alias fconfig "nvim $HOME/.config/fish/config.fish"
 alias flconfig "nvim $HOME/.config/local_configs/config.fish"
 alias kconfig "nvim $HOME/.config/kitty/kitty.conf"
 alias klconfig "nvim $HOME/.config/kitty/kitty.conf"
+alias pytest "pytest -p no:cacheprovider"
 
 # misc stuff
 # alias "_" "cd -"
@@ -96,7 +98,7 @@ alias e "exa"
 alias ea "exa -a"
 alias el "exa -l"
 alias ela "exa -la"
-alias et "exa -aT -I '.git'"
+alias et "exa -aT -I '.git|.venv|node_modules|.solid|__pycache__'"
 
 # functions
 # for git
@@ -113,4 +115,9 @@ function mkcd
     set args $argv[2..]
     mkdir $args $folder
     cd $folder
+end
+
+# also load custom configs
+if test -f ~/.config/local_configs/config.fish
+    source ~/.config/local_configs/config.fish
 end
