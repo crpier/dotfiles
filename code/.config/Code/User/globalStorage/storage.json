@@ -48,6 +48,17 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
+                                        "external": "file:///home/crpier/Downloads/The%20Boys%20-%20Season%202%20%282020%29%20%5B1080p%5D",
+                                        "path": "/home/crpier/Downloads/The Boys - Season 2 (2020) [1080p]",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Downloads/The Boys - Season 2 (2020) [1080p]"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
                                         "external": "file:///home/crpier/Projects/solid-realworld",
                                         "path": "/home/crpier/Projects/solid-realworld",
                                         "scheme": "file"
@@ -155,13 +166,6 @@
                         "label": "Share",
                         "submenu": {
                             "items": [
-                                {
-                                    "id": "github.copyVscodeDevLinkFile",
-                                    "label": "Copy vscode.dev Link"
-                                },
-                                {
-                                    "id": "vscode.menubar.separator"
-                                },
                                 {
                                     "id": "issue.copyGithubPermalink",
                                     "label": "Copy GitHub Permalink"
@@ -315,17 +319,6 @@
                         "label": "Copy As",
                         "submenu": {
                             "items": [
-                                {
-                                    "id": "gitlens.copyRemoteFileUrlToClipboard",
-                                    "label": "Copy Remote File URL"
-                                },
-                                {
-                                    "id": "gitlens.copyRemoteFileUrlFrom",
-                                    "label": "Copy Remote File URL From..."
-                                },
-                                {
-                                    "id": "vscode.menubar.separator"
-                                },
                                 {
                                     "id": "issue.copyGithubPermalink",
                                     "label": "Copy GitHub Permalink"
@@ -637,13 +630,6 @@
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
-                                    "id": "workbench.action.splitEditorInGroup",
-                                    "label": "Split in &&Group"
-                                },
-                                {
-                                    "id": "vscode.menubar.separator"
-                                },
-                                {
                                     "id": "workbench.action.editorLayoutSingle",
                                     "label": "&&Single"
                                 },
@@ -732,7 +718,8 @@
                     },
                     {
                         "id": "editor.action.toggleWordWrap",
-                        "label": "&&Word Wrap"
+                        "label": "&&Word Wrap",
+                        "enabled": false
                     },
                     {
                         "id": "editor.action.toggleStickyScroll",
@@ -744,7 +731,8 @@
                 "items": [
                     {
                         "id": "workbench.action.navigateBack",
-                        "label": "&&Back"
+                        "label": "&&Back",
+                        "enabled": false
                     },
                     {
                         "id": "workbench.action.navigateForward",
@@ -753,7 +741,8 @@
                     },
                     {
                         "id": "workbench.action.navigateToLastEditLocation",
-                        "label": "&&Last Edit Location"
+                        "label": "&&Last Edit Location",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1406,11 +1395,6 @@
                 "isNative": false,
                 "userSettingsLabel": "ctrl+numpad0"
             },
-            "workbench.action.splitEditorInGroup": {
-                "label": "Ctrl+K Ctrl+Shift+\\",
-                "isNative": false,
-                "userSettingsLabel": "ctrl+k ctrl+shift+\\"
-            },
             "workbench.action.toggleEditorGroupLayout": {
                 "label": "Shift+Alt+0",
                 "userSettingsLabel": "shift+alt+0"
@@ -1424,9 +1408,8 @@
                 "userSettingsLabel": "ctrl+shift+f"
             },
             "workbench.view.scm": {
-                "label": "Ctrl+Shift+G G",
-                "isNative": false,
-                "userSettingsLabel": "ctrl+shift+g g"
+                "label": "Ctrl+Shift+G",
+                "userSettingsLabel": "ctrl+shift+g"
             },
             "workbench.view.debug": {
                 "label": "Ctrl+Shift+D",
@@ -1649,21 +1632,21 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 0,
             "activityBarWidth": 48,
-            "sideBarWidth": 0,
+            "sideBarWidth": 212,
             "statusBarHeight": 22,
             "windowBorder": false
         }
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/crpier/Projects/solid-realworld",
-            "backupPath": "/home/crpier/.config/Code/Backups/819d37e855b668e0126eb6cf72366bea",
+            "folder": "file:///home/crpier/Downloads/The%20Boys%20-%20Season%202%20%282020%29%20%5B1080p%5D",
+            "backupPath": "/home/crpier/.config/Code/Backups/63d76e218d4b32932710c8918651db2f",
             "uiState": {
                 "mode": 1,
                 "x": 3200,
-                "y": 29,
+                "y": 301,
                 "width": 1280,
-                "height": 1411
+                "height": 1007
             }
         },
         "openedWindows": []
@@ -1672,10 +1655,7 @@
         "workspaces": [],
         "folders": [
             {
-                "folderUri": "file:///home/crpier/Projects/memecry/frontend"
-            },
-            {
-                "folderUri": "file:///home/crpier/Projects/solid-realworld"
+                "folderUri": "file:///home/crpier/Downloads/The%20Boys%20-%20Season%202%20%282020%29%20%5B1080p%5D"
             }
         ],
         "emptyWindows": []
