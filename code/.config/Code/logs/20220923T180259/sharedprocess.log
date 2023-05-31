@@ -1,7 +1,0 @@
-[2022-09-23 18:03:01.194] [sharedprocess] [info] Starting worker process with pid 159966 (type: fileWatcher, window: 1).
-[2022-09-23 18:03:32.215] [sharedprocess] [info] Worker process with pid 159966 terminated normally (type: fileWatcher, window: 1).
-[2022-09-23 18:03:32.874] [sharedprocess] [info] Starting worker process with pid 160070 (type: fileWatcher, window: 1).
-[2022-09-23 19:08:18.378] [sharedprocess] [error] SharedProcess (worker, fileWatcher): Worker process with pid 160070 terminated by itself with code null, signal: SIGTRAP (type: fileWatcher, window: 1)
-[2022-09-23 19:08:18.436] [sharedprocess] [info] Starting worker process with pid 176723 (type: fileWatcher, window: 1).
-[2022-09-23 19:13:48.631] [sharedprocess] [error] SharedProcess (worker, fileWatcher): Worker process with pid 176723 terminated by itself with code null, signal: SIGTRAP (type: fileWatcher, window: 1)
-[2022-09-23 19:13:48.679] [sharedprocess] [info] Starting worker process with pid 178309 (type: fileWatcher, window: 1).

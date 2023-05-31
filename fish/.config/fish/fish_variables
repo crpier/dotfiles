@@ -3,6 +3,7 @@
 SETUVAR BAT_THEME:gruvbox\x2ddark
 SETUVAR FZF_LEGACY_KEYBINDINGS:0
 SETUVAR NVM_VERSION:0\x2e38\x2e0
+SETUVAR --export PYENV_ROOT:/home/crpier/\x2epyenv
 SETUVAR VIRTUAL_ENV_DISABLE_PROMPT:yes
 SETUVAR __fish_initialized:3400
 SETUVAR _fish_abbr_za:zoxide\x20add
@@ -55,5 +56,5 @@ SETUVAR fish_pager_color_selected_completion:\x1d
 SETUVAR fish_pager_color_selected_description:\x1d
 SETUVAR fish_pager_color_selected_prefix:\x1d
 SETUVAR fish_prompt_pwd_dir_length:100
-SETUVAR fish_user_paths:/usr/local/opt/avr\x2dgcc\x408/bin
+SETUVAR fish_user_paths:/home/crpier/\x2epyenv/bin\x1e/usr/local/opt/avr\x2dgcc\x408/bin
 SETUVAR fzf_fd_opts:\x2d\x2dhidden\x1e\x2d\x2dexclude\x3d\x2egit

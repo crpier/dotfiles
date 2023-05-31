@@ -1,6 +1,0 @@
-> poetry env list --full-path
-cwd: .
-LSP Notebooks experiment is disabled -- Jupyter disabled or not installed
-LSP Notebooks interactive window support is disabled -- not in LSP Notebooks experiment
-Python interpreter path: ~/.pyenv/versions/3.11.1/bin/python
-Starting Pylance language server.

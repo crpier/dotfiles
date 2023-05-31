@@ -39,9 +39,9 @@ set -U fish_prompt_pwd_dir_length 100
 set -U VIRTUAL_ENV_DISABLE_PROMPT yes
 
 # General settings
-set -gx PATH $PATH /opt/neovim/bin ~/Projects/devutils/scripts/local ~/.local/bin $HOME/go/bin $HOME/.cargo/bin
+set -gx PATH $PATH /opt/neovim/bin ~/Projects/devutils/scripts/local ~/.local/bin $HOME/go/bin $HOME/.cargo/bin $HOME/.pyenv/bin
 set -gx EDITOR nvim
-set -gx MANPAGER "/bin/sh -c \"col -b | vim -c 'set ft=man ts=8 nomod nolist nonu noma' -\""
+set -gx MANPAGER "/bin/sh -c \"col -b | vim -c 'set ft=man ts=8 nomod nolist nonu noma norelativenumber' -\""
 set -gx PYTHONDONTWRITEBYTECODE 1
 
 # bat settings
@@ -116,6 +116,8 @@ function mkcd
     mkdir $args $folder
     cd $folder
 end
+
+pyenv init - | source
 
 # also load custom configs
 if test -f ~/.config/local_configs/config.fish
