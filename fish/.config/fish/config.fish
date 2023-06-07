@@ -39,7 +39,7 @@ set -U fish_prompt_pwd_dir_length 100
 set -U VIRTUAL_ENV_DISABLE_PROMPT yes
 
 # General settings
-set -gx PATH $PATH /opt/neovim/bin ~/Projects/devutils/scripts/local ~/.local/bin $HOME/go/bin $HOME/.cargo/bin $HOME/.pyenv/bin
+set -gx PATH $PATH ~/.local/bin
 set -gx EDITOR nvim
 set -gx MANPAGER "/bin/sh -c \"col -b | vim -c 'set ft=man ts=8 nomod nolist nonu noma norelativenumber' -\""
 set -gx PYTHONDONTWRITEBYTECODE 1
@@ -59,10 +59,8 @@ alias fconfig "nvim $HOME/.config/fish/config.fish"
 alias flconfig "nvim $HOME/.config/local_configs/config.fish"
 alias kconfig "nvim $HOME/.config/kitty/kitty.conf"
 alias klconfig "nvim $HOME/.config/kitty/kitty.conf"
-alias pytest "pytest -p no:cacheprovider"
 
 # misc stuff
-# alias "_" "cd -"
 alias b "bat"
 alias pipi "pip install"
 alias fzfb "fzf --preview 'bat --color=always --style=numbers --line-range=:500 {}'"
@@ -83,6 +81,7 @@ alias gco "git checkout"
 alias ge "git clean --fd"
 alias gd "git diff"
 alias gac "git add . && git commit -m"
+alias gu "git pull"
 alias gp "git push"
 alias gr "git reset HEAD --hard"
 alias glo "git log"
@@ -100,6 +99,9 @@ alias el "exa -l"
 alias ela "exa -la"
 alias et "exa -aT -I '.git|.venv|node_modules|.solid|__pycache__'"
 
+# misc
+alias stats "echo $status"
+
 # functions
 # for git
 function gacp
@@ -116,8 +118,6 @@ function mkcd
     mkdir $args $folder
     cd $folder
 end
-
-pyenv init - | source
 
 # also load custom configs
 if test -f ~/.config/local_configs/config.fish
