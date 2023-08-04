@@ -4,16 +4,6 @@ function fish_mode_prompt
 end
 function fish_prompt --description 'Write out the prompt'
     set -l last_status $status
-    # # User
-    # set_color $fish_color_user
-    # echo -n $USER
-    # set_color normal
-    # echo -n '@'
-    # # Host
-    # set_color $fish_color_host
-    # echo -n (prompt_hostname)
-    # set_color normal
-    # echo -n ':'
     echo -e ''
     # PWD
     set_color $fish_color_cwd
@@ -68,7 +58,7 @@ alias rsource "source $HOME/.config/fish/config.fish"
 alias netlisten "netstat -anvp tcp | awk 'NR<3 || /LISTEN/'"
 
 
-# kubectl 
+# kubectl
 alias k kubectl
 
 # git
@@ -78,7 +68,7 @@ alias ga "git add ."
 alias gc "git commit -m"
 alias gcl "git clone"
 alias gco "git checkout"
-alias ge "git clean --fd"
+alias ge "git clean -fd"
 alias gd "git diff"
 alias gac "git add . && git commit -m"
 alias gu "git pull"
@@ -101,6 +91,7 @@ alias et "exa -aT -I '.git|.venv|node_modules|.solid|__pycache__'"
 
 # misc
 alias stats "echo $status"
+alias rmf "rm -rf"
 
 # functions
 # for git
