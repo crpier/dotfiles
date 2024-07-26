@@ -48,7 +48,7 @@ alias nlconfig "nvim $HOME/.config/local_configs/init.local.vim"
 alias fconfig "nvim $HOME/.config/fish/config.fish"
 alias flconfig "nvim $HOME/.config/local_configs/config.fish"
 alias kconfig "nvim $HOME/.config/kitty/kitty.conf"
-alias klconfig "nvim $HOME/.config/kitty/kitty.conf"
+alias klconfig "nvim $HOME/.config/local_configs/kitty.conf"
 
 # misc stuff
 alias b "bat"
