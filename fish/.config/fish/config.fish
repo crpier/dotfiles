@@ -29,13 +29,12 @@ set -U fish_prompt_pwd_dir_length 100
 set -U VIRTUAL_ENV_DISABLE_PROMPT yes
 
 # General settings
-set -gx PATH $PATH ~/.local/bin
+set -gx PATH $PATH ~/.local/bin ~/.cargo/bin
 set -gx EDITOR nvim
-set -gx MANPAGER "/bin/sh -c \"col -b | vim -c 'set ft=man ts=8 nomod nolist nonu noma norelativenumber' -\""
 set -gx PYTHONDONTWRITEBYTECODE 1
 
 # bat settings
-set -gx BAT_THEME "gruvbox-dark"
+set -gx BAT_THEME "Catppuccin Macchiato"
 set -gx BAT_STYLE "numbers,changes"
 
 # Aliases
@@ -81,18 +80,19 @@ alias gl2 "git lg2"
 alias gw "git worktree"
 # sometimes helps when git worktree is not updating
 alias gsf "git fetch origin 'refs/heads/*:refs/heads/*'"
-alias lg lazygit
+alias lg "lazygit --use-config-file='/home/crpier/.config/lazygit/config.yml,/home/crpier/.config/lazygit/maroon.yml'"
 
 # exa aliases
 alias e "exa"
 alias ea "exa -a"
 alias el "exa -l"
 alias ela "exa -la"
-alias et "exa -aT -I '.git|.venv|node_modules|.solid|__pycache__'"
+alias et "exa -aT --git-ignore -I '.git|.venv|node_modules|.solid|__pycache__'"
 
 # misc
 alias stats "echo $status"
 alias rmf "rm -rf"
+alias z "zellij"
 
 # functions
 # for git
