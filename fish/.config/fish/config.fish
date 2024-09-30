@@ -80,14 +80,14 @@ alias gl2 "git lg2"
 alias gw "git worktree"
 # sometimes helps when git worktree is not updating
 alias gsf "git fetch origin 'refs/heads/*:refs/heads/*'"
-alias lg "lazygit --use-config-file='/home/crpier/.config/lazygit/config.yml,/home/crpier/.config/lazygit/maroon.yml'"
+alias lg 'lazygit'
 
-# exa aliases
-alias e "exa"
-alias ea "exa -a"
-alias el "exa -l"
-alias ela "exa -la"
-alias et "exa -aT --git-ignore -I '.git|.venv|node_modules|.solid|__pycache__'"
+# eza aliases
+alias e "eza"
+alias ea "eza -a"
+alias el "eza -l"
+alias ela "eza -la"
+alias et "eza -aT --git-ignore -I '.git|.venv|node_modules|.solid|__pycache__'"
 
 # misc
 alias stats "echo $status"
