@@ -1,6 +1,5 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR BAT_THEME:gruvbox\x2ddark
 SETUVAR --export FZF_DEFAULT_OPTS:\x1d
 SETUVAR FZF_LEGACY_KEYBINDINGS:0
 SETUVAR VIRTUAL_ENV_DISABLE_PROMPT:yes

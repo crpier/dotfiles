@@ -33,10 +33,6 @@ set -gx PATH $PATH ~/.local/bin ~/.cargo/bin
 set -gx EDITOR nvim
 set -gx PYTHONDONTWRITEBYTECODE 1
 
-# bat settings
-set -gx BAT_THEME "Catppuccin Macchiato"
-set -gx BAT_STYLE "numbers,changes"
-
 # Aliases
 # kittens
 alias ks "kitty +kitten ssh"
@@ -48,13 +44,14 @@ alias fconfig "nvim $HOME/.config/fish/config.fish"
 alias flconfig "nvim $HOME/.config/local_configs/config.fish"
 alias kconfig "nvim $HOME/.config/kitty/kitty.conf"
 alias klconfig "nvim $HOME/.config/local_configs/kitty.conf"
+alias gconfig "nvim $HOME/.config/extra.gitconfig"
+alias guconfig "nvim $HOME/.gitconfig"
+alias glconfig "nvim $HOME/.config/extra.gitconfig"
 
 # misc stuff
 alias b "bat"
 alias pipi "pip install"
-alias fzfb "fzf --preview 'bat --color=always --style=numbers --line-range=:500 {}'"
 alias rsource "source $HOME/.config/fish/config.fish"
-alias netlisten "netstat -anvp tcp | awk 'NR<3 || /LISTEN/'"
 
 
 # kubectl
