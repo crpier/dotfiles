@@ -89,11 +89,11 @@ alias et "eza -aT --git-ignore -I '.git|.venv|node_modules|.solid|__pycache__'"
 # misc
 alias stats "echo $status"
 alias rmf "rm -rf"
-alias z "zellij"
 
 # functions
-# for git
+## for git
 function gacp
+    # git add commit push
     set message $argv[1]
     git add .
     git commit -m "$message"
@@ -112,3 +112,9 @@ end
 if test -f ~/.config/local_configs/config.fish
     source ~/.config/local_configs/config.fish
 end
+
+# lol, straight from the examples page
+function last_history_item
+  echo $history[1]
+end
+abbr -a !! --position anywhere --function last_history_item
