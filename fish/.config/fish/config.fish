@@ -29,23 +29,24 @@ set -U fish_prompt_pwd_dir_length 100
 set -U VIRTUAL_ENV_DISABLE_PROMPT yes
 
 # General settings
-set -gx PATH $PATH ~/.local/bin ~/.cargo/bin
+set -gx PATH ~/.local/bin ~/.cargo/bin $PATH
 set -gx EDITOR nvim
 set -gx PYTHONDONTWRITEBYTECODE 1
 
 # Aliases
 # kittens
 alias ks "kitty +kitten ssh"
+alias icat "kitty +kitten icat"
+
 # open stuff in text editor
-alias n "nvim --startuptime ~/.local/share/nvim/startuptime.out"
+alias n "nvim"
 alias nconfig "nvim $HOME/.config/nvim/init.lua"
-alias nlconfig "nvim $HOME/.config/local_configs/init.local.vim"
+alias nlconfig "nvim $HOME/.config/local_configs/nvim.lua"
 alias fconfig "nvim $HOME/.config/fish/config.fish"
 alias flconfig "nvim $HOME/.config/local_configs/config.fish"
 alias kconfig "nvim $HOME/.config/kitty/kitty.conf"
 alias klconfig "nvim $HOME/.config/local_configs/kitty.conf"
-alias gconfig "nvim $HOME/.config/extra.gitconfig"
-alias guconfig "nvim $HOME/.gitconfig"
+alias gconfig "nvim $HOME/.gitconfig"
 alias glconfig "nvim $HOME/.config/extra.gitconfig"
 
 # misc stuff
