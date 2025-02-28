@@ -28,9 +28,9 @@
 
 [alias]
   # list files which have changed since REVIEW_BASE
-  files = !git diff --name-only $(git merge-base HEAD main)
+  files = !git diff --name-only $(git merge-base HEAD $(git rev-parse --abbrev-ref origin/HEAD))
   # Show summary of uncommitted changes
-  stat = !git diff --stat $(git merge-base HEAD main)
+  stat = !git diff --stat $(git merge-base HEAD $(git rev-parse --abbrev-ref origin/HEAD))
 
 [include]
   path = ~/.config/delta/catpuccin.gitconfig

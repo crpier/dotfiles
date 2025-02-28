@@ -31,7 +31,7 @@ set -U VIRTUAL_ENV_DISABLE_PROMPT yes
 # General settings
 set -gx PATH ~/.local/bin ~/.cargo/bin $PATH
 set -gx EDITOR nvim
-set -gx PYTHONDONTWRITEBYTECODE 1
+set -gx PYTHONPATH .
 
 # Aliases
 # kittens
