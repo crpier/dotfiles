@@ -53,6 +53,7 @@ alias glconfig "nvim $HOME/.config/extra.gitconfig"
 alias b "bat"
 alias pipi "pip install"
 alias rsource "source $HOME/.config/fish/config.fish"
+alias rpython 'uv run --with rich python -i -c "from rich import inspect; from rich import pretty; pretty.install()"'
 
 
 # kubectl
