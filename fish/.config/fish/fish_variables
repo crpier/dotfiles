@@ -3,7 +3,7 @@
 SETUVAR --export FZF_DEFAULT_OPTS:\x1d
 SETUVAR FZF_LEGACY_KEYBINDINGS:0
 SETUVAR VIRTUAL_ENV_DISABLE_PROMPT:yes
-SETUVAR __fish_initialized:3400
+SETUVAR __fish_initialized:3800
 SETUVAR _fish_abbr_za:zoxide\x20add
 SETUVAR _fish_abbr_zq:zoxide\x20query
 SETUVAR _fish_abbr_zqi:zoxide\x20query\x20\x2di

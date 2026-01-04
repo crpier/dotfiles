@@ -29,7 +29,7 @@ set -U fish_prompt_pwd_dir_length 100
 set -U VIRTUAL_ENV_DISABLE_PROMPT yes
 
 # General settings
-set -gx PATH ~/.local/bin ~/.cargo/bin $PATH
+set -gx PATH ~/.local/bin ~/.cargo/bin /home/crpier/.opencode/bin/ $PATH
 set -gx EDITOR nvim
 set -gx PYTHONPATH .
 
@@ -40,6 +40,7 @@ alias icat "kitty +kitten icat"
 
 # open stuff in text editor
 alias n "nvim"
+alias rn "uv run nvim"
 alias nconfig "nvim $HOME/.config/nvim/init.lua"
 alias nlconfig "nvim $HOME/.config/local_configs/nvim.lua"
 alias fconfig "nvim $HOME/.config/fish/config.fish"
@@ -51,10 +52,8 @@ alias glconfig "nvim $HOME/.config/extra.gitconfig"
 
 # misc stuff
 alias b "bat"
-alias pipi "pip install"
 alias rsource "source $HOME/.config/fish/config.fish"
 alias rpython 'uv run --with rich python -i -c "from rich import inspect; from rich import pretty; pretty.install()"'
-
 
 # kubectl
 alias k kubectl
@@ -92,7 +91,27 @@ alias et "eza -aT --git-ignore -I '.git|.venv|node_modules|.solid|__pycache__'"
 alias stats "echo $status"
 alias rmf "rm -rf"
 
+# abbreviaations
+abbr ur "uv run"
+
 # functions
+## for neovim
+
+# Opens neovim on the last file that was edited
+function no
+  set last_file (
+      nvim --headless -u NONE \
+          +'lua io.write(vim.v.oldfiles[1] or "")' +q 2>/dev/null
+  )
+
+  if test -n "$last_file"; and test -f "$last_file"
+      exec nvim $last_file $argv
+  else
+      exec nvim $argv
+  end
+end
+
+
 ## for git
 function gacp
     # git add commit push
