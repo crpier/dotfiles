@@ -1,0 +1,59 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "theme": "catppuccin-macchiato",
+  "default_agent": "plan",
+  "agent": {
+    "critic": {
+      "mode": "primary",
+      "prompt": "{file:./prompts/critic.md}",
+      "model": "openai/gpt-5.2-codex",
+      "description": "Software design",
+      "reasoningEffort": "high"
+    },
+    "review": {
+      "description": "Then again, with this quite complex behavior, I find we're having to trigger it manually if it's not possible to implement something sane. Now, coming back to the confusing configuration of agent decoding tools, what I like to help with is the following. What feature should I use for implementing this? Should I create a /command? Should I use a sub-agent or just a regular agent? Should I modify some prompts? Should this be part of the agents.md file in a repository? Should I use the new skills? I have no idea. I should also mention I'm using open code.",
+      "mode": "subagent",
+      "prompt": "{file:./prompts/review.md}",
+      "reasoningEffort": "high"
+    }
+  },
+  "permission": {
+    "bash": "allow",
+    "codesearch": "allow",
+    "doom_loop": "allow",
+    "edit": "allow",
+    "external_directory": "allow",
+    "glob": "allow",
+    "grep": "allow",
+    "list": "allow",
+    "lsp": "allow",
+    "question": "allow",
+    "read": "allow",
+    "task": "allow",
+    "todoread": "allow",
+    "todowrite": "allow",
+    "webfetch": "allow",
+    "websearch": "allow"
+  },
+  "provider": {
+    "ollama": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Ollama (local)",
+      "options": {
+        "baseURL": "http://localhost:11434/v1"
+      },
+      "models": {
+        "qwen3-coder:30b": {
+          "name": "qwen3-coder:30b"
+        },
+        "gpt-oss:20b": {
+          "name": "gpt-oss:20b"
+        }
+      }
+    }
+  },
+  "keybinds": {
+    "session_child_cycle": "ctrl+h",
+    "session_child_cycle_reverse": "ctrl+l"
+  }
+}
