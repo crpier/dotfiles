@@ -90,6 +90,7 @@ alias et "eza -aT --git-ignore -I '.git|.venv|node_modules|.solid|__pycache__'"
 # misc
 alias stats "echo $status"
 alias rmf "rm -rf"
+alias opencode "env OPENCODE_EXPERIMENTAL_PLAN_MODE=1 opencode"
 
 # abbreviaations
 abbr ur "uv run"
