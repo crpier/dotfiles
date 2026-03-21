@@ -1,6 +1,8 @@
 ### Description
 These are my dotfiles. I am using `stow` to manage them, so you could call them `stowfiles` lmao.
 
+This repo also exports reusable Home Manager and NixOS modules from `flake.nix`, so the same configs can be imported from any Nix flake.
+
 Much inspiration from https://github.com/ChristianChiarulli/Machfiles.
 
 ### Installing
@@ -35,6 +37,90 @@ The deploy script just does `stow */` and the `extra.gitconfig` to your .gitconf
 
 ### Usage
 `tmux`, `vim`, `nvim` and other applications use this repository's config.
+
+### Nix flakes
+
+You can import the exported Home Manager modules directly from another flake:
+
+```nix
+{
+  inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    home-manager.url = "github:nix-community/home-manager";
+    home-manager.inputs.nixpkgs.follows = "nixpkgs";
+    dotfiles.url = "github:crpier/dotfiles";
+  };
+
+  outputs = { nixpkgs, home-manager, dotfiles, ... }: {
+    nixosConfigurations.my-host = nixpkgs.lib.nixosSystem {
+      system = "x86_64-linux";
+      modules = [
+        home-manager.nixosModules.home-manager
+        {
+          home-manager.users.crpier = {
+            imports = [ dotfiles.homeManagerModules.default ];
+            crpier.dotfiles.enableAll = true;
+            crpier.dotfiles.installPackages = true;
+          };
+        }
+      ];
+    };
+  };
+}
+```
+
+You can also enable individual modules instead of the full set:
+
+```nix
+{
+  imports = [ dotfiles.homeManagerModules.default ];
+
+  crpier.dotfiles.fish.enable = true;
+  crpier.dotfiles.kitty.enable = true;
+  crpier.dotfiles.tmux.enable = true;
+}
+```
+
+Or you can use the exported NixOS wrapper module and configure users from your system config:
+
+```nix
+{
+  inputs.dotfiles.url = "github:crpier/dotfiles";
+
+  outputs = { nixpkgs, dotfiles, ... }: {
+    nixosConfigurations.my-host = nixpkgs.lib.nixosSystem {
+      system = "x86_64-linux";
+      modules = [
+        dotfiles.nixosModules.default
+        {
+          crpier.dotfiles.users.crpier = {
+            enable = true;
+            enableAll = true;
+            installPackages = true;
+          };
+        }
+      ];
+    };
+  };
+}
+```
+
+If you only want a subset for one user:
+
+```nix
+{
+  crpier.dotfiles.users.crpier = {
+    enable = true;
+    enableAll = false;
+    installPackages = true;
+    modules.fish = true;
+    modules.kitty = true;
+    modules.tmux = true;
+  };
+}
+```
+
+Package bundles are optional and install the common tools each config expects. The wrapper enables them by default, while direct Home Manager usage can opt in with `crpier.dotfiles.installPackages = true;`.
 
 This is also nicely extensible. Many dotfiles here source other files from `~/.config/local_configs/`, so you can put more source controlled stuff next to you source controlled stuff. 
 For example, you can fork this public repo, on both your work and personal laptops, and then extend it with private dotfiles repos. All that these other repos need is to keep config files in the `~/.config/local_configs/` folder.
