@@ -29,7 +29,7 @@ set -U fish_prompt_pwd_dir_length 100
 set -U VIRTUAL_ENV_DISABLE_PROMPT yes
 
 # General settings
-set -gx PATH ~/.local/bin ~/.cargo/bin /home/crpier/.opencode/bin/ ~/.bun/bin $PATH
+set -gx PATH ~/.local/bin ~/.cargo/bin "$HOME/.opencode/bin" ~/.bun/bin $PATH
 set -gx EDITOR nvim
 set -gx PYTHONPATH .
 
