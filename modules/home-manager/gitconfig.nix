@@ -23,12 +23,34 @@ in
       ++ cfg.extraPackages
     );
 
-    programs.git.enable = lib.mkDefault true;
-    programs.git.includes = lib.mkAfter [
-      { path = "${config.xdg.configHome}/extra.gitconfig"; }
-    ];
+    programs.git = {
+      enable = lib.mkDefault true;
+      aliases = {
+        files = "!git diff --name-only $(git merge-base HEAD $(git rev-parse --abbrev-ref origin/HEAD))";
+        stat = "!git diff --stat $(git merge-base HEAD $(git rev-parse --abbrev-ref origin/HEAD))";
+      };
+      includes = lib.mkAfter [
+        { path = "${config.xdg.configHome}/delta/catpuccin.gitconfig"; }
+        { path = "${config.xdg.configHome}/local_configs/gitconfig"; }
+      ];
+      extraConfig = {
+        pull.rebase = false;
+        push.default = "current";
+        init.defaultBranch = "main";
+        core = {
+          pager = "delta";
+          editor = "nvim";
+        };
+        delta = {
+          line-numbers = true;
+          features = "catppuccin-macchiato";
+        };
+        merge.conflictstyle = "diff3";
+        diff.colorMoved = "default";
+        interactive.diffFilter = "delta --color-only";
+      };
+    };
 
-    xdg.configFile."extra.gitconfig".source = ../../gitconfig/.config/extra.gitconfig;
     xdg.configFile."delta/catpuccin.gitconfig".text = lib.mkDefault "";
     xdg.configFile."local_configs/gitconfig".text = lib.mkDefault "";
   };

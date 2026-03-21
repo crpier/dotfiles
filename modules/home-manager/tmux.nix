@@ -22,7 +22,11 @@ in
       ++ cfg.extraPackages
     );
 
-    home.file.".tmux.conf".source = ../../tmux/.tmux.conf;
+    programs.tmux = {
+      enable = true;
+      extraConfig = builtins.readFile ../../tmux/.tmux.conf;
+    };
+
     xdg.configFile."local_configs/.tmux.conf".text = lib.mkDefault "";
   };
 }
