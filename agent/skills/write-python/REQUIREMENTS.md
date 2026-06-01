@@ -176,7 +176,7 @@ TODO levels:
 - `# FIXME:` can be committed on a branch, but should not merge to `main`.
 - `# XXX:` should be fixed before committing.
 
-## Function size and abstractions
+## Function size, helper locality, and abstractions
 
 There is no default preference for short functions. Prefer deep modules: narrow
 interfaces with substantial implementation behind them.
@@ -184,6 +184,10 @@ interfaces with substantial implementation behind them.
 Avoid passthrough functions and single-use helpers unless they clarify genuinely
 complex logic. A function may handle multiple related responsibilities when that
 keeps behavior local and easier to understand.
+
+Keep helpers local to their scope. If a private helper is only used by one
+class, make it a private method or staticmethod on that class. If it is only
+used by one method, define it inside that method or inline it.
 
 Locality of behavior and DRY often conflict. Prefer locality when removing
 repetition would scatter the behavior or create a premature abstraction.

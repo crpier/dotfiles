@@ -34,6 +34,8 @@ requirement.
 - Do not introduce an abstraction until there are at least two implementations.
 - Do not create passthrough functions or tiny single-use helpers unless they
   clarify genuinely complex logic.
+- Keep helpers local to their scope: one class -> private method/staticmethod;
+  one method -> nested function or inline.
 - Prefer context managers over manual resource management.
 - Raise project/domain exceptions, never stdlib exceptions. Use
   `raise DomainError(...) from e` when wrapping another exception.
@@ -71,6 +73,24 @@ requirement.
   always have docstrings.
 - Public functions and classes, especially classes, should have runnable Python
   usage examples in docstrings.
+- Private helpers should have docstrings when they encode non-obvious behavior,
+  domain rules, validation rules, state transitions, SQL/query compilation,
+  concurrency behavior, or error translation.
+- Do not require docstrings for tiny local helpers whose name fully explains
+  their behavior.
+- Private-helper docstrings should explain why the helper exists and what
+  invariant it protects, not restate each line of code.
+- Prefer this shape for internal helpers:
+
+  ```python
+  def _compile_predicates_sql(...) -> ...:
+      """Compile accumulated where() predicates as AND-ed SQL fragments.
+
+      Query builders store repeated where() calls as separate predicates so the
+      explicit-filter intent remains observable until compilation.
+      """
+  ```
+
 - Explain the `what` and/or `why`; explain the `how` only if surprising.
 - Do not include `Args:`, `Returns:`, or `Raises:` sections.
 - Use triple double quotes; no blank line after opening quotes or before
