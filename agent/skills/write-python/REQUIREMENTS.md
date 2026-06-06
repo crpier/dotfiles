@@ -144,12 +144,39 @@ other declarative class systems where class-body fields are the API.
 Use `snektest` with `@test()`. The decorated function name is the test name, so
 it may omit `test_` even though test files still use `test_*.py`.
 
-Keep test names short and descriptive. Use the test function docstring for the
-case description or scenario details.
+Tests must verify one behavior at a time. Do not write “full surface”,
+“end-to-end everything”, or umbrella tests that combine multiple independent
+behaviors like insert + select result shapes + update + delete in one test.
+Split them into focused tests with names that state the single behavior under
+test.
+
+Setup may use supporting operations, but assertions should target one behavior.
+For example, a select test may insert records as setup, but the assertions
+should verify only the selected result-shape behavior. If a test has unrelated
+assertion groups or naturally has two independent assertion branches, split it
+into focused tests with names that describe each behavior.
+
+Avoid tests that exercise unrelated runtimes, backends, adapters, or policies in
+the same test. For example, SQLite runtime behavior and MariaDB runtime behavior
+should be separate tests.
+
+Prefer separate tests for result-shape behavior, mutation behavior, error
+behavior, lifecycle behavior, and backend policy behavior.
+
+Keep test names short and descriptive. Prefer names that state the single
+behavior under test, not umbrella names like `covers X, Y, and Z`. If a test
+name contains words like “full”, “surface”, “and”, or lists multiple verbs,
+challenge whether it should be multiple tests. Use the test function docstring
+for the case description or scenario details.
+
+Fixture loading should happen at the top of the test body, immediately after the
+docstring and before local classes, setup logic, or assertions. Mid-test
+`load_fixture(...)` is a smell: either move fixture acquisition to the top, or
+split the test so each test has its own clear setup and behavior.
 
 When a class or module exists only to exercise behavior under test, define it
-inside the test function when practical. This improves locality and avoids
-polluting the test module with one-off fixtures.
+inside the test function when practical. External fixtures should be acquired
+first so the test's dependencies are visible immediately.
 
 Use test databases for database behavior and fake services for external systems.
 Clean up test data after tests.

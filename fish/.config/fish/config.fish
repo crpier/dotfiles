@@ -27,9 +27,10 @@ end
 
 set -U fish_prompt_pwd_dir_length 100
 set -U VIRTUAL_ENV_DISABLE_PROMPT yes
+set -gx PNPM_HOME "/home/crpier/.local/share/pnpm"
 
 # General settings
-set -gx PATH ~/.local/bin ~/.cargo/bin /home/crpier/.opencode/bin/ ~/.bun/bin $PATH
+set -gx PATH ~/.local/bin ~/.cargo/bin /home/crpier/.opencode/bin/ ~/.bun/bin $PNPM_HOME $PATH
 set -gx EDITOR nvim
 
 # Aliases

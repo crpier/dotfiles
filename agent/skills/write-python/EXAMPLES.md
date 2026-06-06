@@ -161,6 +161,41 @@ def ClassUnderTest_is_validated() -> None:
     ...
 ```
 
+## Fixture acquisition order
+
+Good:
+
+```python
+@test()
+def QueryBuilder_compiles_explicit_filters() -> None:
+    """Compile explicit filters without merging them with runtime behavior."""
+    fixture = load_fixture("query_builder_explicit_filters")
+
+    class QueryBuilderUnderTest(QueryBuilder):
+        ...
+
+    result = QueryBuilderUnderTest(fixture).compile()
+
+    assert result == fixture.expected_sql
+```
+
+Bad:
+
+```python
+@test()
+def QueryBuilder_compiles_filters_and_sqlite_runtime() -> None:
+    """Compile filters and check SQLite runtime behavior."""
+    class QueryBuilderUnderTest(QueryBuilder):
+        ...
+
+    query_builder = QueryBuilderUnderTest()
+    filter_fixture = load_fixture("query_builder_explicit_filters")
+    runtime_fixture = load_fixture("sqlite_runtime")
+
+    assert query_builder.compile(filter_fixture) == filter_fixture.expected_sql
+    assert sqlite_runtime_accepts(runtime_fixture)
+```
+
 ## Lint suppressions
 
 Good:

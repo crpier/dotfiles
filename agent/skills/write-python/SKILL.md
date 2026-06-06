@@ -104,9 +104,21 @@ requirement.
 ## Testing
 
 - Use `snektest` with `@test()` and typed test functions.
-- Test names may omit `test_`; keep them short and descriptive.
+- Tests must verify one behavior at a time. Do not write “full surface”,
+  “end-to-end everything”, or umbrella tests that combine multiple independent
+  behaviors like insert + select result shapes + update + delete in one test.
+  Split them into focused tests with names that state the single behavior under
+  test.
+- Setup may use supporting operations, but assertions should target one
+  behavior. If a test has unrelated assertion groups, split it.
+- If a test name contains words like “full”, “surface”, “and”, or lists
+  multiple verbs, challenge whether it should be multiple tests.
+- Prefer separate tests for result-shape behavior, mutation behavior, error
+  behavior, lifecycle behavior, and backend policy behavior.
 - Use test function docstrings to explain the case.
-- Define classes under test inside the test function when practical.
+- Load fixtures at the top of the test body, immediately after the docstring.
+  Mid-test `load_fixture(...)` is a smell; move it up or split the test.
+- Define local classes under test after external fixture acquisition.
 - Prefer fakes for external services and test databases for database behavior.
 - Avoid `cast()` in tests; it usually indicates poor testability.
 
