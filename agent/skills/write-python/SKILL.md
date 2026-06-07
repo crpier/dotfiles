@@ -32,13 +32,17 @@ requirement.
 - Prefer custom domain types over primitives for validated domain concepts.
 - Prefer locality of behavior over aggressive DRY.
 - Do not introduce an abstraction until there are at least two implementations.
-- Do not create passthrough functions or tiny single-use helpers unless they
-  clarify genuinely complex logic.
+- Do not create passthrough, one-line, or tiny single-use functions unless
+  they clarify genuinely complex logic. Never create a one-line helper solely
+  to satisfy a lint rule.
 - Keep helpers local to their scope: one class -> private method/staticmethod;
   one method -> nested function or inline.
 - Prefer context managers over manual resource management.
 - Raise project/domain exceptions, never stdlib exceptions. Use
   `raise DomainError(...) from e` when wrapping another exception.
+- For Ruff TRY301 (`raise-within-try`), restructure production code to avoid
+  raising inside `try`; if truly unavoidable, ignore the raise line with
+  `# noqa: TRY301`. Do not create a one-line function that only raises.
 - Convert domain exceptions to HTTP exceptions at API boundaries.
 
 ## Imports and public APIs
@@ -111,6 +115,9 @@ requirement.
   test.
 - Setup may use supporting operations, but assertions should target one
   behavior. If a test has unrelated assertion groups, split it.
+- Tests must not mix setup, behavior under test, and assertions in the same
+  logical block. Use fixtures or clearly separated helper setup when setup is
+  non-trivial, especially for database state.
 - If a test name contains words like “full”, “surface”, “and”, or lists
   multiple verbs, challenge whether it should be multiple tests.
 - Prefer separate tests for result-shape behavior, mutation behavior, error
@@ -118,8 +125,15 @@ requirement.
 - Use test function docstrings to explain the case.
 - Load fixtures at the top of the test body, immediately after the docstring.
   Mid-test `load_fixture(...)` is a smell; move it up or split the test.
+- Use fixtures to create external resources and seed prerequisite state.
+- The test body should make the behavior under test obvious.
+- Avoid doing setup inserts, the mutation under test, and result
+  fetching/assertion all inside one transaction/block unless the transaction
+  boundary itself is the behavior under test.
 - Define local classes under test after external fixture acquisition.
 - Prefer fakes for external services and test databases for database behavior.
+- In tests, ignore Ruff TRY301 violations on the same line with
+  `# noqa: TRY301`; do not extract a one-line raising helper.
 - Avoid `cast()` in tests; it usually indicates poor testability.
 
 ## References

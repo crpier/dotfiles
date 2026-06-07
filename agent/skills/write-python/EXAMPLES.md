@@ -196,6 +196,40 @@ def QueryBuilder_compiles_filters_and_sqlite_runtime() -> None:
     assert sqlite_runtime_accepts(runtime_fixture)
 ```
 
+## Arrange/Act/Assert separation
+
+Good:
+
+```python
+@test()
+async def UserRepository_updates_selected_users() -> None:
+    """Update matching users without testing unrelated result-shape behavior."""
+    database = await load_fixture(database_with_seeded_users())
+
+    async with database.transaction() as tx:
+        await tx.execute(update(User).set(active=False).where(User.age < 18))
+
+    async with database.transaction() as tx:
+        rows = await tx.fetch_all(select(User.id, User.active).all())
+
+    assert_eq(rows, [("ada", True), ("grace", False)])
+```
+
+Bad:
+
+```python
+@test()
+async def UserRepository_full_insert_update_and_select_surface() -> None:
+    """Insert, update, fetch result shape, and assert lifecycle behavior."""
+    async with database.transaction() as tx:
+        await tx.execute(insert(User).values(id="grace", age=17))
+        await tx.execute(update(User).set(active=False).where(User.age < 18))
+        rows = await tx.fetch_all(select(User.id, User.active).all())
+
+        assert_eq(rows, [("grace", False)])
+        assert await tx.fetch_one(select(count()).from_(User)) == 1
+```
+
 ## Lint suppressions
 
 Good:
@@ -203,6 +237,42 @@ Good:
 ```python
 def method(self, unused_argument: str) -> None:  # noqa: ARG002 - protocol
     ...
+```
+
+For TRY301 in tests, suppress the line instead of extracting a raise-only
+helper.
+
+Good:
+
+```python
+@test()
+def DatabaseUnavailableError_is_caught() -> None:
+    caught_error: DatabaseUnavailableError | None = None
+
+    try:
+        raise DatabaseUnavailableError("down")  # noqa: TRY301
+    except DatabaseUnavailableError as e:
+        caught_error = e
+
+    assert caught_error is not None
+```
+
+Bad:
+
+```python
+def raise_database_unavailable_error() -> None:
+    raise DatabaseUnavailableError("down")
+
+@test()
+def DatabaseUnavailableError_is_caught() -> None:
+    caught_error: DatabaseUnavailableError | None = None
+
+    try:
+        raise_database_unavailable_error()
+    except DatabaseUnavailableError as e:
+        caught_error = e
+
+    assert caught_error is not None
 ```
 
 ## Pydantic

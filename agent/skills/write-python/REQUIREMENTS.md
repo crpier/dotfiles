@@ -99,6 +99,12 @@ Catch exceptions at the level that has enough context to handle, log, retry, or
 translate them. At API boundaries, translate domain exceptions into HTTP
 exceptions or the framework's boundary type.
 
+For Ruff TRY301 (`raise-within-try`), first restructure production code so the
+raise does not happen inside the `try` block. If the surrounding control flow
+really needs to raise inside `try`, ignore the raise line with
+`# noqa: TRY301`. Do not create a passthrough or one-line helper that only
+raises an error just to satisfy the rule.
+
 Name caught exceptions `e`, unless that would shadow an existing name in the
 same scope.
 
@@ -156,6 +162,27 @@ should verify only the selected result-shape behavior. If a test has unrelated
 assertion groups or naturally has two independent assertion branches, split it
 into focused tests with names that describe each behavior.
 
+Tests must not mix setup, behavior under test, and assertions in the same
+logical block. Use fixtures or clearly separated helper setup when setup is
+non-trivial, especially for database state. The test body should make the
+behavior under test obvious.
+
+Avoid doing setup inserts, the mutation under test, and result
+fetching/assertion all inside one transaction or block unless the transaction
+boundary itself is the behavior under test. Prefer this shape:
+
+```python
+database = await load_fixture(database_with_seeded_users())
+
+async with database.transaction() as tx:
+    await tx.execute(update(User).set(...).where(...))
+
+async with database.transaction() as tx:
+    rows = await tx.fetch_all(select(...).all())
+
+assert_eq(rows, expected)
+```
+
 Avoid tests that exercise unrelated runtimes, backends, adapters, or policies in
 the same test. For example, SQLite runtime behavior and MariaDB runtime behavior
 should be separate tests.
@@ -170,7 +197,8 @@ challenge whether it should be multiple tests. Use the test function docstring
 for the case description or scenario details.
 
 Fixture loading should happen at the top of the test body, immediately after the
-docstring and before local classes, setup logic, or assertions. Mid-test
+docstring and before local classes, setup logic, or assertions. Use fixtures to
+create external resources and seed prerequisite state. Mid-test
 `load_fixture(...)` is a smell: either move fixture acquisition to the top, or
 split the test so each test has its own clear setup and behavior.
 
@@ -182,6 +210,10 @@ Use test databases for database behavior and fake services for external systems.
 Clean up test data after tests.
 
 Do not mark TDD phases with comments like `RED` or `GREEN`.
+
+If a test violates Ruff TRY301 (`raise-within-try`), ignore it on the same line
+with `# noqa: TRY301`. Do not extract a one-line helper whose only behavior is
+raising the error.
 
 Avoid `cast()` in tests even more strongly than in library code. It usually
 means the production code is hard to test or the test is reaching through the
@@ -208,9 +240,11 @@ TODO levels:
 There is no default preference for short functions. Prefer deep modules: narrow
 interfaces with substantial implementation behind them.
 
-Avoid passthrough functions and single-use helpers unless they clarify genuinely
-complex logic. A function may handle multiple related responsibilities when that
-keeps behavior local and easier to understand.
+Avoid passthrough, one-line, and single-use functions unless they clarify
+genuinely complex logic. Never add a function whose only purpose is to move a
+single expression, raise statement, or lint violation somewhere else. A function
+may handle multiple related responsibilities when that keeps behavior local and
+easier to understand.
 
 Keep helpers local to their scope. If a private helper is only used by one
 class, make it a private method or staticmethod on that class. If it is only
