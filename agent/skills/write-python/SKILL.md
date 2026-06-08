@@ -27,6 +27,17 @@ requirement.
 
 - Prefer explicit, domain-rich names: `attribute_index`, `database_session`,
   `cluster_status`; avoid abbreviations and one-letter names.
+- A name should add information. If the receiving keyword already gives a value
+  its meaning, do not create a temporary name just to repeat it.
+- Do not introduce single-use local variables for simple literals or simple
+  constructors when the value is immediately passed to a named argument. Inline
+  the value instead. A temporary variable is appropriate only when it is reused,
+  the expression is complex enough to obscure the call site, or the name adds
+  domain meaning that is not already present in the destination parameter.
+- Avoid generic single-use temporaries like `timestamp`, `data`, `result`,
+  `value`, or `payload` when they only restate the type or shape of the value.
+  Either inline the expression or use a domain name such as
+  `event_happened_at`, `published_at`, or `retry_deadline`.
 - Use `get_` only for pure non-IO functions. Use `fetch_` for IO that returns a
   value.
 - Prefer custom domain types over primitives for validated domain concepts.
@@ -44,6 +55,29 @@ requirement.
   raising inside `try`; if truly unavoidable, ignore the raise line with
   `# noqa: TRY301`. Do not create a one-line function that only raises.
 - Convert domain exceptions to HTTP exceptions at API boundaries.
+
+### Single-use temporaries
+
+Prefer:
+
+```python
+pending_event = Event(
+    enabled=True,
+    happened_at=datetime(2026, 1, 2, 3, 4, 5, 678901, tzinfo=UTC),
+    payload={"ok": True},
+)
+```
+
+Avoid:
+
+```python
+timestamp = datetime(2026, 1, 2, 3, 4, 5, 678901, tzinfo=UTC)
+pending_event = Event(
+    enabled=True,
+    happened_at=timestamp,
+    payload={"ok": True},
+)
+```
 
 ## Imports and public APIs
 
