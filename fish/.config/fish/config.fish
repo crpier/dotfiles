@@ -90,6 +90,8 @@ alias et "eza -aT --git-ignore -I '.git|.venv|node_modules|.solid|__pycache__'"
 # misc
 alias stats "echo $status"
 alias rmf "rm -rf"
+alias claude "claude --dangerously-skip-permissions"
+alias c "claude"
 
 # abbreviaations
 abbr ur "uv run"

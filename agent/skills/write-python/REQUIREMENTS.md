@@ -42,6 +42,21 @@ Do not use generated-looking `Args:`, `Returns:`, or `Raises:` sections.
 Wrapped docstring lines should be balanced rather than leaving one very long
 line followed by a tiny fragment.
 
+Docstrings target markdown, not reStructuredText. Quote inline code, identifiers,
+and literals with single backticks (`loose`), never rst double backticks
+(``loose``). Do not use rst roles or field lists (`:param:`, `:return:`,
+`:meth:`) or directives (`.. note::`).
+
+Docstrings and comments must not cite external project-management or
+decision-tracking artifacts: issue or ticket numbers, ADR numbers, story or
+acceptance-criterion numbers, "slice", "epic", "vertical slice", sprint or
+milestone names. Explain the invariant or domain rule in its own terms instead.
+For example, write "Capture always lands loose — there is no direct-to-tethered
+path" rather than "ADR-0001: Capture always lands loose". These citations rot as
+trackers change and are meaningless to anyone reading the code without the
+tracker open. Keep the domain vocabulary and the reasoning; drop only the
+reference.
+
 ## Naming
 
 Use explicit names over abbreviations. Prefer names that encode domain meaning,

@@ -116,8 +116,17 @@ pending_event = Event(
   concurrency behavior, or error translation.
 - Do not require docstrings for tiny local helpers whose name fully explains
   their behavior.
+- Docstrings target markdown, not rst: quote inline code with single backticks
+  (`loose`), not rst double backticks (``loose``); avoid rst roles/directives.
 - Private-helper docstrings should explain why the helper exists and what
   invariant it protects, not restate each line of code.
+- Do not reference external project-management or decision-tracking artifacts in
+  docstrings or comments: issue/ticket numbers, ADR numbers, story or acceptance
+  -criterion numbers, "slice", "epic", "vertical slice", sprint or milestone
+  names. State the domain rule or invariant directly. The code is the source of
+  truth, not a pointer into a tracker; such references rot and mean nothing to a
+  reader without the tracker. Domain vocabulary and the real reasoning stay;
+  only the citation goes.
 - Prefer this shape for internal helpers:
 
   ```python

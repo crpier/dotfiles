@@ -61,6 +61,15 @@ function installFooter(pi: ExtensionAPI, ctx: ExtensionContext) {
 				const sessionName = ctx.sessionManager.getSessionName();
 				if (sessionName) pwd += ` • ${sessionName}`;
 
+				const extensionStatuses = footerData.getExtensionStatuses();
+				if (extensionStatuses.size > 0) {
+					const statusText = Array.from(extensionStatuses.entries())
+						.sort(([a], [b]) => a.localeCompare(b))
+						.map(([, text]) => sanitizeStatusText(text))
+						.join(" ");
+					pwd += ` • ${statusText}`;
+				}
+
 				const statsParts: string[] = [];
 				if (totalInput) statsParts.push(`↑${formatTokens(totalInput)}`);
 				if (totalOutput) statsParts.push(`↓${formatTokens(totalOutput)}`);
@@ -111,15 +120,6 @@ function installFooter(pi: ExtensionAPI, ctx: ExtensionContext) {
 					truncateToWidth(theme.fg("dim", pwd), width, theme.fg("dim", "...")),
 					theme.fg("dim", statsLine),
 				];
-
-				const extensionStatuses = footerData.getExtensionStatuses();
-				if (extensionStatuses.size > 0) {
-					const statusLine = Array.from(extensionStatuses.entries())
-						.sort(([a], [b]) => a.localeCompare(b))
-						.map(([, text]) => sanitizeStatusText(text))
-						.join(" ");
-					lines.push(truncateToWidth(statusLine, width, theme.fg("dim", "...")));
-				}
 
 				return lines;
 			},
