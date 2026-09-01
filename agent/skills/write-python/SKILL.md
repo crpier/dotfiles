@@ -184,3 +184,17 @@ pending_event = Event(
 - Open [REQUIREMENTS.md](REQUIREMENTS.md) for nuance and edge cases.
 - Open [EXAMPLES.md](EXAMPLES.md) when applying an unfamiliar convention or
   reviewing ambiguous code.
+
+# TODO:
+
+- refine this: "docstrings should concern with the responsibilities of the thing they document, not things outside that"
+  Example:
+
+    ```python
+    class SupadataTranscriptProvider(TranscriptProvider):
+        """The paid `TranscriptProvider` backed by Supadata (the primary when enabled).
+
+        Enabled only when key + flag are set, in which case it leads the chain. It
+    ```
+
+We really don't care when the transcript provider is enabled or that it's paid, only why it exists and an overview of how to use it.

@@ -1,4 +1,4 @@
-import type { TuiPlugin, TuiPluginApi } from "@opencode-ai/plugin/tui"
+import { Plugin, type Context } from "@opencode-ai/plugin/tui"
 import { spawn } from "node:child_process"
 import { mkdtemp, rm, writeFile } from "node:fs/promises"
 import { tmpdir } from "node:os"
@@ -11,58 +11,75 @@ type Options = {
   delete_after_close?: boolean
 }
 
-const tui: TuiPlugin = async (api, options) => {
-  const config = parseOptions(options)
-  let lastOpenedMessageID = ""
+export default Plugin.define({
+  id: "latest-response-editor",
+  setup(context) {
+    const config = parseOptions(context.options)
+    let lastOpenedMessageID = ""
 
-  const openCurrent = async () => {
-    const latest = latestAssistant(api)
-    if (!latest) {
-      api.ui.toast({ variant: "warning", message: "No assistant response found" })
-      return
+    const openCurrent = async () => {
+      const latest = latestAssistant(context)
+      if (!latest) {
+        context.ui.toast.show({ variant: "warning", message: "No assistant response found" })
+        return
+      }
+
+      lastOpenedMessageID = latest.messageID
+      try {
+        await openInEditor(context, latest.text, config.delete_after_close)
+      } catch (error) {
+        context.ui.toast.show({ variant: "error", message: error instanceof Error ? error.message : String(error) })
+      }
     }
 
-    lastOpenedMessageID = latest.messageID
-    try {
-      await openInEditor(api, latest.text, config.delete_after_close)
-    } catch (error) {
-      api.ui.toast({ variant: "error", message: error instanceof Error ? error.message : String(error) })
-    }
-  }
-
-  api.keymap.registerLayer({
-    commands: [
-      {
-        name: COMMAND,
-        title: "Open latest agent response in $EDITOR",
-        category: "Session",
-        namespace: "palette",
-        slashName: "latest-response",
-        suggested: () => api.route.current.name === "session",
-        enabled: () => api.route.current.name === "session",
-        run() {
-          void openCurrent()
-        },
+    const unregisterCommand = context.ui.slot({
+      append: "app",
+      render: () => {
+        context.keymap.layer(() => ({
+          mode: "global",
+          commands: [
+            {
+              id: COMMAND,
+              title: "Open latest agent response in $EDITOR",
+              group: "Session",
+              palette: true,
+              slash: { name: "latest-response" },
+              suggested: () => context.ui.router.current().type === "session",
+              enabled: () => context.ui.router.current().type === "session",
+              run: openCurrent,
+            },
+          ],
+        }))
+        return null
       },
-    ],
-  })
-
-  if (!config.auto_open_on_idle) return
-
-  api.event.on("session.idle", (event) => {
-    if (api.route.current.name !== "session") return
-    if (api.route.current.params.sessionID !== event.properties.sessionID) return
-
-    const latest = latestAssistant(api)
-    if (!latest) return
-    if (latest.messageID === lastOpenedMessageID) return
-
-    lastOpenedMessageID = latest.messageID
-    void openInEditor(api, latest.text, config.delete_after_close).catch((error) => {
-      api.ui.toast({ variant: "error", message: error instanceof Error ? error.message : String(error) })
     })
-  })
-}
+
+    if (!config.auto_open_on_idle) return unregisterCommand
+
+    const stopAutoOpen = context.data.on("session.execution.succeeded", (event) => {
+      const route = context.ui.router.current()
+      if (route.type !== "session") return
+      if (route.sessionID !== event.data.sessionID) return
+
+      void (async () => {
+        await context.data.session.message.sync(route.sessionID)
+        const latest = latestAssistant(context)
+        if (!latest) return
+        if (latest.messageID === lastOpenedMessageID) return
+
+        lastOpenedMessageID = latest.messageID
+        await openInEditor(context, latest.text, config.delete_after_close)
+      })().catch((error) => {
+        context.ui.toast.show({ variant: "error", message: error instanceof Error ? error.message : String(error) })
+      })
+    })
+
+    return () => {
+      stopAutoOpen()
+      unregisterCommand()
+    }
+  },
+})
 
 function parseOptions(options: Record<string, unknown> | undefined): Options {
   return {
@@ -71,17 +88,17 @@ function parseOptions(options: Record<string, unknown> | undefined): Options {
   }
 }
 
-function latestAssistant(api: TuiPluginApi) {
-  if (api.route.current.name !== "session") return
+function latestAssistant(context: Context) {
+  const route = context.ui.router.current()
+  if (route.type !== "session") return
 
-  const message = api.state.session
-    .messages(api.route.current.params.sessionID)
+  const message = context.data.session.message
+    .list(route.sessionID)
     .toReversed()
-    .find((item) => item.role === "assistant")
+    .find((item) => item.type === "assistant")
   if (!message) return
 
-  const text = api.state
-    .part(message.id)
+  const text = message.content
     .filter((part) => part.type === "text" && part.text.trim())
     .map((part) => part.text)
     .join("\n\n")
@@ -91,10 +108,10 @@ function latestAssistant(api: TuiPluginApi) {
   return { messageID: message.id, text }
 }
 
-async function openInEditor(api: TuiPluginApi, text: string, deleteAfterClose: boolean) {
+async function openInEditor(context: Context, text: string, deleteAfterClose: boolean) {
   const editor = process.env.VISUAL || process.env.EDITOR
   if (!editor) {
-    api.ui.toast({ variant: "error", message: "Set $EDITOR or $VISUAL first" })
+    context.ui.toast.show({ variant: "error", message: "Set $EDITOR or $VISUAL first" })
     return
   }
 
@@ -102,15 +119,15 @@ async function openInEditor(api: TuiPluginApi, text: string, deleteAfterClose: b
   const file = join(dir, "latest-response.md")
   await writeFile(file, text)
 
-  api.renderer.suspend()
-  api.renderer.currentRenderBuffer.clear()
+  context.renderer.suspend()
+  context.renderer.currentRenderBuffer.clear()
 
   try {
-    await runEditor(editor, file, api.state.path.directory)
+    await runEditor(editor, file, (context.location ?? context.data.location.default()).directory)
   } finally {
-    api.renderer.currentRenderBuffer.clear()
-    api.renderer.resume()
-    api.renderer.requestRender()
+    context.renderer.currentRenderBuffer.clear()
+    context.renderer.resume()
+    context.renderer.requestRender()
     if (deleteAfterClose) await rm(dir, { recursive: true, force: true })
   }
 }
@@ -130,5 +147,3 @@ function runEditor(editor: string, file: string, cwd: string) {
     child.on("error", reject)
   })
 }
-
-export default { id: "latest-response-editor", tui }

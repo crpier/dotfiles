@@ -1,0 +1,19 @@
+{
+  "theme": {
+    "name": "catppuccin-macchiato"
+  },
+  "keybinds": {},
+  "plugins": [
+    "./plugins/latest-response-editor.tsx",
+    "./plugins/context-usage.tsx"
+  ],
+  "diffs": {
+    "wrap": "word"
+  },
+  "session": {
+    "sidebar": "auto",
+    "scrollbar": true,
+    "thinking": "show"
+  },
+  "animations": true
+}
