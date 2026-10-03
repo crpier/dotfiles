@@ -14,4 +14,4 @@ Loop instructions are injected at the message tail rather than by changing the s
 
 For example, `tell me a short funny joke every 10 seconds` becomes a repeated prompt like `Tell me one short, funny joke.`
 
-Only one loop can be active per session. Setting another replaces it. Minimum interval: 10 seconds. Each run is a normal user turn and can use tools, modify files, and incur model/API costs. Stop it with `/loop stop` before leaving an autonomous task unattended.
+Only one loop can be active per session. Setting another replaces it. Minimum interval: 10 seconds. Each run is a normal user turn and can use tools, modify files, and incur model/API costs. Stop it with `/loop stop` before leaving an autonomous task unattended. The model can call `stop_loop` when a task finishes or needs to stop. This clears the timer and persists the stopped state without aborting the current turn. Calling it with no active loop is safe.

@@ -212,6 +212,23 @@ export default function loopExtension(pi: ExtensionAPI) {
 		},
 	});
 
+	pi.registerTool({
+		name: "stop_loop",
+		label: "Stop Loop",
+		description:
+			"Stop the recurring loop in this pi session. Use when its task is complete, the user requests cancellation, or an error requires attention. Safe to call when no loop is active. Does not abort the current turn.",
+		promptSnippet: "Stop the recurring loop in this session",
+		parameters: Type.Object({}),
+		async execute(_toolCallId, _params, _signal, _onUpdate, ctx) {
+			const wasActive = loop !== undefined;
+			stopLoop(ctx, true);
+			return {
+				content: [{ type: "text", text: wasActive ? "Loop stopped." : "No active loop." }],
+				details: { stopped: wasActive },
+			};
+		},
+	});
+
 	pi.registerCommand("loop", {
 		description: "Repeat a prompt at an LLM-inferred interval; use 'status' or 'stop' to manage it",
 		getArgumentCompletions: (prefix) => {
