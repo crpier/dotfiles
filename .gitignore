@@ -1,3 +1,7 @@
 .git
+__pycache__/
+*.py[cod]
+# Machine-specific Git identities must never be committed.
+git/.config/git/local
 opencode/.config/opencode/package-lock.json
 opencode/.config/opencode/tui.json

@@ -1,0 +1,40 @@
+# Shared Git settings. Keep private identity overrides in ~/.config/git/local.
+# This file is symlinked from dotfiles; edit it here rather than with --global.
+[user]
+    name = crpier
+[core]
+    editor = nvim
+[init]
+    defaultBranch = main
+[pull]
+    ff = only
+    rebase = false
+[push]
+    default = simple
+    autoSetupRemote = true
+[merge]
+    conflictStyle = diff3
+[diff]
+    algorithm = histogram
+    colorMoved = plain
+    mnemonicPrefix = true
+[commit]
+    verbose = true
+[column]
+    ui = auto
+[branch]
+    sort = -committerdate
+[tag]
+    sort = -version:refname
+[rerere]
+    enabled = true
+    autoupdate = true
+[alias]
+    co = checkout
+    br = branch
+    ci = commit
+    st = status
+    lg = log --graph --oneline --decorate
+    lg2 = log --graph --decorate --pretty=fuller
+[include]
+    path = ~/.config/git/local

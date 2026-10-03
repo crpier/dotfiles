@@ -1,0 +1,31 @@
+{
+  "git": [
+    {"source": "git/.config/git/config", "target": ".config/git/config"}
+  ],
+  "mise": [
+    {"source": "mise/.config/mise/config.toml", "target": ".config/mise/config.toml"}
+  ],
+  "hypr": [
+    {"source": "hypr/.config/hypr", "target": ".config/hypr", "mode": "files"}
+  ],
+  "ghostty": [
+    {"source": "ghostty/.config/ghostty/config", "target": ".config/ghostty/config"},
+    {"source": "ghostty/.config/xdg-terminals.list", "target": ".config/xdg-terminals.list"}
+  ],
+  "fish": [
+    {"source": "fish/.config/fish", "target": ".config/fish", "mode": "files"}
+  ],
+  "idle": [
+    {"source": "idle/.config/omarchy/idle-suspend.qml", "target": ".config/omarchy/idle-suspend.qml"},
+    {"source": "idle/.config/systemd/user/idle-suspend.service", "target": ".config/systemd/user/idle-suspend.service"}
+  ],
+  "voxtype": [
+    {"source": "voxtype/.config/voxtype/config.toml", "target": ".config/voxtype/config.toml"}
+  ],
+  "agent": [
+    {"source": "agent/skills", "target": ".agents/skills/personal"}
+  ],
+  "pi-extensions": [
+    {"source": "pi-extensions", "target": ".pi/agent/extensions"}
+  ]
+}

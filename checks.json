@@ -1,0 +1,70 @@
+{
+  "git": {
+    "executables": {
+      "git": "Needed to use Git",
+      "nvim": "Configured as the commit editor"
+    },
+    "paths": {
+      ".config/git/local": "Set your private identity here using git config --file ~/.config/git/local user.email <email>"
+    }
+  },
+  "mise": {
+    "executables": {
+      "mise": "Needed to install and activate configured development tools"
+    },
+    "paths": {}
+  },
+  "hypr": {
+    "executables": {
+      "Hyprland": "Needed to run the window manager",
+      "hyprctl": "Needed to reload and validate Hyprland configuration",
+      "1password": "Opened at Hyprland login so the SSH agent can be unlocked"
+    },
+    "paths": {
+      ".config/hypr/hyprland.lua": "Omarchy's main loader must load the personal override modules"
+    }
+  },
+  "ghostty": {
+    "executables": {
+      "ghostty": "Needed to run the terminal",
+      "fish": "Configured as Ghostty's shell"
+    },
+    "paths": {}
+  },
+  "fish": {
+    "executables": {
+      "fish": "Needed to run the shell",
+      "git": "Used by the Git prompt and aliases",
+      "nvim": "Configured editor",
+      "eza": "Used by directory-listing aliases",
+      "bat": "Used by the b alias",
+      "uv": "Used by Python and editor aliases"
+    },
+    "paths": {}
+  },
+  "idle": {
+    "executables": {
+      "qs": "Quickshell provides the Wayland idle monitor; already included in Omarchy",
+      "systemctl": "Used to request suspend and manage the user service",
+      "omarchy": "Keeps Omarchy's built-in idle locking disabled"
+    },
+    "paths": {}
+  },
+  "voxtype": {
+    "executables": {
+      "voxtype": "Needed to run the dictation daemon",
+      "wtype": "Wayland typing driver used by this installation",
+      "wl-copy": "Used to copy transcriptions for paste mode and clipboard fallback",
+      "wl-paste": "Used to save the previous clipboard contents for restoration"
+    },
+    "paths": {
+      ".local/share/voxtype/models/ggml-large-v3.bin": "Download the configured large-v3 model with voxtype setup --download --model large-v3"
+    }
+  },
+  "pi-extensions": {
+    "executables": {
+      "pi": "Needed to load the extensions"
+    },
+    "paths": {}
+  }
+}

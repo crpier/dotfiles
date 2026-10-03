@@ -1,0 +1,16 @@
+[Unit]
+Description=Suspend after one hour idle, without automatic locking
+After=wayland-session-waitenv.service
+PartOf=graphical-session.target
+ConditionEnvironment=WAYLAND_DISPLAY
+
+[Service]
+Type=simple
+# Suppress Omarchy's built-in screensaver/idle lock on every login.
+ExecStartPre=/usr/bin/omarchy toggle idle stay-awake
+ExecStart=/usr/bin/qs --no-duplicate --path %h/.config/omarchy/idle-suspend.qml
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=graphical-session.target

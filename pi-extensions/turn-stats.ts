@@ -6,6 +6,7 @@ interface TurnStats {
 	outputTokens: number;
 	tokensPerSecond: number;
 	averageTtftMs?: number;
+	estimatedCostUsd?: number;
 	endedAt?: number;
 }
 
@@ -35,6 +36,7 @@ export default function (pi: ExtensionAPI) {
 	let currentTurn: number | undefined;
 	let totalDurationMs = 0;
 	let totalOutputTokens = 0;
+	let totalCostUsd = 0;
 	let completedTurns = 0;
 	let requestStartedAt: number | undefined;
 	let totalTtftMs = 0;
@@ -43,13 +45,14 @@ export default function (pi: ExtensionAPI) {
 	pi.registerEntryRenderer<TurnStats>(ENTRY_TYPE, (entry, _options, theme) => {
 		if (!entry.data) return;
 
-		const { durationMs, outputTokens, tokensPerSecond, averageTtftMs, endedAt } = entry.data;
+		const { durationMs, outputTokens, tokensPerSecond, averageTtftMs, estimatedCostUsd, endedAt } = entry.data;
 		const stats = [
 			`⏱ ${formatDuration(durationMs)}`,
 			`${numberFormat.format(outputTokens)} output tokens`,
 			`${tokensPerSecond.toFixed(1)} tok/s avg`,
 		];
 		if (averageTtftMs !== undefined) stats.push(`${formatDuration(averageTtftMs)} TTFT avg`);
+		if (estimatedCostUsd !== undefined) stats.push(`$${estimatedCostUsd.toFixed(4)}`);
 		if (endedAt !== undefined) stats.push(timeFormat.format(endedAt));
 		const text = stats.join(" · ");
 
@@ -62,6 +65,7 @@ export default function (pi: ExtensionAPI) {
 		currentTurn = undefined;
 		totalDurationMs = 0;
 		totalOutputTokens = 0;
+		totalCostUsd = 0;
 		completedTurns = 0;
 		requestStartedAt = undefined;
 		totalTtftMs = 0;
@@ -110,6 +114,8 @@ export default function (pi: ExtensionAPI) {
 
 		totalDurationMs += Math.max(1, end - start);
 		totalOutputTokens += event.message.usage.output;
+		// Pi's cost includes input, output, cache reads, and cache writes.
+		totalCostUsd += event.message.usage.cost.total;
 		completedTurns++;
 		startedAt.delete(event.turnIndex);
 		responseEndedAt.delete(event.turnIndex);
@@ -125,6 +131,7 @@ export default function (pi: ExtensionAPI) {
 			outputTokens: totalOutputTokens,
 			tokensPerSecond: totalOutputTokens / (totalDurationMs / 1_000),
 			averageTtftMs: ttftSamples > 0 ? totalTtftMs / ttftSamples : undefined,
+			estimatedCostUsd: totalCostUsd,
 			endedAt: Date.now(),
 		});
 		completedTurns = 0;

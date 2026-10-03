@@ -1,0 +1,11 @@
+[tools]
+codex = "latest"
+go = "latest"
+rust = "latest"
+node = "26.8.2"
+pi = "latest"
+uv = "latest"
+gh = "latest"
+
+[settings.upgrade]
+auto_prune = false

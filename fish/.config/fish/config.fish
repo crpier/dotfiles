@@ -1,4 +1,10 @@
+fish_vi_key_bindings
+
 # Fish settings
+if status is-interactive
+    fish_config theme choose "Catppuccin Macchiato"
+end
+
 # disables the vi mode prompt
 function fish_mode_prompt
 end
@@ -25,18 +31,26 @@ function fish_prompt --description 'Write out the prompt'
 end
 
 
-set -U fish_prompt_pwd_dir_length 100
-set -U VIRTUAL_ENV_DISABLE_PROMPT yes
-set -gx PNPM_HOME "/home/crpier/.local/share/pnpm"
+# Keep intentional settings in config, not persisted universal variables.
+set -g fish_prompt_pwd_dir_length 100
+set -gx VIRTUAL_ENV_DISABLE_PROMPT yes
+set -gx PNPM_HOME "$HOME/.local/share/pnpm"
 
-# General settings
-set -gx PATH ~/.local/bin ~/.cargo/bin /home/crpier/.opencode/bin/ ~/.bun/bin $PNPM_HOME $PATH
+# General settings. --path avoids universal state and duplicate PATH entries.
+fish_add_path --path "$HOME/.local/bin" "$HOME/.cargo/bin" \
+    "$HOME/.opencode/bin" "$HOME/.bun/bin" "$PNPM_HOME"
 set -gx EDITOR nvim
 
-# Aliases
-# kittens
-alias ks "kitty +kitten ssh"
-alias icat "kitty +kitten icat"
+# Arch's mise package normally activates Fish through vendor_conf.d.
+# Provide a fallback without registering the hooks twice or ignoring an opt-out.
+if status is-interactive; and type -q mise
+    if not functions -q __mise_env_eval
+        if not set -q MISE_FISH_AUTO_ACTIVATE; or test "$MISE_FISH_AUTO_ACTIVATE" != 0
+            mise activate fish | source
+        end
+    end
+end
+
 
 # open stuff in text editor
 alias n "nvim"
@@ -44,11 +58,9 @@ alias rn "uv run nvim"
 alias nconfig "nvim $HOME/.config/nvim/init.lua"
 alias nlconfig "nvim $HOME/.config/local_configs/nvim.lua"
 alias fconfig "nvim $HOME/.config/fish/config.fish"
-alias flconfig "nvim $HOME/.config/local_configs/config.fish"
-alias kconfig "nvim $HOME/.config/kitty/kitty.conf"
-alias klconfig "nvim $HOME/.config/local_configs/kitty.conf"
-alias gconfig "nvim $HOME/.gitconfig"
-alias glconfig "nvim $HOME/.config/extra.gitconfig"
+alias gconfig "nvim $HOME/.config/ghostty/config"
+alias gitconfig "nvim $HOME/.config/git/config"
+alias glconfig "nvim $HOME/.config/git/local"
 
 # misc stuff
 alias b "bat"
@@ -90,7 +102,7 @@ alias et "eza -aT --git-ignore -I '.git|.venv|node_modules|.solid|__pycache__'"
 # misc
 alias stats "echo $status"
 alias rmf "rm -rf"
-alias claude "claude --dangerously-skip-permissions"
+# Keep the normal permission checks when launching Claude.
 alias c "claude"
 
 # abbreviaations
@@ -118,9 +130,7 @@ end
 function gacp
     # git add commit push
     set message $argv[1]
-    git add .
-    git commit -m "$message"
-    git push
+    git add .; and git commit -m "$message"; and git push
 end
 
 # misc

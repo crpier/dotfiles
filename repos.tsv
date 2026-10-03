@@ -1,0 +1,2 @@
+# Git URL<TAB>destination relative to home
+git@github.com:crpier/nvim.git	.config/nvim
