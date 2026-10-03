@@ -21,7 +21,7 @@ function fish_prompt --description 'Write out the prompt'
         echo -n \((basename $VIRTUAL_ENV)\)
         set_color normal
     end
-    __terlar_git_prompt
+    fish_git_prompt
     echo
     if not test $last_status -eq 0
         set_color $fish_color_error
@@ -33,6 +33,11 @@ end
 
 # Keep intentional settings in config, not persisted universal variables.
 set -g fish_prompt_pwd_dir_length 100
+# Native Fish Git prompt: branch and change markers, with colors and symbols.
+set -g __fish_git_prompt_showdirtystate 1
+set -g __fish_git_prompt_showuntrackedfiles 1
+set -g __fish_git_prompt_showcolorhints 1
+set -g __fish_git_prompt_use_informative_chars 1
 set -gx VIRTUAL_ENV_DISABLE_PROMPT yes
 set -gx PNPM_HOME "$HOME/.local/share/pnpm"
 

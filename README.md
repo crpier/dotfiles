@@ -15,7 +15,7 @@ layout is specific to my two LG displays.
 | `mise` | Global tool declarations at `~/.config/mise/config.toml` |
 | `hypr` | Monitor, input, binding, appearance, and autostart Lua overrides |
 | `ghostty` | Ghostty config and `~/.config/xdg-terminals.list` default-terminal preference |
-| `fish` | Shell config, prompt function, and Catppuccin Macchiato theme |
+| `fish` | Shell config with Fish's built-in Git prompt, and Catppuccin Macchiato theme |
 | `idle` | One-hour idle suspend helper and its user service; no automatic desktop locking |
 | `voxtype` | Dictation configuration at `~/.config/voxtype/config.toml` |
 | `agent` | Whole skills directory linked under `~/.agents/skills/personal` |
@@ -31,6 +31,10 @@ and unlocked/authorized as required.
 Ghostty launches Fish without changing the system login shell. Fish and Ghostty
 use Catppuccin Macchiato independently of the desktop theme. Pi's theme/settings
 are not managed here; its existing `omarchy-system` preference is left alone.
+The prompt layout lives in `config.fish` and calls Fish's built-in
+`fish_git_prompt`, with native color hints and informative characters enabled:
+a green branch name, red `✚` for unstaged changes, green `●` for staged changes,
+and blue `…` for untracked files. No separate Git prompt helper is needed.
 
 Neovim is a separate checkout of `git@github.com:crpier/nvim.git`, cloned directly
 to `~/.config/nvim`, not symlinked or stored as a submodule.
