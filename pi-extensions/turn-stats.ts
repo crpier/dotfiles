@@ -33,9 +33,12 @@ function formatDuration(durationMs: number): string {
 export default function (pi: ExtensionAPI) {
 	const startedAt = new Map<number, number>();
 	const responseEndedAt = new Map<number, number>();
+	const firstOutputAt = new Map<number, number>();
 	let currentTurn: number | undefined;
-	let totalDurationMs = 0;
+	let agentStartedAt: number | undefined;
+	let totalStreamingMs = 0;
 	let totalOutputTokens = 0;
+	let streamingOutputTokens = 0;
 	let totalCostUsd = 0;
 	let completedTurns = 0;
 	let requestStartedAt: number | undefined;
@@ -62,9 +65,12 @@ export default function (pi: ExtensionAPI) {
 	pi.on("agent_start", () => {
 		startedAt.clear();
 		responseEndedAt.clear();
+		firstOutputAt.clear();
 		currentTurn = undefined;
-		totalDurationMs = 0;
+		agentStartedAt = performance.now();
+		totalStreamingMs = 0;
 		totalOutputTokens = 0;
+		streamingOutputTokens = 0;
 		totalCostUsd = 0;
 		completedTurns = 0;
 		requestStartedAt = undefined;
@@ -93,14 +99,18 @@ export default function (pi: ExtensionAPI) {
 			!((update.type === "text_delta" || update.type === "thinking_delta" || update.type === "toolcall_delta") && update.delta.length > 0)
 		) return;
 
-		totalTtftMs += Math.max(0, performance.now() - requestStartedAt);
+		const now = performance.now();
+		if (currentTurn !== undefined && !firstOutputAt.has(currentTurn)) {
+			firstOutputAt.set(currentTurn, now);
+		}
+		totalTtftMs += Math.max(0, now - requestStartedAt);
 		ttftSamples++;
 		requestStartedAt = undefined;
 	});
 
 	pi.on("message_end", (event) => {
 		if (event.message.role === "assistant" && currentTurn !== undefined) {
-			responseEndedAt.set(currentTurn, Date.now());
+			responseEndedAt.set(currentTurn, performance.now());
 			requestStartedAt = undefined;
 		}
 	});
@@ -109,16 +119,22 @@ export default function (pi: ExtensionAPI) {
 		if (event.message.role !== "assistant") return;
 
 		const start = startedAt.get(event.turnIndex);
-		const end = responseEndedAt.get(event.turnIndex) ?? Date.now();
+		const end = responseEndedAt.get(event.turnIndex) ?? performance.now();
 		if (start === undefined) return;
 
-		totalDurationMs += Math.max(1, end - start);
+		const firstOutput = firstOutputAt.get(event.turnIndex);
+		// Only include responses with a measured stream in the throughput ratio.
+		if (firstOutput !== undefined) {
+			totalStreamingMs += Math.max(1, end - firstOutput);
+			streamingOutputTokens += event.message.usage.output;
+		}
 		totalOutputTokens += event.message.usage.output;
 		// Pi's cost includes input, output, cache reads, and cache writes.
 		totalCostUsd += event.message.usage.cost.total;
 		completedTurns++;
 		startedAt.delete(event.turnIndex);
 		responseEndedAt.delete(event.turnIndex);
+		firstOutputAt.delete(event.turnIndex);
 		currentTurn = undefined;
 		requestStartedAt = undefined;
 	});
@@ -127,9 +143,9 @@ export default function (pi: ExtensionAPI) {
 		if (completedTurns === 0) return;
 
 		pi.appendEntry<TurnStats>(ENTRY_TYPE, {
-			durationMs: totalDurationMs,
+			durationMs: agentStartedAt !== undefined ? Math.max(0, performance.now() - agentStartedAt) : 0,
 			outputTokens: totalOutputTokens,
-			tokensPerSecond: totalOutputTokens / (totalDurationMs / 1_000),
+			tokensPerSecond: totalStreamingMs > 0 ? streamingOutputTokens / (totalStreamingMs / 1_000) : 0,
 			averageTtftMs: ttftSamples > 0 ? totalTtftMs / ttftSamples : undefined,
 			estimatedCostUsd: totalCostUsd,
 			endedAt: Date.now(),

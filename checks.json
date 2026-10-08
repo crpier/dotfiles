@@ -42,14 +42,6 @@
     },
     "paths": {}
   },
-  "idle": {
-    "executables": {
-      "qs": "Quickshell provides the Wayland idle monitor; already included in Omarchy",
-      "systemctl": "Used to request suspend and manage the user service",
-      "omarchy": "Keeps Omarchy's built-in idle locking disabled"
-    },
-    "paths": {}
-  },
   "voxtype": {
     "executables": {
       "voxtype": "Needed to run the dictation daemon",

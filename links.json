@@ -15,10 +15,6 @@
   "fish": [
     {"source": "fish/.config/fish", "target": ".config/fish", "mode": "files"}
   ],
-  "idle": [
-    {"source": "idle/.config/omarchy/idle-suspend.qml", "target": ".config/omarchy/idle-suspend.qml"},
-    {"source": "idle/.config/systemd/user/idle-suspend.service", "target": ".config/systemd/user/idle-suspend.service"}
-  ],
   "voxtype": [
     {"source": "voxtype/.config/voxtype/config.toml", "target": ".config/voxtype/config.toml"}
   ],

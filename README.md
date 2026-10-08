@@ -16,7 +16,6 @@ layout is specific to my two LG displays.
 | `hypr` | Monitor, input, binding, appearance, and autostart Lua overrides |
 | `ghostty` | Ghostty config and `~/.config/xdg-terminals.list` default-terminal preference |
 | `fish` | Shell config with Fish's built-in Git prompt, and Catppuccin Macchiato theme |
-| `idle` | One-hour idle suspend helper and its user service; no automatic desktop locking |
 | `voxtype` | Dictation configuration at `~/.config/voxtype/config.toml` |
 | `agent` | Whole skills directory linked under `~/.agents/skills/personal` |
 | `pi-extensions` | Whole extensions directory linked at `~/.pi/agent/extensions` |
@@ -38,57 +37,6 @@ and blue `…` for untracked files. No separate Git prompt helper is needed.
 
 Neovim is a separate checkout of `git@github.com:crpier/nvim.git`, cloned directly
 to `~/.config/nvim`, not symlinked or stored as a submodule.
-
-## Idle, suspend, and locking
-
-The desired policy is **no screensaver, no automatic desktop locking (including
-before suspend), and suspend after one hour of inactivity**. Anyone with physical
-access can use the desktop after wake unless it was locked manually.
-
-Omarchy's built-in idle service only handles screensaver/locking. Keep it in
-Stay Awake mode; the separate Quickshell monitor in the `idle` package requests
-`systemctl suspend` after 3600 idle seconds. It respects Wayland idle inhibitors
-(such as fullscreen games/video), and systemd's normal sleep inhibitors still
-apply. It does not turn off displays at an earlier deadline.
-
-Linking does **not** enable services or change Omarchy toggle state. After
-reviewing/deploying this package, explicitly activate the policy:
-
-```bash
-./deploy.sh idle --apply
-systemctl --user mask --now omarchy-sleep-lock.service
-systemctl --user daemon-reload
-systemctl --user enable --now idle-suspend.service
-```
-
-The service sets `omarchy toggle idle stay-awake` on each start. Do not switch
-Omarchy back to Allow Idle: that re-enables its automatic lock timer alongside
-the suspend helper. The bar's Stay Awake indicator refers to the built-in
-screensaver/locking, **not** this separate suspend timer. To temporarily prevent
-automatic suspend, stop `idle-suspend.service`; start it again to restore it.
-The sleep-lock mask is persistent local systemd state and must be repeated on
-restoration. Manual locking with Super+Ctrl+L is unchanged.
-
-Check with:
-
-```bash
-systemctl --user status idle-suspend.service
-systemctl --user is-enabled omarchy-sleep-lock.service  # expected: masked
-omarchy-shell idle status                              # expected: enabled=false
-journalctl --user -u idle-suspend.service
-```
-
-To restore Omarchy's default automatic locking and remove the suspend timer:
-
-```bash
-systemctl --user disable --now idle-suspend.service
-systemctl --user unmask omarchy-sleep-lock.service
-systemctl --user start omarchy-sleep-lock.service
-omarchy toggle idle allow-idle
-```
-
-This leaves any independent screensaver-off toggle untouched; use
-`omarchy toggle screensaver` if you also want to change that preference.
 
 ## Prerequisites
 
