@@ -27,3 +27,10 @@
 -- o.bind("SUPER + SHIFT + S", nil, "omarchy-capture-screenshot")
 -- o.bind("SUPER + H", nil, "voxtype record toggle")
 -- o.bind("SUPER + PERIOD", nil, "omarchy-shell shell toggle omarchy.emojis")
+
+-- Keep only Omarchy's Alt+Space dictation toggle.
+-- Disable the default Right Alt hold shortcut and former experiment keys.
+hl.unbind("ALT + Alt_R")
+hl.unbind("SUPER + CTRL + X")
+hl.unbind("F9")
+hl.unbind("F10")

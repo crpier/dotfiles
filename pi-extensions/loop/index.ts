@@ -50,6 +50,9 @@ function isPersistedLoopState(value: unknown): value is PersistedLoopState {
 }
 
 export default function loopExtension(pi: ExtensionAPI) {
+	// T3 owns scheduling; retain this extension for standalone Pi.
+	if (process.env.T3_PI_MCP_EXTENSION_PATH) return;
+
 	let loop: LoopState | undefined;
 	let timer: ReturnType<typeof setTimeout> | undefined;
 	let generation = 0;

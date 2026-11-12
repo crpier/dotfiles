@@ -45,6 +45,9 @@ function runEditor(command: string, file: string): Promise<number | null> {
 }
 
 export default function (pi: ExtensionAPI) {
+	// T3 owns the composer; retain terminal editor integration for standalone Pi.
+	if (process.env.T3_PI_MCP_EXTENSION_PATH) return;
+
 	let tui: TUI | undefined;
 	let running = false;
 	let installedBaseFactory: MarkedEditorFactory["baseFactory"];

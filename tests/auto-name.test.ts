@@ -30,6 +30,8 @@ function harness(complete = async () => response) {
 	const notices: string[] = [];
 	const calls: { model: unknown; context: { messages: unknown[] }; options: Record<string, unknown> }[] = [];
 	let idle = true;
+	let pending = false;
+	const idleWaiters: (() => void)[] = [];
 	let currentName: string | undefined;
 	const api = {
 		on(name: string, handler: (event: never, ctx: ExtensionCommandContext) => void) { events.set(name, handler); },
@@ -42,7 +44,8 @@ function harness(complete = async () => response) {
 	extension(api);
 	const ctx = {
 		sessionManager: manager, model, thinkingLevel: "high", hasUI: true,
-		getSystemPrompt: () => "Original system prompt", isIdle: () => idle, hasPendingMessages: () => false,
+		getSystemPrompt: () => "Original system prompt", isIdle: () => idle, hasPendingMessages: () => pending,
+		waitForIdle: () => new Promise<void>((resolve) => idleWaiters.push(resolve)),
 		ui: { notify: (message: string) => notices.push(message) },
 		modelRegistry: { streamSimple(selected: unknown, context: { messages: unknown[] }, options: Record<string, unknown>) {
 			calls.push({ model: selected, context, options });
@@ -50,6 +53,13 @@ function harness(complete = async () => response) {
 		} },
 	} as unknown as ExtensionCommandContext;
 	return { manager, ctx, calls, notices, name: () => currentName, busy: () => { idle = false; },
+		pending: () => { pending = true; },
+		settle: () => {
+			idle = true;
+			pending = false;
+			events.get("agent_settled")?.({} as never, ctx);
+			idleWaiters.splice(0).forEach((resolve) => resolve());
+		},
 		emit: (name: string, event: unknown = {}) => events.get(name)?.(event as never, ctx),
 		run: (args = "") => command!.handler(args, ctx) };
 }
@@ -103,9 +113,54 @@ test("honors compaction and context edits instead of resending raw history", asy
 	assert.ok(h.manager.getEntry(last));
 });
 
-test("busy agent is refused without making a paid request", async () => {
-	const h = harness(); h.busy(); await h.run();
-	assert.equal(h.calls.length, 0); assert.equal(h.name(), undefined);
+for (const state of ["busy", "pending"] as const) {
+	test(`${state} agent queues naming with guidance and the finalized conversation`, async () => {
+		const h = harness(); h[state]();
+		const running = h.run("Emphasize notifications");
+		assert.equal(h.calls.length, 0);
+		assert.match(h.notices.at(-1)!, /naming queued/);
+		await h.run("Duplicate guidance");
+		assert.match(h.notices.at(-1)!, /already queued or running/);
+		h.manager.appendMessage({ ...response, content: [{ type: "text", text: "Completed queued work" }] });
+		h.settle(); await running;
+		assert.equal(h.calls.length, 1);
+		assert.match(JSON.stringify(h.calls[0].context), /Completed queued work/);
+		assert.match(JSON.stringify(h.calls[0].context), /Emphasize notifications/);
+		assert.doesNotMatch(JSON.stringify(h.calls[0].context), /Duplicate guidance/);
+		assert.ok(h.name());
+	});
+}
+
+for (const event of ["session_shutdown", "session_start", "session_tree", "cancel"] as const) {
+	test(`${event} cancels queued naming without a paid request`, async () => {
+		const h = harness(); h.busy();
+		const running = h.run();
+		if (event === "cancel") await h.run("--cancel");
+		else h.emit(event);
+		h.settle(); await running;
+		assert.equal(h.calls.length, 0);
+		assert.equal(h.name(), undefined);
+	});
+}
+
+test("queued naming survives compaction and agent restarts", async () => {
+	const h = harness(); h.busy();
+	const running = h.run();
+	h.emit("session_compact"); h.emit("agent_start");
+	h.settle(); await running;
+	assert.equal(h.calls.length, 1);
+	assert.ok(h.name());
+});
+
+test("cancelling then requeuing does not let the old waiter consume the new request", async () => {
+	const h = harness(); h.busy();
+	const old = h.run("Old guidance");
+	await h.run("--cancel");
+	const next = h.run("New guidance");
+	h.settle(); await Promise.all([old, next]);
+	assert.equal(h.calls.length, 1);
+	assert.match(JSON.stringify(h.calls[0].context), /New guidance/);
+	assert.doesNotMatch(JSON.stringify(h.calls[0].context), /Old guidance/);
 });
 
 test("context changes during the call discard the title", async () => {

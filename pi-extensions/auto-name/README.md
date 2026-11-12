@@ -10,7 +10,8 @@ full active context, with best-effort prompt-cache reuse.
 ```
 
 This directory is already linked into `~/.pi/agent/extensions`. Run `/reload` in
-Pi to load the command, then use `/auto-name` after the agent finishes working.
+Pi to load the command. Use `/auto-name` at any time; if the agent is busy,
+naming waits until the agent and queued messages have finished.
 
 ## Behavior
 
@@ -31,10 +32,14 @@ Pi to load the command, then use `/auto-name` after the agent finishes working.
 - Saves a valid response with `pi.setSessionName()`. The naming prompt and
   response are never persisted as messages, rendered in chat, or added to
   `/tree`. Only the ordinary session-name metadata is saved.
-- Refuses to start while the agent is busy or messages are queued. Duplicate
-  commands are ignored. Cancellation, agent startup, session shutdown, tree
-  navigation, or compaction cancels an in-flight request. Session changes or
-  a manual rename during the request prevent saving a stale title.
+- Queues while the agent is busy or messages are pending, preserving any naming
+  guidance. Once fully idle, it names the finalized conversation using the model
+  selected at that time. Duplicate commands are ignored. `/auto-name --cancel`,
+  session shutdown/replacement, or tree navigation cancels queued naming;
+  automatic compaction and agent retries do not.
+- Cancellation, agent startup, session shutdown, tree navigation, or compaction
+  cancels an in-flight naming request. Session changes or a manual rename during
+  the request prevent saving a stale title.
 - Never executes tools. A tool call, provider error, truncated output, empty
   title, multiline title, or title over 100 characters leaves the old name
   unchanged.

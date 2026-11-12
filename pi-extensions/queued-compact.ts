@@ -112,6 +112,13 @@ export default function (pi: ExtensionAPI) {
 		return editor;
 	};
 
+	pi.registerCommand("queued-compact", {
+		description: "Compact once the agent and queued messages finish (optional focus instructions)",
+		handler: async (args, ctx) => {
+			enqueue(ctx, args.trim() || undefined);
+		},
+	});
+
 	pi.on("session_start", (_event, ctx) => {
 		if (ctx.mode !== "tui" || !ctx.hasUI) return;
 
@@ -130,7 +137,7 @@ export default function (pi: ExtensionAPI) {
 		ctx.ui.setEditorComponent(queuedCompactFactory);
 	});
 
-	pi.on("agent_end", (_event, ctx) => {
+	pi.on("agent_settled", (_event, ctx) => {
 		drain(ctx);
 	});
 
@@ -148,6 +155,7 @@ export default function (pi: ExtensionAPI) {
 	});
 
 	pi.on("session_shutdown", (_event, ctx) => {
+		pending = undefined;
 		if (drainTimer) {
 			clearTimeout(drainTimer);
 			drainTimer = undefined;

@@ -30,6 +30,18 @@ function formatDuration(durationMs: number): string {
 	return `${minutes}m ${seconds}s`;
 }
 
+function formatStats({ durationMs, outputTokens, tokensPerSecond, averageTtftMs, estimatedCostUsd, endedAt }: TurnStats): string {
+	const stats = [
+		`⏱ ${formatDuration(durationMs)}`,
+		`${numberFormat.format(outputTokens)} output tokens`,
+		`${tokensPerSecond.toFixed(1)} tok/s avg`,
+	];
+	if (averageTtftMs !== undefined) stats.push(`${formatDuration(averageTtftMs)} TTFT avg`);
+	if (estimatedCostUsd !== undefined) stats.push(`$${estimatedCostUsd.toFixed(4)}`);
+	if (endedAt !== undefined) stats.push(timeFormat.format(endedAt));
+	return stats.join(" · ");
+}
+
 export default function (pi: ExtensionAPI) {
 	const startedAt = new Map<number, number>();
 	const responseEndedAt = new Map<number, number>();
@@ -48,18 +60,7 @@ export default function (pi: ExtensionAPI) {
 	pi.registerEntryRenderer<TurnStats>(ENTRY_TYPE, (entry, _options, theme) => {
 		if (!entry.data) return;
 
-		const { durationMs, outputTokens, tokensPerSecond, averageTtftMs, estimatedCostUsd, endedAt } = entry.data;
-		const stats = [
-			`⏱ ${formatDuration(durationMs)}`,
-			`${numberFormat.format(outputTokens)} output tokens`,
-			`${tokensPerSecond.toFixed(1)} tok/s avg`,
-		];
-		if (averageTtftMs !== undefined) stats.push(`${formatDuration(averageTtftMs)} TTFT avg`);
-		if (estimatedCostUsd !== undefined) stats.push(`$${estimatedCostUsd.toFixed(4)}`);
-		if (endedAt !== undefined) stats.push(timeFormat.format(endedAt));
-		const text = stats.join(" · ");
-
-		return new Text(theme.fg("dim", text), 1, 0);
+		return new Text(theme.fg("dim", formatStats(entry.data)), 1, 0);
 	});
 
 	pi.on("agent_start", () => {
@@ -139,17 +140,22 @@ export default function (pi: ExtensionAPI) {
 		requestStartedAt = undefined;
 	});
 
-	pi.on("agent_settled", () => {
+	pi.on("agent_settled", (_event, ctx) => {
 		if (completedTurns === 0) return;
 
-		pi.appendEntry<TurnStats>(ENTRY_TYPE, {
+		const stats: TurnStats = {
 			durationMs: agentStartedAt !== undefined ? Math.max(0, performance.now() - agentStartedAt) : 0,
 			outputTokens: totalOutputTokens,
 			tokensPerSecond: totalStreamingMs > 0 ? streamingOutputTokens / (totalStreamingMs / 1_000) : 0,
 			averageTtftMs: ttftSamples > 0 ? totalTtftMs / ttftSamples : undefined,
 			estimatedCostUsd: totalCostUsd,
 			endedAt: Date.now(),
-		});
+		};
+		pi.appendEntry<TurnStats>(ENTRY_TYPE, stats);
 		completedTurns = 0;
+		// T3 cannot render custom Pi entries, but bridges notifications to its timeline.
+		if (process.env.T3_PI_MCP_EXTENSION_PATH && ctx.mode === "rpc" && ctx.hasUI) {
+			ctx.ui.notify(formatStats({ ...stats, endedAt: undefined }), "info");
+		}
 	});
 }

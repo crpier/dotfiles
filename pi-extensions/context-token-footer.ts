@@ -128,6 +128,9 @@ function installFooter(pi: ExtensionAPI, ctx: ExtensionContext) {
 }
 
 export default function (pi: ExtensionAPI) {
+	// T3 renders its own context indicator, not Pi's terminal footer.
+	if (process.env.T3_PI_MCP_EXTENSION_PATH) return;
+
 	pi.on("session_start", async (_event, ctx) => {
 		installFooter(pi, ctx);
 	});

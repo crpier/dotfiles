@@ -108,7 +108,7 @@ alias et "eza -aT --git-ignore -I '.git|.venv|node_modules|.solid|__pycache__'"
 alias stats "echo $status"
 alias rmf "rm -rf"
 # Keep the normal permission checks when launching Claude.
-alias c "claude"
+alias oc "opencode"
 
 # abbreviaations
 abbr ur "uv run"

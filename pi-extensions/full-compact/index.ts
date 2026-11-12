@@ -15,6 +15,9 @@ function notify(ctx: ExtensionContext, message: string, level: "info" | "warning
 }
 
 export default function (pi: ExtensionAPI) {
+	// Use T3's native compaction flow instead of replacing its session externally.
+	if (process.env.T3_PI_MCP_EXTENSION_PATH) return;
+
 	let running = false;
 	let controller: AbortController | undefined;
 

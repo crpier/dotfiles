@@ -28,19 +28,27 @@ export function parseTitle(text: string): string {
 }
 
 export default function (pi: ExtensionAPI) {
+	// T3 owns thread titles; retain this extension for standalone Pi.
+	if (process.env.T3_PI_MCP_EXTENSION_PATH) return;
+
 	let request: Snapshot | undefined;
 	let snapshot: Snapshot | undefined;
 	let controller: AbortController | undefined;
+	let queued: object | undefined;
 	const toolsKey = () => JSON.stringify(pi.getActiveTools());
-	const reset = () => {
+	const resetTranscript = () => {
 		controller?.abort();
 		request = undefined;
 		snapshot = undefined;
 	};
+	const reset = () => {
+		queued = undefined;
+		resetTranscript();
+	};
 
 	pi.on("session_shutdown", reset);
 	pi.on("session_start", reset);
-	pi.on("session_compact", reset);
+	pi.on("session_compact", resetTranscript);
 	pi.on("session_tree", reset);
 	pi.on("agent_start", () => controller?.abort());
 
@@ -75,16 +83,27 @@ export default function (pi: ExtensionAPI) {
 		description: "Name this session with the current model and full context (/auto-name [guidance] or --cancel)",
 		handler: async (args, ctx) => {
 			if (args.trim() === "--cancel") {
+				if (queued) {
+					queued = undefined;
+					notify(ctx, "Queued session naming cancelled; name unchanged");
+				}
 				controller?.abort();
 				return;
 			}
-			if (controller) {
-				notify(ctx, "Session naming is already running; use /auto-name --cancel to cancel", "warning");
+			if (controller || queued) {
+				notify(ctx, "Session naming is already queued or running; use /auto-name --cancel to cancel", "warning");
 				return;
 			}
 			if (!ctx.isIdle() || ctx.hasPendingMessages()) {
-				notify(ctx, "Wait for the agent and queued messages to finish, then run /auto-name", "warning");
-				return;
+				const ticket = {};
+				queued = ticket;
+				notify(ctx, "Session naming queued; waiting for the agent and queued messages to finish");
+				try {
+					await ctx.waitForIdle();
+					if (queued !== ticket) return;
+				} finally {
+					if (queued === ticket) queued = undefined;
+				}
 			}
 			const model = ctx.model;
 			if (!model) {
